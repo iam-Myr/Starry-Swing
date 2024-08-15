@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://ck5qu4mm8eomm"]
+
+[ext_resource type="Script" path="res://Scenes/Player/player.gd" id="1_sivrr"]
+[ext_resource type="Texture2D" uid="uid://d0pfwxfenbhj" path="res://Assets/Player Sprite/transparent-no-particles-export1.png" id="1_yksdr"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_lw0y6"]
+height = 36.0
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_sivrr")
+
+[node name="Player_Img" type="Sprite2D" parent="."]
+texture = ExtResource("1_yksdr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_lw0y6")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.3
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
