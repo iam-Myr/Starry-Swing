@@ -10,7 +10,6 @@ func _ready():
 func _process(delta):
 	pass
 
-
-func _on_star_body_entered(body):
+func _on_star_body_entered():
 	# If body is lasso tip
 	print("contact")

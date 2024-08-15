@@ -14,7 +14,7 @@ func _process(_delta):
 	if Input.is_action_just_pressed("grapple") and can_grapple:
 		print("grapple")
 		can_grapple = false
-		$Timer.start()
+		$LassoTimer.start()
 
 func _on_timer_timeout():
 	can_grapple = true

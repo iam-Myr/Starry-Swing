@@ -15,8 +15,8 @@ texture = ExtResource("1_yksdr")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_lw0y6")
 
-[node name="Timer" type="Timer" parent="."]
+[node name="LassoTimer" type="Timer" parent="."]
 wait_time = 0.3
 one_shot = true
 
-[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="LassoTimer" to="." method="_on_timer_timeout"]

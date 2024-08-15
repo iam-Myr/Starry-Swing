@@ -1,15 +1,21 @@
-[gd_scene load_steps=3 format=3 uid="uid://c8f3ws1cwt30i"]
+[gd_scene load_steps=4 format=3 uid="uid://c8f3ws1cwt30i"]
 
 [ext_resource type="Texture2D" uid="uid://blhw5j2rd6jjq" path="res://Assets/Star Sprite/item-feedback-4.png" id="1_dj30u"]
+[ext_resource type="Script" path="res://Scenes/star.gd" id="1_rsrx2"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_5qc33"]
 radius = 15.0333
 
-[node name="Star" type="Area2D"]
-
-[node name="StarCollision" type="CollisionShape2D" parent="."]
-position = Vector2(1, 1)
-shape = SubResource("CircleShape2D_5qc33")
+[node name="Star" type="Node2D"]
+script = ExtResource("1_rsrx2")
 
 [node name="StarImg" type="Sprite2D" parent="."]
 texture = ExtResource("1_dj30u")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="StarCollision" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(1, 1)
+shape = SubResource("CircleShape2D_5qc33")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
