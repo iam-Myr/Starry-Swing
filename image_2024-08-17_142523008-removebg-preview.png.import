@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dnqus3b8legrp"
-path="res://.godot/imported/item-feedback-3.png-cda1f28aef705c72555aaa49d7180bd3.ctex"
+uid="uid://bx7u1kqsx4x1t"
+path="res://.godot/imported/image_2024-08-17_142523008-removebg-preview.png-334c0224c73781e6e88bec69e566139f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Star Sprite/item-feedback-3.png"
-dest_files=["res://.godot/imported/item-feedback-3.png-cda1f28aef705c72555aaa49d7180bd3.ctex"]
+source_file="res://image_2024-08-17_142523008-removebg-preview.png"
+dest_files=["res://.godot/imported/image_2024-08-17_142523008-removebg-preview.png-334c0224c73781e6e88bec69e566139f.ctex"]
 
 [params]
 

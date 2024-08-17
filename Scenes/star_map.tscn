@@ -76,4 +76,10 @@ position = Vector2(857, 332)
 [node name="Marker2D23" type="Marker2D" parent="StarMarkers"]
 position = Vector2(631.77, 307.56)
 
+[node name="Marker2D24" type="Marker2D" parent="StarMarkers"]
+position = Vector2(1159, 447)
+
+[node name="Marker2D25" type="Marker2D" parent="StarMarkers"]
+position = Vector2(1182, 271)
+
 [node name="Stars" type="Node2D" parent="."]

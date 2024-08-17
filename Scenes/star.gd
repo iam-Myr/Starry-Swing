@@ -1,6 +1,6 @@
-extends Node2D
+extends StaticBody2D
 
-signal body_entered(body)
+signal body_entered(star, body)
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -11,4 +11,4 @@ func _process(delta):
 	pass
 
 func _on_area_2d_body_entered(body):
-	body_entered.emit(body)
+	body_entered.emit(self, body)

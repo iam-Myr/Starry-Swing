@@ -1,12 +1,47 @@
-[gd_scene load_steps=3 format=3 uid="uid://lirewln1yeo4"]
+[gd_scene load_steps=7 format=3 uid="uid://lirewln1yeo4"]
 
 [ext_resource type="PackedScene" uid="uid://ck5qu4mm8eomm" path="res://Scenes/Player/player.tscn" id="1_kxtem"]
 [ext_resource type="Script" path="res://Scenes/world.gd" id="1_ofgo2"]
+[ext_resource type="Texture2D" uid="uid://bm5f0we85xggn" path="res://Assets/Stars/stars_tilemap.png" id="2_3pors"]
+[ext_resource type="Texture2D" uid="uid://b8ons6nu62avd" path="res://Assets/Stars/BG.jpg" id="3_45twk"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8eau3"]
+texture = ExtResource("2_3pors")
+separation = Vector2i(5, 0)
+texture_region_size = Vector2i(90, 90)
+use_texture_padding = false
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_df1fy"]
+tile_size = Vector2i(20, 20)
+sources/0 = SubResource("TileSetAtlasSource_8eau3")
 
 [node name="World" type="Node2D"]
 script = ExtResource("1_ofgo2")
 
-[node name="Player" parent="." instance=ExtResource("1_kxtem")]
-position = Vector2(754, 160)
+[node name="BG" type="Node2D" parent="."]
 
+[node name="Sprite2D" type="Sprite2D" parent="BG"]
+texture_repeat = 3
+position = Vector2(645, 373)
+texture = ExtResource("3_45twk")
+region_enabled = true
+region_rect = Rect2(-338.23, -303.275, 1291.15, 983.553)
+
+[node name="TileMap" type="TileMap" parent="BG"]
+tile_set = SubResource("TileSet_df1fy")
+format = 2
+layer_0/tile_data = PackedInt32Array(262201, 131072, 1)
+
+[node name="Player" parent="." instance=ExtResource("1_kxtem")]
+position = Vector2(663, 362)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+zoom = Vector2(1.3, 1.3)
+position_smoothing_enabled = true
+
+[connection signal="is_grappling" from="." to="Player" method="_on_world_is_grappling"]
 [connection signal="grapple_signal" from="Player" to="." method="_on_player_grapple_signal"]
