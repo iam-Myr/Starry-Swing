@@ -37,10 +37,14 @@ tile_set = SubResource("TileSet_df1fy")
 format = 2
 layer_0/tile_data = PackedInt32Array(262201, 131072, 1)
 
-[node name="StarMap" parent="BG" instance=ExtResource("6_3rt72")]
+[node name="StarMap" parent="." instance=ExtResource("6_3rt72")]
+
+[node name="Rope" type="Line2D" parent="."]
+width = 3.0
+default_color = Color(0.596078, 0.815686, 1, 1)
 
 [node name="Player" parent="." instance=ExtResource("1_kxtem")]
-position = Vector2(663, 362)
+position = Vector2(548, 339)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 zoom = Vector2(1.5, 1.5)
@@ -49,10 +53,6 @@ limit_top = 0
 limit_right = 1280
 limit_bottom = 700
 position_smoothing_enabled = true
-
-[node name="Rope" type="Line2D" parent="."]
-width = 3.0
-default_color = Color(0.596078, 0.815686, 1, 1)
 
 [connection signal="player_grappling" from="Player" to="." method="_on_player_player_grappling"]
 [connection signal="player_released" from="Player" to="." method="_on_player_player_released"]

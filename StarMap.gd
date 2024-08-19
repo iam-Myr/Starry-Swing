@@ -2,17 +2,11 @@ extends Node2D
 
 var star_scene:PackedScene = preload("res://Scenes/star.tscn")
 const STAR_NUMBER = 20
-signal stars_spawned(stars_container)
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	spawn_stars(STAR_NUMBER, $StarMarkers)
-	# Emit signal containing the stars
-	stars_spawned.emit($Stars)
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
 
 func spawn_stars(star_number, star_marker_node):
 	var star_markers_list = star_marker_node.get_children()

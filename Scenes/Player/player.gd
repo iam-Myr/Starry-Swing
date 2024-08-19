@@ -22,8 +22,16 @@ var input_dir = Vector2.ZERO
 signal player_grappling(anchor)
 signal player_released
 
+var direction  = 1
+
 func _ready():
 	$StarDetector/StarDetectorCircle.shape.radius = ROPE_LENGTH
+
+func spawn(star):
+	visible = true
+	grappling = true
+	grapple_anchor = star.position
+	position = Vector2(star.position.x, star.position.y + 50)
 
 func _input(event):
 	if event.is_action_released("grapple"):

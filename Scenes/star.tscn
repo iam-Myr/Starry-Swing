@@ -26,9 +26,9 @@ texture = ExtResource("2_82637")
 [node name="Light" type="PointLight2D" parent="."]
 enabled = false
 color = Color(0.596078, 1, 1, 0.67451)
-energy = 0.2
+energy = 0.6
 texture = ExtResource("3_g75ee")
-texture_scale = 0.1
+texture_scale = 0.07
 
 [node name="Particles" type="CPUParticles2D" parent="."]
 emitting = false
