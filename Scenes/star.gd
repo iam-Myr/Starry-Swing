@@ -1,5 +1,8 @@
 extends StaticBody2D
 
+@onready var particles = $Particles
+@onready var light = $Light
+
 signal body_entered(star, body)
 
 # Called when the node enters the scene tree for the first time.
@@ -10,5 +13,10 @@ func _ready():
 func _process(delta):
 	pass
 
-func _on_area_2d_body_entered(body):
-	body_entered.emit(self, body)
+func get_chosen():
+	particles.emitting = true
+	light.enabled = true
+
+func remove_chosen():
+	particles.emitting = false
+	light.enabled = false

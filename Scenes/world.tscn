@@ -52,7 +52,7 @@ position_smoothing_enabled = true
 
 [node name="Rope" type="Line2D" parent="."]
 width = 3.0
-default_color = Color(0.596078, 0.372549, 1, 1)
+default_color = Color(0.596078, 0.815686, 1, 1)
 
 [connection signal="player_grappling" from="Player" to="." method="_on_player_player_grappling"]
 [connection signal="player_released" from="Player" to="." method="_on_player_player_released"]

@@ -1,21 +1,40 @@
-[gd_scene load_steps=4 format=3 uid="uid://se1fxigjlx08"]
+[gd_scene load_steps=6 format=3 uid="uid://se1fxigjlx08"]
 
 [ext_resource type="Script" path="res://Scenes/star.gd" id="1_rsrx2"]
 [ext_resource type="Texture2D" uid="uid://b8ssrsfdhmfd5" path="res://Assets/Stars/star.png" id="2_82637"]
+[ext_resource type="Texture2D" uid="uid://cmqat35qq3u5g" path="res://Assets/light.png" id="3_g75ee"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_5qc33"]
 radius = 15.0333
+
+[sub_resource type="Gradient" id="Gradient_lfb07"]
+colors = PackedColorArray(0.776471, 0.917647, 1, 1, 1, 1, 1, 0.584314)
 
 [node name="Star" type="StaticBody2D"]
 collision_layer = 2
 collision_mask = 3
 script = ExtResource("1_rsrx2")
 
+[node name="StarCollision" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_5qc33")
+
 [node name="StarImg" type="Sprite2D" parent="."]
-position = Vector2(2.5, 3)
+position = Vector2(2, 1)
 scale = Vector2(0.289062, 0.290076)
 texture = ExtResource("2_82637")
 
-[node name="StarCollision" type="CollisionShape2D" parent="."]
-position = Vector2(1, 1)
-shape = SubResource("CircleShape2D_5qc33")
+[node name="Light" type="PointLight2D" parent="."]
+enabled = false
+color = Color(0.596078, 1, 1, 0.67451)
+energy = 0.2
+texture = ExtResource("3_g75ee")
+texture_scale = 0.1
+
+[node name="Particles" type="CPUParticles2D" parent="."]
+emitting = false
+emission_shape = 1
+emission_sphere_radius = 20.0
+gravity = Vector2(0, 0)
+scale_amount_max = 3.0
+color = Color(0.776471, 0.917647, 1, 1)
+color_ramp = SubResource("Gradient_lfb07")

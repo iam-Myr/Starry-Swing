@@ -87,28 +87,25 @@ func _physics_process(delta: float):
 		
 	else:
 		# If not grappling, fall due to gravity
-		#velocity.x += direction.x * 0.1
-		#velocity.x = lerp(velocity.x,direction.x*SPEED, 0.001)
-		#velocity.x = clamp(velocity.x, -MAX_HORIZONTAL_SPEED, MAX_HORIZONTAL_SPEED)
+		velocity.x += direction.x * 0.1
+		velocity.x = lerp(velocity.x,direction.x*SPEED, 0.001)
+		velocity.x = clamp(velocity.x, -MAX_HORIZONTAL_SPEED, MAX_HORIZONTAL_SPEED)
 
 		
-		#velocity.y += GRAVITY * delta  # Apply gravity to the y-velocity
-		#velocity.y = clamp(velocity.y, -MAX_VERTICAL_SPEED, MAX_VERTICAL_SPEED)  # Cap vertical speed
+		velocity.y += GRAVITY * delta  # Apply gravity to the y-velocity
+		velocity.y = clamp(velocity.y, -MAX_VERTICAL_SPEED, MAX_VERTICAL_SPEED)  # Cap vertical speed
 		
-		#move_and_slide()  
-		#prev_pos = position  
+		move_and_slide()  
+		prev_pos = position  
 		
-		
+		"""
 		var alignment = direction.dot(Vector2(velocity.x,0).normalized())
 		var speed_modifier = max(50,alignment) * 1.1
-		var total_forces = direction * SPEED * speed_modifier
+		var total_forces = direction * SWING_SPEED * speed_modifier
 		total_forces += Vector2(0,GRAVITY)
 		var new_pos = verlet_integration(prev_pos,total_forces,delta)
 			
 		#var nextVelocity = new_pos - transform.origin
 		velocity = (new_pos - transform.origin) / delta
-		
-		move_and_slide()  
-		prev_pos = position
-	
-	print(abs(velocity.x))
+	"""
+	#print(abs(velocity.x))
