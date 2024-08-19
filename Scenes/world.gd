@@ -1,68 +1,50 @@
 extends Node2D
 
-var starmap_scene: PackedScene = preload("res://Scenes/star_map.tscn")
-var grapple_scene: PackedScene = preload("res://Scenes/grapple.tscn")
+@onready var player = $Player
+@onready var rope = $Rope
+signal warped_player
+@onready var anchor = $Player
+var player_grappling = false
 
-signal is_grappling
 
-# Define boundaries for teleportation
-var boundary_left: float = 0  # Adjust as needed
-var boundary_right: float = 1250  # Adjust as needed
-var boundary_top: float = -5  # Adjust as needed
-var boundary_bottom: float = 850 # Adjust as needed
-
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	var new_starmap = starmap_scene.instantiate()
-	new_starmap.connect("stars_spawned", Callable(self, "_on_stars_spawned"))
-	add_child(new_starmap)
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	check_player_out_of_bounds()
+	#check_player_out_of_bounds()
+	player.position = player.position.posmodv(get_viewport_rect().size)
+	if player_grappling:
+		rope.points = [player.position, anchor.position]
+	else:
+		rope.points = []
 
 func check_player_out_of_bounds():
-	if $Player.position.x < boundary_left:
-		$Player.position.x = boundary_right
-	elif $Player.position.x > boundary_right:
-		$Player.position.x = boundary_left
-
-	if $Player.position.y < boundary_top:
-		$Player.position.y = boundary_bottom
-	elif $Player.position.y > boundary_bottom:
-		$Player.position.y = boundary_top
-
-func _on_stars_spawned(stars_container):
-	# Connect each star's body_entered signal to _on_star_body_entered
-	for star in stars_container.get_children():
-		star.connect("body_entered", Callable(self, "_on_star_body_entered"))
-
-func _on_star_body_entered(star, body):
-	if body.is_in_group("grapple_segments"):
-		print(star, body)
-		$Grapple/EndingPinjoint.node_b = star.get_path()
-		is_grappling.emit()
-
-func _on_player_grapple_signal(direction):
-	print("grapple")
+	var screen_size = get_viewport_rect().size
+	var position_changed = false
 	
-	# Remove Previous Grapple
-	remove_child($Grapple)
+	# Check X bounds
+	if player.global_position.x < 0:
+		player.global_position.x += screen_size.x
+		position_changed = true
+	elif player.global_position.x > screen_size.x:
+		player.global_position.x -= screen_size.x
+		position_changed = true
 	
-	# Change Player direction
-	$Player/Player_Img.flip_h = $Player.position.x > get_global_mouse_position().x
+	# Check Y bounds
+	if player.global_position.y < 0:
+		player.global_position.y += screen_size.y
+		position_changed = true
+	elif player.global_position.y > screen_size.y:
+		player.global_position.y -= screen_size.y
+		position_changed = true
 	
-	var new_grapple = grapple_scene.instantiate() 
-	new_grapple.name = "Grapple"
-	new_grapple.position = $Player.position + Vector2(-5, -20) # offset
-	new_grapple.rotation = direction.angle() - 90
-	
-	add_child(new_grapple)
-	
-	# Connect Grapple to Player
-	var pin_joint = $Grapple/StartingPinjoint
-	pin_joint.node_a = $Player.get_path()
+	# Emit signal only if the position has changed
+	if position_changed:
+		warped_player.emit()
 
-	# Despawn
-	await get_tree().create_timer(2.0).timeout
-	remove_child(new_grapple)
+
+func _on_player_player_grappling(anchr):
+	player_grappling = true
+	anchor = anchr
+	#print(anchor)
+
+
+func _on_player_player_released():
+	player_grappling = false

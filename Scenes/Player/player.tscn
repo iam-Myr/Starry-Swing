@@ -1,10 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://ck5qu4mm8eomm"]
+[gd_scene load_steps=5 format=3 uid="uid://ck5qu4mm8eomm"]
 
 [ext_resource type="Script" path="res://Scenes/Player/player.gd" id="1_sivrr"]
 [ext_resource type="Texture2D" uid="uid://d0pfwxfenbhj" path="res://Assets/Player Sprite/transparent-no-particles-export1.png" id="1_yksdr"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_lw0y6"]
 height = 36.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_u2jmf"]
+radius = 102.961
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_sivrr")
@@ -18,5 +21,11 @@ shape = SubResource("CapsuleShape2D_lw0y6")
 [node name="GrappleTimer" type="Timer" parent="."]
 wait_time = 0.3
 one_shot = true
+
+[node name="StarDetector" type="Area2D" parent="."]
+collision_mask = 2
+
+[node name="StarDetectorCircle" type="CollisionShape2D" parent="StarDetector"]
+shape = SubResource("CircleShape2D_u2jmf")
 
 [connection signal="timeout" from="GrappleTimer" to="." method="_on_timer_timeout"]

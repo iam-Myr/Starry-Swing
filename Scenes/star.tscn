@@ -7,6 +7,8 @@
 radius = 15.0333
 
 [node name="Star" type="StaticBody2D"]
+collision_layer = 2
+collision_mask = 3
 script = ExtResource("1_rsrx2")
 
 [node name="StarImg" type="Sprite2D" parent="."]
@@ -14,10 +16,6 @@ position = Vector2(2.5, 3)
 scale = Vector2(0.289062, 0.290076)
 texture = ExtResource("2_82637")
 
-[node name="Area2D" type="Area2D" parent="."]
-
-[node name="StarCollision" type="CollisionShape2D" parent="Area2D"]
+[node name="StarCollision" type="CollisionShape2D" parent="."]
 position = Vector2(1, 1)
 shape = SubResource("CircleShape2D_5qc33")
-
-[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
