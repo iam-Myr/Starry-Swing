@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://lirewln1yeo4"]
+[gd_scene load_steps=9 format=3 uid="uid://lirewln1yeo4"]
 
 [ext_resource type="PackedScene" uid="uid://ck5qu4mm8eomm" path="res://Scenes/Player/player.tscn" id="1_kxtem"]
 [ext_resource type="Script" path="res://Scenes/world.gd" id="1_ofgo2"]
 [ext_resource type="Texture2D" uid="uid://bm5f0we85xggn" path="res://Assets/Stars/stars_tilemap.png" id="2_3pors"]
 [ext_resource type="Texture2D" uid="uid://b8ons6nu62avd" path="res://Assets/Stars/BG.jpg" id="3_45twk"]
 [ext_resource type="PackedScene" uid="uid://bq2dt2dkkfwx0" path="res://Scenes/star_map.tscn" id="6_3rt72"]
+[ext_resource type="PackedScene" uid="uid://se1fxigjlx08" path="res://Scenes/star.tscn" id="6_wyxf3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8eau3"]
 texture = ExtResource("2_3pors")
@@ -53,6 +54,9 @@ limit_top = 0
 limit_right = 1280
 limit_bottom = 700
 position_smoothing_enabled = true
+
+[node name="Star" parent="." instance=ExtResource("6_wyxf3")]
+position = Vector2(548, 387)
 
 [connection signal="player_grappling" from="Player" to="." method="_on_player_player_grappling"]
 [connection signal="player_released" from="Player" to="." method="_on_player_player_released"]

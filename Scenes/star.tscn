@@ -38,3 +38,8 @@ gravity = Vector2(0, 0)
 scale_amount_max = 3.0
 color = Color(0.776471, 0.917647, 1, 1)
 color_ramp = SubResource("Gradient_lfb07")
+
+[node name="ChosenTimer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="timeout" from="ChosenTimer" to="." method="_on_chosen_timer_timeout"]

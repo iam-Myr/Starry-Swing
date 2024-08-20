@@ -5,14 +5,13 @@ const SWING_SPEED = 700           # Speed of the character while swinging on the
 const SPEED = 50
 const ROPE_LENGTH = 150 # (circle radius)
 const MAX_VERTICAL_SPEED = 300   # Cap acceleration
-const MAX_HORIZONTAL_SPEED = 800
+const MAX_HORIZONTAL_SPEED = 1000
+var GRAVITY = ProjectSettings.get_setting("physics/2d/default_gravity") - 100  # Gravity value from project settings
 
 # Nodes and variables
-var GRAVITY = ProjectSettings.get_setting("physics/2d/default_gravity") - 100  # Gravity value from project settings
 var grappling: bool = false       # Boolean to check if the character is currently grappling
 var grapple_anchor: Vector2       # Position of the point where the grapple hooks
 var prev_pos: Vector2 = position  # Previous position of the character (used in Verlet integration)
-
 var closest_object = null
 var closest_distance = INF
 var input_dir = Vector2.ZERO
@@ -21,8 +20,6 @@ var input_dir = Vector2.ZERO
 
 signal player_grappling(anchor)
 signal player_released
-
-var direction  = 1
 
 func _ready():
 	$StarDetector/StarDetectorCircle.shape.radius = ROPE_LENGTH
@@ -70,11 +67,11 @@ func _physics_process(delta: float):
 			# Compute direction vector from player to body
 			var to_body = body.position - position
 			
-			# Check if the body is in the direction the player is looking
-			if direction.dot(to_body) >= 0:
+			# Check if the body is in the direction the player is looking and above player
+			if body.position.y < position.y + 20 and direction.dot(to_body) >= 0:
 				var distance = position.distance_to(body.position)
 				
-				if distance < closest_distance:
+				if position.distance_to(body.position) < closest_distance:
 					closest_distance = distance
 					closest_object = body
 		if closest_object:
@@ -83,6 +80,7 @@ func _physics_process(delta: float):
 			player_grappling.emit(closest_object)
 
 	if grappling:
+		# Grapple physics
 		var total_forces = direction * SWING_SPEED + Vector2(0, GRAVITY)  # Apply swinging force and gravity
 		var new_pos = verlet_integration(prev_pos, total_forces, delta)  # Calculate the new position
 
@@ -94,26 +92,14 @@ func _physics_process(delta: float):
 		move_and_slide()  # Move the character according to the updated velocity
 		
 	else:
-		# If not grappling, fall due to gravity
+		# Non Grapple physics
 		velocity.x += direction.x * 0.1
 		velocity.x = lerp(velocity.x,direction.x*SPEED, 0.001)
 		velocity.x = clamp(velocity.x, -MAX_HORIZONTAL_SPEED, MAX_HORIZONTAL_SPEED)
 
-		
 		velocity.y += GRAVITY * delta  # Apply gravity to the y-velocity
 		velocity.y = clamp(velocity.y, -MAX_VERTICAL_SPEED, MAX_VERTICAL_SPEED)  # Cap vertical speed
 		
+		prev_pos = position 
 		move_and_slide()  
-		prev_pos = position  
-		
-		"""
-		var alignment = direction.dot(Vector2(velocity.x,0).normalized())
-		var speed_modifier = max(50,alignment) * 1.1
-		var total_forces = direction * SWING_SPEED * speed_modifier
-		total_forces += Vector2(0,GRAVITY)
-		var new_pos = verlet_integration(prev_pos,total_forces,delta)
-			
-		#var nextVelocity = new_pos - transform.origin
-		velocity = (new_pos - transform.origin) / delta
-	"""
 	#print(abs(velocity.x))
