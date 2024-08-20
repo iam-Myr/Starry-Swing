@@ -1,7 +1,7 @@
 extends Node2D
 
 var star_scene:PackedScene = preload("res://Scenes/star.tscn")
-const STAR_NUMBER = 20
+const STAR_NUMBER = 25
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

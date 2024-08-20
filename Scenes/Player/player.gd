@@ -3,7 +3,7 @@ extends CharacterBody2D
 # Constants for movement and grappling mechanics
 const SWING_SPEED = 700           # Speed of the character while swinging on the rope
 const SPEED = 50
-const ROPE_LENGTH = 150 # (circle radius)
+const ROPE_LENGTH = 300 # (circle radius)
 const MAX_VERTICAL_SPEED = 300   # Cap acceleration
 const MAX_HORIZONTAL_SPEED = 1000
 var GRAVITY = ProjectSettings.get_setting("physics/2d/default_gravity") - 100  # Gravity value from project settings
@@ -25,7 +25,6 @@ func _ready():
 	$StarDetector/StarDetectorCircle.shape.radius = ROPE_LENGTH
 
 func spawn(star):
-	visible = true
 	grappling = true
 	grapple_anchor = star.position
 	position = Vector2(star.position.x, star.position.y + 50)
@@ -53,6 +52,11 @@ func _process(delta):
 		$Player_Img.flip_h = direction.x < 0 
 
 func _physics_process(delta: float):
+	# Protection against teleport
+	if position.distance_to(prev_pos) > 700:
+		player_released.emit()
+		grappling = false
+		
 	# Get the input direction from the player
 	input_dir.x = Input.get_action_strength("right") - Input.get_action_strength("left")  # Determine left/right movement
 	var direction = input_dir.normalized()  # Normalize the direction vector
@@ -74,6 +78,7 @@ func _physics_process(delta: float):
 				if position.distance_to(body.position) < closest_distance:
 					closest_distance = distance
 					closest_object = body
+					
 		if closest_object:
 			grappling = true
 			grapple_anchor = closest_object.position  # Set the grapple anchor to the hit position
@@ -88,18 +93,23 @@ func _physics_process(delta: float):
 		new_pos = constrain_rope(new_pos, rope_length)  # Constrain the position within the rope length
 
 		velocity = (new_pos - position) / delta  # Update velocity based on the new position
+		
 		prev_pos = position  # Update the previous position
 		move_and_slide()  # Move the character according to the updated velocity
 		
 	else:
 		# Non Grapple physics
-		velocity.x += direction.x * 0.1
+		#"""
+		velocity.x += direction.x 
 		velocity.x = lerp(velocity.x,direction.x*SPEED, 0.001)
 		velocity.x = clamp(velocity.x, -MAX_HORIZONTAL_SPEED, MAX_HORIZONTAL_SPEED)
 
 		velocity.y += GRAVITY * delta  # Apply gravity to the y-velocity
 		velocity.y = clamp(velocity.y, -MAX_VERTICAL_SPEED, MAX_VERTICAL_SPEED)  # Cap vertical speed
-		
+		#"""
+		# God Mode
+		#velocity = direction * 200
+
 		prev_pos = position 
 		move_and_slide()  
 	#print(abs(velocity.x))

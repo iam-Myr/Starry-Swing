@@ -26,7 +26,7 @@ texture = ExtResource("2_82637")
 [node name="Light" type="PointLight2D" parent="."]
 enabled = false
 color = Color(0.596078, 1, 1, 0.67451)
-energy = 0.6
+energy = 0.7
 texture = ExtResource("3_g75ee")
 texture_scale = 0.07
 

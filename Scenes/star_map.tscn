@@ -87,4 +87,4 @@ position = Vector2(1182, 271)
 
 [node name="Polaris" parent="Stars" instance=ExtResource("2_fl5g8")]
 position = Vector2(547, 284)
-scale = Vector2(1.5, 1.5)
+scale = Vector2(2.5, 2.5)
