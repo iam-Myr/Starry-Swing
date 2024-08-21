@@ -1,0 +1,94 @@
+[gd_scene load_steps=5 format=3 uid="uid://vgi03b5p2567"]
+
+[ext_resource type="Texture2D" uid="uid://tu8gos5mtiv1" path="res://Assets/Stars/StarMap.png" id="1_vnmmf"]
+[ext_resource type="Script" path="res://Scenes/star_map_2.gd" id="1_wtm4l"]
+[ext_resource type="PackedScene" uid="uid://dyp0cloypkf7l" path="res://Scenes/consellation.tscn" id="2_wibjh"]
+[ext_resource type="PackedScene" uid="uid://se1fxigjlx08" path="res://Scenes/star.tscn" id="3_7cpuq"]
+
+[node name="StarMap2" type="Node2D"]
+script = ExtResource("1_wtm4l")
+
+[node name="StarMapImg" type="Sprite2D" parent="."]
+visible = false
+modulate = Color(1, 1, 1, 0.172549)
+position = Vector2(640, 479)
+scale = Vector2(2.06021, 2.12987)
+texture = ExtResource("1_vnmmf")
+
+[node name="Rogues" type="Node2D" parent="."]
+
+[node name="Star" parent="Rogues" instance=ExtResource("3_7cpuq")]
+position = Vector2(707, 603)
+
+[node name="Star2" parent="Rogues" instance=ExtResource("3_7cpuq")]
+position = Vector2(319, 428)
+
+[node name="Star3" parent="Rogues" instance=ExtResource("3_7cpuq")]
+position = Vector2(459, 579)
+
+[node name="Star4" parent="Rogues" instance=ExtResource("3_7cpuq")]
+position = Vector2(815, 387)
+
+[node name="Star5" parent="Rogues" instance=ExtResource("3_7cpuq")]
+position = Vector2(426, 330)
+
+[node name="Star6" parent="Rogues" instance=ExtResource("3_7cpuq")]
+position = Vector2(197, 236)
+
+[node name="Star7" parent="Rogues" instance=ExtResource("3_7cpuq")]
+position = Vector2(779, 19)
+
+[node name="Star8" parent="Rogues" instance=ExtResource("3_7cpuq")]
+position = Vector2(809, 165)
+
+[node name="UrsaMinor" parent="." instance=ExtResource("2_wibjh")]
+label = "Ursa Minor"
+
+[node name="Line2D" type="Line2D" parent="UrsaMinor"]
+position = Vector2(271, 97)
+points = PackedVector2Array(191, 73, 211, 2, 68, -25, 67, 57, 192, 73, 302, 145, 360, 254, 385, 362)
+width = 2.0
+default_color = Color(0.882353, 0.882353, 0.882353, 0.0470588)
+
+[node name="Stars" type="Node2D" parent="UrsaMinor"]
+
+[node name="Polaris" parent="UrsaMinor/Stars" instance=ExtResource("3_7cpuq")]
+position = Vector2(658, 457)
+scale = Vector2(1.28, 1.4)
+
+[node name="Star2" parent="UrsaMinor/Stars" instance=ExtResource("3_7cpuq")]
+position = Vector2(573, 243)
+
+[node name="Star3" parent="UrsaMinor/Stars" instance=ExtResource("3_7cpuq")]
+position = Vector2(463, 170)
+
+[node name="Star4" parent="UrsaMinor/Stars" instance=ExtResource("3_7cpuq")]
+position = Vector2(334, 155)
+
+[node name="Star5" parent="UrsaMinor/Stars" instance=ExtResource("3_7cpuq")]
+position = Vector2(482, 100)
+
+[node name="Star6" parent="UrsaMinor/Stars" instance=ExtResource("3_7cpuq")]
+position = Vector2(340, 71)
+
+[node name="Star7" parent="UrsaMinor/Stars" instance=ExtResource("3_7cpuq")]
+position = Vector2(632, 351)
+
+[node name="Cepheus" parent="." instance=ExtResource("2_wibjh")]
+label = "Cepheus"
+
+[node name="Line2D" type="Line2D" parent="Cepheus"]
+position = Vector2(1036, 124)
+points = PackedVector2Array(-1, -1, -76, 286, 193, 129)
+width = 3.0
+
+[node name="Stars" type="Node2D" parent="Cepheus"]
+
+[node name="Star" parent="Cepheus/Stars" instance=ExtResource("3_7cpuq")]
+position = Vector2(962, 410)
+
+[node name="Star2" parent="Cepheus/Stars" instance=ExtResource("3_7cpuq")]
+position = Vector2(1035, 124)
+
+[node name="Star3" parent="Cepheus/Stars" instance=ExtResource("3_7cpuq")]
+position = Vector2(1231, 252)

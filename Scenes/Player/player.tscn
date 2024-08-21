@@ -18,6 +18,9 @@ texture = ExtResource("1_yksdr")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_lw0y6")
 
+[node name="GrappleMarker" type="Marker2D" parent="."]
+position = Vector2(13, 5)
+
 [node name="StarDetector" type="Area2D" parent="."]
 collision_mask = 2
 

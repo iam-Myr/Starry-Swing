@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://dyp0cloypkf7l"]
+
+[ext_resource type="Script" path="res://Scenes/consellation.gd" id="1_cn0t5"]
+
+[node name="Consellation" type="Node2D" groups=["Constellation"]]
+script = ExtResource("1_cn0t5")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 60.0
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

@@ -3,7 +3,7 @@ extends CharacterBody2D
 # Constants for movement and grappling mechanics
 const SWING_SPEED = 700           # Speed of the character while swinging on the rope
 const SPEED = 50
-const ROPE_LENGTH = 300 # (circle radius)
+const ROPE_LENGTH = 150 # (circle radius)
 const MAX_VERTICAL_SPEED = 300   # Cap acceleration
 const MAX_HORIZONTAL_SPEED = 1000
 var GRAVITY = ProjectSettings.get_setting("physics/2d/default_gravity") - 100  # Gravity value from project settings
@@ -53,7 +53,7 @@ func _process(delta):
 
 func _physics_process(delta: float):
 	# Protection against teleport
-	if position.distance_to(prev_pos) > 700:
+	if global_position.distance_to(prev_pos) > 900:
 		player_released.emit()
 		grappling = false
 		
@@ -89,8 +89,8 @@ func _physics_process(delta: float):
 		var total_forces = direction * SWING_SPEED + Vector2(0, GRAVITY)  # Apply swinging force and gravity
 		var new_pos = verlet_integration(prev_pos, total_forces, delta)  # Calculate the new position
 
-		var rope_length = 0
-		rope_length = clamp(rope_length,position.distance_to(grappled_body.position),ROPE_LENGTH/2)  # Calculate the current rope length
+		var rope_length = position.distance_to(grappled_body.position)
+		#rope_length = clamp(rope_length,rope_length,ROPE_LENGTH)  # Calculate the current rope length
 		new_pos = constrain_rope(new_pos, rope_length)  # Constrain the position within the rope length
 		
 		velocity = (new_pos - position) / delta  # Update velocity based on the new position

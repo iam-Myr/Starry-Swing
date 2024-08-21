@@ -1,13 +1,16 @@
 extends Node2D
 
+const WORLD_DIMENSIONS = Vector2(1280, 720)
+
 @onready var player = $Player
 @onready var rope = $Rope
 @onready var camera = $Player/Camera2D
-@onready var chosen_star = $StarMap/Stars/Polaris #Start with spawnpoint
+@onready var chosen_star = $StarMap2/UrsaMinor/Stars/Polaris #Start with spawnpoint
+@onready var prev_chosen_star = $StarMap2/UrsaMinor/Stars/Polaris
 
 var player_grappling = true
 var zoom_speed = Vector2(0.1,0.1)
-var min_zoom = Vector2(0.1,0.1)
+var min_zoom = Vector2(1,1)
 var max_zoom = Vector2(2,2)
 
 func _ready():
@@ -18,10 +21,10 @@ func _ready():
 
 func _process(delta):
 	player.position = player.position.posmodv(get_viewport_rect().size)
-	$Comet.position = $Comet.position.posmodv(get_viewport_rect().size)
+	#$Comet.position = $Comet.position.posmodv(get_viewport_rect().size)
 	
 	if player_grappling:
-		rope.points = [player.global_position, chosen_star.global_position]
+		rope.points = [player.get_node("GrappleMarker").global_position, chosen_star.global_position]
 	else:
 		rope.points = []
 		
@@ -37,15 +40,22 @@ func _on_player_player_grappling(star):
 	player_grappling = true
 	chosen_star = star
 	chosen_star.get_chosen()
+	
+	if chosen_star.constellation != prev_chosen_star.constellation and prev_chosen_star.constellation:
+		prev_chosen_star.constellation.fail()
+
+	if chosen_star.constellation and not chosen_star.constellation.is_unlocked:
+		chosen_star.constellation.const_star_activated(chosen_star)
 
 func _on_player_player_released():
 	player_grappling = false
 	chosen_star.remove_chosen()
+	prev_chosen_star = chosen_star
 
 # Function to create 8 background sprites around the given node
 func create_background_grid(background_sprite: Sprite2D):
 	# Get the size of the background sprite
-	var sprite_size = background_sprite.get_rect().size
+	var sprite_size = WORLD_DIMENSIONS
 	
 	# Loop through the grid positions (-1, 0, 1) for both x and y directions
 	for x_offset in [-1, 0, 1]:
