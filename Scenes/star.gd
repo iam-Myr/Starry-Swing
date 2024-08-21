@@ -1,4 +1,4 @@
-extends StaticBody2D
+extends CelestialBody
 
 @onready var particles = $Particles
 @onready var light = $Light

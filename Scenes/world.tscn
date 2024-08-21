@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://lirewln1yeo4"]
+[gd_scene load_steps=9 format=3 uid="uid://lirewln1yeo4"]
 
 [ext_resource type="PackedScene" uid="uid://ck5qu4mm8eomm" path="res://Scenes/Player/player.tscn" id="1_kxtem"]
 [ext_resource type="Script" path="res://Scenes/world.gd" id="1_ofgo2"]
 [ext_resource type="Texture2D" uid="uid://bm5f0we85xggn" path="res://Assets/Stars/stars_tilemap.png" id="2_3pors"]
 [ext_resource type="Texture2D" uid="uid://b8ons6nu62avd" path="res://Assets/Stars/BG.jpg" id="3_45twk"]
 [ext_resource type="PackedScene" uid="uid://bq2dt2dkkfwx0" path="res://Scenes/star_map.tscn" id="6_3rt72"]
+[ext_resource type="PackedScene" uid="uid://bsrhp1ber8sbt" path="res://Scenes/comet.tscn" id="6_4mg4q"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8eau3"]
 texture = ExtResource("2_3pors")
@@ -25,14 +26,12 @@ script = ExtResource("1_ofgo2")
 
 [node name="BG" type="Node2D" parent="."]
 
-[node name="MainBGSprite" type="Sprite2D" parent="BG"]
+[node name="BGSprite" type="Sprite2D" parent="BG"]
 texture_repeat = 3
 texture = ExtResource("3_45twk")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 1280, 720)
-
-[node name="StarMap" parent="BG/MainBGSprite" instance=ExtResource("6_3rt72")]
 
 [node name="TileMap" type="TileMap" parent="BG"]
 visible = false
@@ -50,15 +49,19 @@ default_color = Color(0.596078, 0.815686, 1, 1)
 position = Vector2(548, 339)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
-zoom = Vector2(1.5, 1.5)
+zoom = Vector2(1.1, 1.1)
 
-[node name="StarMap2" parent="." instance=ExtResource("6_3rt72")]
-visible = false
-position = Vector2(1280, 0)
+[node name="Control" type="Control" parent="."]
+clip_contents = true
+layout_mode = 3
+anchors_preset = 0
+offset_left = 1282.0
+offset_top = -1.0
+offset_right = 1794.0
+offset_bottom = 720.0
 
-[node name="StarMap3" parent="." instance=ExtResource("6_3rt72")]
-visible = false
-position = Vector2(-1280, 0)
+[node name="Comet" parent="." instance=ExtResource("6_4mg4q")]
+position = Vector2(180, 198)
 
 [connection signal="player_grappling" from="Player" to="." method="_on_player_player_grappling"]
 [connection signal="player_released" from="Player" to="." method="_on_player_player_released"]

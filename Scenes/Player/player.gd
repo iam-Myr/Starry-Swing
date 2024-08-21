@@ -10,7 +10,7 @@ var GRAVITY = ProjectSettings.get_setting("physics/2d/default_gravity") - 100  #
 
 # Nodes and variables
 var grappling: bool = false       # Boolean to check if the character is currently grappling
-var grapple_anchor: Vector2       # Position of the point where the grapple hooks
+var grappled_body: CelestialBody = null    # Position of the point where the grapple hooks
 var prev_pos: Vector2 = position  # Previous position of the character (used in Verlet integration)
 var closest_object = null
 var closest_distance = INF
@@ -26,7 +26,7 @@ func _ready():
 
 func spawn(star):
 	grappling = true
-	grapple_anchor = star.position
+	grappled_body = star
 	position = Vector2(star.position.x, star.position.y + 50)
 
 func _input(event):
@@ -36,13 +36,13 @@ func _input(event):
 
 func verlet_integration(prev_pos: Vector2, forces: Vector2, delta: float) -> Vector2:
 	var accel = forces  # Acceleration based on applied forces
-	return 2 * position - prev_pos + accel * pow(delta,2)  # Calculate the new position
+	return 2 * position - prev_pos + accel * pow(delta, 2) 
 
 func constrain_rope(pos: Vector2, max_rope_length: float) -> Vector2:
-	var rope_vector = pos - grapple_anchor  # Vector from the grapple anchor to the character's current position
+	var rope_vector = pos - grappled_body.position  # Vector from the grapple anchor to the character's current position
 	if rope_vector.length() > max_rope_length:  # If the rope is stretched beyond its maximum length
 		rope_vector = rope_vector.normalized() * max_rope_length  # Limit the length to the maximum allowed
-		return grapple_anchor + rope_vector  # Return the constrained position
+		return grappled_body.position + rope_vector  # Return the constrained position
 	return pos  # Return the original position if within the rope length limit
 
 func _process(delta):
@@ -81,7 +81,7 @@ func _physics_process(delta: float):
 					
 		if closest_object:
 			grappling = true
-			grapple_anchor = closest_object.position  # Set the grapple anchor to the hit position
+			grappled_body = closest_object  # Set the grapple anchor to the hit position
 			player_grappling.emit(closest_object)
 
 	if grappling:
@@ -89,18 +89,18 @@ func _physics_process(delta: float):
 		var total_forces = direction * SWING_SPEED + Vector2(0, GRAVITY)  # Apply swinging force and gravity
 		var new_pos = verlet_integration(prev_pos, total_forces, delta)  # Calculate the new position
 
-		var rope_length = position.distance_to(grapple_anchor)  # Calculate the current rope length
+		var rope_length = 0
+		rope_length = clamp(rope_length,position.distance_to(grappled_body.position),ROPE_LENGTH/2)  # Calculate the current rope length
 		new_pos = constrain_rope(new_pos, rope_length)  # Constrain the position within the rope length
-
-		velocity = (new_pos - position) / delta  # Update velocity based on the new position
 		
+		velocity = (new_pos - position) / delta  # Update velocity based on the new position
 		prev_pos = position  # Update the previous position
 		move_and_slide()  # Move the character according to the updated velocity
 		
 	else:
 		# Non Grapple physics
 		#"""
-		velocity.x += direction.x 
+		velocity.x += direction.x * 0.5
 		velocity.x = lerp(velocity.x,direction.x*SPEED, 0.001)
 		velocity.x = clamp(velocity.x, -MAX_HORIZONTAL_SPEED, MAX_HORIZONTAL_SPEED)
 

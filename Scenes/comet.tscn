@@ -1,0 +1,39 @@
+[gd_scene load_steps=5 format=3 uid="uid://bsrhp1ber8sbt"]
+
+[ext_resource type="Script" path="res://Scenes/comet.gd" id="1_6y2ga"]
+[ext_resource type="Texture2D" uid="uid://dta62xp3i4v45" path="res://Assets/Stars/comet.png" id="1_hnsy3"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_edarr"]
+radius = 19.0
+height = 54.0
+
+[sub_resource type="Gradient" id="Gradient_f3lpc"]
+colors = PackedColorArray(0.823529, 0.160784, 0, 1, 1, 0.847059, 0.223529, 0.709804)
+
+[node name="Comet" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("1_6y2ga")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-40, -1)
+rotation = -2.37412
+scale = Vector2(0.330442, 0.323154)
+texture = ExtResource("1_hnsy3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_edarr")
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+position = Vector2(-26, 0)
+rotation = -0.0935652
+amount = 15
+lifetime_randomness = 0.5
+emission_shape = 1
+emission_sphere_radius = 17.0
+gravity = Vector2(-100, 0)
+scale_amount_min = 2.0
+scale_amount_max = 6.0
+color = Color(1, 1, 0.00784314, 1)
+color_ramp = SubResource("Gradient_f3lpc")

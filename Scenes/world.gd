@@ -2,23 +2,37 @@ extends Node2D
 
 @onready var player = $Player
 @onready var rope = $Rope
-signal warped_player
+@onready var camera = $Player/Camera2D
 @onready var chosen_star = $StarMap/Stars/Polaris #Start with spawnpoint
+
 var player_grappling = true
+var zoom_speed = Vector2(0.1,0.1)
+var min_zoom = Vector2(0.1,0.1)
+var max_zoom = Vector2(2,2)
 
 func _ready():
 	player.spawn(chosen_star)
 	chosen_star.get_chosen()
 	
-	create_background_grid($BG/MainBGSprite)
+	create_background_grid($BG/BGSprite)
 
 func _process(delta):
 	player.position = player.position.posmodv(get_viewport_rect().size)
+	$Comet.position = $Comet.position.posmodv(get_viewport_rect().size)
+	
 	if player_grappling:
 		rope.points = [player.global_position, chosen_star.global_position]
 	else:
 		rope.points = []
+		
 
+func _input(event):
+	if event.is_action_pressed("zoom in"):
+		camera.zoom = clamp(camera.zoom - zoom_speed, min_zoom, max_zoom)
+	if event.is_action_pressed("zoom out"):
+		camera.zoom = clamp(camera.zoom + zoom_speed, min_zoom, max_zoom)
+
+	
 func _on_player_player_grappling(star):
 	player_grappling = true
 	chosen_star = star
@@ -28,13 +42,11 @@ func _on_player_player_released():
 	player_grappling = false
 	chosen_star.remove_chosen()
 
-
 # Function to create 8 background sprites around the given node
 func create_background_grid(background_sprite: Sprite2D):
 	# Get the size of the background sprite
 	var sprite_size = background_sprite.get_rect().size
-	print(sprite_size)
-
+	
 	# Loop through the grid positions (-1, 0, 1) for both x and y directions
 	for x_offset in [-1, 0, 1]:
 		for y_offset in [-1, 0, 1]:

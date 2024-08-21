@@ -18,14 +18,8 @@ texture = ExtResource("1_yksdr")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_lw0y6")
 
-[node name="GrappleTimer" type="Timer" parent="."]
-wait_time = 0.3
-one_shot = true
-
 [node name="StarDetector" type="Area2D" parent="."]
 collision_mask = 2
 
 [node name="StarDetectorCircle" type="CollisionShape2D" parent="StarDetector"]
 shape = SubResource("CircleShape2D_u2jmf")
-
-[connection signal="timeout" from="GrappleTimer" to="." method="_on_timer_timeout"]
