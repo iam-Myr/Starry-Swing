@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://tu8gos5mtiv1" path="res://Assets/Stars/StarMap.png" id="1_vnmmf"]
 [ext_resource type="Script" path="res://Scenes/star_map_2.gd" id="1_wtm4l"]
 [ext_resource type="PackedScene" uid="uid://dyp0cloypkf7l" path="res://Scenes/consellation.tscn" id="2_wibjh"]
-[ext_resource type="PackedScene" uid="uid://se1fxigjlx08" path="res://Scenes/star.tscn" id="3_7cpuq"]
+[ext_resource type="PackedScene" uid="uid://bho1ihsa2y4vl" path="res://Scenes/star.tscn" id="3_7cpuq"]
 
 [node name="StarMap2" type="Node2D"]
 script = ExtResource("1_wtm4l")
@@ -54,7 +54,7 @@ default_color = Color(0.882353, 0.882353, 0.882353, 0.0470588)
 
 [node name="Polaris" parent="UrsaMinor/Stars" instance=ExtResource("3_7cpuq")]
 position = Vector2(658, 457)
-scale = Vector2(1.28, 1.4)
+scale = Vector2(2, 2)
 
 [node name="Star2" parent="UrsaMinor/Stars" instance=ExtResource("3_7cpuq")]
 position = Vector2(573, 243)

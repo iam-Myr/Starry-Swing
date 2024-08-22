@@ -4,9 +4,8 @@ extends CharacterBody2D
 const SWING_SPEED = 700           # Speed of the character while swinging on the rope
 const SPEED = 50
 const ROPE_LENGTH = 150 # (circle radius)
-const MAX_VERTICAL_SPEED = 300   # Cap acceleration
-const MAX_HORIZONTAL_SPEED = 1000
-var GRAVITY = ProjectSettings.get_setting("physics/2d/default_gravity") - 100  # Gravity value from project settings
+const MAX_VERTICAL_VELOCITY = 500
+const GRAVITY = 880
 
 # Nodes and variables
 var grappling: bool = false       # Boolean to check if the character is currently grappling
@@ -15,6 +14,8 @@ var prev_pos: Vector2 = position  # Previous position of the character (used in 
 var closest_object = null
 var closest_distance = INF
 var input_dir = Vector2.ZERO
+var total_forces
+var new_pos
 
 @onready var star_detector = $StarDetector  # Reference to the Line2D node
 
@@ -24,7 +25,7 @@ signal player_released
 func _ready():
 	$StarDetector/StarDetectorCircle.shape.radius = ROPE_LENGTH
 
-func spawn(star):
+func spawn_at(star):
 	grappling = true
 	grappled_body = star
 	position = Vector2(star.position.x, star.position.y + 50)
@@ -52,32 +53,12 @@ func _process(delta):
 		$Player_Img.flip_h = direction.x < 0 
 
 func _physics_process(delta: float):
-	# Protection against teleport
-	if global_position.distance_to(prev_pos) > 900:
-		player_released.emit()
-		grappling = false
-		
 	# Get the input direction from the player
 	input_dir.x = Input.get_action_strength("right") - Input.get_action_strength("left")  # Determine left/right movement
 	var direction = input_dir.normalized()  # Normalize the direction vector
 
 	if Input.is_action_just_pressed("grapple") and not grappling:
-		# Check the closest object within the area
-		closest_object = null
-		closest_distance = INF
-	
-		# Iterate over overlapping bodies
-		for body in star_detector.get_overlapping_bodies():
-			# Compute direction vector from player to body
-			var to_body = body.position - position
-			
-			# Check if the body is in the direction the player is looking and above player
-			if body.position.y < position.y + 20 and direction.dot(to_body) >= 0:
-				var distance = position.distance_to(body.position)
-				
-				if position.distance_to(body.position) < closest_distance:
-					closest_distance = distance
-					closest_object = body
+		closest_object = find_closest_object(direction)
 					
 		if closest_object:
 			grappling = true
@@ -85,31 +66,47 @@ func _physics_process(delta: float):
 			player_grappling.emit(closest_object)
 
 	if grappling:
-		# Grapple physics
-		var total_forces = direction * SWING_SPEED + Vector2(0, GRAVITY)  # Apply swinging force and gravity
-		var new_pos = verlet_integration(prev_pos, total_forces, delta)  # Calculate the new position
-
+		total_forces = direction * SWING_SPEED + Vector2(0, GRAVITY)  # Apply swinging force and gravity
+		new_pos = verlet_integration(prev_pos, total_forces, delta)  # Calculate the new position
 		var rope_length = position.distance_to(grappled_body.position)
-		#rope_length = clamp(rope_length,rope_length,ROPE_LENGTH)  # Calculate the current rope length
 		new_pos = constrain_rope(new_pos, rope_length)  # Constrain the position within the rope length
-		
-		velocity = (new_pos - position) / delta  # Update velocity based on the new position
-		prev_pos = position  # Update the previous position
-		move_and_slide()  # Move the character according to the updated velocity
-		
 	else:
-		# Non Grapple physics
-		#"""
-		velocity.x += direction.x * 0.5
-		velocity.x = lerp(velocity.x,direction.x*SPEED, 0.001)
-		velocity.x = clamp(velocity.x, -MAX_HORIZONTAL_SPEED, MAX_HORIZONTAL_SPEED)
+		total_forces = Vector2(0, GRAVITY)
+		#nongrapple_physics(direction, delta)
+		new_pos = verlet_integration(prev_pos, total_forces, delta)  # Calculate the new position
+	
+	var velocity_value = (new_pos - position) / delta  # Update velocity based on the new position
+	
+	# Protection against teleport (BAD)
+	if new_pos.distance_to(position) > 50:
+		player_released.emit()
+		grappling = false
+		velocity_value = velocity
+	
+	velocity = velocity_value  # Update velocity based on the new position
+	velocity.y = clamp(velocity.y, -MAX_VERTICAL_VELOCITY, MAX_VERTICAL_VELOCITY)
+	prev_pos = position  # Update the previous position
+	move_and_slide()  
+	
+	#print(velocity)
 
-		velocity.y += GRAVITY * delta  # Apply gravity to the y-velocity
-		velocity.y = clamp(velocity.y, -MAX_VERTICAL_SPEED, MAX_VERTICAL_SPEED)  # Cap vertical speed
-		#"""
-		# God Mode
-		#velocity = direction * 200
+func find_closest_object(direction):
+	# Check the closest object within the area
+	closest_object = null
+	closest_distance = INF
+	
+	# Iterate over overlapping bodies
+	for body in star_detector.get_overlapping_bodies():
+		# Compute direction vector from player to body
+		var to_body = body.position - position
+			
+		# Check if the body is in the direction the player is looking and above player
+		if body.position.y < position.y + 20 and direction.dot(to_body) >= 0:
+			var distance = position.distance_to(body.position)
+				
+			if position.distance_to(body.position) < closest_distance:
+				closest_distance = distance
+				closest_object = body
+	return closest_object
 
-		prev_pos = position 
-		move_and_slide()  
-	#print(abs(velocity.x))
+

@@ -43,7 +43,7 @@ width = 3.0
 default_color = Color(0.596078, 0.815686, 1, 1)
 
 [node name="Player" parent="." instance=ExtResource("1_kxtem")]
-position = Vector2(656, 485)
+position = Vector2(662, 532)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 zoom = Vector2(1.1, 1.1)

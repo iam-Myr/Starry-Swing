@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://se1fxigjlx08"]
+[gd_scene load_steps=6 format=3 uid="uid://bho1ihsa2y4vl"]
 
 [ext_resource type="Script" path="res://Scenes/star.gd" id="1_rsrx2"]
 [ext_resource type="Texture2D" uid="uid://b8ssrsfdhmfd5" path="res://Assets/Stars/star.png" id="2_82637"]
@@ -26,7 +26,6 @@ texture = ExtResource("2_82637")
 [node name="Light" type="PointLight2D" parent="."]
 enabled = false
 color = Color(0.596078, 1, 1, 0.67451)
-energy = 0.7
 texture = ExtResource("3_g75ee")
 texture_scale = 0.07
 
@@ -35,7 +34,7 @@ emitting = false
 emission_shape = 1
 emission_sphere_radius = 20.0
 gravity = Vector2(0, 0)
-scale_amount_max = 3.0
+scale_amount_max = 4.0
 color = Color(0.776471, 0.917647, 1, 1)
 color_ramp = SubResource("Gradient_lfb07")
 

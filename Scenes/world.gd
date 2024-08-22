@@ -2,19 +2,23 @@ extends Node2D
 
 const WORLD_DIMENSIONS = Vector2(1280, 720)
 
-@onready var player = $Player
-@onready var rope = $Rope
-@onready var camera = $Player/Camera2D
-@onready var chosen_star = $StarMap2/UrsaMinor/Stars/Polaris #Start with spawnpoint
-@onready var prev_chosen_star = $StarMap2/UrsaMinor/Stars/Polaris
+@onready var player: CharacterBody2D = $Player
+@onready var rope: Line2D = $Rope
+@onready var camera: Camera2D = $Player/Camera2D
+@onready var chosen_star: StaticBody2D = $StarMap2/UrsaMinor/Stars/Polaris # Start with spawnpoint
+@onready var prev_chosen_star: StaticBody2D = $StarMap2/UrsaMinor/Stars/Polaris
 
-var player_grappling = true
+var random_spawn: bool = false
+var player_grappling: bool = true
 var zoom_speed = Vector2(0.1,0.1)
 var min_zoom = Vector2(1,1)
 var max_zoom = Vector2(2,2)
 
+
 func _ready():
-	player.spawn(chosen_star)
+	if random_spawn: 
+		chosen_star = $StarMap2/Rogues.get_children().pick_random()
+	player.spawn_at(chosen_star)
 	chosen_star.get_chosen()
 	
 	create_background_grid($BG/BGSprite)
@@ -27,7 +31,7 @@ func _process(delta):
 		rope.points = [player.get_node("GrappleMarker").global_position, chosen_star.global_position]
 	else:
 		rope.points = []
-		
+	
 
 func _input(event):
 	if event.is_action_pressed("zoom in"):
