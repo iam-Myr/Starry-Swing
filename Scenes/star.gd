@@ -8,6 +8,10 @@ var is_chosen = false
 func _ready():
 	if not constellation.is_in_group("Constellation"):
 		constellation = null
+	
+	#Random Scale
+	var rand_scale = randf_range(0.9,1.3)
+	self.scale = Vector2(rand_scale,rand_scale)
 
 func get_chosen():
 	is_chosen = true

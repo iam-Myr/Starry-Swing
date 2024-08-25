@@ -48,4 +48,8 @@ energy = 3.0
 texture = ExtResource("3_g75ee")
 texture_scale = 0.1
 
+[node name="VisibleOnScreenEnabler2D" type="VisibleOnScreenEnabler2D" parent="."]
+position = Vector2(1.54972e-06, -8.9407e-08)
+scale = Vector2(1.5, 1.5)
+
 [connection signal="timeout" from="ChosenTimer" to="." method="_on_chosen_timer_timeout"]

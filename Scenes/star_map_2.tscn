@@ -11,75 +11,96 @@ script = ExtResource("1_wtm4l")
 [node name="StarMapImg" type="Sprite2D" parent="."]
 visible = false
 modulate = Color(1, 1, 1, 0.172549)
-position = Vector2(640, 479)
-scale = Vector2(2.06021, 2.12987)
+position = Vector2(1038, 795)
+scale = Vector2(2, 2)
 texture = ExtResource("1_vnmmf")
+metadata/_edit_lock_ = true
 
 [node name="Rogues" type="Node2D" parent="."]
+position = Vector2(411, 349)
 
 [node name="Star" parent="Rogues" instance=ExtResource("3_7cpuq")]
 position = Vector2(707, 603)
 
-[node name="Star2" parent="Rogues" instance=ExtResource("3_7cpuq")]
-position = Vector2(319, 428)
-
 [node name="Star3" parent="Rogues" instance=ExtResource("3_7cpuq")]
 position = Vector2(459, 579)
 
-[node name="Star4" parent="Rogues" instance=ExtResource("3_7cpuq")]
-position = Vector2(815, 387)
+[node name="Star11" parent="Rogues" instance=ExtResource("3_7cpuq")]
+position = Vector2(1092, 589)
 
-[node name="Star5" parent="Rogues" instance=ExtResource("3_7cpuq")]
-position = Vector2(426, 330)
+[node name="Star13" parent="Rogues" instance=ExtResource("3_7cpuq")]
+position = Vector2(1250, 323)
 
-[node name="Star6" parent="Rogues" instance=ExtResource("3_7cpuq")]
-position = Vector2(197, 236)
+[node name="Star15" parent="Rogues" instance=ExtResource("3_7cpuq")]
+position = Vector2(1546, 448)
 
 [node name="Star7" parent="Rogues" instance=ExtResource("3_7cpuq")]
-position = Vector2(779, 19)
+position = Vector2(288, -84)
 
-[node name="Star8" parent="Rogues" instance=ExtResource("3_7cpuq")]
-position = Vector2(809, 165)
+[node name="Star10" parent="Rogues" instance=ExtResource("3_7cpuq")]
+position = Vector2(-162, -204)
+
+[node name="Star14" parent="Rogues" instance=ExtResource("3_7cpuq")]
+position = Vector2(104, 735)
+
+[node name="Star16" parent="Rogues" instance=ExtResource("3_7cpuq")]
+position = Vector2(399, 871)
+
+[node name="Star18" parent="Rogues" instance=ExtResource("3_7cpuq")]
+position = Vector2(-129, 887)
+
+[node name="Star20" parent="Rogues" instance=ExtResource("3_7cpuq")]
+position = Vector2(974, 831)
+
+[node name="Star21" parent="Rogues" instance=ExtResource("3_7cpuq")]
+position = Vector2(1304, 921)
+
+[node name="Star22" parent="Rogues" instance=ExtResource("3_7cpuq")]
+position = Vector2(710, 1026)
+
+[node name="Star23" parent="Rogues" instance=ExtResource("3_7cpuq")]
+position = Vector2(1371, -186)
 
 [node name="UrsaMinor" parent="." instance=ExtResource("2_wibjh")]
-label = "Ursa Minor"
+position = Vector2(411, 349)
+metadata/_edit_lock_ = true
 
 [node name="Line2D" type="Line2D" parent="UrsaMinor"]
 position = Vector2(271, 97)
-points = PackedVector2Array(191, 73, 211, 2, 68, -25, 67, 57, 192, 73, 302, 145, 360, 254, 385, 362)
+points = PackedVector2Array(188, 59, 205, -6, 62, -37, 63, 45, 187, 59, 295, 127, 347, 231, 372, 328)
 width = 2.0
-default_color = Color(0.882353, 0.882353, 0.882353, 0.0470588)
 
 [node name="Stars" type="Node2D" parent="UrsaMinor"]
 
 [node name="Polaris" parent="UrsaMinor/Stars" instance=ExtResource("3_7cpuq")]
-position = Vector2(658, 457)
+position = Vector2(643, 426)
 scale = Vector2(2, 2)
 
 [node name="Star2" parent="UrsaMinor/Stars" instance=ExtResource("3_7cpuq")]
-position = Vector2(573, 243)
+position = Vector2(565, 220)
 
 [node name="Star3" parent="UrsaMinor/Stars" instance=ExtResource("3_7cpuq")]
-position = Vector2(463, 170)
+position = Vector2(459, 157)
 
 [node name="Star4" parent="UrsaMinor/Stars" instance=ExtResource("3_7cpuq")]
-position = Vector2(334, 155)
+position = Vector2(335, 143)
 
 [node name="Star5" parent="UrsaMinor/Stars" instance=ExtResource("3_7cpuq")]
-position = Vector2(482, 100)
+position = Vector2(477, 89)
 
 [node name="Star6" parent="UrsaMinor/Stars" instance=ExtResource("3_7cpuq")]
-position = Vector2(340, 71)
+position = Vector2(333, 61)
 
 [node name="Star7" parent="UrsaMinor/Stars" instance=ExtResource("3_7cpuq")]
-position = Vector2(632, 351)
+position = Vector2(618, 327)
 
 [node name="Cepheus" parent="." instance=ExtResource("2_wibjh")]
-label = "Cepheus"
+position = Vector2(389, 325)
+metadata/_edit_lock_ = true
 
 [node name="Line2D" type="Line2D" parent="Cepheus"]
 position = Vector2(1036, 124)
-points = PackedVector2Array(-1, -1, -76, 286, 193, 129)
+points = PackedVector2Array(81, -219, 136, -134, 1, 2, -76, 286, 194, 129, 346, 0, 321, -58, 138, -133)
 width = 3.0
 
 [node name="Stars" type="Node2D" parent="Cepheus"]
@@ -92,3 +113,112 @@ position = Vector2(1035, 124)
 
 [node name="Star3" parent="Cepheus/Stars" instance=ExtResource("3_7cpuq")]
 position = Vector2(1231, 252)
+
+[node name="Star4" parent="Cepheus/Stars" instance=ExtResource("3_7cpuq")]
+position = Vector2(1381, 124)
+
+[node name="Star5" parent="Cepheus/Stars" instance=ExtResource("3_7cpuq")]
+position = Vector2(1358, 68)
+
+[node name="Star6" parent="Cepheus/Stars" instance=ExtResource("3_7cpuq")]
+position = Vector2(1174, -11)
+
+[node name="Star7" parent="Cepheus/Stars" instance=ExtResource("3_7cpuq")]
+position = Vector2(1117, -96)
+
+[node name="Draco" parent="." instance=ExtResource("2_wibjh")]
+position = Vector2(411, 363)
+metadata/_edit_lock_ = true
+
+[node name="Line2D" type="Line2D" parent="Draco"]
+points = PackedVector2Array(109, 507, 125, 319, 79, 63, 139, -204, 241, -292, 344, -251, 501, -194, 670, -32, 854, -44, 801, -136, 702, -287)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Draco"]
+
+[node name="Star" parent="Draco/Stars" instance=ExtResource("3_7cpuq")]
+position = Vector2(110, 510)
+
+[node name="Star2" parent="Draco/Stars" instance=ExtResource("3_7cpuq")]
+position = Vector2(125, 320)
+
+[node name="Star3" parent="Draco/Stars" instance=ExtResource("3_7cpuq")]
+position = Vector2(79, 63)
+
+[node name="Star4" parent="Draco/Stars" instance=ExtResource("3_7cpuq")]
+position = Vector2(139, -206)
+
+[node name="Star5" parent="Draco/Stars" instance=ExtResource("3_7cpuq")]
+position = Vector2(241, -290)
+
+[node name="Star6" parent="Draco/Stars" instance=ExtResource("3_7cpuq")]
+position = Vector2(347, -247)
+
+[node name="Star7" parent="Draco/Stars" instance=ExtResource("3_7cpuq")]
+position = Vector2(502, -190)
+
+[node name="Star8" parent="Draco/Stars" instance=ExtResource("3_7cpuq")]
+position = Vector2(671, -33)
+
+[node name="Star9" parent="Draco/Stars" instance=ExtResource("3_7cpuq")]
+position = Vector2(853, -43)
+
+[node name="Star10" parent="Draco/Stars" instance=ExtResource("3_7cpuq")]
+position = Vector2(802, -137)
+
+[node name="Star11" parent="Draco/Stars" instance=ExtResource("3_7cpuq")]
+position = Vector2(700, -287)
+
+[node name="UrsaMajor" parent="." instance=ExtResource("2_wibjh")]
+metadata/_edit_lock_ = true
+
+[node name="Line2D" type="Line2D" parent="UrsaMajor"]
+points = PackedVector2Array(127, 289, 220, 440, 206, 552, 213, 698, 121, 781, 214, 969, 350, 929, 214, 699)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="UrsaMajor"]
+
+[node name="Star" parent="UrsaMajor/Stars" instance=ExtResource("3_7cpuq")]
+position = Vector2(132, 298)
+
+[node name="Star2" parent="UrsaMajor/Stars" instance=ExtResource("3_7cpuq")]
+position = Vector2(218, 436)
+
+[node name="Star3" parent="UrsaMajor/Stars" instance=ExtResource("3_7cpuq")]
+position = Vector2(211, 552)
+
+[node name="Star4" parent="UrsaMajor/Stars" instance=ExtResource("3_7cpuq")]
+position = Vector2(213, 704)
+
+[node name="Star5" parent="UrsaMajor/Stars" instance=ExtResource("3_7cpuq")]
+position = Vector2(351, 927)
+
+[node name="Star6" parent="UrsaMajor/Stars" instance=ExtResource("3_7cpuq")]
+position = Vector2(126, 782)
+
+[node name="Star7" parent="UrsaMajor/Stars" instance=ExtResource("3_7cpuq")]
+position = Vector2(221, 966)
+
+[node name="Cassiopeia" parent="." instance=ExtResource("2_wibjh")]
+metadata/_edit_lock_ = true
+
+[node name="Line2D" type="Line2D" parent="Cassiopeia"]
+points = PackedVector2Array(1624, 1077, 1740, 1032, 1758, 937, 1873, 902, 1816, 786)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Cassiopeia"]
+
+[node name="Star" parent="Cassiopeia/Stars" instance=ExtResource("3_7cpuq")]
+position = Vector2(1626, 1076)
+
+[node name="Star2" parent="Cassiopeia/Stars" instance=ExtResource("3_7cpuq")]
+position = Vector2(1758, 941)
+
+[node name="Star3" parent="Cassiopeia/Stars" instance=ExtResource("3_7cpuq")]
+position = Vector2(1872, 904)
+
+[node name="Star4" parent="Cassiopeia/Stars" instance=ExtResource("3_7cpuq")]
+position = Vector2(1817, 789)
+
+[node name="Star5" parent="Cassiopeia/Stars" instance=ExtResource("3_7cpuq")]
+position = Vector2(1740, 1031)

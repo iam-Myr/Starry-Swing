@@ -1,0 +1,4927 @@
+[gd_scene load_steps=4 format=3 uid="uid://oxuojxvf6xy8"]
+
+[ext_resource type="Script" path="res://Scenes/star_map_2.gd" id="1_ojpws"]
+[ext_resource type="PackedScene" uid="uid://dyp0cloypkf7l" path="res://Scenes/consellation.tscn" id="2_c7akh"]
+[ext_resource type="PackedScene" uid="uid://bho1ihsa2y4vl" path="res://Scenes/star.tscn" id="3_33jhu"]
+
+[node name="generator2" type="Node2D"]
+script = ExtResource("1_ojpws")
+
+[node name="Constellation_1" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="85" type="Line2D" parent="Constellation_1"]
+points = PackedVector2Array(8800.93, 1902.85, 8749.86, 1419.7, 8678.21, 1113.66, 9184.01, 997.627, 8754.16, 1065.67, 8678.21, 1113.66, 8505.74, 1184.55, 7972.78, 1240.75, 7496.9, 1349.7, 7513.44, 1393, 8504.07, 1427.12, 8336.95, 1471.59, 8276.28, 1744.56, 7553.09, 1479.35)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_1"]
+
+[node name="Star" parent="Constellation_1/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(8800.93, 1902.85)
+scale = Vector2(1.29865, 1.29865)
+
+[node name="Star86" parent="Constellation_1/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(8749.86, 1419.7)
+scale = Vector2(1.15541, 1.15541)
+
+[node name="Star87" parent="Constellation_1/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(8678.21, 1113.66)
+scale = Vector2(1.16882, 1.16882)
+
+[node name="Star88" parent="Constellation_1/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(9184.01, 997.627)
+scale = Vector2(0.907227, 0.907227)
+
+[node name="Star89" parent="Constellation_1/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(8754.16, 1065.67)
+scale = Vector2(1.04198, 1.04198)
+
+[node name="Star90" parent="Constellation_1/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(8678.21, 1113.66)
+scale = Vector2(1.17595, 1.17595)
+
+[node name="Star91" parent="Constellation_1/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(8505.74, 1184.55)
+scale = Vector2(0.931585, 0.931585)
+
+[node name="Star92" parent="Constellation_1/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(7972.78, 1240.75)
+scale = Vector2(1.02749, 1.02749)
+
+[node name="Star93" parent="Constellation_1/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(7496.9, 1349.7)
+scale = Vector2(1.17544, 1.17544)
+
+[node name="Star94" parent="Constellation_1/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(7513.44, 1393)
+scale = Vector2(1.10716, 1.10716)
+
+[node name="Star95" parent="Constellation_1/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(8504.07, 1427.12)
+scale = Vector2(1.11005, 1.11005)
+
+[node name="Star96" parent="Constellation_1/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(8336.95, 1471.59)
+scale = Vector2(1.18632, 1.18632)
+
+[node name="Star97" parent="Constellation_1/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(8276.28, 1744.56)
+scale = Vector2(1.16743, 1.16743)
+
+[node name="Star98" parent="Constellation_1/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(7553.09, 1479.35)
+scale = Vector2(1.18171, 1.18171)
+
+[node name="Constellation_2" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="99" type="Line2D" parent="Constellation_2"]
+points = PackedVector2Array(12806.5, 5483.52, 12998.3, 5711.38, 13263.4, 5928.95, 13605.2, 5870.95, -81.4632, 5792.16)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_2"]
+
+[node name="Star" parent="Constellation_2/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(12806.5, 5483.52)
+scale = Vector2(1.0785, 1.0785)
+
+[node name="Star100" parent="Constellation_2/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(12998.3, 5711.38)
+scale = Vector2(1.063, 1.063)
+
+[node name="Star101" parent="Constellation_2/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13263.4, 5928.95)
+scale = Vector2(0.900476, 0.900476)
+
+[node name="Star102" parent="Constellation_2/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13605.2, 5870.95)
+scale = Vector2(1.12668, 1.12668)
+
+[node name="Star103" parent="Constellation_2/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(-81.4632, 5792.16)
+scale = Vector2(1.12138, 1.12138)
+
+[node name="Constellation_3" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="104" type="Line2D" parent="Constellation_3"]
+points = PackedVector2Array(619.685, 4011.79, 705.574, 3860.61, 759.432, 3823.86, 702.767, 3834.8)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_3"]
+
+[node name="Star" parent="Constellation_3/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(619.685, 4011.79)
+scale = Vector2(1.17897, 1.17897)
+
+[node name="Star105" parent="Constellation_3/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(705.574, 3860.61)
+scale = Vector2(1.17622, 1.17622)
+
+[node name="Star106" parent="Constellation_3/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(759.432, 3823.86)
+scale = Vector2(1.26699, 1.26699)
+
+[node name="Star107" parent="Constellation_3/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(702.767, 3834.8)
+scale = Vector2(0.985683, 0.985683)
+
+[node name="Constellation_4" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="108" type="Line2D" parent="Constellation_4"]
+points = PackedVector2Array(2847.78, 1571.57, 2846.92, 1519.83, 2784.01, 1123.66, 2889.72, 736.31, 2545.7, 619.502, 2575.28, 532.191, 2418.69, 481.443, 1745.91, 522.668, 1201.68, 605.041, 761.685, 597.081, 326.822, 612.809, 411.484, 847.491, 2323.23, 1066.31, 2450.08, 760.681, 252.301, 824.93, 326.822, 612.809, 88.6534, 734.859, 13798.3, 971.042)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_4"]
+
+[node name="Star" parent="Constellation_4/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2847.78, 1571.57)
+scale = Vector2(1.03324, 1.03324)
+
+[node name="Star109" parent="Constellation_4/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2846.92, 1519.83)
+scale = Vector2(1.11947, 1.11947)
+
+[node name="Star110" parent="Constellation_4/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2784.01, 1123.66)
+scale = Vector2(1.14972, 1.14972)
+
+[node name="Star111" parent="Constellation_4/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2889.72, 736.31)
+scale = Vector2(1.15662, 1.15662)
+
+[node name="Star112" parent="Constellation_4/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2545.7, 619.502)
+scale = Vector2(1.24358, 1.24358)
+
+[node name="Star113" parent="Constellation_4/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2575.28, 532.191)
+scale = Vector2(0.924355, 0.924355)
+
+[node name="Star114" parent="Constellation_4/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2418.69, 481.443)
+scale = Vector2(1.25007, 1.25007)
+
+[node name="Star115" parent="Constellation_4/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1745.91, 522.668)
+scale = Vector2(1.04719, 1.04719)
+
+[node name="Star116" parent="Constellation_4/Stars" instance=ExtResource("3_33jhu")]
+position = Vector2(1201.68, 605.041)
+scale = Vector2(0.915966, 0.915966)
+
+[node name="Star117" parent="Constellation_4/Stars" instance=ExtResource("3_33jhu")]
+position = Vector2(761.685, 597.081)
+scale = Vector2(1.01392, 1.01392)
+
+[node name="Star118" parent="Constellation_4/Stars" instance=ExtResource("3_33jhu")]
+position = Vector2(326.822, 612.809)
+scale = Vector2(1.16245, 1.16245)
+
+[node name="Star119" parent="Constellation_4/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(411.484, 847.491)
+scale = Vector2(1.28416, 1.28416)
+
+[node name="Star120" parent="Constellation_4/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2323.23, 1066.31)
+scale = Vector2(1.01211, 1.01211)
+
+[node name="Star121" parent="Constellation_4/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2450.08, 760.681)
+scale = Vector2(1.05334, 1.05334)
+
+[node name="Star122" parent="Constellation_4/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(252.301, 824.93)
+scale = Vector2(1.20999, 1.20999)
+
+[node name="Star123" parent="Constellation_4/Stars" instance=ExtResource("3_33jhu")]
+position = Vector2(326.822, 612.809)
+scale = Vector2(0.903155, 0.903155)
+
+[node name="Star124" parent="Constellation_4/Stars" instance=ExtResource("3_33jhu")]
+position = Vector2(88.6534, 734.859)
+scale = Vector2(1.16159, 1.16159)
+
+[node name="Star125" parent="Constellation_4/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13798.3, 971.042)
+scale = Vector2(0.941621, 0.941621)
+
+[node name="Constellation_5" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="126" type="Line2D" parent="Constellation_5"]
+points = PackedVector2Array(4064.96, 2004.25, 3976.97, 1963.56, 3850.66, 1926.26, 3454.43, 1810.81, 3587.76, 1978.67, 3731.08, 2226.76, 4226.58, 2388.87, 3976.97, 1963.56, 3731.08, 2226.76, 3415.02, 2460.82)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_5"]
+
+[node name="Star" parent="Constellation_5/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(4064.96, 2004.25)
+scale = Vector2(1.1658, 1.1658)
+
+[node name="Star127" parent="Constellation_5/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(3976.97, 1963.56)
+scale = Vector2(1.14884, 1.14884)
+
+[node name="Star128" parent="Constellation_5/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(3850.66, 1926.26)
+scale = Vector2(0.926058, 0.926058)
+
+[node name="Star129" parent="Constellation_5/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(3454.43, 1810.81)
+scale = Vector2(1.24969, 1.24969)
+
+[node name="Star130" parent="Constellation_5/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(3587.76, 1978.67)
+scale = Vector2(1.10393, 1.10393)
+
+[node name="Star131" parent="Constellation_5/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(3731.08, 2226.76)
+scale = Vector2(1.02127, 1.02127)
+
+[node name="Star132" parent="Constellation_5/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(4226.58, 2388.87)
+scale = Vector2(0.979473, 0.979473)
+
+[node name="Star133" parent="Constellation_5/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(3976.97, 1963.56)
+scale = Vector2(1.05884, 1.05884)
+
+[node name="Star134" parent="Constellation_5/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(3731.08, 2226.76)
+scale = Vector2(1.06947, 1.06947)
+
+[node name="Star135" parent="Constellation_5/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(3415.02, 2460.82)
+scale = Vector2(1.03333, 1.03333)
+
+[node name="Constellation_6" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="136" type="Line2D" parent="Constellation_6"]
+points = PackedVector2Array(1587.35, 3672.86, 1417.1, 3661.23, 1488.16, 3860.37, 1609.49, 3816.74, 1720.9, 3810.68, 1835.16, 3607.25, 1620.36, 3670.2)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_6"]
+
+[node name="Star" parent="Constellation_6/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1587.35, 3672.86)
+scale = Vector2(1.26139, 1.26139)
+
+[node name="Star137" parent="Constellation_6/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1417.1, 3661.23)
+scale = Vector2(0.943947, 0.943947)
+
+[node name="Star138" parent="Constellation_6/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1488.16, 3860.37)
+scale = Vector2(1.09287, 1.09287)
+
+[node name="Star139" parent="Constellation_6/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1609.49, 3816.74)
+scale = Vector2(1.06189, 1.06189)
+
+[node name="Star140" parent="Constellation_6/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1720.9, 3810.68)
+scale = Vector2(1.08165, 1.08165)
+
+[node name="Star141" parent="Constellation_6/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1835.16, 3607.25)
+scale = Vector2(1.24734, 1.24734)
+
+[node name="Star142" parent="Constellation_6/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1620.36, 3670.2)
+scale = Vector2(1.17816, 1.17816)
+
+[node name="Constellation_7" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="143" type="Line2D" parent="Constellation_7"]
+points = PackedVector2Array(9666.68, 2033.54, 9746.61, 1634.19, 9856.62, 1499.68, 9943.59, 1476.83)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_7"]
+
+[node name="Star" parent="Constellation_7/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(9666.68, 2033.54)
+scale = Vector2(1.11726, 1.11726)
+
+[node name="Star144" parent="Constellation_7/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(9746.61, 1634.19)
+scale = Vector2(0.998839, 0.998839)
+
+[node name="Star145" parent="Constellation_7/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(9856.62, 1499.68)
+scale = Vector2(1.12027, 1.12027)
+
+[node name="Star146" parent="Constellation_7/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(9943.59, 1476.83)
+scale = Vector2(1.15399, 1.15399)
+
+[node name="Constellation_8" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="147" type="Line2D" parent="Constellation_8"]
+points = PackedVector2Array(8990.2, 3517.12, 8993.95, 3222.56, 9185.23, 3164.86, 9506.08, 3110.49, 9659.52, 3370.77, 9283.9, 3582.9, 8990.2, 3517.12, 8635.85, 3438.16, 8993.95, 3222.56, 9085.54, 3126.88, 9193.2, 3135.73)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_8"]
+
+[node name="Star" parent="Constellation_8/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(8990.2, 3517.12)
+scale = Vector2(1.15287, 1.15287)
+
+[node name="Star148" parent="Constellation_8/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(8993.95, 3222.56)
+scale = Vector2(1.24303, 1.24303)
+
+[node name="Star149" parent="Constellation_8/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(9185.23, 3164.86)
+scale = Vector2(1.09019, 1.09019)
+
+[node name="Star150" parent="Constellation_8/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(9506.08, 3110.49)
+scale = Vector2(1.23688, 1.23688)
+
+[node name="Star151" parent="Constellation_8/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(9659.52, 3370.77)
+scale = Vector2(0.950011, 0.950011)
+
+[node name="Star152" parent="Constellation_8/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(9283.9, 3582.9)
+scale = Vector2(1.1042, 1.1042)
+
+[node name="Star153" parent="Constellation_8/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(8990.2, 3517.12)
+scale = Vector2(1.21224, 1.21224)
+
+[node name="Star154" parent="Constellation_8/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(8635.85, 3438.16)
+scale = Vector2(0.950773, 0.950773)
+
+[node name="Star155" parent="Constellation_8/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(8993.95, 3222.56)
+scale = Vector2(1.02014, 1.02014)
+
+[node name="Star156" parent="Constellation_8/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(9085.54, 3126.88)
+scale = Vector2(1.09268, 1.09268)
+
+[node name="Star157" parent="Constellation_8/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(9193.2, 3135.73)
+scale = Vector2(1.29989, 1.29989)
+
+[node name="Constellation_9" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="158" type="Line2D" parent="Constellation_9"]
+points = PackedVector2Array(5127.52, 5232.22, 5121.57, 5154.56, 5031.54, 4971.2, 5405.58, 4631.77, 5697.06, 4461.12, 5641.31, 4228.17, 5329.14, 4260.02, 5213.49, 4596.88, 5031.54, 4971.2, 6035.62, 4363.73, 6225.26, 4228.18, 6177.09, 4174.29, 6035.62, 4363.73)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_9"]
+
+[node name="Star" parent="Constellation_9/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(5127.52, 5232.22)
+scale = Vector2(1.09112, 1.09112)
+
+[node name="Star159" parent="Constellation_9/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(5121.57, 5154.56)
+scale = Vector2(0.926466, 0.926466)
+
+[node name="Star160" parent="Constellation_9/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(5031.54, 4971.2)
+scale = Vector2(0.943928, 0.943928)
+
+[node name="Star161" parent="Constellation_9/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(5405.58, 4631.77)
+scale = Vector2(0.980251, 0.980251)
+
+[node name="Star162" parent="Constellation_9/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(5697.06, 4461.12)
+scale = Vector2(1.1235, 1.1235)
+
+[node name="Star163" parent="Constellation_9/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(5641.31, 4228.17)
+scale = Vector2(1.03387, 1.03387)
+
+[node name="Star164" parent="Constellation_9/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(5329.14, 4260.02)
+scale = Vector2(1.06689, 1.06689)
+
+[node name="Star165" parent="Constellation_9/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(5213.49, 4596.88)
+scale = Vector2(1.09097, 1.09097)
+
+[node name="Star166" parent="Constellation_9/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(5031.54, 4971.2)
+scale = Vector2(0.995052, 0.995052)
+
+[node name="Star167" parent="Constellation_9/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(6035.62, 4363.73)
+scale = Vector2(1.18926, 1.18926)
+
+[node name="Star168" parent="Constellation_9/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(6225.26, 4228.18)
+scale = Vector2(1.25048, 1.25048)
+
+[node name="Star169" parent="Constellation_9/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(6177.09, 4174.29)
+scale = Vector2(1.0073, 1.0073)
+
+[node name="Star170" parent="Constellation_9/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(6035.62, 4363.73)
+scale = Vector2(1.11594, 1.11594)
+
+[node name="Constellation_10" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="171" type="Line2D" parent="Constellation_10"]
+points = PackedVector2Array(12564.7, 3336.96, 12432, 3376.59, 12250, 3349.42, 12155.8, 3510.42)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_10"]
+
+[node name="Star" parent="Constellation_10/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(12564.7, 3336.96)
+scale = Vector2(1.19423, 1.19423)
+
+[node name="Star172" parent="Constellation_10/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(12432, 3376.59)
+scale = Vector2(1.18068, 1.18068)
+
+[node name="Star173" parent="Constellation_10/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(12250, 3349.42)
+scale = Vector2(0.993627, 0.993627)
+
+[node name="Star174" parent="Constellation_10/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(12155.8, 3510.42)
+scale = Vector2(1.0062, 1.0062)
+
+[node name="Constellation_11" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="175" type="Line2D" parent="Constellation_11"]
+points = PackedVector2Array(8695.58, 3087.87, 8432.1, 3119.37, 8198.99, 3083.38, 7963.4, 2900.24, 8184.67, 2826.78, 8048.08, 3377.06, 7729.44, 3377.27)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_11"]
+
+[node name="Star" parent="Constellation_11/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(8695.58, 3087.87)
+scale = Vector2(0.943642, 0.943642)
+
+[node name="Star176" parent="Constellation_11/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(8432.1, 3119.37)
+scale = Vector2(0.97795, 0.97795)
+
+[node name="Star177" parent="Constellation_11/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(8198.99, 3083.38)
+scale = Vector2(1.04302, 1.04302)
+
+[node name="Star178" parent="Constellation_11/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(7963.4, 2900.24)
+scale = Vector2(1.11747, 1.11747)
+
+[node name="Star179" parent="Constellation_11/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(8184.67, 2826.78)
+scale = Vector2(1.26309, 1.26309)
+
+[node name="Star180" parent="Constellation_11/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(8048.08, 3377.06)
+scale = Vector2(0.974726, 0.974726)
+
+[node name="Star181" parent="Constellation_11/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(7729.44, 3377.27)
+scale = Vector2(1.05047, 1.05047)
+
+[node name="Constellation_12" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="182" type="Line2D" parent="Constellation_12"]
+points = PackedVector2Array(9651.21, 5394.6, 9430.52, 5162.15, 9290.42, 5083.23, 10012.8, 5065.6)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_12"]
+
+[node name="Star" parent="Constellation_12/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(9651.21, 5394.6)
+scale = Vector2(1.1583, 1.1583)
+
+[node name="Star183" parent="Constellation_12/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(9430.52, 5162.15)
+scale = Vector2(1.26468, 1.26468)
+
+[node name="Star184" parent="Constellation_12/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(9290.42, 5083.23)
+scale = Vector2(1.2644, 1.2644)
+
+[node name="Star185" parent="Constellation_12/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10012.8, 5065.6)
+scale = Vector2(1.08434, 1.08434)
+
+[node name="Constellation_13" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="186" type="Line2D" parent="Constellation_13"]
+points = PackedVector2Array(6326.7, 4965.02, 6584.62, 4936.79)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_13"]
+
+[node name="Star" parent="Constellation_13/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(6326.7, 4965.02)
+scale = Vector2(1.1604, 1.1604)
+
+[node name="Star187" parent="Constellation_13/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(6584.62, 4936.79)
+scale = Vector2(1.26296, 1.26296)
+
+[node name="Constellation_14" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="188" type="Line2D" parent="Constellation_14"]
+points = PackedVector2Array(11411.4, 4129.68, 11352.3, 4336.1, 11659.5, 4494.88, 11775.1, 4534.46, 11836.1, 4471.49, 11878, 4441.44, 11364.7, 4438.51, 11302.2, 4508.97, 11150.3, 4414.1, 11364.7, 4438.51)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_14"]
+
+[node name="Star" parent="Constellation_14/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(11411.4, 4129.68)
+scale = Vector2(1.24783, 1.24783)
+
+[node name="Star189" parent="Constellation_14/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(11352.3, 4336.1)
+scale = Vector2(1.15996, 1.15996)
+
+[node name="Star190" parent="Constellation_14/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(11659.5, 4494.88)
+scale = Vector2(0.900594, 0.900594)
+
+[node name="Star191" parent="Constellation_14/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(11775.1, 4534.46)
+scale = Vector2(1.04736, 1.04736)
+
+[node name="Star192" parent="Constellation_14/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(11836.1, 4471.49)
+scale = Vector2(0.951423, 0.951423)
+
+[node name="Star193" parent="Constellation_14/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(11878, 4441.44)
+scale = Vector2(1.20087, 1.20087)
+
+[node name="Star194" parent="Constellation_14/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(11364.7, 4438.51)
+scale = Vector2(1.25637, 1.25637)
+
+[node name="Star195" parent="Constellation_14/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(11302.2, 4508.97)
+scale = Vector2(1.04865, 1.04865)
+
+[node name="Star196" parent="Constellation_14/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(11150.3, 4414.1)
+scale = Vector2(1.22523, 1.22523)
+
+[node name="Star197" parent="Constellation_14/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(11364.7, 4438.51)
+scale = Vector2(1.14384, 1.14384)
+
+[node name="Constellation_15" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="198" type="Line2D" parent="Constellation_15"]
+points = PackedVector2Array(10322.3, 4761.65, 10217.9, 4620.01)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_15"]
+
+[node name="Star" parent="Constellation_15/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10322.3, 4761.65)
+scale = Vector2(1.0977, 1.0977)
+
+[node name="Star199" parent="Constellation_15/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10217.9, 4620.01)
+scale = Vector2(1.21518, 1.21518)
+
+[node name="Constellation_16" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="200" type="Line2D" parent="Constellation_16"]
+points = PackedVector2Array(2849.45, 1881.02, 2726.21, 1886.02, 2544.53, 1871.24, 2112.45, 1892.34, 2006.01, 1891.77, 1903.41, 1545.29, 1976.34, 1240.86, 2029.63, 1302.12, 2202.8, 1433.07, 2323.18, 1564.56, 2604.85, 1715.04, 2849.45, 1881.02)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_16"]
+
+[node name="Star" parent="Constellation_16/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2849.45, 1881.02)
+scale = Vector2(1.03812, 1.03812)
+
+[node name="Star201" parent="Constellation_16/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2726.21, 1886.02)
+scale = Vector2(0.939394, 0.939394)
+
+[node name="Star202" parent="Constellation_16/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2544.53, 1871.24)
+scale = Vector2(1.02484, 1.02484)
+
+[node name="Star203" parent="Constellation_16/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2112.45, 1892.34)
+scale = Vector2(0.945608, 0.945608)
+
+[node name="Star204" parent="Constellation_16/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2006.01, 1891.77)
+scale = Vector2(1.24389, 1.24389)
+
+[node name="Star205" parent="Constellation_16/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1903.41, 1545.29)
+scale = Vector2(0.960918, 0.960918)
+
+[node name="Star206" parent="Constellation_16/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1976.34, 1240.86)
+scale = Vector2(1.27778, 1.27778)
+
+[node name="Star207" parent="Constellation_16/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2029.63, 1302.12)
+scale = Vector2(1.08359, 1.08359)
+
+[node name="Star208" parent="Constellation_16/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2202.8, 1433.07)
+scale = Vector2(1.27215, 1.27215)
+
+[node name="Star209" parent="Constellation_16/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2323.18, 1564.56)
+scale = Vector2(0.98746, 0.98746)
+
+[node name="Star210" parent="Constellation_16/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2604.85, 1715.04)
+scale = Vector2(0.910435, 0.910435)
+
+[node name="Star211" parent="Constellation_16/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2849.45, 1881.02)
+scale = Vector2(0.963743, 0.963743)
+
+[node name="Constellation_17" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="212" type="Line2D" parent="Constellation_17"]
+points = PackedVector2Array(12451.1, 4213.12, 12821.4, 4071.84, 13306.8, 4262.81, 13821.3, 4416.67, 32.1048, 4496, 91.3137, 4735.6, 6.73472, 4827.82, -79.2722, 4821, 13563.5, 4755.03, 13346.9, 4559.43, 13018.5, 4583.3, 12838.3, 4758.7, 13268, 4769, 202.247, 4824.65, 212.062, 4843.74, 231.809, 4907.93, 203.594, 4959.09, 106.528, 4956.07, 6.73472, 4827.82)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_17"]
+
+[node name="Star" parent="Constellation_17/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(12451.1, 4213.12)
+scale = Vector2(1.14161, 1.14161)
+
+[node name="Star213" parent="Constellation_17/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(12821.4, 4071.84)
+scale = Vector2(1.27654, 1.27654)
+
+[node name="Star214" parent="Constellation_17/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13306.8, 4262.81)
+scale = Vector2(1.04366, 1.04366)
+
+[node name="Star215" parent="Constellation_17/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13821.3, 4416.67)
+scale = Vector2(1.09566, 1.09566)
+
+[node name="Star216" parent="Constellation_17/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(32.1048, 4496)
+scale = Vector2(1.26196, 1.26196)
+
+[node name="Star217" parent="Constellation_17/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(91.3137, 4735.6)
+scale = Vector2(1.1522, 1.1522)
+
+[node name="Star218" parent="Constellation_17/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(6.73472, 4827.82)
+scale = Vector2(0.940848, 0.940848)
+
+[node name="Star219" parent="Constellation_17/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(-79.2722, 4821)
+scale = Vector2(1.16613, 1.16613)
+
+[node name="Star220" parent="Constellation_17/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13563.5, 4755.03)
+scale = Vector2(1.00411, 1.00411)
+
+[node name="Star221" parent="Constellation_17/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13346.9, 4559.43)
+scale = Vector2(0.935586, 0.935586)
+
+[node name="Star222" parent="Constellation_17/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13018.5, 4583.3)
+scale = Vector2(1.27993, 1.27993)
+
+[node name="Star223" parent="Constellation_17/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(12838.3, 4758.7)
+scale = Vector2(0.937253, 0.937253)
+
+[node name="Star224" parent="Constellation_17/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13268, 4769)
+scale = Vector2(1.15143, 1.15143)
+
+[node name="Star225" parent="Constellation_17/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(202.247, 4824.65)
+scale = Vector2(1.16252, 1.16252)
+
+[node name="Star226" parent="Constellation_17/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(212.062, 4843.74)
+scale = Vector2(0.946096, 0.946096)
+
+[node name="Star227" parent="Constellation_17/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(231.809, 4907.93)
+scale = Vector2(1.22053, 1.22053)
+
+[node name="Star228" parent="Constellation_17/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(203.594, 4959.09)
+scale = Vector2(1.28866, 1.28866)
+
+[node name="Star229" parent="Constellation_17/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(106.528, 4956.07)
+scale = Vector2(1.00536, 1.00536)
+
+[node name="Star230" parent="Constellation_17/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(6.73472, 4827.82)
+scale = Vector2(1.2235, 1.2235)
+
+[node name="Constellation_18" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="231" type="Line2D" parent="Constellation_18"]
+points = PackedVector2Array(7980.59, 2384.43, 7968.31, 2198.15, 7817.43, 2136.41, 7821.19, 1954.52, 7582.82, 1991.69)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_18"]
+
+[node name="Star" parent="Constellation_18/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(7980.59, 2384.43)
+scale = Vector2(1.0174, 1.0174)
+
+[node name="Star232" parent="Constellation_18/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(7968.31, 2198.15)
+scale = Vector2(0.918005, 0.918005)
+
+[node name="Star233" parent="Constellation_18/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(7817.43, 2136.41)
+scale = Vector2(1.04647, 1.04647)
+
+[node name="Star234" parent="Constellation_18/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(7821.19, 1954.52)
+scale = Vector2(1.1095, 1.1095)
+
+[node name="Star235" parent="Constellation_18/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(7582.82, 1991.69)
+scale = Vector2(1.07177, 1.07177)
+
+[node name="Constellation_19" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="236" type="Line2D" parent="Constellation_19"]
+points = PackedVector2Array(285.223, 5135.04, 704.015, 5235.76, 875.784, 5210.03, 1014.94, 5215.51, 1248.78, 4861.93, 1556.1, 4947.22, 1721.49, 5091.32, 1754.57, 5109.65, 2085.34, 5104.07, 1944.97, 4811.55, 1248.78, 4861.93, 703.147, 5168.74, 350.676, 4940.55)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_19"]
+
+[node name="Star" parent="Constellation_19/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(285.223, 5135.04)
+scale = Vector2(0.98366, 0.98366)
+
+[node name="Star237" parent="Constellation_19/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(704.015, 5235.76)
+scale = Vector2(1.12744, 1.12744)
+
+[node name="Star238" parent="Constellation_19/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(875.784, 5210.03)
+scale = Vector2(1.02387, 1.02387)
+
+[node name="Star239" parent="Constellation_19/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1014.94, 5215.51)
+scale = Vector2(1.10972, 1.10972)
+
+[node name="Star240" parent="Constellation_19/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1248.78, 4861.93)
+scale = Vector2(0.990833, 0.990833)
+
+[node name="Star241" parent="Constellation_19/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1556.1, 4947.22)
+scale = Vector2(1.1485, 1.1485)
+
+[node name="Star242" parent="Constellation_19/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1721.49, 5091.32)
+scale = Vector2(1.22857, 1.22857)
+
+[node name="Star243" parent="Constellation_19/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1754.57, 5109.65)
+scale = Vector2(0.903149, 0.903149)
+
+[node name="Star244" parent="Constellation_19/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2085.34, 5104.07)
+scale = Vector2(1.03732, 1.03732)
+
+[node name="Star245" parent="Constellation_19/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1944.97, 4811.55)
+scale = Vector2(1.15291, 1.15291)
+
+[node name="Star246" parent="Constellation_19/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1248.78, 4861.93)
+scale = Vector2(1.03048, 1.03048)
+
+[node name="Star247" parent="Constellation_19/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(703.147, 5168.74)
+scale = Vector2(1.11126, 1.11126)
+
+[node name="Star248" parent="Constellation_19/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(350.676, 4940.55)
+scale = Vector2(1.02622, 1.02622)
+
+[node name="Constellation_20" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="249" type="Line2D" parent="Constellation_20"]
+points = PackedVector2Array(6490.28, 2413.92, 6508.1, 2331.69, 6662.44, 2256.45, 6686.54, 2068.05, 6835.54, 1937.65, 6830.45, 1987.49, 6946.25, 1965.14, 7134.98, 2240.98, 7315.43, 2678.48, 6890.19, 2495.38, 7134.98, 2240.98)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_20"]
+
+[node name="Star" parent="Constellation_20/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(6490.28, 2413.92)
+scale = Vector2(1.02274, 1.02274)
+
+[node name="Star250" parent="Constellation_20/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(6508.1, 2331.69)
+scale = Vector2(0.926947, 0.926947)
+
+[node name="Star251" parent="Constellation_20/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(6662.44, 2256.45)
+scale = Vector2(1.15269, 1.15269)
+
+[node name="Star252" parent="Constellation_20/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(6686.54, 2068.05)
+scale = Vector2(1.04122, 1.04122)
+
+[node name="Star253" parent="Constellation_20/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(6835.54, 1937.65)
+scale = Vector2(1.1449, 1.1449)
+
+[node name="Star254" parent="Constellation_20/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(6830.45, 1987.49)
+scale = Vector2(1.19043, 1.19043)
+
+[node name="Star255" parent="Constellation_20/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(6946.25, 1965.14)
+scale = Vector2(0.91965, 0.91965)
+
+[node name="Star256" parent="Constellation_20/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(7134.98, 2240.98)
+scale = Vector2(1.23332, 1.23332)
+
+[node name="Star257" parent="Constellation_20/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(7315.43, 2678.48)
+scale = Vector2(1.02932, 1.02932)
+
+[node name="Star258" parent="Constellation_20/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(6890.19, 2495.38)
+scale = Vector2(1.25431, 1.25431)
+
+[node name="Star259" parent="Constellation_20/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(7134.98, 2240.98)
+scale = Vector2(0.949414, 0.949414)
+
+[node name="Constellation_21" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="260" type="Line2D" parent="Constellation_21"]
+points = PackedVector2Array(10851.3, 1935.17, 10742.4, 1853.56, 10599.1, 1771.57, 10505.6, 1930.07, 10557.1, 2073.52, 10782.5, 2113.96, 10851.3, 1935.17, 11003, 1915.17, 11224.7, 1749.36, 11739.6, 1585.61, 12074.4, 1623.77, 12379.8, 1419.28, 12761.9, 1240.26, 12704, 1030.77, 12620.6, 822.171, 12286.1, 1014.16, 12050.9, 1220.58, 11797.9, 1311.83, 11739.6, 1585.61)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_21"]
+
+[node name="Star" parent="Constellation_21/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10851.3, 1935.17)
+scale = Vector2(0.919183, 0.919183)
+
+[node name="Star261" parent="Constellation_21/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10742.4, 1853.56)
+scale = Vector2(1.02192, 1.02192)
+
+[node name="Star262" parent="Constellation_21/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10599.1, 1771.57)
+scale = Vector2(0.973809, 0.973809)
+
+[node name="Star263" parent="Constellation_21/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10505.6, 1930.07)
+scale = Vector2(1.09583, 1.09583)
+
+[node name="Star264" parent="Constellation_21/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10557.1, 2073.52)
+scale = Vector2(1.21297, 1.21297)
+
+[node name="Star265" parent="Constellation_21/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10782.5, 2113.96)
+scale = Vector2(1.17769, 1.17769)
+
+[node name="Star266" parent="Constellation_21/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10851.3, 1935.17)
+scale = Vector2(0.941178, 0.941178)
+
+[node name="Star267" parent="Constellation_21/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(11003, 1915.17)
+scale = Vector2(0.910744, 0.910744)
+
+[node name="Star268" parent="Constellation_21/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(11224.7, 1749.36)
+scale = Vector2(0.934432, 0.934432)
+
+[node name="Star269" parent="Constellation_21/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(11739.6, 1585.61)
+scale = Vector2(1.19531, 1.19531)
+
+[node name="Star270" parent="Constellation_21/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(12074.4, 1623.77)
+scale = Vector2(1.1478, 1.1478)
+
+[node name="Star271" parent="Constellation_21/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(12379.8, 1419.28)
+scale = Vector2(1.2542, 1.2542)
+
+[node name="Star272" parent="Constellation_21/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(12761.9, 1240.26)
+scale = Vector2(0.900966, 0.900966)
+
+[node name="Star273" parent="Constellation_21/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(12704, 1030.77)
+scale = Vector2(1.02347, 1.02347)
+
+[node name="Star274" parent="Constellation_21/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(12620.6, 822.171)
+scale = Vector2(0.948853, 0.948853)
+
+[node name="Star275" parent="Constellation_21/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(12286.1, 1014.16)
+scale = Vector2(1.06087, 1.06087)
+
+[node name="Star276" parent="Constellation_21/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(12050.9, 1220.58)
+scale = Vector2(1.2491, 1.2491)
+
+[node name="Star277" parent="Constellation_21/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(11797.9, 1311.83)
+scale = Vector2(1.01223, 1.01223)
+
+[node name="Star278" parent="Constellation_21/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(11739.6, 1585.61)
+scale = Vector2(1.02752, 1.02752)
+
+[node name="Constellation_22" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="279" type="Line2D" parent="Constellation_22"]
+points = PackedVector2Array(13893.8, 4106.94, 184.823, 4188.99, 216.206, 4120.84, 383.983, 4155.97, 357.545, 4205.19, 184.823, 4188.99)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_22"]
+
+[node name="Star" parent="Constellation_22/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13893.8, 4106.94)
+scale = Vector2(1.17595, 1.17595)
+
+[node name="Star280" parent="Constellation_22/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(184.823, 4188.99)
+scale = Vector2(0.975101, 0.975101)
+
+[node name="Star281" parent="Constellation_22/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(216.206, 4120.84)
+scale = Vector2(1.04901, 1.04901)
+
+[node name="Star282" parent="Constellation_22/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(383.983, 4155.97)
+scale = Vector2(1.29904, 1.29904)
+
+[node name="Star283" parent="Constellation_22/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(357.545, 4205.19)
+scale = Vector2(0.903786, 0.903786)
+
+[node name="Star284" parent="Constellation_22/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(184.823, 4188.99)
+scale = Vector2(1.00414, 1.00414)
+
+[node name="Constellation_23" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="285" type="Line2D" parent="Constellation_23"]
+points = PackedVector2Array(1392.51, 4311.91, 1082.39, 4339.57, 1384.39, 4277.13)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_23"]
+
+[node name="Star" parent="Constellation_23/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1392.51, 4311.91)
+scale = Vector2(1.07639, 1.07639)
+
+[node name="Star286" parent="Constellation_23/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1082.39, 4339.57)
+scale = Vector2(0.93755, 0.93755)
+
+[node name="Star287" parent="Constellation_23/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1384.39, 4277.13)
+scale = Vector2(1.29683, 1.29683)
+
+[node name="Constellation_24" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="288" type="Line2D" parent="Constellation_24"]
+points = PackedVector2Array(12042, 4127.1, 12134.2, 3877.52, 12071.7, 3784.43, 12413.6, 3940.79)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_24"]
+
+[node name="Star" parent="Constellation_24/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(12042, 4127.1)
+scale = Vector2(0.953692, 0.953692)
+
+[node name="Star289" parent="Constellation_24/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(12134.2, 3877.52)
+scale = Vector2(1.25767, 1.25767)
+
+[node name="Star290" parent="Constellation_24/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(12071.7, 3784.43)
+scale = Vector2(1.29555, 1.29555)
+
+[node name="Star291" parent="Constellation_24/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(12413.6, 3940.79)
+scale = Vector2(1.12576, 1.12576)
+
+[node name="Constellation_25" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="292" type="Line2D" parent="Constellation_25"]
+points = PackedVector2Array(5442.1, 5510.71, 5668.25, 5368.07, 5862.18, 5215.66, 6350.43, 5420.76)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_25"]
+
+[node name="Star" parent="Constellation_25/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(5442.1, 5510.71)
+scale = Vector2(1.1212, 1.1212)
+
+[node name="Star293" parent="Constellation_25/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(5668.25, 5368.07)
+scale = Vector2(1.13948, 1.13948)
+
+[node name="Star294" parent="Constellation_25/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(5862.18, 5215.66)
+scale = Vector2(0.994364, 0.994364)
+
+[node name="Star295" parent="Constellation_25/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(6350.43, 5420.76)
+scale = Vector2(1.24847, 1.24847)
+
+[node name="Constellation_26" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="296" type="Line2D" parent="Constellation_26"]
+points = PackedVector2Array(2155.54, 2891.03, 2133.69, 2835.19, 2092.73, 2826.53, 2037.88, 2845.35, 2000.7, 2875.19, 1958.07, 2935.31, 1946.65, 3044.42, 2027.56, 3137.39)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_26"]
+
+[node name="Star" parent="Constellation_26/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2155.54, 2891.03)
+scale = Vector2(0.975316, 0.975316)
+
+[node name="Star297" parent="Constellation_26/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2133.69, 2835.19)
+scale = Vector2(1.22631, 1.22631)
+
+[node name="Star298" parent="Constellation_26/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2092.73, 2826.53)
+scale = Vector2(1.21934, 1.21934)
+
+[node name="Star299" parent="Constellation_26/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2037.88, 2845.35)
+scale = Vector2(0.996701, 0.996701)
+
+[node name="Star300" parent="Constellation_26/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2000.7, 2875.19)
+scale = Vector2(1.24214, 1.24214)
+
+[node name="Star301" parent="Constellation_26/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1958.07, 2935.31)
+scale = Vector2(0.903494, 0.903494)
+
+[node name="Star302" parent="Constellation_26/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1946.65, 3044.42)
+scale = Vector2(1.00578, 1.00578)
+
+[node name="Star303" parent="Constellation_26/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2027.56, 3137.39)
+scale = Vector2(1.2032, 1.2032)
+
+[node name="Constellation_27" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="304" type="Line2D" parent="Constellation_27"]
+points = PackedVector2Array(5195.66, 4158.03, 5125.85, 4229.81, 5011.53, 4207.1, 4971.28, 4146.14, 4943.32, 4091.97, 4953.49, 4016.27, 5057.7, 3951.56)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_27"]
+
+[node name="Star" parent="Constellation_27/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(5195.66, 4158.03)
+scale = Vector2(1.2877, 1.2877)
+
+[node name="Star305" parent="Constellation_27/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(5125.85, 4229.81)
+scale = Vector2(1.26172, 1.26172)
+
+[node name="Star306" parent="Constellation_27/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(5011.53, 4207.1)
+scale = Vector2(1.10456, 1.10456)
+
+[node name="Star307" parent="Constellation_27/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(4971.28, 4146.14)
+scale = Vector2(1.07578, 1.07578)
+
+[node name="Star308" parent="Constellation_27/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(4943.32, 4091.97)
+scale = Vector2(1.26353, 1.26353)
+
+[node name="Star309" parent="Constellation_27/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(4953.49, 4016.27)
+scale = Vector2(1.02876, 1.02876)
+
+[node name="Star310" parent="Constellation_27/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(5057.7, 3951.56)
+scale = Vector2(1.23897, 1.23897)
+
+[node name="Constellation_28" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="311" type="Line2D" parent="Constellation_28"]
+points = PackedVector2Array(1557.42, 6151.44, 1742.7, 6205.83, 2331.83, 6298.28, 2651.07, 6204.06, 2342.21, 6121.59, 2089.98, 6027.15, 1742.7, 6205.83)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_28"]
+
+[node name="Star" parent="Constellation_28/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1557.42, 6151.44)
+scale = Vector2(1.21402, 1.21402)
+
+[node name="Star312" parent="Constellation_28/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1742.7, 6205.83)
+scale = Vector2(1.24077, 1.24077)
+
+[node name="Star313" parent="Constellation_28/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2331.83, 6298.28)
+scale = Vector2(1.26797, 1.26797)
+
+[node name="Star314" parent="Constellation_28/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2651.07, 6204.06)
+scale = Vector2(1.27504, 1.27504)
+
+[node name="Star315" parent="Constellation_28/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2342.21, 6121.59)
+scale = Vector2(1.04898, 1.04898)
+
+[node name="Star316" parent="Constellation_28/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2089.98, 6027.15)
+scale = Vector2(1.29497, 1.29497)
+
+[node name="Star317" parent="Constellation_28/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1742.7, 6205.83)
+scale = Vector2(1.03568, 1.03568)
+
+[node name="Constellation_29" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="318" type="Line2D" parent="Constellation_29"]
+points = PackedVector2Array(2727.32, 6770.53, 2055.21, 6806.32, 1109.08, 6822.03, 535.232, 6753.73, 260.659, 6678.98, 13576.6, 6572.39, 13342.3, 6501.91, 5.7995, 6361.57, 196.818, 6444.21, 457.376, 6521.89, 558.279, 6562.72, 1028, 6527.24, 1412.98, 6476.33, 558.279, 6562.72)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_29"]
+
+[node name="Star" parent="Constellation_29/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2727.32, 6770.53)
+scale = Vector2(0.936844, 0.936844)
+
+[node name="Star319" parent="Constellation_29/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2055.21, 6806.32)
+scale = Vector2(1.14881, 1.14881)
+
+[node name="Star320" parent="Constellation_29/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1109.08, 6822.03)
+scale = Vector2(1.23793, 1.23793)
+
+[node name="Star321" parent="Constellation_29/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(535.232, 6753.73)
+scale = Vector2(1.02735, 1.02735)
+
+[node name="Star322" parent="Constellation_29/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(260.659, 6678.98)
+scale = Vector2(1.08244, 1.08244)
+
+[node name="Star323" parent="Constellation_29/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13576.6, 6572.39)
+scale = Vector2(1.10975, 1.10975)
+
+[node name="Star324" parent="Constellation_29/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13342.3, 6501.91)
+scale = Vector2(0.908927, 0.908927)
+
+[node name="Star325" parent="Constellation_29/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(5.7995, 6361.57)
+scale = Vector2(1.0664, 1.0664)
+
+[node name="Star326" parent="Constellation_29/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(196.818, 6444.21)
+scale = Vector2(1.24291, 1.24291)
+
+[node name="Star327" parent="Constellation_29/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(457.376, 6521.89)
+scale = Vector2(1.10466, 1.10466)
+
+[node name="Star328" parent="Constellation_29/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(558.279, 6562.72)
+scale = Vector2(1.11901, 1.11901)
+
+[node name="Star329" parent="Constellation_29/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1028, 6527.24)
+scale = Vector2(1.15877, 1.15877)
+
+[node name="Star330" parent="Constellation_29/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1412.98, 6476.33)
+scale = Vector2(1.14822, 1.14822)
+
+[node name="Star331" parent="Constellation_29/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(558.279, 6562.72)
+scale = Vector2(1.26664, 1.26664)
+
+[node name="Constellation_30" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="332" type="Line2D" parent="Constellation_30"]
+points = PackedVector2Array(796.095, 4831.35, 753.548, 4957.71)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_30"]
+
+[node name="Star" parent="Constellation_30/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(796.095, 4831.35)
+scale = Vector2(1.17887, 1.17887)
+
+[node name="Star333" parent="Constellation_30/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(753.548, 4957.71)
+scale = Vector2(1.0422, 1.0422)
+
+[node name="Constellation_31" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="334" type="Line2D" parent="Constellation_31"]
+points = PackedVector2Array(5384.77, 1404.28, 5414.34, 1667.3, 5591.36, 1945.13, 5665.59, 2265.75, 5893.67, 2453.13, 5591.36, 1945.13, 5260.86, 2052.08, 4875, 2193.61)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_31"]
+
+[node name="Star" parent="Constellation_31/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(5384.77, 1404.28)
+scale = Vector2(1.17556, 1.17556)
+
+[node name="Star335" parent="Constellation_31/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(5414.34, 1667.3)
+scale = Vector2(1.17963, 1.17963)
+
+[node name="Star336" parent="Constellation_31/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(5591.36, 1945.13)
+scale = Vector2(1.1593, 1.1593)
+
+[node name="Star337" parent="Constellation_31/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(5665.59, 2265.75)
+scale = Vector2(0.930232, 0.930232)
+
+[node name="Star338" parent="Constellation_31/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(5893.67, 2453.13)
+scale = Vector2(1.20911, 1.20911)
+
+[node name="Star339" parent="Constellation_31/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(5591.36, 1945.13)
+scale = Vector2(0.945811, 0.945811)
+
+[node name="Star340" parent="Constellation_31/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(5260.86, 2052.08)
+scale = Vector2(0.945364, 0.945364)
+
+[node name="Star341" parent="Constellation_31/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(4875, 2193.61)
+scale = Vector2(1.17041, 1.17041)
+
+[node name="Constellation_32" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="342" type="Line2D" parent="Constellation_32"]
+points = PackedVector2Array(4099.55, 1556.15, 4299.15, 1522.5, 4381.5, 1508.61, 4408.27, 1444.81, 4337.27, 1469.21, 4299.15, 1522.5)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_32"]
+
+[node name="Star" parent="Constellation_32/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(4099.55, 1556.15)
+scale = Vector2(0.981535, 0.981535)
+
+[node name="Star343" parent="Constellation_32/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(4299.15, 1522.5)
+scale = Vector2(1.06155, 1.06155)
+
+[node name="Star344" parent="Constellation_32/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(4381.5, 1508.61)
+scale = Vector2(1.27949, 1.27949)
+
+[node name="Star345" parent="Constellation_32/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(4408.27, 1444.81)
+scale = Vector2(0.902431, 0.902431)
+
+[node name="Star346" parent="Constellation_32/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(4337.27, 1469.21)
+scale = Vector2(1.08757, 1.08757)
+
+[node name="Star347" parent="Constellation_32/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(4299.15, 1522.5)
+scale = Vector2(1.0144, 1.0144)
+
+[node name="Constellation_33" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="348" type="Line2D" parent="Constellation_33"]
+points = PackedVector2Array(12835.5, 3312.91, 12940.9, 3450.46, 13189.4, 3783.97, 13318, 3828.92, 13216.1, 3874.12, 13189.4, 3783.97, 13002.9, 3634.72, 12940.9, 3450.46)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_33"]
+
+[node name="Star" parent="Constellation_33/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(12835.5, 3312.91)
+scale = Vector2(0.991072, 0.991072)
+
+[node name="Star349" parent="Constellation_33/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(12940.9, 3450.46)
+scale = Vector2(1.21114, 1.21114)
+
+[node name="Star350" parent="Constellation_33/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13189.4, 3783.97)
+scale = Vector2(1.23771, 1.23771)
+
+[node name="Star351" parent="Constellation_33/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13318, 3828.92)
+scale = Vector2(1.04267, 1.04267)
+
+[node name="Star352" parent="Constellation_33/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13216.1, 3874.12)
+scale = Vector2(1.06513, 1.06513)
+
+[node name="Star353" parent="Constellation_33/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13189.4, 3783.97)
+scale = Vector2(1.01542, 1.01542)
+
+[node name="Star354" parent="Constellation_33/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13002.9, 3634.72)
+scale = Vector2(1.05827, 1.05827)
+
+[node name="Star355" parent="Constellation_33/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(12940.9, 3450.46)
+scale = Vector2(0.96982, 0.96982)
+
+[node name="Constellation_34" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="356" type="Line2D" parent="Constellation_34"]
+points = PackedVector2Array(5972.35, 3025.62, 5759.88, 2998.34, 5792.05, 3155.24, 5904.28, 3140.45, 5972.35, 3025.62, 6472.28, 2772.72, 6556.1, 2983.91, 6323.16, 3226.72, 6199.23, 3446.92, 6123.91, 3584.59, 6215.98, 3747.33, 6613.92, 3908.8, 7021.93, 3902.93, 6628.25, 2711.77)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_34"]
+
+[node name="Star" parent="Constellation_34/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(5972.35, 3025.62)
+scale = Vector2(0.989009, 0.989009)
+
+[node name="Star357" parent="Constellation_34/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(5759.88, 2998.34)
+scale = Vector2(0.926086, 0.926086)
+
+[node name="Star358" parent="Constellation_34/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(5792.05, 3155.24)
+scale = Vector2(1.22658, 1.22658)
+
+[node name="Star359" parent="Constellation_34/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(5904.28, 3140.45)
+scale = Vector2(0.989863, 0.989863)
+
+[node name="Star360" parent="Constellation_34/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(5972.35, 3025.62)
+scale = Vector2(1.27582, 1.27582)
+
+[node name="Star361" parent="Constellation_34/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(6472.28, 2772.72)
+scale = Vector2(1.0626, 1.0626)
+
+[node name="Star362" parent="Constellation_34/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(6556.1, 2983.91)
+scale = Vector2(1.13972, 1.13972)
+
+[node name="Star363" parent="Constellation_34/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(6323.16, 3226.72)
+scale = Vector2(1.12868, 1.12868)
+
+[node name="Star364" parent="Constellation_34/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(6199.23, 3446.92)
+scale = Vector2(0.90586, 0.90586)
+
+[node name="Star365" parent="Constellation_34/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(6123.91, 3584.59)
+scale = Vector2(1.2133, 1.2133)
+
+[node name="Star366" parent="Constellation_34/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(6215.98, 3747.33)
+scale = Vector2(1.08666, 1.08666)
+
+[node name="Star367" parent="Constellation_34/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(6613.92, 3908.8)
+scale = Vector2(0.967349, 0.967349)
+
+[node name="Star368" parent="Constellation_34/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(7021.93, 3902.93)
+scale = Vector2(0.930356, 0.930356)
+
+[node name="Star369" parent="Constellation_34/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(6628.25, 2711.77)
+scale = Vector2(1.05767, 1.05767)
+
+[node name="Constellation_35" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="370" type="Line2D" parent="Constellation_35"]
+points = PackedVector2Array(3670.26, 1155.02, 4031.68, 1160.77, 4038.67, 1200.51)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_35"]
+
+[node name="Star" parent="Constellation_35/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(3670.26, 1155.02)
+scale = Vector2(0.927036, 0.927036)
+
+[node name="Star371" parent="Constellation_35/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(4031.68, 1160.77)
+scale = Vector2(1.10487, 1.10487)
+
+[node name="Star372" parent="Constellation_35/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(4038.67, 1200.51)
+scale = Vector2(1.20459, 1.20459)
+
+[node name="Constellation_36" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="373" type="Line2D" parent="Constellation_36"]
+points = PackedVector2Array(10981.8, 3370.53, 10941.6, 3146.05, 10958.5, 3058.43, 11134.4, 2846.27, 11427, 2767.47, 11397.4, 2645.4, 11308.7, 2598.29, 11319.9, 2499.24, 11394.1, 2154.35, 11659.2, 2100.9, 11860.9, 2175.96, 11999.8, 2396.66, 11862.8, 2513.38, 11812.8, 2633.81, 11839.1, 2764.56, 12010.1, 3244.67, 12163.4, 3183.27, 12167.7, 3133.19, 12327.5, 2945.24, 12514.6, 2915.3, 12670.7, 2847.98, 12650.6, 2658.52, 12709.5, 2538.31, 13036.2, 2642.58, 13201.5, 2689.9, 13298.5, 2605.05, 13532, 2708.44)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_36"]
+
+[node name="Star" parent="Constellation_36/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10981.8, 3370.53)
+scale = Vector2(1.06923, 1.06923)
+
+[node name="Star374" parent="Constellation_36/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10941.6, 3146.05)
+scale = Vector2(1.14519, 1.14519)
+
+[node name="Star375" parent="Constellation_36/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10958.5, 3058.43)
+scale = Vector2(1.1511, 1.1511)
+
+[node name="Star376" parent="Constellation_36/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(11134.4, 2846.27)
+scale = Vector2(1.13201, 1.13201)
+
+[node name="Star377" parent="Constellation_36/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(11427, 2767.47)
+scale = Vector2(1.12638, 1.12638)
+
+[node name="Star378" parent="Constellation_36/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(11397.4, 2645.4)
+scale = Vector2(1.09241, 1.09241)
+
+[node name="Star379" parent="Constellation_36/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(11308.7, 2598.29)
+scale = Vector2(1.09288, 1.09288)
+
+[node name="Star380" parent="Constellation_36/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(11319.9, 2499.24)
+scale = Vector2(0.905051, 0.905051)
+
+[node name="Star381" parent="Constellation_36/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(11394.1, 2154.35)
+scale = Vector2(0.943014, 0.943014)
+
+[node name="Star382" parent="Constellation_36/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(11659.2, 2100.9)
+scale = Vector2(1.26681, 1.26681)
+
+[node name="Star383" parent="Constellation_36/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(11860.9, 2175.96)
+scale = Vector2(1.05962, 1.05962)
+
+[node name="Star384" parent="Constellation_36/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(11999.8, 2396.66)
+scale = Vector2(1.0391, 1.0391)
+
+[node name="Star385" parent="Constellation_36/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(11862.8, 2513.38)
+scale = Vector2(0.900113, 0.900113)
+
+[node name="Star386" parent="Constellation_36/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(11812.8, 2633.81)
+scale = Vector2(1.10325, 1.10325)
+
+[node name="Star387" parent="Constellation_36/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(11839.1, 2764.56)
+scale = Vector2(1.09241, 1.09241)
+
+[node name="Star388" parent="Constellation_36/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(12010.1, 3244.67)
+scale = Vector2(1.04218, 1.04218)
+
+[node name="Star389" parent="Constellation_36/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(12163.4, 3183.27)
+scale = Vector2(1.24297, 1.24297)
+
+[node name="Star390" parent="Constellation_36/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(12167.7, 3133.19)
+scale = Vector2(1.02845, 1.02845)
+
+[node name="Star391" parent="Constellation_36/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(12327.5, 2945.24)
+scale = Vector2(1.17176, 1.17176)
+
+[node name="Star392" parent="Constellation_36/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(12514.6, 2915.3)
+scale = Vector2(1.19287, 1.19287)
+
+[node name="Star393" parent="Constellation_36/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(12670.7, 2847.98)
+scale = Vector2(0.904164, 0.904164)
+
+[node name="Star394" parent="Constellation_36/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(12650.6, 2658.52)
+scale = Vector2(1.14757, 1.14757)
+
+[node name="Star395" parent="Constellation_36/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(12709.5, 2538.31)
+scale = Vector2(1.10182, 1.10182)
+
+[node name="Star396" parent="Constellation_36/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13036.2, 2642.58)
+scale = Vector2(1.02704, 1.02704)
+
+[node name="Star397" parent="Constellation_36/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13201.5, 2689.9)
+scale = Vector2(1.09573, 1.09573)
+
+[node name="Star398" parent="Constellation_36/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13298.5, 2605.05)
+scale = Vector2(1.20169, 1.20169)
+
+[node name="Star399" parent="Constellation_36/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13532, 2708.44)
+scale = Vector2(1.20239, 1.20239)
+
+[node name="Constellation_37" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="400" type="Line2D" parent="Constellation_37"]
+points = PackedVector2Array(12174.4, 2556.82, 12399.1, 2443.76, 12515.4, 2065.59)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_37"]
+
+[node name="Star" parent="Constellation_37/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(12174.4, 2556.82)
+scale = Vector2(1.13673, 1.13673)
+
+[node name="Star401" parent="Constellation_37/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(12399.1, 2443.76)
+scale = Vector2(1.23792, 1.23792)
+
+[node name="Star402" parent="Constellation_37/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(12515.4, 2065.59)
+scale = Vector2(0.991548, 0.991548)
+
+[node name="Constellation_38" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="403" type="Line2D" parent="Constellation_38"]
+points = PackedVector2Array(9817.78, 3831.72, 9800.94, 3902.38, 9650.59, 4056.46, 9373.66, 4213.11, 9225.89, 4365.75, 9330.64, 4513.12, 9413.73, 4458.68, 9667.1, 4400.89, 9773.75, 4280.99, 10006.8, 4089.09, 9894.82, 4450.7)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_38"]
+
+[node name="Star" parent="Constellation_38/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(9817.78, 3831.72)
+scale = Vector2(1.00108, 1.00108)
+
+[node name="Star404" parent="Constellation_38/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(9800.94, 3902.38)
+scale = Vector2(0.999133, 0.999133)
+
+[node name="Star405" parent="Constellation_38/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(9650.59, 4056.46)
+scale = Vector2(1.16298, 1.16298)
+
+[node name="Star406" parent="Constellation_38/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(9373.66, 4213.11)
+scale = Vector2(1.0806, 1.0806)
+
+[node name="Star407" parent="Constellation_38/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(9225.89, 4365.75)
+scale = Vector2(1.01241, 1.01241)
+
+[node name="Star408" parent="Constellation_38/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(9330.64, 4513.12)
+scale = Vector2(1.14514, 1.14514)
+
+[node name="Star409" parent="Constellation_38/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(9413.73, 4458.68)
+scale = Vector2(0.984436, 0.984436)
+
+[node name="Star410" parent="Constellation_38/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(9667.1, 4400.89)
+scale = Vector2(1.04161, 1.04161)
+
+[node name="Star411" parent="Constellation_38/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(9773.75, 4280.99)
+scale = Vector2(1.10858, 1.10858)
+
+[node name="Star412" parent="Constellation_38/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10006.8, 4089.09)
+scale = Vector2(1.2132, 1.2132)
+
+[node name="Star413" parent="Constellation_38/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(9894.82, 4450.7)
+scale = Vector2(1.08119, 1.08119)
+
+[node name="Constellation_39" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="414" type="Line2D" parent="Constellation_39"]
+points = PackedVector2Array(399.419, 2311.64, 491.868, 2265.33, 571.39, 2102.16, 712.464, 2003.96, 834.986, 2168.78, 871.535, 1946.5, 989.901, 1908.18, 1147.98, 1873.2)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_39"]
+
+[node name="Star" parent="Constellation_39/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(399.419, 2311.64)
+scale = Vector2(1.07774, 1.07774)
+
+[node name="Star415" parent="Constellation_39/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(491.868, 2265.33)
+scale = Vector2(1.16485, 1.16485)
+
+[node name="Star416" parent="Constellation_39/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(571.39, 2102.16)
+scale = Vector2(1.11974, 1.11974)
+
+[node name="Star417" parent="Constellation_39/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(712.464, 2003.96)
+scale = Vector2(1.01318, 1.01318)
+
+[node name="Star418" parent="Constellation_39/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(834.986, 2168.78)
+scale = Vector2(0.91151, 0.91151)
+
+[node name="Star419" parent="Constellation_39/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(871.535, 1946.5)
+scale = Vector2(1.04016, 1.04016)
+
+[node name="Star420" parent="Constellation_39/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(989.901, 1908.18)
+scale = Vector2(1.28411, 1.28411)
+
+[node name="Star421" parent="Constellation_39/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1147.98, 1873.2)
+scale = Vector2(1.1704, 1.1704)
+
+[node name="Constellation_40" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="422" type="Line2D" parent="Constellation_40"]
+points = PackedVector2Array(4600.27, 3879.4, 4674.48, 3786.54, 5042.05, 3612.27, 5318.58, 3542.22, 5466.16, 3575.87, 5637.61, 3634.09, 5608.16, 3721.11, 5203.78, 3243.9, 5197.96, 3311.96, 4987.92, 3461.65, 4735.61, 3370.08, 4820.63, 3086.6, 4875.95, 2987.1, 4674.48, 3786.54)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_40"]
+
+[node name="Star" parent="Constellation_40/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(4600.27, 3879.4)
+scale = Vector2(1.02954, 1.02954)
+
+[node name="Star423" parent="Constellation_40/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(4674.48, 3786.54)
+scale = Vector2(0.991399, 0.991399)
+
+[node name="Star424" parent="Constellation_40/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(5042.05, 3612.27)
+scale = Vector2(0.922283, 0.922283)
+
+[node name="Star425" parent="Constellation_40/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(5318.58, 3542.22)
+scale = Vector2(1.23062, 1.23062)
+
+[node name="Star426" parent="Constellation_40/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(5466.16, 3575.87)
+scale = Vector2(1.07869, 1.07869)
+
+[node name="Star427" parent="Constellation_40/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(5637.61, 3634.09)
+scale = Vector2(1.18659, 1.18659)
+
+[node name="Star428" parent="Constellation_40/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(5608.16, 3721.11)
+scale = Vector2(0.921619, 0.921619)
+
+[node name="Star429" parent="Constellation_40/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(5203.78, 3243.9)
+scale = Vector2(1.16759, 1.16759)
+
+[node name="Star430" parent="Constellation_40/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(5197.96, 3311.96)
+scale = Vector2(1.01946, 1.01946)
+
+[node name="Star431" parent="Constellation_40/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(4987.92, 3461.65)
+scale = Vector2(1.07283, 1.07283)
+
+[node name="Star432" parent="Constellation_40/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(4735.61, 3370.08)
+scale = Vector2(0.905856, 0.905856)
+
+[node name="Star433" parent="Constellation_40/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(4820.63, 3086.6)
+scale = Vector2(1.26343, 1.26343)
+
+[node name="Star434" parent="Constellation_40/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(4875.95, 2987.1)
+scale = Vector2(1.2275, 1.2275)
+
+[node name="Star435" parent="Constellation_40/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(4674.48, 3786.54)
+scale = Vector2(1.02995, 1.02995)
+
+[node name="Constellation_41" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="436" type="Line2D" parent="Constellation_41"]
+points = PackedVector2Array(12496.3, 3195.32, 13072.3, 2794.47, 13148.3, 2810.96, 13200.1, 2873.84, 13295, 3089.79, 13448.1, 3166.81)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_41"]
+
+[node name="Star" parent="Constellation_41/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(12496.3, 3195.32)
+scale = Vector2(1.03507, 1.03507)
+
+[node name="Star437" parent="Constellation_41/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13072.3, 2794.47)
+scale = Vector2(1.26995, 1.26995)
+
+[node name="Star438" parent="Constellation_41/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13148.3, 2810.96)
+scale = Vector2(0.939425, 0.939425)
+
+[node name="Star439" parent="Constellation_41/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13200.1, 2873.84)
+scale = Vector2(1.0368, 1.0368)
+
+[node name="Star440" parent="Constellation_41/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13295, 3089.79)
+scale = Vector2(0.988471, 0.988471)
+
+[node name="Star441" parent="Constellation_41/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13448.1, 3166.81)
+scale = Vector2(1.23967, 1.23967)
+
+[node name="Constellation_42" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="442" type="Line2D" parent="Constellation_42"]
+points = PackedVector2Array(10020, 5376.13, 10044.6, 5398.78, 10208.1, 5379.43, 10229.3, 5338.32, 10102.5, 5301.67, 10020, 5376.13, 10002.3, 5460.67, 10127.3, 5680.84, 10244.1, 5956.91, 10597.4, 5927.79, 10926.4, 5877.72, 11214, 5983.26, 11560.6, 6071.54, 11423.5, 6270.97, 12182.9, 6335.7, 12404.1, 6430.84, 12716.6, 6518.9, 13420.1, 6442.08, 291.455, 6175.45, 543.938, 6007.1, 865.141, 5892.19, 1324.62, 5894.26, 1770.85, 5858.35, 2179.29, 5787.98, 2537.49, 5688.9, 2571.18, 5249.69, 2636.26, 4870.47)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_42"]
+
+[node name="Star" parent="Constellation_42/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10020, 5376.13)
+scale = Vector2(1.07826, 1.07826)
+
+[node name="Star443" parent="Constellation_42/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10044.6, 5398.78)
+scale = Vector2(1.2248, 1.2248)
+
+[node name="Star444" parent="Constellation_42/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10208.1, 5379.43)
+scale = Vector2(1.10889, 1.10889)
+
+[node name="Star445" parent="Constellation_42/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10229.3, 5338.32)
+scale = Vector2(0.999702, 0.999702)
+
+[node name="Star446" parent="Constellation_42/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10102.5, 5301.67)
+scale = Vector2(1.25289, 1.25289)
+
+[node name="Star447" parent="Constellation_42/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10020, 5376.13)
+scale = Vector2(0.960419, 0.960419)
+
+[node name="Star448" parent="Constellation_42/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10002.3, 5460.67)
+scale = Vector2(1.22259, 1.22259)
+
+[node name="Star449" parent="Constellation_42/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10127.3, 5680.84)
+scale = Vector2(0.96153, 0.96153)
+
+[node name="Star450" parent="Constellation_42/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10244.1, 5956.91)
+scale = Vector2(1.26844, 1.26844)
+
+[node name="Star451" parent="Constellation_42/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10597.4, 5927.79)
+scale = Vector2(1.09024, 1.09024)
+
+[node name="Star452" parent="Constellation_42/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10926.4, 5877.72)
+scale = Vector2(1.0153, 1.0153)
+
+[node name="Star453" parent="Constellation_42/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(11214, 5983.26)
+scale = Vector2(1.00596, 1.00596)
+
+[node name="Star454" parent="Constellation_42/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(11560.6, 6071.54)
+scale = Vector2(0.952982, 0.952982)
+
+[node name="Star455" parent="Constellation_42/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(11423.5, 6270.97)
+scale = Vector2(1.04266, 1.04266)
+
+[node name="Star456" parent="Constellation_42/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(12182.9, 6335.7)
+scale = Vector2(1.1439, 1.1439)
+
+[node name="Star457" parent="Constellation_42/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(12404.1, 6430.84)
+scale = Vector2(1.2344, 1.2344)
+
+[node name="Star458" parent="Constellation_42/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(12716.6, 6518.9)
+scale = Vector2(1.21531, 1.21531)
+
+[node name="Star459" parent="Constellation_42/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13420.1, 6442.08)
+scale = Vector2(1.02974, 1.02974)
+
+[node name="Star460" parent="Constellation_42/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(291.455, 6175.45)
+scale = Vector2(1.09541, 1.09541)
+
+[node name="Star461" parent="Constellation_42/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(543.938, 6007.1)
+scale = Vector2(1.14451, 1.14451)
+
+[node name="Star462" parent="Constellation_42/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(865.141, 5892.19)
+scale = Vector2(1.0592, 1.0592)
+
+[node name="Star463" parent="Constellation_42/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1324.62, 5894.26)
+scale = Vector2(1.18848, 1.18848)
+
+[node name="Star464" parent="Constellation_42/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1770.85, 5858.35)
+scale = Vector2(0.972698, 0.972698)
+
+[node name="Star465" parent="Constellation_42/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2179.29, 5787.98)
+scale = Vector2(0.994346, 0.994346)
+
+[node name="Star466" parent="Constellation_42/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2537.49, 5688.9)
+scale = Vector2(0.915809, 0.915809)
+
+[node name="Star467" parent="Constellation_42/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2571.18, 5249.69)
+scale = Vector2(1.22008, 1.22008)
+
+[node name="Star468" parent="Constellation_42/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2636.26, 4870.47)
+scale = Vector2(0.928444, 0.928444)
+
+[node name="Constellation_43" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="469" type="Line2D" parent="Constellation_43"]
+points = PackedVector2Array(133.04, 3279.33, 13706.7, 3507.56, 13624.5, 3206.8, 13679, 3170.02, 13724.7, 3075.71, 13557, 2904.91)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_43"]
+
+[node name="Star" parent="Constellation_43/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(133.04, 3279.33)
+scale = Vector2(1.07524, 1.07524)
+
+[node name="Star470" parent="Constellation_43/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13706.7, 3507.56)
+scale = Vector2(0.911576, 0.911576)
+
+[node name="Star471" parent="Constellation_43/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13624.5, 3206.8)
+scale = Vector2(1.00835, 1.00835)
+
+[node name="Star472" parent="Constellation_43/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13679, 3170.02)
+scale = Vector2(1.03616, 1.03616)
+
+[node name="Star473" parent="Constellation_43/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13724.7, 3075.71)
+scale = Vector2(1.21254, 1.21254)
+
+[node name="Star474" parent="Constellation_43/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13557, 2904.91)
+scale = Vector2(0.905432, 0.905432)
+
+[node name="Constellation_44" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="475" type="Line2D" parent="Constellation_44"]
+points = PackedVector2Array(1397.88, 2507.56, 1231.09, 2610.11, 1009.14, 2766.46, 769.374, 2482.1, 1010.21, 2529.09, 1397.88, 2507.56)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_44"]
+
+[node name="Star" parent="Constellation_44/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1397.88, 2507.56)
+scale = Vector2(1.06913, 1.06913)
+
+[node name="Star476" parent="Constellation_44/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1231.09, 2610.11)
+scale = Vector2(1.08951, 1.08951)
+
+[node name="Star477" parent="Constellation_44/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1009.14, 2766.46)
+scale = Vector2(1.10381, 1.10381)
+
+[node name="Star478" parent="Constellation_44/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(769.374, 2482.1)
+scale = Vector2(1.16662, 1.16662)
+
+[node name="Star479" parent="Constellation_44/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1010.21, 2529.09)
+scale = Vector2(1.25472, 1.25472)
+
+[node name="Star480" parent="Constellation_44/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1397.88, 2507.56)
+scale = Vector2(1.14989, 1.14989)
+
+[node name="Constellation_45" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="481" type="Line2D" parent="Constellation_45"]
+points = PackedVector2Array(6809.79, 1745.42, 6839.11, 1658.77, 6777.23, 1567.12, 6672.77, 1544.44, 6692.1, 1397.1, 6825.64, 1417.66, 6777.23, 1567.12, 6766.2, 1642.72, 6411.62, 1327.33, 6369.76, 1252.9)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_45"]
+
+[node name="Star" parent="Constellation_45/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(6809.79, 1745.42)
+scale = Vector2(0.941777, 0.941777)
+
+[node name="Star482" parent="Constellation_45/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(6839.11, 1658.77)
+scale = Vector2(0.956293, 0.956293)
+
+[node name="Star483" parent="Constellation_45/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(6777.23, 1567.12)
+scale = Vector2(1.01257, 1.01257)
+
+[node name="Star484" parent="Constellation_45/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(6672.77, 1544.44)
+scale = Vector2(1.03328, 1.03328)
+
+[node name="Star485" parent="Constellation_45/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(6692.1, 1397.1)
+scale = Vector2(1.00031, 1.00031)
+
+[node name="Star486" parent="Constellation_45/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(6825.64, 1417.66)
+scale = Vector2(1.04599, 1.04599)
+
+[node name="Star487" parent="Constellation_45/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(6777.23, 1567.12)
+scale = Vector2(1.10292, 1.10292)
+
+[node name="Star488" parent="Constellation_45/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(6766.2, 1642.72)
+scale = Vector2(1.21372, 1.21372)
+
+[node name="Star489" parent="Constellation_45/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(6411.62, 1327.33)
+scale = Vector2(1.0681, 1.0681)
+
+[node name="Star490" parent="Constellation_45/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(6369.76, 1252.9)
+scale = Vector2(1.14315, 1.14315)
+
+[node name="Constellation_46" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="491" type="Line2D" parent="Constellation_46"]
+points = PackedVector2Array(8910.67, 5927.27, 8673.05, 5778.32, 8353.17, 5742.8, 7886.73, 5823.11, 7375.53, 5857.25, 7004.65, 5965.15, 6562.48, 6044.16, 6977.46, 6063.81, 7397.24, 6055.07, 7803.26, 6060.74, 8202.86, 6039.92, 8576.13, 5994.33, 8277.83, 5606.67, 8488.54, 5410.25, 8647.76, 5443.07)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_46"]
+
+[node name="Star" parent="Constellation_46/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(8910.67, 5927.27)
+scale = Vector2(1.29912, 1.29912)
+
+[node name="Star492" parent="Constellation_46/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(8673.05, 5778.32)
+scale = Vector2(1.01385, 1.01385)
+
+[node name="Star493" parent="Constellation_46/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(8353.17, 5742.8)
+scale = Vector2(1.2105, 1.2105)
+
+[node name="Star494" parent="Constellation_46/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(7886.73, 5823.11)
+scale = Vector2(1.14258, 1.14258)
+
+[node name="Star495" parent="Constellation_46/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(7375.53, 5857.25)
+scale = Vector2(1.1896, 1.1896)
+
+[node name="Star496" parent="Constellation_46/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(7004.65, 5965.15)
+scale = Vector2(1.25662, 1.25662)
+
+[node name="Star497" parent="Constellation_46/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(6562.48, 6044.16)
+scale = Vector2(1.24633, 1.24633)
+
+[node name="Star498" parent="Constellation_46/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(6977.46, 6063.81)
+scale = Vector2(1.26886, 1.26886)
+
+[node name="Star499" parent="Constellation_46/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(7397.24, 6055.07)
+scale = Vector2(1.29386, 1.29386)
+
+[node name="Star500" parent="Constellation_46/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(7803.26, 6060.74)
+scale = Vector2(1.12993, 1.12993)
+
+[node name="Star501" parent="Constellation_46/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(8202.86, 6039.92)
+scale = Vector2(1.23988, 1.23988)
+
+[node name="Star502" parent="Constellation_46/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(8576.13, 5994.33)
+scale = Vector2(1.27743, 1.27743)
+
+[node name="Star503" parent="Constellation_46/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(8277.83, 5606.67)
+scale = Vector2(1.11151, 1.11151)
+
+[node name="Star504" parent="Constellation_46/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(8488.54, 5410.25)
+scale = Vector2(1.23856, 1.23856)
+
+[node name="Star505" parent="Constellation_46/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(8647.76, 5443.07)
+scale = Vector2(1.02706, 1.02706)
+
+[node name="Constellation_47" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="506" type="Line2D" parent="Constellation_47"]
+points = PackedVector2Array(8068.59, 5160.06, 7904.59, 5268.44, 7584.46, 5308.42, 7831.88, 5166.27, 8068.59, 5160.06, 8342.19, 4990.52)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_47"]
+
+[node name="Star" parent="Constellation_47/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(8068.59, 5160.06)
+scale = Vector2(0.947643, 0.947643)
+
+[node name="Star507" parent="Constellation_47/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(7904.59, 5268.44)
+scale = Vector2(1.09002, 1.09002)
+
+[node name="Star508" parent="Constellation_47/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(7584.46, 5308.42)
+scale = Vector2(1.0374, 1.0374)
+
+[node name="Star509" parent="Constellation_47/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(7831.88, 5166.27)
+scale = Vector2(1.09399, 1.09399)
+
+[node name="Star510" parent="Constellation_47/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(8068.59, 5160.06)
+scale = Vector2(0.940335, 0.940335)
+
+[node name="Star511" parent="Constellation_47/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(8342.19, 4990.52)
+scale = Vector2(1.07972, 1.07972)
+
+[node name="Constellation_48" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="512" type="Line2D" parent="Constellation_48"]
+points = PackedVector2Array(11300.1, 3968.34, 11277.8, 3874.38, 11312.1, 3788.32, 11443, 3668.58, 11403.3, 3478.23, 11650.3, 3444.23, 11561.5, 3640.37, 11612.8, 3792.64, 11403.3, 3478.23, 11278.3, 3524.47)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_48"]
+
+[node name="Star" parent="Constellation_48/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(11300.1, 3968.34)
+scale = Vector2(1.03582, 1.03582)
+
+[node name="Star513" parent="Constellation_48/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(11277.8, 3874.38)
+scale = Vector2(1.12879, 1.12879)
+
+[node name="Star514" parent="Constellation_48/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(11312.1, 3788.32)
+scale = Vector2(1.24994, 1.24994)
+
+[node name="Star515" parent="Constellation_48/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(11443, 3668.58)
+scale = Vector2(0.959576, 0.959576)
+
+[node name="Star516" parent="Constellation_48/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(11403.3, 3478.23)
+scale = Vector2(1.05374, 1.05374)
+
+[node name="Star517" parent="Constellation_48/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(11650.3, 3444.23)
+scale = Vector2(1.02177, 1.02177)
+
+[node name="Star518" parent="Constellation_48/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(11561.5, 3640.37)
+scale = Vector2(1.02709, 1.02709)
+
+[node name="Star519" parent="Constellation_48/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(11612.8, 3792.64)
+scale = Vector2(1.04419, 1.04419)
+
+[node name="Star520" parent="Constellation_48/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(11403.3, 3478.23)
+scale = Vector2(0.963871, 0.963871)
+
+[node name="Star521" parent="Constellation_48/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(11278.3, 3524.47)
+scale = Vector2(0.95885, 0.95885)
+
+[node name="Constellation_49" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="522" type="Line2D" parent="Constellation_49"]
+points = PackedVector2Array(2786.62, 4770.22, 3213.8, 4923.63, 3525.94, 4673.85, 3277.65, 4505.97, 2698.09, 4473.16, 3277.65, 4505.97)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_49"]
+
+[node name="Star" parent="Constellation_49/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2786.62, 4770.22)
+scale = Vector2(1.11071, 1.11071)
+
+[node name="Star523" parent="Constellation_49/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(3213.8, 4923.63)
+scale = Vector2(1.07468, 1.07468)
+
+[node name="Star524" parent="Constellation_49/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(3525.94, 4673.85)
+scale = Vector2(1.14511, 1.14511)
+
+[node name="Star525" parent="Constellation_49/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(3277.65, 4505.97)
+scale = Vector2(1.19926, 1.19926)
+
+[node name="Star526" parent="Constellation_49/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2698.09, 4473.16)
+scale = Vector2(1.18907, 1.18907)
+
+[node name="Star527" parent="Constellation_49/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(3277.65, 4505.97)
+scale = Vector2(1.03446, 1.03446)
+
+[node name="Constellation_50" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="528" type="Line2D" parent="Constellation_50"]
+points = PackedVector2Array(2477.47, 4336.27, 2432.47, 4422.07, 2326.07, 4550.05, 2137.55, 4515.02, 1976.82, 4644.8, 1747.32, 4685.06, 1644, 4437.03, 1829.81, 4455.84, 1970.46, 4465.37, 2140.92, 4411.93, 2287.73, 4244.67, 2140.92, 4411.93)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_50"]
+
+[node name="Star" parent="Constellation_50/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2477.47, 4336.27)
+scale = Vector2(1.02111, 1.02111)
+
+[node name="Star529" parent="Constellation_50/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2432.47, 4422.07)
+scale = Vector2(1.05994, 1.05994)
+
+[node name="Star530" parent="Constellation_50/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2326.07, 4550.05)
+scale = Vector2(1.11335, 1.11335)
+
+[node name="Star531" parent="Constellation_50/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2137.55, 4515.02)
+scale = Vector2(1.01602, 1.01602)
+
+[node name="Star532" parent="Constellation_50/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1976.82, 4644.8)
+scale = Vector2(0.949644, 0.949644)
+
+[node name="Star533" parent="Constellation_50/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1747.32, 4685.06)
+scale = Vector2(1.11994, 1.11994)
+
+[node name="Star534" parent="Constellation_50/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1644, 4437.03)
+scale = Vector2(1.14822, 1.14822)
+
+[node name="Star535" parent="Constellation_50/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1829.81, 4455.84)
+scale = Vector2(1.09578, 1.09578)
+
+[node name="Star536" parent="Constellation_50/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1970.46, 4465.37)
+scale = Vector2(1.21568, 1.21568)
+
+[node name="Star537" parent="Constellation_50/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2140.92, 4411.93)
+scale = Vector2(1.03029, 1.03029)
+
+[node name="Star538" parent="Constellation_50/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2287.73, 4244.67)
+scale = Vector2(1.16831, 1.16831)
+
+[node name="Star539" parent="Constellation_50/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2140.92, 4411.93)
+scale = Vector2(1.25287, 1.25287)
+
+[node name="Constellation_51" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="540" type="Line2D" parent="Constellation_51"]
+points = PackedVector2Array(8431.03, 3495.51, 8384.63, 3681.06, 8627.74, 3995.82, 8600.3, 4438.28, 8429.18, 4669.87, 8452.87, 4906.13, 8510.88, 4989.9)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_51"]
+
+[node name="Star" parent="Constellation_51/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(8431.03, 3495.51)
+scale = Vector2(1.07423, 1.07423)
+
+[node name="Star541" parent="Constellation_51/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(8384.63, 3681.06)
+scale = Vector2(1.04753, 1.04753)
+
+[node name="Star542" parent="Constellation_51/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(8627.74, 3995.82)
+scale = Vector2(0.991503, 0.991503)
+
+[node name="Star543" parent="Constellation_51/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(8600.3, 4438.28)
+scale = Vector2(1.20147, 1.20147)
+
+[node name="Star544" parent="Constellation_51/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(8429.18, 4669.87)
+scale = Vector2(1.15688, 1.15688)
+
+[node name="Star545" parent="Constellation_51/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(8452.87, 4906.13)
+scale = Vector2(1.25619, 1.25619)
+
+[node name="Star546" parent="Constellation_51/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(8510.88, 4989.9)
+scale = Vector2(0.989067, 0.989067)
+
+[node name="Constellation_52" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="547" type="Line2D" parent="Constellation_52"]
+points = PackedVector2Array(5230.37, 2619.08, 5313.07, 2632.08, 5271.64, 2683.8, 5230.37, 2619.08, 5211.8, 2540.79, 5039.16, 2483.64, 5058.48, 2558.41, 5230.37, 2619.08)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_52"]
+
+[node name="Star" parent="Constellation_52/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(5230.37, 2619.08)
+scale = Vector2(1.06557, 1.06557)
+
+[node name="Star548" parent="Constellation_52/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(5313.07, 2632.08)
+scale = Vector2(0.913887, 0.913887)
+
+[node name="Star549" parent="Constellation_52/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(5271.64, 2683.8)
+scale = Vector2(0.960614, 0.960614)
+
+[node name="Star550" parent="Constellation_52/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(5230.37, 2619.08)
+scale = Vector2(0.905082, 0.905082)
+
+[node name="Star551" parent="Constellation_52/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(5211.8, 2540.79)
+scale = Vector2(1.28129, 1.28129)
+
+[node name="Star552" parent="Constellation_52/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(5039.16, 2483.64)
+scale = Vector2(1.07877, 1.07877)
+
+[node name="Star553" parent="Constellation_52/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(5058.48, 2558.41)
+scale = Vector2(1.225, 1.225)
+
+[node name="Star554" parent="Constellation_52/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(5230.37, 2619.08)
+scale = Vector2(1.14949, 1.14949)
+
+[node name="Constellation_53" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="555" type="Line2D" parent="Constellation_53"]
+points = PackedVector2Array(13681, 3873.1, 13733.6, 3774.48, 13684.1, 3683.08, 13541, 3686.63)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_53"]
+
+[node name="Star" parent="Constellation_53/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13681, 3873.1)
+scale = Vector2(1.2118, 1.2118)
+
+[node name="Star556" parent="Constellation_53/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13733.6, 3774.48)
+scale = Vector2(1.20318, 1.20318)
+
+[node name="Star557" parent="Constellation_53/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13684.1, 3683.08)
+scale = Vector2(0.967669, 0.967669)
+
+[node name="Star558" parent="Constellation_53/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13541, 3686.63)
+scale = Vector2(1.06585, 1.06585)
+
+[node name="Constellation_54" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="559" type="Line2D" parent="Constellation_54"]
+points = PackedVector2Array(1762.23, 2077.24, 1438.37, 2363.79, 1323.52, 2120.44, 1611.3, 1872.77, 1736.85, 1969.53, 1762.23, 2077.24)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_54"]
+
+[node name="Star" parent="Constellation_54/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1762.23, 2077.24)
+scale = Vector2(1.11529, 1.11529)
+
+[node name="Star560" parent="Constellation_54/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1438.37, 2363.79)
+scale = Vector2(1.07662, 1.07662)
+
+[node name="Star561" parent="Constellation_54/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1323.52, 2120.44)
+scale = Vector2(1.29873, 1.29873)
+
+[node name="Star562" parent="Constellation_54/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1611.3, 1872.77)
+scale = Vector2(0.940117, 0.940117)
+
+[node name="Star563" parent="Constellation_54/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1736.85, 1969.53)
+scale = Vector2(1.24297, 1.24297)
+
+[node name="Star564" parent="Constellation_54/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1762.23, 2077.24)
+scale = Vector2(1.01883, 1.01883)
+
+[node name="Constellation_55" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="565" type="Line2D" parent="Constellation_55"]
+points = PackedVector2Array(11013.6, 4858.3, 10655.5, 5099.42, 10633.3, 4540.19, 10962.4, 4156.43, 10550.1, 4292.31, 10501.5, 4047.99, 10376.6, 4116.87, 10258.4, 4174.05)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_55"]
+
+[node name="Star" parent="Constellation_55/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(11013.6, 4858.3)
+scale = Vector2(1.25763, 1.25763)
+
+[node name="Star566" parent="Constellation_55/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10655.5, 5099.42)
+scale = Vector2(0.939751, 0.939751)
+
+[node name="Star567" parent="Constellation_55/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10633.3, 4540.19)
+scale = Vector2(0.991662, 0.991662)
+
+[node name="Star568" parent="Constellation_55/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10962.4, 4156.43)
+scale = Vector2(0.976942, 0.976942)
+
+[node name="Star569" parent="Constellation_55/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10550.1, 4292.31)
+scale = Vector2(1.08173, 1.08173)
+
+[node name="Star570" parent="Constellation_55/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10501.5, 4047.99)
+scale = Vector2(1.18008, 1.18008)
+
+[node name="Star571" parent="Constellation_55/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10376.6, 4116.87)
+scale = Vector2(1.13751, 1.13751)
+
+[node name="Star572" parent="Constellation_55/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10258.4, 4174.05)
+scale = Vector2(0.987995, 0.987995)
+
+[node name="Constellation_56" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="573" type="Line2D" parent="Constellation_56"]
+points = PackedVector2Array(390.083, 4652.72, 513.492, 4581.08, 571.19, 4515.13, 622.305, 4539.21, 609.899, 4395.61, 509.296, 4411.64, 571.19, 4515.13)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_56"]
+
+[node name="Star" parent="Constellation_56/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(390.083, 4652.72)
+scale = Vector2(1.22653, 1.22653)
+
+[node name="Star574" parent="Constellation_56/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(513.492, 4581.08)
+scale = Vector2(0.996196, 0.996196)
+
+[node name="Star575" parent="Constellation_56/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(571.19, 4515.13)
+scale = Vector2(0.902777, 0.902777)
+
+[node name="Star576" parent="Constellation_56/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(622.305, 4539.21)
+scale = Vector2(1.24082, 1.24082)
+
+[node name="Star577" parent="Constellation_56/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(609.899, 4395.61)
+scale = Vector2(0.901019, 0.901019)
+
+[node name="Star578" parent="Constellation_56/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(509.296, 4411.64)
+scale = Vector2(1.11644, 1.11644)
+
+[node name="Star579" parent="Constellation_56/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(571.19, 4515.13)
+scale = Vector2(1.05062, 1.05062)
+
+[node name="Constellation_57" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="580" type="Line2D" parent="Constellation_57"]
+points = PackedVector2Array(2016.68, 4166.61, 1936.04, 4018.85, 1827.21, 4055.89, 1849.08, 4164.43, 2016.68, 4166.61)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_57"]
+
+[node name="Star" parent="Constellation_57/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2016.68, 4166.61)
+scale = Vector2(1.10415, 1.10415)
+
+[node name="Star581" parent="Constellation_57/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1936.04, 4018.85)
+scale = Vector2(0.931776, 0.931776)
+
+[node name="Star582" parent="Constellation_57/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1827.21, 4055.89)
+scale = Vector2(1.06087, 1.06087)
+
+[node name="Star583" parent="Constellation_57/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1849.08, 4164.43)
+scale = Vector2(1.06398, 1.06398)
+
+[node name="Star584" parent="Constellation_57/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2016.68, 4166.61)
+scale = Vector2(1.24918, 1.24918)
+
+[node name="Constellation_58" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="585" type="Line2D" parent="Constellation_58"]
+points = PackedVector2Array(457.086, 3921.77, 322.206, 3423.04, 476.099, 3307.89, 457.086, 3921.77)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_58"]
+
+[node name="Star" parent="Constellation_58/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(457.086, 3921.77)
+scale = Vector2(1.13077, 1.13077)
+
+[node name="Star586" parent="Constellation_58/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(322.206, 3423.04)
+scale = Vector2(1.25326, 1.25326)
+
+[node name="Star587" parent="Constellation_58/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(476.099, 3307.89)
+scale = Vector2(0.936094, 0.936094)
+
+[node name="Star588" parent="Constellation_58/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(457.086, 3921.77)
+scale = Vector2(0.935188, 0.935188)
+
+[node name="Constellation_59" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="589" type="Line2D" parent="Constellation_59"]
+points = PackedVector2Array(3340.28, 3132.16, 3840.71, 3168.77, 3918.46, 3202.1, 4238.55, 3246.06, 4163.13, 3614.91, 3914.71, 3913.22, 3711.12, 4102.18, 3666.24, 4068.5, 3412.47, 3912.53, 3412.47, 3912.53, 3177.39, 3989.36, 3106.11, 4032.02, 3043.94, 4061.97, 3177.04, 3621.49, 2805.63, 3560.04, 2611.86, 3538.77)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_59"]
+
+[node name="Star" parent="Constellation_59/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(3340.28, 3132.16)
+scale = Vector2(1.12318, 1.12318)
+
+[node name="Star590" parent="Constellation_59/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(3840.71, 3168.77)
+scale = Vector2(0.925903, 0.925903)
+
+[node name="Star591" parent="Constellation_59/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(3918.46, 3202.1)
+scale = Vector2(1.24506, 1.24506)
+
+[node name="Star592" parent="Constellation_59/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(4238.55, 3246.06)
+scale = Vector2(1.21523, 1.21523)
+
+[node name="Star593" parent="Constellation_59/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(4163.13, 3614.91)
+scale = Vector2(0.930056, 0.930056)
+
+[node name="Star594" parent="Constellation_59/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(3914.71, 3913.22)
+scale = Vector2(1.1267, 1.1267)
+
+[node name="Star595" parent="Constellation_59/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(3711.12, 4102.18)
+scale = Vector2(1.21215, 1.21215)
+
+[node name="Star596" parent="Constellation_59/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(3666.24, 4068.5)
+scale = Vector2(1.14751, 1.14751)
+
+[node name="Star597" parent="Constellation_59/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(3412.47, 3912.53)
+scale = Vector2(1.07625, 1.07625)
+
+[node name="Star598" parent="Constellation_59/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(3412.47, 3912.53)
+scale = Vector2(0.954587, 0.954587)
+
+[node name="Star599" parent="Constellation_59/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(3177.39, 3989.36)
+scale = Vector2(1.1948, 1.1948)
+
+[node name="Star600" parent="Constellation_59/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(3106.11, 4032.02)
+scale = Vector2(1.08393, 1.08393)
+
+[node name="Star601" parent="Constellation_59/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(3043.94, 4061.97)
+scale = Vector2(1.18314, 1.18314)
+
+[node name="Star602" parent="Constellation_59/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(3177.04, 3621.49)
+scale = Vector2(1.10921, 1.10921)
+
+[node name="Star603" parent="Constellation_59/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2805.63, 3560.04)
+scale = Vector2(0.987415, 0.987415)
+
+[node name="Star604" parent="Constellation_59/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2611.86, 3538.77)
+scale = Vector2(0.940513, 0.940513)
+
+[node name="Constellation_60" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="605" type="Line2D" parent="Constellation_60"]
+points = PackedVector2Array(10130.4, 3826.17, 9940.45, 3667.01, 9929.5, 3753.48, 10144.3, 3870.61, 10337.8, 3812.36, 10435.8, 3757.79, 10518.5, 3476.87, 10708.8, 3200.17, 10589.5, 3155.36, 10538.3, 3135.92, 10461.8, 3134.54, 10408.3, 3169.8, 10275.7, 3169.29, 10193.7, 3237.92, 10856.4, 3516.24, 10765.8, 3577.91, 10518.5, 3476.87, 10367.1, 3552.82, 10435.8, 3757.79, 10818, 3670.67, 10795.2, 3623.1, 10765.8, 3577.91)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_60"]
+
+[node name="Star" parent="Constellation_60/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10130.4, 3826.17)
+scale = Vector2(1.01425, 1.01425)
+
+[node name="Star606" parent="Constellation_60/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(9940.45, 3667.01)
+scale = Vector2(1.10704, 1.10704)
+
+[node name="Star607" parent="Constellation_60/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(9929.5, 3753.48)
+scale = Vector2(1.29092, 1.29092)
+
+[node name="Star608" parent="Constellation_60/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10144.3, 3870.61)
+scale = Vector2(1.04243, 1.04243)
+
+[node name="Star609" parent="Constellation_60/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10337.8, 3812.36)
+scale = Vector2(1.22462, 1.22462)
+
+[node name="Star610" parent="Constellation_60/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10435.8, 3757.79)
+scale = Vector2(1.02287, 1.02287)
+
+[node name="Star611" parent="Constellation_60/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10518.5, 3476.87)
+scale = Vector2(1.25299, 1.25299)
+
+[node name="Star612" parent="Constellation_60/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10708.8, 3200.17)
+scale = Vector2(1.26573, 1.26573)
+
+[node name="Star613" parent="Constellation_60/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10589.5, 3155.36)
+scale = Vector2(1.09185, 1.09185)
+
+[node name="Star614" parent="Constellation_60/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10538.3, 3135.92)
+scale = Vector2(1.18338, 1.18338)
+
+[node name="Star615" parent="Constellation_60/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10461.8, 3134.54)
+scale = Vector2(0.946979, 0.946979)
+
+[node name="Star616" parent="Constellation_60/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10408.3, 3169.8)
+scale = Vector2(1.26044, 1.26044)
+
+[node name="Star617" parent="Constellation_60/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10275.7, 3169.29)
+scale = Vector2(1.01659, 1.01659)
+
+[node name="Star618" parent="Constellation_60/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10193.7, 3237.92)
+scale = Vector2(0.968365, 0.968365)
+
+[node name="Star619" parent="Constellation_60/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10856.4, 3516.24)
+scale = Vector2(1.06525, 1.06525)
+
+[node name="Star620" parent="Constellation_60/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10765.8, 3577.91)
+scale = Vector2(1.05633, 1.05633)
+
+[node name="Star621" parent="Constellation_60/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10518.5, 3476.87)
+scale = Vector2(0.953983, 0.953983)
+
+[node name="Star622" parent="Constellation_60/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10367.1, 3552.82)
+scale = Vector2(0.940551, 0.940551)
+
+[node name="Star623" parent="Constellation_60/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10435.8, 3757.79)
+scale = Vector2(1.0219, 1.0219)
+
+[node name="Star624" parent="Constellation_60/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10818, 3670.67)
+scale = Vector2(0.954385, 0.954385)
+
+[node name="Star625" parent="Constellation_60/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10795.2, 3623.1)
+scale = Vector2(1.01943, 1.01943)
+
+[node name="Star626" parent="Constellation_60/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10765.8, 3577.91)
+scale = Vector2(1.06108, 1.06108)
+
+[node name="Constellation_61" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="627" type="Line2D" parent="Constellation_61"]
+points = PackedVector2Array(1174.26, 2817.39, 851.735, 3030.04, 956.91, 3127.13, 1263.26, 3313.84, 1335.78, 3428.46, 1272.61, 3514.76, 1252.2, 3617.72, 946.762, 3487.59, 778.32, 3321.14, 851.735, 3030.04, 730.043, 2910.76)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_61"]
+
+[node name="Star" parent="Constellation_61/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1174.26, 2817.39)
+scale = Vector2(1.28772, 1.28772)
+
+[node name="Star628" parent="Constellation_61/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(851.735, 3030.04)
+scale = Vector2(1.19635, 1.19635)
+
+[node name="Star629" parent="Constellation_61/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(956.91, 3127.13)
+scale = Vector2(1.0259, 1.0259)
+
+[node name="Star630" parent="Constellation_61/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1263.26, 3313.84)
+scale = Vector2(1.14812, 1.14812)
+
+[node name="Star631" parent="Constellation_61/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1335.78, 3428.46)
+scale = Vector2(1.22554, 1.22554)
+
+[node name="Star632" parent="Constellation_61/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1272.61, 3514.76)
+scale = Vector2(1.15142, 1.15142)
+
+[node name="Star633" parent="Constellation_61/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1252.2, 3617.72)
+scale = Vector2(1.15605, 1.15605)
+
+[node name="Star634" parent="Constellation_61/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(946.762, 3487.59)
+scale = Vector2(0.929498, 0.929498)
+
+[node name="Star635" parent="Constellation_61/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(778.32, 3321.14)
+scale = Vector2(1.17584, 1.17584)
+
+[node name="Star636" parent="Constellation_61/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(851.735, 3030.04)
+scale = Vector2(1.27996, 1.27996)
+
+[node name="Star637" parent="Constellation_61/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(730.043, 2910.76)
+scale = Vector2(1.25455, 1.25455)
+
+[node name="Constellation_62" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="638" type="Line2D" parent="Constellation_62"]
+points = PackedVector2Array(6110.85, 1129.14, 6289.52, 1008.18, 6509.32, 894.383, 6888.87, 763.312, 7654.47, 792.824, 8001.21, 838.776, 8309.67, 901.938, 8524.19, 795.02, 8795.15, 697.056, 9139.12, 612.081, 9569.54, 545.755, 9167.79, 414.665, 8493.12, 308.443, 7437.77, 255, 6287.46, 281.554, 5572.46, 283.486, 4928.46, 316.449, 4522.12, 342.006, 4195.1, 405.244, 3951.7, 475.524, 3623.58, 628.202, 3867.8, 749.086, 6557.61, 398.119, 6714.64, 518.371, 6816.89, 640.366, 6888.87, 763.312, 6424.51, 669.775, 6278.27, 646.937, 5902.23, 774.61, 5628.7, 917.866, 5378.45, 1079.08)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_62"]
+
+[node name="Star" parent="Constellation_62/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(6110.85, 1129.14)
+scale = Vector2(1.05825, 1.05825)
+
+[node name="Star639" parent="Constellation_62/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(6289.52, 1008.18)
+scale = Vector2(0.929265, 0.929265)
+
+[node name="Star640" parent="Constellation_62/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(6509.32, 894.383)
+scale = Vector2(0.902285, 0.902285)
+
+[node name="Star641" parent="Constellation_62/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(6888.87, 763.312)
+scale = Vector2(0.905848, 0.905848)
+
+[node name="Star642" parent="Constellation_62/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(7654.47, 792.824)
+scale = Vector2(1.12246, 1.12246)
+
+[node name="Star643" parent="Constellation_62/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(8001.21, 838.776)
+scale = Vector2(1.00812, 1.00812)
+
+[node name="Star644" parent="Constellation_62/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(8309.67, 901.938)
+scale = Vector2(1.06738, 1.06738)
+
+[node name="Star645" parent="Constellation_62/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(8524.19, 795.02)
+scale = Vector2(1.132, 1.132)
+
+[node name="Star646" parent="Constellation_62/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(8795.15, 697.056)
+scale = Vector2(1.22723, 1.22723)
+
+[node name="Star647" parent="Constellation_62/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(9139.12, 612.081)
+scale = Vector2(0.904159, 0.904159)
+
+[node name="Star648" parent="Constellation_62/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(9569.54, 545.755)
+scale = Vector2(1.07185, 1.07185)
+
+[node name="Star649" parent="Constellation_62/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(9167.79, 414.665)
+scale = Vector2(1.16376, 1.16376)
+
+[node name="Star650" parent="Constellation_62/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(8493.12, 308.443)
+scale = Vector2(1.01681, 1.01681)
+
+[node name="Star651" parent="Constellation_62/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(7437.77, 255)
+scale = Vector2(1.27665, 1.27665)
+
+[node name="Star652" parent="Constellation_62/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(6287.46, 281.554)
+scale = Vector2(1.26286, 1.26286)
+
+[node name="Star653" parent="Constellation_62/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(5572.46, 283.486)
+scale = Vector2(1.10782, 1.10782)
+
+[node name="Star654" parent="Constellation_62/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(4928.46, 316.449)
+scale = Vector2(1.21884, 1.21884)
+
+[node name="Star655" parent="Constellation_62/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(4522.12, 342.006)
+scale = Vector2(1.11081, 1.11081)
+
+[node name="Star656" parent="Constellation_62/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(4195.1, 405.244)
+scale = Vector2(0.947514, 0.947514)
+
+[node name="Star657" parent="Constellation_62/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(3951.7, 475.524)
+scale = Vector2(1.05895, 1.05895)
+
+[node name="Star658" parent="Constellation_62/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(3623.58, 628.202)
+scale = Vector2(0.933644, 0.933644)
+
+[node name="Star659" parent="Constellation_62/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(3867.8, 749.086)
+scale = Vector2(1.15549, 1.15549)
+
+[node name="Star660" parent="Constellation_62/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(6557.61, 398.119)
+scale = Vector2(1.04598, 1.04598)
+
+[node name="Star661" parent="Constellation_62/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(6714.64, 518.371)
+scale = Vector2(1.2235, 1.2235)
+
+[node name="Star662" parent="Constellation_62/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(6816.89, 640.366)
+scale = Vector2(0.9511, 0.9511)
+
+[node name="Star663" parent="Constellation_62/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(6888.87, 763.312)
+scale = Vector2(1.18271, 1.18271)
+
+[node name="Star664" parent="Constellation_62/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(6424.51, 669.775)
+scale = Vector2(1.24203, 1.24203)
+
+[node name="Star665" parent="Constellation_62/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(6278.27, 646.937)
+scale = Vector2(1.25704, 1.25704)
+
+[node name="Star666" parent="Constellation_62/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(5902.23, 774.61)
+scale = Vector2(1.03829, 1.03829)
+
+[node name="Star667" parent="Constellation_62/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(5628.7, 917.866)
+scale = Vector2(1.17496, 1.17496)
+
+[node name="Star668" parent="Constellation_62/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(5378.45, 1079.08)
+scale = Vector2(1.0258, 1.0258)
+
+[node name="Constellation_63" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="669" type="Line2D" parent="Constellation_63"]
+points = PackedVector2Array(9525.46, 2516.32, 9550.98, 2595.23, 9392.21, 2647.84, 9217, 2657.87, 9095.53, 2582.1, 8878.1, 2608.48, 8850.76, 2571.6, 8759.31, 2515.2, 8567.24, 2455.32, 8435.68, 2424.64, 8567.81, 2387.41, 8734.15, 2421.61, 8931.16, 2361.66, 9092.9, 2306.55, 9157.94, 2314.26, 9176.76, 2261.8, 9124.48, 2225.01, 9067.67, 2248.01, 8891.35, 2816.95, 8913.87, 2773.24, 8677.84, 2271.67, 8363.63, 1991.52)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_63"]
+
+[node name="Star" parent="Constellation_63/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(9525.46, 2516.32)
+scale = Vector2(1.01256, 1.01256)
+
+[node name="Star670" parent="Constellation_63/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(9550.98, 2595.23)
+scale = Vector2(1.23701, 1.23701)
+
+[node name="Star671" parent="Constellation_63/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(9392.21, 2647.84)
+scale = Vector2(1.2682, 1.2682)
+
+[node name="Star672" parent="Constellation_63/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(9217, 2657.87)
+scale = Vector2(1.04925, 1.04925)
+
+[node name="Star673" parent="Constellation_63/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(9095.53, 2582.1)
+scale = Vector2(1.14823, 1.14823)
+
+[node name="Star674" parent="Constellation_63/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(8878.1, 2608.48)
+scale = Vector2(1.24323, 1.24323)
+
+[node name="Star675" parent="Constellation_63/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(8850.76, 2571.6)
+scale = Vector2(0.991708, 0.991708)
+
+[node name="Star676" parent="Constellation_63/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(8759.31, 2515.2)
+scale = Vector2(1.04197, 1.04197)
+
+[node name="Star677" parent="Constellation_63/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(8567.24, 2455.32)
+scale = Vector2(0.930427, 0.930427)
+
+[node name="Star678" parent="Constellation_63/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(8435.68, 2424.64)
+scale = Vector2(1.17354, 1.17354)
+
+[node name="Star679" parent="Constellation_63/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(8567.81, 2387.41)
+scale = Vector2(0.93536, 0.93536)
+
+[node name="Star680" parent="Constellation_63/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(8734.15, 2421.61)
+scale = Vector2(1.23667, 1.23667)
+
+[node name="Star681" parent="Constellation_63/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(8931.16, 2361.66)
+scale = Vector2(1.25164, 1.25164)
+
+[node name="Star682" parent="Constellation_63/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(9092.9, 2306.55)
+scale = Vector2(0.915003, 0.915003)
+
+[node name="Star683" parent="Constellation_63/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(9157.94, 2314.26)
+scale = Vector2(1.00652, 1.00652)
+
+[node name="Star684" parent="Constellation_63/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(9176.76, 2261.8)
+scale = Vector2(1.10049, 1.10049)
+
+[node name="Star685" parent="Constellation_63/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(9124.48, 2225.01)
+scale = Vector2(1.02829, 1.02829)
+
+[node name="Star686" parent="Constellation_63/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(9067.67, 2248.01)
+scale = Vector2(1.19441, 1.19441)
+
+[node name="Star687" parent="Constellation_63/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(8891.35, 2816.95)
+scale = Vector2(1.10327, 1.10327)
+
+[node name="Star688" parent="Constellation_63/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(8913.87, 2773.24)
+scale = Vector2(1.00996, 1.00996)
+
+[node name="Star689" parent="Constellation_63/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(8677.84, 2271.67)
+scale = Vector2(1.03152, 1.03152)
+
+[node name="Star690" parent="Constellation_63/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(8363.63, 1991.52)
+scale = Vector2(0.962815, 0.962815)
+
+[node name="Constellation_64" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="691" type="Line2D" parent="Constellation_64"]
+points = PackedVector2Array(13663.6, 1988.76, 13455.3, 2263.88, 13220.9, 2242.18, 13358.9, 2431.44, 13629.2, 2557.33, 13455.3, 2263.88, 13855.1, 2079.12, 13663.6, 1988.76)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_64"]
+
+[node name="Star" parent="Constellation_64/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13663.6, 1988.76)
+scale = Vector2(0.942877, 0.942877)
+
+[node name="Star692" parent="Constellation_64/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13455.3, 2263.88)
+scale = Vector2(0.983483, 0.983483)
+
+[node name="Star693" parent="Constellation_64/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13220.9, 2242.18)
+scale = Vector2(1.25587, 1.25587)
+
+[node name="Star694" parent="Constellation_64/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13358.9, 2431.44)
+scale = Vector2(1.00083, 1.00083)
+
+[node name="Star695" parent="Constellation_64/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13629.2, 2557.33)
+scale = Vector2(1.22611, 1.22611)
+
+[node name="Star696" parent="Constellation_64/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13455.3, 2263.88)
+scale = Vector2(1.14463, 1.14463)
+
+[node name="Star697" parent="Constellation_64/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13855.1, 2079.12)
+scale = Vector2(0.912643, 0.912643)
+
+[node name="Star698" parent="Constellation_64/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13663.6, 1988.76)
+scale = Vector2(1.02227, 1.02227)
+
+[node name="Constellation_65" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="699" type="Line2D" parent="Constellation_65"]
+points = PackedVector2Array(13215.4, 4120.33, 12941.5, 3867.73, 12739.6, 3857.44)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_65"]
+
+[node name="Star" parent="Constellation_65/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13215.4, 4120.33)
+scale = Vector2(0.969949, 0.969949)
+
+[node name="Star700" parent="Constellation_65/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(12941.5, 3867.73)
+scale = Vector2(1.00206, 1.00206)
+
+[node name="Star701" parent="Constellation_65/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(12739.6, 3857.44)
+scale = Vector2(1.20563, 1.20563)
+
+[node name="Constellation_66" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="702" type="Line2D" parent="Constellation_66"]
+points = PackedVector2Array(9405.86, 1204.94, 9054.12, 1299.4, 9280.87, 1297.96, 9405.86, 1204.94, 9632.24, 1128.83, 10134.4, 1247.04, 10575, 1360.25, 10953.3, 1541.01, 10946.8, 1457.07, 10822.8, 1329.58, 10794.5, 1219, 10703.4, 1057.17, 10683.3, 952.947, 10721.7, 815.962, 10786.8, 578.463, 10841.7, 460.03, 10929.4, 342.069, 11173.3, 252.782, 11615, 169.901, 11735.1, 110.972, 12001.7, 53.0373, 73.5627, 46.7845, 399.522, 87.4288, 568.789, 129.527, 13641.9, 216.954, 12564.8, 273.625, 12003.8, 263.899, 1384.27, 139.548, 2039.68, 170.059)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_66"]
+
+[node name="Star" parent="Constellation_66/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(9405.86, 1204.94)
+scale = Vector2(1.18751, 1.18751)
+
+[node name="Star703" parent="Constellation_66/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(9054.12, 1299.4)
+scale = Vector2(0.975039, 0.975039)
+
+[node name="Star704" parent="Constellation_66/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(9280.87, 1297.96)
+scale = Vector2(1.25569, 1.25569)
+
+[node name="Star705" parent="Constellation_66/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(9405.86, 1204.94)
+scale = Vector2(0.948617, 0.948617)
+
+[node name="Star706" parent="Constellation_66/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(9632.24, 1128.83)
+scale = Vector2(1.22427, 1.22427)
+
+[node name="Star707" parent="Constellation_66/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10134.4, 1247.04)
+scale = Vector2(1.29598, 1.29598)
+
+[node name="Star708" parent="Constellation_66/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10575, 1360.25)
+scale = Vector2(1.25593, 1.25593)
+
+[node name="Star709" parent="Constellation_66/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10953.3, 1541.01)
+scale = Vector2(1.10769, 1.10769)
+
+[node name="Star710" parent="Constellation_66/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10946.8, 1457.07)
+scale = Vector2(1.10962, 1.10962)
+
+[node name="Star711" parent="Constellation_66/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10822.8, 1329.58)
+scale = Vector2(0.963133, 0.963133)
+
+[node name="Star712" parent="Constellation_66/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10794.5, 1219)
+scale = Vector2(1.0526, 1.0526)
+
+[node name="Star713" parent="Constellation_66/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10703.4, 1057.17)
+scale = Vector2(1.16349, 1.16349)
+
+[node name="Star714" parent="Constellation_66/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10683.3, 952.947)
+scale = Vector2(0.940185, 0.940185)
+
+[node name="Star715" parent="Constellation_66/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10721.7, 815.962)
+scale = Vector2(1.21222, 1.21222)
+
+[node name="Star716" parent="Constellation_66/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10786.8, 578.463)
+scale = Vector2(1.26867, 1.26867)
+
+[node name="Star717" parent="Constellation_66/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10841.7, 460.03)
+scale = Vector2(0.944254, 0.944254)
+
+[node name="Star718" parent="Constellation_66/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10929.4, 342.069)
+scale = Vector2(0.964539, 0.964539)
+
+[node name="Star719" parent="Constellation_66/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(11173.3, 252.782)
+scale = Vector2(1.22971, 1.22971)
+
+[node name="Star720" parent="Constellation_66/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(11615, 169.901)
+scale = Vector2(1.16957, 1.16957)
+
+[node name="Star721" parent="Constellation_66/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(11735.1, 110.972)
+scale = Vector2(1.16032, 1.16032)
+
+[node name="Star722" parent="Constellation_66/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(12001.7, 53.0373)
+scale = Vector2(0.945848, 0.945848)
+
+[node name="Star723" parent="Constellation_66/Stars" instance=ExtResource("3_33jhu")]
+position = Vector2(73.5627, 46.7845)
+scale = Vector2(1.17193, 1.17193)
+
+[node name="Star724" parent="Constellation_66/Stars" instance=ExtResource("3_33jhu")]
+position = Vector2(399.522, 87.4288)
+scale = Vector2(1.09916, 1.09916)
+
+[node name="Star725" parent="Constellation_66/Stars" instance=ExtResource("3_33jhu")]
+position = Vector2(568.789, 129.527)
+scale = Vector2(1.18881, 1.18881)
+
+[node name="Star726" parent="Constellation_66/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13641.9, 216.954)
+scale = Vector2(1.17384, 1.17384)
+
+[node name="Star727" parent="Constellation_66/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(12564.8, 273.625)
+scale = Vector2(1.01175, 1.01175)
+
+[node name="Star728" parent="Constellation_66/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(12003.8, 263.899)
+scale = Vector2(0.92414, 0.92414)
+
+[node name="Star729" parent="Constellation_66/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1384.27, 139.548)
+scale = Vector2(1.09565, 1.09565)
+
+[node name="Star730" parent="Constellation_66/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2039.68, 170.059)
+scale = Vector2(0.906449, 0.906449)
+
+[node name="Constellation_67" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="731" type="Line2D" parent="Constellation_67"]
+points = PackedVector2Array(849.879, 1355.74, 576.351, 1421.6, 570.616, 1535.84, 609.496, 1553.39, 869.774, 1575.51, 1114.17, 1669.45, 1347.15, 1764.91, 1384.03, 1683.18, 1114.17, 1669.45, 849.879, 1355.74)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_67"]
+
+[node name="Star" parent="Constellation_67/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(849.879, 1355.74)
+scale = Vector2(1.12155, 1.12155)
+
+[node name="Star732" parent="Constellation_67/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(576.351, 1421.6)
+scale = Vector2(1.03151, 1.03151)
+
+[node name="Star733" parent="Constellation_67/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(570.616, 1535.84)
+scale = Vector2(1.04993, 1.04993)
+
+[node name="Star734" parent="Constellation_67/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(609.496, 1553.39)
+scale = Vector2(1.17484, 1.17484)
+
+[node name="Star735" parent="Constellation_67/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(869.774, 1575.51)
+scale = Vector2(0.966385, 0.966385)
+
+[node name="Star736" parent="Constellation_67/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1114.17, 1669.45)
+scale = Vector2(1.21107, 1.21107)
+
+[node name="Star737" parent="Constellation_67/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1347.15, 1764.91)
+scale = Vector2(1.15957, 1.15957)
+
+[node name="Star738" parent="Constellation_67/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1384.03, 1683.18)
+scale = Vector2(1.24903, 1.24903)
+
+[node name="Star739" parent="Constellation_67/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1114.17, 1669.45)
+scale = Vector2(1.20322, 1.20322)
+
+[node name="Star740" parent="Constellation_67/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(849.879, 1355.74)
+scale = Vector2(1.08331, 1.08331)
+
+[node name="Constellation_68" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="741" type="Line2D" parent="Constellation_68"]
+points = PackedVector2Array(12451.1, 4213.12, 12252.9, 4542.72, 11899.5, 4755.12, 11833.3, 4794.73, 11760.1, 4897.5, 11677.3, 4976.25, 11770.9, 5060.01, 12151.8, 4967.55, 12504.3, 4845.53, 11809.4, 4879.88, 11942.9, 4821.41, 11899.5, 4755.12)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_68"]
+
+[node name="Star" parent="Constellation_68/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(12451.1, 4213.12)
+scale = Vector2(1.07589, 1.07589)
+
+[node name="Star742" parent="Constellation_68/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(12252.9, 4542.72)
+scale = Vector2(1.14946, 1.14946)
+
+[node name="Star743" parent="Constellation_68/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(11899.5, 4755.12)
+scale = Vector2(1.21572, 1.21572)
+
+[node name="Star744" parent="Constellation_68/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(11833.3, 4794.73)
+scale = Vector2(0.989096, 0.989096)
+
+[node name="Star745" parent="Constellation_68/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(11760.1, 4897.5)
+scale = Vector2(1.1614, 1.1614)
+
+[node name="Star746" parent="Constellation_68/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(11677.3, 4976.25)
+scale = Vector2(0.994234, 0.994234)
+
+[node name="Star747" parent="Constellation_68/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(11770.9, 5060.01)
+scale = Vector2(1.29186, 1.29186)
+
+[node name="Star748" parent="Constellation_68/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(12151.8, 4967.55)
+scale = Vector2(1.19008, 1.19008)
+
+[node name="Star749" parent="Constellation_68/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(12504.3, 4845.53)
+scale = Vector2(0.911088, 0.911088)
+
+[node name="Star750" parent="Constellation_68/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(11809.4, 4879.88)
+scale = Vector2(1.17458, 1.17458)
+
+[node name="Star751" parent="Constellation_68/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(11942.9, 4821.41)
+scale = Vector2(1.14894, 1.14894)
+
+[node name="Star752" parent="Constellation_68/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(11899.5, 4755.12)
+scale = Vector2(1.25576, 1.25576)
+
+[node name="Constellation_69" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="753" type="Line2D" parent="Constellation_69"]
+points = PackedVector2Array(12504.3, 4845.53, 12445.4, 5177.3, 12359.3, 5239.71, 12107.2, 5381.02)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_69"]
+
+[node name="Star" parent="Constellation_69/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(12504.3, 4845.53)
+scale = Vector2(1.24894, 1.24894)
+
+[node name="Star754" parent="Constellation_69/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(12445.4, 5177.3)
+scale = Vector2(1.16366, 1.16366)
+
+[node name="Star755" parent="Constellation_69/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(12359.3, 5239.71)
+scale = Vector2(1.18728, 1.18728)
+
+[node name="Star756" parent="Constellation_69/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(12107.2, 5381.02)
+scale = Vector2(1.0067, 1.0067)
+
+[node name="Constellation_70" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="757" type="Line2D" parent="Constellation_70"]
+points = PackedVector2Array(13245.5, 3434.14, 13125.1, 3405.94, 13230.3, 3352.6, 13377.4, 3345.71, 13245.5, 3434.14)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_70"]
+
+[node name="Star" parent="Constellation_70/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13245.5, 3434.14)
+scale = Vector2(0.997848, 0.997848)
+
+[node name="Star758" parent="Constellation_70/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13125.1, 3405.94)
+scale = Vector2(0.911379, 0.911379)
+
+[node name="Star759" parent="Constellation_70/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13230.3, 3352.6)
+scale = Vector2(1.0779, 1.0779)
+
+[node name="Star760" parent="Constellation_70/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13377.4, 3345.71)
+scale = Vector2(0.985013, 0.985013)
+
+[node name="Star761" parent="Constellation_70/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13245.5, 3434.14)
+scale = Vector2(1.08771, 1.08771)
+
+[node name="Constellation_71" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="762" type="Line2D" parent="Constellation_71"]
+points = PackedVector2Array(4421.89, 2067.2, 4452.87, 2001.48, 4452.87, 2001.48)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_71"]
+
+[node name="Star" parent="Constellation_71/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(4421.89, 2067.2)
+scale = Vector2(1.19783, 1.19783)
+
+[node name="Star763" parent="Constellation_71/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(4452.87, 2001.48)
+scale = Vector2(0.977409, 0.977409)
+
+[node name="Star764" parent="Constellation_71/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(4452.87, 2001.48)
+scale = Vector2(0.921749, 0.921749)
+
+[node name="Constellation_72" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="765" type="Line2D" parent="Constellation_72"]
+points = PackedVector2Array(2270.36, 3189.87, 2346.58, 3115.6, 2526.67, 3094.88, 2680.04, 2993.74, 1944.62, 2773.77, 2416.91, 2760.76, 2576.39, 2862, 1992.04, 2432.52, 2354.23, 2287.39, 2492.49, 2415.34, 2550.43, 2502.95, 2554.61, 2593.49, 2576.78, 2774.27, 2576.39, 2862, 2526.67, 3094.88, 2534.02, 3224.41, 2346.58, 3115.6, 2416.91, 2760.76, 2488.48, 2696.38, 2576.78, 2774.27, 2727.65, 2639.85, 2740.87, 2587.48, 2799.68, 2493.98, 2831.93, 2445.14, 2772.79, 2692.53, 2718.23, 2741.77, 2576.78, 2774.27)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_72"]
+
+[node name="Star" parent="Constellation_72/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2270.36, 3189.87)
+scale = Vector2(1.17092, 1.17092)
+
+[node name="Star766" parent="Constellation_72/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2346.58, 3115.6)
+scale = Vector2(1.02698, 1.02698)
+
+[node name="Star767" parent="Constellation_72/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2526.67, 3094.88)
+scale = Vector2(1.16294, 1.16294)
+
+[node name="Star768" parent="Constellation_72/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2680.04, 2993.74)
+scale = Vector2(1.21978, 1.21978)
+
+[node name="Star769" parent="Constellation_72/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1944.62, 2773.77)
+scale = Vector2(1.09621, 1.09621)
+
+[node name="Star770" parent="Constellation_72/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2416.91, 2760.76)
+scale = Vector2(0.902443, 0.902443)
+
+[node name="Star771" parent="Constellation_72/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2576.39, 2862)
+scale = Vector2(1.1105, 1.1105)
+
+[node name="Star772" parent="Constellation_72/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1992.04, 2432.52)
+scale = Vector2(0.952004, 0.952004)
+
+[node name="Star773" parent="Constellation_72/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2354.23, 2287.39)
+scale = Vector2(1.18744, 1.18744)
+
+[node name="Star774" parent="Constellation_72/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2492.49, 2415.34)
+scale = Vector2(1.05549, 1.05549)
+
+[node name="Star775" parent="Constellation_72/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2550.43, 2502.95)
+scale = Vector2(1.1447, 1.1447)
+
+[node name="Star776" parent="Constellation_72/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2554.61, 2593.49)
+scale = Vector2(1.13472, 1.13472)
+
+[node name="Star777" parent="Constellation_72/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2576.78, 2774.27)
+scale = Vector2(1.28453, 1.28453)
+
+[node name="Star778" parent="Constellation_72/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2576.39, 2862)
+scale = Vector2(1.2474, 1.2474)
+
+[node name="Star779" parent="Constellation_72/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2526.67, 3094.88)
+scale = Vector2(1.16291, 1.16291)
+
+[node name="Star780" parent="Constellation_72/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2534.02, 3224.41)
+scale = Vector2(1.06311, 1.06311)
+
+[node name="Star781" parent="Constellation_72/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2346.58, 3115.6)
+scale = Vector2(1.29112, 1.29112)
+
+[node name="Star782" parent="Constellation_72/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2416.91, 2760.76)
+scale = Vector2(1.25277, 1.25277)
+
+[node name="Star783" parent="Constellation_72/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2488.48, 2696.38)
+scale = Vector2(0.947867, 0.947867)
+
+[node name="Star784" parent="Constellation_72/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2576.78, 2774.27)
+scale = Vector2(1.28866, 1.28866)
+
+[node name="Star785" parent="Constellation_72/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2727.65, 2639.85)
+scale = Vector2(0.905456, 0.905456)
+
+[node name="Star786" parent="Constellation_72/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2740.87, 2587.48)
+scale = Vector2(0.960924, 0.960924)
+
+[node name="Star787" parent="Constellation_72/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2799.68, 2493.98)
+scale = Vector2(1.23219, 1.23219)
+
+[node name="Star788" parent="Constellation_72/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2831.93, 2445.14)
+scale = Vector2(1.17936, 1.17936)
+
+[node name="Star789" parent="Constellation_72/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2772.79, 2692.53)
+scale = Vector2(1.06637, 1.06637)
+
+[node name="Star790" parent="Constellation_72/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2718.23, 2741.77)
+scale = Vector2(0.914748, 0.914748)
+
+[node name="Star791" parent="Constellation_72/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2576.78, 2774.27)
+scale = Vector2(0.924119, 0.924119)
+
+[node name="Constellation_73" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="792" type="Line2D" parent="Constellation_73"]
+points = PackedVector2Array(2796.75, 4289.66, 2942.74, 4279.17, 2820.15, 4094.51, 2784.88, 4023.35, 2711.89, 3969.35, 2466.57, 3858.82, 2317.86, 3850.69, 2147.05, 3835.49, 2106.14, 3712.12, 2095.21, 3533.71, 2192.92, 3441.62, 2241.54, 3471.83, 2326.05, 3527.37)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_73"]
+
+[node name="Star" parent="Constellation_73/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2796.75, 4289.66)
+scale = Vector2(1.08538, 1.08538)
+
+[node name="Star793" parent="Constellation_73/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2942.74, 4279.17)
+scale = Vector2(1.04167, 1.04167)
+
+[node name="Star794" parent="Constellation_73/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2820.15, 4094.51)
+scale = Vector2(1.08327, 1.08327)
+
+[node name="Star795" parent="Constellation_73/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2784.88, 4023.35)
+scale = Vector2(1.2789, 1.2789)
+
+[node name="Star796" parent="Constellation_73/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2711.89, 3969.35)
+scale = Vector2(1.02072, 1.02072)
+
+[node name="Star797" parent="Constellation_73/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2466.57, 3858.82)
+scale = Vector2(0.985257, 0.985257)
+
+[node name="Star798" parent="Constellation_73/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2317.86, 3850.69)
+scale = Vector2(1.15032, 1.15032)
+
+[node name="Star799" parent="Constellation_73/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2147.05, 3835.49)
+scale = Vector2(1.02168, 1.02168)
+
+[node name="Star800" parent="Constellation_73/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2106.14, 3712.12)
+scale = Vector2(0.993235, 0.993235)
+
+[node name="Star801" parent="Constellation_73/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2095.21, 3533.71)
+scale = Vector2(1.13994, 1.13994)
+
+[node name="Star802" parent="Constellation_73/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2192.92, 3441.62)
+scale = Vector2(0.931103, 0.931103)
+
+[node name="Star803" parent="Constellation_73/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2241.54, 3471.83)
+scale = Vector2(1.17149, 1.17149)
+
+[node name="Star804" parent="Constellation_73/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(2326.05, 3527.37)
+scale = Vector2(1.25566, 1.25566)
+
+[node name="Constellation_74" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="805" type="Line2D" parent="Constellation_74"]
+points = PackedVector2Array(13037.5, 1669.54, 13409.2, 1504.99, 13844.3, 1376.4, 282.373, 1520.4, 129.009, 1730.12)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_74"]
+
+[node name="Star" parent="Constellation_74/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13037.5, 1669.54)
+scale = Vector2(1.26896, 1.26896)
+
+[node name="Star806" parent="Constellation_74/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13409.2, 1504.99)
+scale = Vector2(0.939459, 0.939459)
+
+[node name="Star807" parent="Constellation_74/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13844.3, 1376.4)
+scale = Vector2(0.914115, 0.914115)
+
+[node name="Star808" parent="Constellation_74/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(282.373, 1520.4)
+scale = Vector2(0.948135, 0.948135)
+
+[node name="Star809" parent="Constellation_74/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(129.009, 1730.12)
+scale = Vector2(1.06039, 1.06039)
+
+[node name="Constellation_75" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="810" type="Line2D" parent="Constellation_75"]
+points = PackedVector2Array(3338.01, 2779.82, 3457.32, 2641.5, 3291.81, 2719.23, 3099.28, 2884.95, 3338.01, 2779.82)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_75"]
+
+[node name="Star" parent="Constellation_75/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(3338.01, 2779.82)
+scale = Vector2(1.03798, 1.03798)
+
+[node name="Star811" parent="Constellation_75/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(3457.32, 2641.5)
+scale = Vector2(1.08279, 1.08279)
+
+[node name="Star812" parent="Constellation_75/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(3291.81, 2719.23)
+scale = Vector2(1.11834, 1.11834)
+
+[node name="Star813" parent="Constellation_75/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(3099.28, 2884.95)
+scale = Vector2(0.958099, 0.958099)
+
+[node name="Star814" parent="Constellation_75/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(3338.01, 2779.82)
+scale = Vector2(1.21115, 1.21115)
+
+[node name="Constellation_76" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="815" type="Line2D" parent="Constellation_76"]
+points = PackedVector2Array(4533.17, 4235.44, 4714.8, 4233.16, 4635.2, 4185.6, 4518.21, 4139.9, 4533.17, 4235.44, 4362.38, 4385.73, 4171.38, 4330.6, 4078.66, 4282.19, 3711.12, 4102.18)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_76"]
+
+[node name="Star" parent="Constellation_76/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(4533.17, 4235.44)
+scale = Vector2(0.976301, 0.976301)
+
+[node name="Star816" parent="Constellation_76/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(4714.8, 4233.16)
+scale = Vector2(1.03831, 1.03831)
+
+[node name="Star817" parent="Constellation_76/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(4635.2, 4185.6)
+scale = Vector2(1.04652, 1.04652)
+
+[node name="Star818" parent="Constellation_76/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(4518.21, 4139.9)
+scale = Vector2(1.12945, 1.12945)
+
+[node name="Star819" parent="Constellation_76/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(4533.17, 4235.44)
+scale = Vector2(1.2339, 1.2339)
+
+[node name="Star820" parent="Constellation_76/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(4362.38, 4385.73)
+scale = Vector2(1.17098, 1.17098)
+
+[node name="Star821" parent="Constellation_76/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(4171.38, 4330.6)
+scale = Vector2(1.08603, 1.08603)
+
+[node name="Star822" parent="Constellation_76/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(4078.66, 4282.19)
+scale = Vector2(1.24783, 1.24783)
+
+[node name="Star823" parent="Constellation_76/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(3711.12, 4102.18)
+scale = Vector2(1.00067, 1.00067)
+
+[node name="Constellation_77" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="824" type="Line2D" parent="Constellation_77"]
+points = PackedVector2Array(3177.04, 3621.49, 3155.47, 3367.34, 3340.28, 3132.16, 3395.79, 3083.72, 3574.87, 2877.26, 3816.79, 2503.77)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_77"]
+
+[node name="Star" parent="Constellation_77/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(3177.04, 3621.49)
+scale = Vector2(1.29784, 1.29784)
+
+[node name="Star825" parent="Constellation_77/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(3155.47, 3367.34)
+scale = Vector2(1.01841, 1.01841)
+
+[node name="Star826" parent="Constellation_77/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(3340.28, 3132.16)
+scale = Vector2(1.05297, 1.05297)
+
+[node name="Star827" parent="Constellation_77/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(3395.79, 3083.72)
+scale = Vector2(0.937505, 0.937505)
+
+[node name="Star828" parent="Constellation_77/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(3574.87, 2877.26)
+scale = Vector2(1.2326, 1.2326)
+
+[node name="Star829" parent="Constellation_77/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(3816.79, 2503.77)
+scale = Vector2(1.10182, 1.10182)
+
+[node name="Constellation_78" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="830" type="Line2D" parent="Constellation_78"]
+points = PackedVector2Array(9936.37, 6205.56, 10429.8, 6177.43, 10872.6, 6117.27, 10519, 6288.51, 10270.9, 6365.78, 9954.79, 6434.11, 9631.72, 6405.1)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_78"]
+
+[node name="Star" parent="Constellation_78/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(9936.37, 6205.56)
+scale = Vector2(0.989181, 0.989181)
+
+[node name="Star831" parent="Constellation_78/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10429.8, 6177.43)
+scale = Vector2(0.974709, 0.974709)
+
+[node name="Star832" parent="Constellation_78/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10872.6, 6117.27)
+scale = Vector2(0.926653, 0.926653)
+
+[node name="Star833" parent="Constellation_78/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10519, 6288.51)
+scale = Vector2(1.1016, 1.1016)
+
+[node name="Star834" parent="Constellation_78/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10270.9, 6365.78)
+scale = Vector2(0.950417, 0.950417)
+
+[node name="Star835" parent="Constellation_78/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(9954.79, 6434.11)
+scale = Vector2(1.24329, 1.24329)
+
+[node name="Star836" parent="Constellation_78/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(9631.72, 6405.1)
+scale = Vector2(0.980637, 0.980637)
+
+[node name="Constellation_79" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="837" type="Line2D" parent="Constellation_79"]
+points = PackedVector2Array(9932.44, 3511.37, 10176, 2967.36, 10206.6, 2901.63, 10222.1, 2819.48, 10143, 2844.26, 10074.1, 2893.01, 10362.3, 2647.15, 10501.5, 2334.58, 10534.4, 2313.76, 10896.2, 2465.73)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_79"]
+
+[node name="Star" parent="Constellation_79/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(9932.44, 3511.37)
+scale = Vector2(0.991432, 0.991432)
+
+[node name="Star838" parent="Constellation_79/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10176, 2967.36)
+scale = Vector2(1.28986, 1.28986)
+
+[node name="Star839" parent="Constellation_79/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10206.6, 2901.63)
+scale = Vector2(1.21735, 1.21735)
+
+[node name="Star840" parent="Constellation_79/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10222.1, 2819.48)
+scale = Vector2(1.23361, 1.23361)
+
+[node name="Star841" parent="Constellation_79/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10143, 2844.26)
+scale = Vector2(0.96764, 0.96764)
+
+[node name="Star842" parent="Constellation_79/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10074.1, 2893.01)
+scale = Vector2(0.921184, 0.921184)
+
+[node name="Star843" parent="Constellation_79/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10362.3, 2647.15)
+scale = Vector2(0.905995, 0.905995)
+
+[node name="Star844" parent="Constellation_79/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10501.5, 2334.58)
+scale = Vector2(1.18898, 1.18898)
+
+[node name="Star845" parent="Constellation_79/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10534.4, 2313.76)
+scale = Vector2(1.20598, 1.20598)
+
+[node name="Star846" parent="Constellation_79/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(10896.2, 2465.73)
+scale = Vector2(1.26469, 1.26469)
+
+[node name="Constellation_80" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="847" type="Line2D" parent="Constellation_80"]
+points = PackedVector2Array(1935.49, 3326.51, 1905.4, 3224.46, 1786.3, 3249.83)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_80"]
+
+[node name="Star" parent="Constellation_80/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1935.49, 3326.51)
+scale = Vector2(1.0998, 1.0998)
+
+[node name="Star848" parent="Constellation_80/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1905.4, 3224.46)
+scale = Vector2(1.10464, 1.10464)
+
+[node name="Star849" parent="Constellation_80/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1786.3, 3249.83)
+scale = Vector2(0.91165, 0.91165)
+
+[node name="Constellation_81" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="850" type="Line2D" parent="Constellation_81"]
+points = PackedVector2Array(9355.65, 1595.41, 9162.13, 1804.98, 9250.2, 1844.46, 9355.65, 1595.41)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_81"]
+
+[node name="Star" parent="Constellation_81/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(9355.65, 1595.41)
+scale = Vector2(1.17452, 1.17452)
+
+[node name="Star851" parent="Constellation_81/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(9162.13, 1804.98)
+scale = Vector2(1.1105, 1.1105)
+
+[node name="Star852" parent="Constellation_81/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(9250.2, 1844.46)
+scale = Vector2(0.995173, 0.995173)
+
+[node name="Star853" parent="Constellation_81/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(9355.65, 1595.41)
+scale = Vector2(1.0076, 1.0076)
+
+[node name="Constellation_82" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="854" type="Line2D" parent="Constellation_82"]
+points = PackedVector2Array(1094.13, 3841.92, 1275.06, 4085.94, 1023.18, 4147.5, 1094.13, 3841.92)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_82"]
+
+[node name="Star" parent="Constellation_82/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1094.13, 3841.92)
+scale = Vector2(1.18836, 1.18836)
+
+[node name="Star855" parent="Constellation_82/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1275.06, 4085.94)
+scale = Vector2(1.1848, 1.1848)
+
+[node name="Star856" parent="Constellation_82/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1023.18, 4147.5)
+scale = Vector2(1.06606, 1.06606)
+
+[node name="Star857" parent="Constellation_82/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(1094.13, 3841.92)
+scale = Vector2(1.20184, 1.20184)
+
+[node name="Constellation_83" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="858" type="Line2D" parent="Constellation_83"]
+points = PackedVector2Array(586.033, 2639.83, 285.314, 2519.73, -56.8095, 2755.18, 15.346, 2811.81, 105.134, 2819.85, 496.137, 2806.56, 586.033, 2639.83)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_83"]
+
+[node name="Star" parent="Constellation_83/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(586.033, 2639.83)
+scale = Vector2(1.21259, 1.21259)
+
+[node name="Star859" parent="Constellation_83/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(285.314, 2519.73)
+scale = Vector2(1.13928, 1.13928)
+
+[node name="Star860" parent="Constellation_83/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(-56.8095, 2755.18)
+scale = Vector2(1.00395, 1.00395)
+
+[node name="Star861" parent="Constellation_83/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(15.346, 2811.81)
+scale = Vector2(1.24901, 1.24901)
+
+[node name="Star862" parent="Constellation_83/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(105.134, 2819.85)
+scale = Vector2(1.14687, 1.14687)
+
+[node name="Star863" parent="Constellation_83/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(496.137, 2806.56)
+scale = Vector2(1.18142, 1.18142)
+
+[node name="Star864" parent="Constellation_83/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(586.033, 2639.83)
+scale = Vector2(1.10204, 1.10204)
+
+[node name="Constellation_84" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="865" type="Line2D" parent="Constellation_84"]
+points = PackedVector2Array(6949.21, 4399.91, 7349.01, 4253.01, 7377.12, 4460.34, 7047.92, 4552.23, 6949.21, 4399.91, 6721.31, 4366.58, 6544.39, 4320.04, 7062.06, 4786.8, 7160.18, 5079.62, 7284.42, 5369.72, 7357.91, 4924.55, 7752.55, 4090.25, 8042.7, 4000.18, 7737.22, 4270.78, 7816.36, 4450.1, 7975.07, 4481.6, 7975.07, 4481.6)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_84"]
+
+[node name="Star" parent="Constellation_84/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(6949.21, 4399.91)
+scale = Vector2(1.21252, 1.21252)
+
+[node name="Star866" parent="Constellation_84/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(7349.01, 4253.01)
+scale = Vector2(1.14854, 1.14854)
+
+[node name="Star867" parent="Constellation_84/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(7377.12, 4460.34)
+scale = Vector2(1.16389, 1.16389)
+
+[node name="Star868" parent="Constellation_84/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(7047.92, 4552.23)
+scale = Vector2(1.26494, 1.26494)
+
+[node name="Star869" parent="Constellation_84/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(6949.21, 4399.91)
+scale = Vector2(1.18699, 1.18699)
+
+[node name="Star870" parent="Constellation_84/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(6721.31, 4366.58)
+scale = Vector2(1.20123, 1.20123)
+
+[node name="Star871" parent="Constellation_84/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(6544.39, 4320.04)
+scale = Vector2(1.22293, 1.22293)
+
+[node name="Star872" parent="Constellation_84/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(7062.06, 4786.8)
+scale = Vector2(0.976989, 0.976989)
+
+[node name="Star873" parent="Constellation_84/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(7160.18, 5079.62)
+scale = Vector2(1.12367, 1.12367)
+
+[node name="Star874" parent="Constellation_84/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(7284.42, 5369.72)
+scale = Vector2(0.991109, 0.991109)
+
+[node name="Star875" parent="Constellation_84/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(7357.91, 4924.55)
+scale = Vector2(1.08533, 1.08533)
+
+[node name="Star876" parent="Constellation_84/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(7752.55, 4090.25)
+scale = Vector2(1.13503, 1.13503)
+
+[node name="Star877" parent="Constellation_84/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(8042.7, 4000.18)
+scale = Vector2(1.12847, 1.12847)
+
+[node name="Star878" parent="Constellation_84/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(7737.22, 4270.78)
+scale = Vector2(1.26219, 1.26219)
+
+[node name="Star879" parent="Constellation_84/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(7816.36, 4450.1)
+scale = Vector2(1.14882, 1.14882)
+
+[node name="Star880" parent="Constellation_84/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(7975.07, 4481.6)
+scale = Vector2(1.02065, 1.02065)
+
+[node name="Star881" parent="Constellation_84/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(7975.07, 4481.6)
+scale = Vector2(1.28457, 1.28457)
+
+[node name="UMi" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="882" type="Line2D" parent="UMi"]
+points = PackedVector2Array(6837.68, 3353.81, 6737.17, 3312.54, 6660.44, 3514.11, 6782.92, 3534.05, 6837.68, 3353.81, 6963.34, 3205.25, 7137.78, 3150.6, 7293.05, 3138.32)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="UMi"]
+
+[node name="Star" parent="UMi/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(6837.68, 3353.81)
+scale = Vector2(0.908884, 0.908884)
+
+[node name="Star883" parent="UMi/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(6737.17, 3312.54)
+scale = Vector2(0.950233, 0.950233)
+
+[node name="Star884" parent="UMi/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(6660.44, 3514.11)
+scale = Vector2(1.27416, 1.27416)
+
+[node name="Star885" parent="UMi/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(6782.92, 3534.05)
+scale = Vector2(0.985529, 0.985529)
+
+[node name="Star886" parent="UMi/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(6837.68, 3353.81)
+scale = Vector2(1.10808, 1.10808)
+
+[node name="Star887" parent="UMi/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(6963.34, 3205.25)
+scale = Vector2(1.19993, 1.19993)
+
+[node name="Star888" parent="UMi/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(7137.78, 3150.6)
+scale = Vector2(1.24972, 1.24972)
+
+[node name="Polaris" parent="UMi/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(7293.05, 3138.32)
+scale = Vector2(1.26738, 1.26738)
+
+[node name="Constellation_86" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="890" type="Line2D" parent="Constellation_86"]
+points = PackedVector2Array(13268, 4769, 13466, 4902.87, 13664.8, 5021.83, -33.8579, 5310.35, 13493.4, 5505.06, 13018.5, 5369.8, 12974.3, 5171.6, 12838.3, 4758.7)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_86"]
+
+[node name="Star" parent="Constellation_86/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13268, 4769)
+scale = Vector2(1.02858, 1.02858)
+
+[node name="Star891" parent="Constellation_86/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13466, 4902.87)
+scale = Vector2(1.0145, 1.0145)
+
+[node name="Star892" parent="Constellation_86/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13664.8, 5021.83)
+scale = Vector2(1.0371, 1.0371)
+
+[node name="Star893" parent="Constellation_86/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(-33.8579, 5310.35)
+scale = Vector2(0.908783, 0.908783)
+
+[node name="Star894" parent="Constellation_86/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13493.4, 5505.06)
+scale = Vector2(1.18468, 1.18468)
+
+[node name="Star895" parent="Constellation_86/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13018.5, 5369.8)
+scale = Vector2(1.15949, 1.15949)
+
+[node name="Star896" parent="Constellation_86/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(12974.3, 5171.6)
+scale = Vector2(1.26481, 1.26481)
+
+[node name="Star897" parent="Constellation_86/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(12838.3, 4758.7)
+scale = Vector2(1.06544, 1.06544)
+
+[node name="Constellation_87" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="898" type="Line2D" parent="Constellation_87"]
+points = PackedVector2Array(6300.28, 6346.33, 6047.48, 6417.1, 5725.14, 6479.31, 5144.72, 6407.82, 4716.49, 6309.48, 4534.27, 6218.24, 4391.57, 6123.41, 4105.48, 6010, 3879.78, 5885.66, 3427.21, 5742.93, 3609.8, 5499.73, 3746.24, 5251.12, 4953.15, 5832.06, 4704.04, 5928.42, 4040.49, 5753.32, 4171.76, 5616.81, 4206.73, 5342.8, 4098.47, 4916.48)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_87"]
+
+[node name="Star" parent="Constellation_87/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(6300.28, 6346.33)
+scale = Vector2(1.09825, 1.09825)
+
+[node name="Star899" parent="Constellation_87/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(6047.48, 6417.1)
+scale = Vector2(1.29059, 1.29059)
+
+[node name="Star900" parent="Constellation_87/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(5725.14, 6479.31)
+scale = Vector2(1.20414, 1.20414)
+
+[node name="Star901" parent="Constellation_87/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(5144.72, 6407.82)
+scale = Vector2(1.0861, 1.0861)
+
+[node name="Star902" parent="Constellation_87/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(4716.49, 6309.48)
+scale = Vector2(1.23089, 1.23089)
+
+[node name="Star903" parent="Constellation_87/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(4534.27, 6218.24)
+scale = Vector2(1.19766, 1.19766)
+
+[node name="Star904" parent="Constellation_87/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(4391.57, 6123.41)
+scale = Vector2(1.23664, 1.23664)
+
+[node name="Star905" parent="Constellation_87/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(4105.48, 6010)
+scale = Vector2(1.28369, 1.28369)
+
+[node name="Star906" parent="Constellation_87/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(3879.78, 5885.66)
+scale = Vector2(1.13226, 1.13226)
+
+[node name="Star907" parent="Constellation_87/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(3427.21, 5742.93)
+scale = Vector2(1.08606, 1.08606)
+
+[node name="Star908" parent="Constellation_87/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(3609.8, 5499.73)
+scale = Vector2(1.04545, 1.04545)
+
+[node name="Star909" parent="Constellation_87/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(3746.24, 5251.12)
+scale = Vector2(0.974837, 0.974837)
+
+[node name="Star910" parent="Constellation_87/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(4953.15, 5832.06)
+scale = Vector2(1.06367, 1.06367)
+
+[node name="Star911" parent="Constellation_87/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(4704.04, 5928.42)
+scale = Vector2(1.22665, 1.22665)
+
+[node name="Star912" parent="Constellation_87/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(4040.49, 5753.32)
+scale = Vector2(1.15981, 1.15981)
+
+[node name="Star913" parent="Constellation_87/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(4171.76, 5616.81)
+scale = Vector2(0.936957, 0.936957)
+
+[node name="Star914" parent="Constellation_87/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(4206.73, 5342.8)
+scale = Vector2(1.06562, 1.06562)
+
+[node name="Star915" parent="Constellation_87/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(4098.47, 4916.48)
+scale = Vector2(0.921219, 0.921219)
+
+[node name="Constellation_88" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="916" type="Line2D" parent="Constellation_88"]
+points = PackedVector2Array(13700.8, 4496.73, 13577.9, 4405.1, 13612.3, 4292.36, 13488, 4148.87, 13570.2, 4082.95, 13612.3, 4292.36, 13700.8, 4496.73)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_88"]
+
+[node name="Star" parent="Constellation_88/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13700.8, 4496.73)
+scale = Vector2(1.2464, 1.2464)
+
+[node name="Star917" parent="Constellation_88/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13577.9, 4405.1)
+scale = Vector2(1.11592, 1.11592)
+
+[node name="Star918" parent="Constellation_88/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13612.3, 4292.36)
+scale = Vector2(1.27846, 1.27846)
+
+[node name="Star919" parent="Constellation_88/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13488, 4148.87)
+scale = Vector2(1.089, 1.089)
+
+[node name="Star920" parent="Constellation_88/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13570.2, 4082.95)
+scale = Vector2(1.19381, 1.19381)
+
+[node name="Star921" parent="Constellation_88/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13612.3, 4292.36)
+scale = Vector2(0.972049, 0.972049)
+
+[node name="Star922" parent="Constellation_88/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(13700.8, 4496.73)
+scale = Vector2(0.951938, 0.951938)
+
+[node name="Constellation_89" parent="." instance=ExtResource("2_c7akh")]
+
+[node name="923" type="Line2D" parent="Constellation_89"]
+points = PackedVector2Array(4561.94, 2293.31, 4721.73, 2193.3, 4732.14, 1973.13, 4928.31, 1936.07, 4973.52, 1814.67)
+width = 2.0
+
+[node name="Stars" type="Node2D" parent="Constellation_89"]
+
+[node name="Star" parent="Constellation_89/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(4561.94, 2293.31)
+scale = Vector2(1.17281, 1.17281)
+
+[node name="Star924" parent="Constellation_89/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(4721.73, 2193.3)
+scale = Vector2(1.19626, 1.19626)
+
+[node name="Star925" parent="Constellation_89/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(4732.14, 1973.13)
+scale = Vector2(1.24025, 1.24025)
+
+[node name="Star926" parent="Constellation_89/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(4928.31, 1936.07)
+scale = Vector2(1.0021, 1.0021)
+
+[node name="Star927" parent="Constellation_89/Stars" instance=ExtResource("3_33jhu")]
+process_mode = 4
+position = Vector2(4973.52, 1814.67)
+scale = Vector2(1.20705, 1.20705)

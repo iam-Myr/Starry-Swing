@@ -11,6 +11,7 @@ radius = 102.961
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_sivrr")
+ROPE_LENGTH = 250
 
 [node name="Player_Img" type="Sprite2D" parent="."]
 texture = ExtResource("1_yksdr")

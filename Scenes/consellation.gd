@@ -4,7 +4,7 @@ var is_unlocked: bool = false
 var unlocking_mode: bool = false
 var stars_unlocked = []
 var total_stars = 0
-@export var label: String
+var constellation_name: String
 
 func const_star_activated(star):
 	if not is_unlocked and star not in stars_unlocked:

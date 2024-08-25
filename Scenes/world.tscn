@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://lirewln1yeo4"]
+[gd_scene load_steps=9 format=3 uid="uid://lirewln1yeo4"]
 
 [ext_resource type="PackedScene" uid="uid://ck5qu4mm8eomm" path="res://Scenes/Player/player.tscn" id="1_kxtem"]
 [ext_resource type="Script" path="res://Scenes/world.gd" id="1_ofgo2"]
 [ext_resource type="Texture2D" uid="uid://bm5f0we85xggn" path="res://Assets/Stars/stars_tilemap.png" id="2_3pors"]
 [ext_resource type="Texture2D" uid="uid://b8ons6nu62avd" path="res://Assets/Stars/BG.jpg" id="3_45twk"]
-[ext_resource type="PackedScene" uid="uid://vgi03b5p2567" path="res://Scenes/star_map_2.tscn" id="7_2pk1f"]
+[ext_resource type="PackedScene" uid="uid://oxuojxvf6xy8" path="res://svg3.tscn" id="4_ip87y"]
+[ext_resource type="Script" path="res://Scenes/Cammera.gd" id="6_7t2bm"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8eau3"]
 texture = ExtResource("2_3pors")
@@ -23,6 +24,12 @@ sources/0 = SubResource("TileSetAtlasSource_8eau3")
 [node name="World" type="Node2D"]
 script = ExtResource("1_ofgo2")
 
+[node name="TileMap" type="TileMap" parent="."]
+visible = false
+tile_set = SubResource("TileSet_df1fy")
+format = 2
+layer_0/tile_data = PackedInt32Array(262201, 131072, 1)
+
 [node name="BG" type="Node2D" parent="."]
 
 [node name="BGSprite" type="Sprite2D" parent="BG"]
@@ -30,34 +37,19 @@ texture_repeat = 3
 texture = ExtResource("3_45twk")
 centered = false
 region_enabled = true
-region_rect = Rect2(0, 0, 1280, 720)
+region_rect = Rect2(0, 0, 2076, 1590)
 
-[node name="TileMap" type="TileMap" parent="BG"]
-visible = false
-tile_set = SubResource("TileSet_df1fy")
-format = 2
-layer_0/tile_data = PackedInt32Array(262201, 131072, 1)
+[node name="generator3" parent="BG" instance=ExtResource("4_ip87y")]
 
 [node name="Rope" type="Line2D" parent="."]
 width = 3.0
 default_color = Color(0.596078, 0.815686, 1, 1)
 
 [node name="Player" parent="." instance=ExtResource("1_kxtem")]
-position = Vector2(662, 532)
+position = Vector2(7311, 3276)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
-zoom = Vector2(1.1, 1.1)
-
-[node name="Control" type="Control" parent="."]
-clip_contents = true
-layout_mode = 3
-anchors_preset = 0
-offset_left = 1282.0
-offset_top = -1.0
-offset_right = 1794.0
-offset_bottom = 720.0
-
-[node name="StarMap2" parent="." instance=ExtResource("7_2pk1f")]
+script = ExtResource("6_7t2bm")
 
 [connection signal="player_grappling" from="Player" to="." method="_on_player_player_grappling"]
 [connection signal="player_released" from="Player" to="." method="_on_player_player_released"]
