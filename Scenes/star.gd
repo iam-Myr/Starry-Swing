@@ -4,12 +4,8 @@ class_name Star
 @onready var particles = $Particles
 @onready var light = $Light
 var is_chosen = false
-@onready var constellation = get_parent().get_parent()
 
 func _ready():
-	if not constellation.is_in_group("Constellation"):
-		constellation = null
-	
 	#Random Scale
 	var rand_scale = randf_range(0.9,1.3)
 	self.scale = Vector2(rand_scale,rand_scale)

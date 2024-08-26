@@ -1,7 +1,7 @@
 extends Node2D
 
 
-@onready var starmap = $NightSky
+@onready var starmap = $StarMap2
 @onready var WORLD_DIMENSIONS = starmap.size
 
 @onready var player: CharacterBody2D = $Player
@@ -19,7 +19,7 @@ func _ready():
 	player.spawn_at(chosen_star)
 	chosen_star.get_chosen()
 	
-	create_background_grid($BG)
+	#create_background_grid($BG)
 
 func _process(delta):
 	player.position = player.position.posmodv(WORLD_DIMENSIONS)
@@ -37,12 +37,12 @@ func _on_player_player_grappling(star):
 	chosen_star.get_chosen()
 	
 	# Fail constellation: If player grapples another constellation's star
-	if chosen_star.constellation and chosen_star.constellation != prev_chosen_star.constellation:
+	if prev_chosen_star.constellation and chosen_star.constellation != prev_chosen_star.constellation:
 		prev_chosen_star.constellation.fail()
 
 	if chosen_star.constellation and not chosen_star.constellation.is_unlocked:
 		chosen_star.constellation.const_star_activated(chosen_star)
-		#print(chosen_star.constellation.constellation_name)
+		print(chosen_star.constellation.constellation_name)
 
 func _on_player_player_released():
 	player_grappling = false

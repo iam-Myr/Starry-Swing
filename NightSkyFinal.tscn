@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scenes/star_map_2.gd" id="1_cdnmd"]
 [ext_resource type="PackedScene" uid="uid://dyp0cloypkf7l" path="res://Scenes/consellation.tscn" id="2_3mw2d"]
-[ext_resource type="PackedScene" uid="uid://bho1ihsa2y4vl" path="res://Scenes/Star.tscn" id="3_07t30"]
+[ext_resource type="PackedScene" uid="uid://bho1ihsa2y4vl" path="res://Scenes/star.tscn" id="3_07t30"]
 
 [node name="Generator" type="Node2D"]
 script = ExtResource("1_cdnmd")
