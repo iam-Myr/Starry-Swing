@@ -9,7 +9,6 @@
 script = ExtResource("1_wtm4l")
 
 [node name="StarMapImg" type="Sprite2D" parent="."]
-visible = false
 modulate = Color(1, 1, 1, 0.172549)
 position = Vector2(1038, 795)
 scale = Vector2(2, 2)

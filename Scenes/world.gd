@@ -1,20 +1,17 @@
 extends Node2D
 
 
-@onready var starmap = $BG/generator3
+@onready var starmap = $NightSky
 @onready var WORLD_DIMENSIONS = starmap.size
 
 @onready var player: CharacterBody2D = $Player
 @onready var rope: Line2D = $Rope
 @onready var camera: Camera2D = $Player/Camera2D
-#var chosen_star
-#var prev_chosen_star
 @onready var chosen_star: StaticBody2D = starmap.get_node("UMi/Stars/Polaris") # Start with spawnpoint
 @onready var prev_chosen_star: StaticBody2D = starmap.get_node("UMi/Stars/Polaris")
 
 var random_spawn: bool = false
-var player_grappling: bool = false
-
+var player_grappling: bool = true
 
 func _ready():
 	if random_spawn: 
@@ -22,7 +19,7 @@ func _ready():
 	player.spawn_at(chosen_star)
 	chosen_star.get_chosen()
 	
-	#create_background_grid($BG)
+	create_background_grid($BG)
 
 func _process(delta):
 	player.position = player.position.posmodv(WORLD_DIMENSIONS)
@@ -38,13 +35,14 @@ func _on_player_player_grappling(star):
 	player_grappling = true
 	chosen_star = star
 	chosen_star.get_chosen()
-	print(chosen_star)
 	
-	if chosen_star.constellation != prev_chosen_star.constellation and prev_chosen_star.constellation:
+	# Fail constellation: If player grapples another constellation's star
+	if chosen_star.constellation and chosen_star.constellation != prev_chosen_star.constellation:
 		prev_chosen_star.constellation.fail()
 
 	if chosen_star.constellation and not chosen_star.constellation.is_unlocked:
 		chosen_star.constellation.const_star_activated(chosen_star)
+		#print(chosen_star.constellation.constellation_name)
 
 func _on_player_player_released():
 	player_grappling = false

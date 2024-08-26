@@ -1,10 +1,12 @@
 extends Node2D
 
+class_name Constellation
+
 var is_unlocked: bool = false
 var unlocking_mode: bool = false
 var stars_unlocked = []
 var total_stars = 0
-var constellation_name: String
+@export var constellation_name: String
 
 func const_star_activated(star):
 	if not is_unlocked and star not in stars_unlocked:
@@ -36,7 +38,7 @@ func unlock_constellation():
 	for star in stars_unlocked:
 		star.get_node("ConstLight").enabled = false
 	
-	$Line2D.default_color.a = 0.4
+	get_child(1).default_color.a = 0.4
 
 
 

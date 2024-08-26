@@ -1,4 +1,5 @@
 extends CelestialBody
+class_name Star
 
 @onready var particles = $Particles
 @onready var light = $Light

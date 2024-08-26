@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://Scenes/world.gd" id="1_ofgo2"]
 [ext_resource type="Texture2D" uid="uid://bm5f0we85xggn" path="res://Assets/Stars/stars_tilemap.png" id="2_3pors"]
 [ext_resource type="Texture2D" uid="uid://b8ons6nu62avd" path="res://Assets/Stars/BG.jpg" id="3_45twk"]
-[ext_resource type="PackedScene" uid="uid://oxuojxvf6xy8" path="res://svg3.tscn" id="4_ip87y"]
+[ext_resource type="PackedScene" uid="uid://s2iwgbkcj2ux" path="res://NightSkyFinal.tscn" id="4_0ldqj"]
 [ext_resource type="Script" path="res://Scenes/Cammera.gd" id="6_7t2bm"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8eau3"]
@@ -37,18 +37,19 @@ texture_repeat = 3
 texture = ExtResource("3_45twk")
 centered = false
 region_enabled = true
-region_rect = Rect2(0, 0, 2076, 1590)
+region_rect = Rect2(0, 0, 7000, 5000)
 
-[node name="generator3" parent="BG" instance=ExtResource("4_ip87y")]
+[node name="NightSky" parent="." instance=ExtResource("4_0ldqj")]
 
 [node name="Rope" type="Line2D" parent="."]
 width = 3.0
 default_color = Color(0.596078, 0.815686, 1, 1)
 
 [node name="Player" parent="." instance=ExtResource("1_kxtem")]
-position = Vector2(7311, 3276)
+position = Vector2(1836, 174)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
+zoom = Vector2(0.4, 0.4)
 script = ExtResource("6_7t2bm")
 
 [connection signal="player_grappling" from="Player" to="." method="_on_player_player_grappling"]
