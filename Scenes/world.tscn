@@ -1,11 +1,12 @@
-[gd_scene load_steps=9 format=3 uid="uid://lirewln1yeo4"]
+[gd_scene load_steps=10 format=3 uid="uid://lirewln1yeo4"]
 
 [ext_resource type="PackedScene" uid="uid://ck5qu4mm8eomm" path="res://Scenes/Player/player.tscn" id="1_kxtem"]
 [ext_resource type="Script" path="res://Scenes/world.gd" id="1_ofgo2"]
 [ext_resource type="Texture2D" uid="uid://bm5f0we85xggn" path="res://Assets/Stars/stars_tilemap.png" id="2_3pors"]
-[ext_resource type="Texture2D" uid="uid://b8ons6nu62avd" path="res://Assets/Stars/BG.jpg" id="3_45twk"]
+[ext_resource type="Texture2D" uid="uid://cguwcy4s1d3o" path="res://Assets/Stars/blue-square-texture-background.jpg" id="3_ywahv"]
 [ext_resource type="Script" path="res://Scenes/Cammera.gd" id="6_7t2bm"]
 [ext_resource type="PackedScene" uid="uid://vgi03b5p2567" path="res://Scenes/star_map_2.tscn" id="6_c7i56"]
+[ext_resource type="PackedScene" uid="uid://b2f2ejek7xfb0" path="res://Scenes/ui.tscn" id="7_nuh6t"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8eau3"]
 texture = ExtResource("2_3pors")
@@ -34,7 +35,7 @@ layer_0/tile_data = PackedInt32Array(262201, 131072, 1)
 
 [node name="BGSprite" type="Sprite2D" parent="BG"]
 texture_repeat = 3
-texture = ExtResource("3_45twk")
+texture = ExtResource("3_ywahv")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 2076, 1590)
@@ -43,18 +44,20 @@ region_rect = Rect2(0, 0, 2076, 1590)
 width = 3.0
 default_color = Color(0.596078, 0.815686, 1, 1)
 
+[node name="StarMap2" parent="." instance=ExtResource("6_c7i56")]
+
 [node name="Player" parent="." instance=ExtResource("1_kxtem")]
 position = Vector2(1050, 841)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
-limit_left = 0
-limit_top = 0
+limit_left = 1
+limit_top = 1
 limit_right = 2075
-limit_bottom = 1595
+limit_bottom = 1590
 limit_smoothed = true
 script = ExtResource("6_7t2bm")
 
-[node name="StarMap2" parent="." instance=ExtResource("6_c7i56")]
+[node name="UI" parent="." instance=ExtResource("7_nuh6t")]
 
 [connection signal="player_grappling" from="Player" to="." method="_on_player_player_grappling"]
 [connection signal="player_released" from="Player" to="." method="_on_player_player_released"]

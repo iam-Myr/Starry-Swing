@@ -1,17 +1,16 @@
-[gd_scene load_steps=5 format=3 uid="uid://bbs3yq637yyad"]
+[gd_scene load_steps=4 format=3 uid="uid://bbs3yq637yyad"]
 
 [ext_resource type="Script" path="res://Scenes/planisphere.gd" id="1_hgv6x"]
 [ext_resource type="Texture2D" uid="uid://bxh1b2tknamr3" path="res://chart.png" id="2_01jbt"]
 [ext_resource type="Texture2D" uid="uid://baee7466yypq8" path="res://plan_bg-ai-brush-removebg-ksy130s5.png" id="2_t1udb"]
-[ext_resource type="PackedScene" uid="uid://vgi03b5p2567" path="res://Scenes/star_map_2.tscn" id="4_3wtir"]
 
 [node name="Planisphere" type="Node2D"]
 position = Vector2(-12793, -3672)
 script = ExtResource("1_hgv6x")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(503.72, 99.28)
-zoom = Vector2(0.05, 0.05)
+position = Vector2(14137, 3624)
+zoom = Vector2(0.1, 0.1)
 
 [node name="Chart" type="Sprite2D" parent="."]
 position = Vector2(14231, 4650)
@@ -22,7 +21,3 @@ texture = ExtResource("2_01jbt")
 position = Vector2(14239, 8071)
 scale = Vector2(14.7, 14.7)
 texture = ExtResource("2_t1udb")
-
-[node name="StarMap2" parent="." instance=ExtResource("4_3wtir")]
-position = Vector2(13087, 4030)
-rotation = -0.120428

@@ -50,7 +50,7 @@ func _process(delta):
 	# Flip Character
 	var direction = Input.get_vector("left","right","up","down")
 	if direction.x != 0:
-		$Player_Img.flip_h = direction.x < 0 
+		$Player_Img.flip_h = !direction.x < 0 
 
 func _physics_process(delta: float):
 	# Get the input direction from the player

@@ -138,7 +138,7 @@ position = Vector2(137, -205)
 position = Vector2(81, 66)
 
 [node name="Draco@Stars2@Star3" parent="Draco/Stars" index="2" instance=ExtResource("3_7cpuq")]
-position = Vector2(-332, -300)
+position = Vector2(339, -249)
 
 [node name="Draco@Stars2@Star4" parent="Draco/Stars" index="3" instance=ExtResource("3_7cpuq")]
 position = Vector2(128, 331)

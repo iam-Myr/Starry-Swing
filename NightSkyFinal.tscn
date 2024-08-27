@@ -1,13 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://s2iwgbkcj2ux"]
+[gd_scene load_steps=3 format=3 uid="uid://s2iwgbkcj2ux"]
 
 [ext_resource type="Script" path="res://Scenes/star_map_2.gd" id="1_cdnmd"]
 [ext_resource type="PackedScene" uid="uid://dyp0cloypkf7l" path="res://Scenes/consellation.tscn" id="2_3mw2d"]
-[ext_resource type="PackedScene" uid="uid://bho1ihsa2y4vl" path="res://Scenes/star.tscn" id="3_07t30"]
 
 [node name="Generator" type="Node2D"]
 script = ExtResource("1_cdnmd")
 
 [node name="And" parent="." instance=ExtResource("2_3mw2d")]
+visible = false
 metadata/_edit_lock_ = true
 
 [node name="3" type="Line2D" parent="And"]
@@ -15,111 +15,6 @@ points = PackedVector2Array(4008.52, 1287.1, 3751, 1468, 3691, 1392, 3657, 1321,
 width = 2.0
 
 [node name="Stars" type="Node2D" parent="And"]
-
-[node name="Star" parent="And/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4008.52, 1287.1)
-scale = Vector2(1.0806, 1.0806)
-
-[node name="Star3" parent="And/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3751.23, 1468.24)
-scale = Vector2(1.13488, 1.13488)
-
-[node name="Star4" parent="And/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3606.81, 1596.75)
-scale = Vector2(1.23844, 1.23844)
-
-[node name="Star5" parent="And/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3459.84, 1644.56)
-scale = Vector2(1.04148, 1.04148)
-
-[node name="Star7" parent="And/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3691.73, 1797.72)
-scale = Vector2(1.04691, 1.04691)
-
-[node name="Star8" parent="And/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3644.86, 1774.79)
-scale = Vector2(1.00677, 1.00677)
-
-[node name="Star9" parent="And/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3603.14, 1638.58)
-scale = Vector2(1.26974, 1.26974)
-
-[node name="Star10" parent="And/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3606.81, 1596.75)
-scale = Vector2(1.03462, 1.03462)
-
-[node name="Star11" parent="And/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3595.18, 1519.58)
-scale = Vector2(1.23737, 1.23737)
-
-[node name="Star12" parent="And/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3316.15, 1261.76)
-scale = Vector2(1.04742, 1.04742)
-
-[node name="Star13" parent="And/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3144.13, 1287.2)
-scale = Vector2(1.2838, 1.2838)
-
-[node name="Star15" parent="And/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3316.15, 1261.76)
-scale = Vector2(1.29644, 1.29644)
-
-[node name="Star16" parent="And/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3326.94, 1232.98)
-scale = Vector2(1.18342, 1.18342)
-
-[node name="Star17" parent="And/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3313.43, 1175.63)
-scale = Vector2(0.960209, 0.960209)
-
-[node name="Star19" parent="And/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3751.23, 1468.24)
-scale = Vector2(1.28635, 1.28635)
-
-[node name="Star20" parent="And/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3689.58, 1390.52)
-scale = Vector2(1.02908, 1.02908)
-
-[node name="Star21" parent="And/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3656.62, 1320.87)
-scale = Vector2(1.09077, 1.09077)
-
-[node name="Star22" parent="And/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3750.13, 1154.47)
-scale = Vector2(1.01968, 1.01968)
-
-[node name="Star23" parent="And/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3885.47, 1117.04)
-scale = Vector2(1.14713, 1.14713)
-
-[node name="Star25" parent="And/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3326.94, 1232.98)
-scale = Vector2(0.942889, 0.942889)
-
-[node name="Star26" parent="And/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3353.66, 1176.65)
-scale = Vector2(1.19186, 1.19186)
 
 [node name="Ant" parent="." instance=ExtResource("2_3mw2d")]
 visible = false
@@ -131,21 +26,6 @@ width = 2.0
 
 [node name="Stars" type="Node2D" parent="Ant"]
 
-[node name="Star" parent="Ant/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6123.91, 3400.69)
-scale = Vector2(1.24587, 1.24587)
-
-[node name="Star28" parent="Ant/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6398.97, 3268.83)
-scale = Vector2(1.01736, 1.01736)
-
-[node name="Star29" parent="Ant/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6539.41, 3432.72)
-scale = Vector2(1.13949, 1.13949)
-
 [node name="Aps" parent="." instance=ExtResource("2_3mw2d")]
 visible = false
 metadata/_edit_lock_ = true
@@ -156,26 +36,6 @@ width = 2.0
 
 [node name="Stars" type="Node2D" parent="Aps"]
 
-[node name="Star" parent="Aps/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(797.344, 4564.21)
-scale = Vector2(1.02385, 1.02385)
-
-[node name="Star31" parent="Aps/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1236.65, 4554.78)
-scale = Vector2(1.00382, 1.00382)
-
-[node name="Star32" parent="Aps/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1344.62, 4522.97)
-scale = Vector2(1.07558, 1.07558)
-
-[node name="Star33" parent="Aps/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1298.89, 4560.22)
-scale = Vector2(1.21168, 1.21168)
-
 [node name="Aqr" parent="." instance=ExtResource("2_3mw2d")]
 visible = false
 metadata/_edit_lock_ = true
@@ -185,101 +45,6 @@ points = PackedVector2Array(2506.46, 2686.39, 2530.11, 2672.55, 2714.9, 2580.42,
 width = 2.0
 
 [node name="Stars" type="Node2D" parent="Aqr"]
-
-[node name="Star" parent="Aqr/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2506.46, 2686.39)
-scale = Vector2(1.28058, 1.28058)
-
-[node name="Star35" parent="Aqr/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2530.11, 2672.55)
-scale = Vector2(1.02283, 1.02283)
-
-[node name="Star36" parent="Aqr/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2714.9, 2580.42)
-scale = Vector2(1.08166, 1.08166)
-
-[node name="Star37" parent="Aqr/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2877.47, 2438.64)
-scale = Vector2(0.960841, 0.960841)
-
-[node name="Star38" parent="Aqr/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2952.87, 2467.46)
-scale = Vector2(0.936786, 0.936786)
-
-[node name="Star39" parent="Aqr/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2986.95, 2430.54)
-scale = Vector2(1.23887, 1.23887)
-
-[node name="Star40" parent="Aqr/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3017.94, 2433.17)
-scale = Vector2(0.967601, 0.967601)
-
-[node name="Star41" parent="Aqr/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3099.92, 2634.65)
-scale = Vector2(0.900925, 0.900925)
-
-[node name="Star42" parent="Aqr/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3220.04, 2677.93)
-scale = Vector2(1.06061, 1.06061)
-
-[node name="Star43" parent="Aqr/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3179.87, 3001.65)
-scale = Vector2(1.24974, 1.24974)
-
-[node name="Star45" parent="Aqr/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2714.9, 2580.42)
-scale = Vector2(1.23882, 1.23882)
-
-[node name="Star46" parent="Aqr/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2880.58, 2804.48)
-scale = Vector2(0.928633, 0.928633)
-
-[node name="Star48" parent="Aqr/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2877.47, 2438.64)
-scale = Vector2(1.0096, 1.0096)
-
-[node name="Star49" parent="Aqr/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2929.96, 2640.15)
-scale = Vector2(1.02284, 1.02284)
-
-[node name="Star51" parent="Aqr/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2986.95, 2430.54)
-scale = Vector2(1.12147, 1.12147)
-
-[node name="Star52" parent="Aqr/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2970.07, 2392.81)
-scale = Vector2(1.17604, 1.17604)
-
-[node name="Star54" parent="Aqr/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3244.11, 2972.72)
-scale = Vector2(1.20342, 1.20342)
-
-[node name="Star55" parent="Aqr/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3220.04, 2677.93)
-scale = Vector2(1.25401, 1.25401)
-
-[node name="Star56" parent="Aqr/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3333.38, 2911.05)
-scale = Vector2(1.09999, 1.09999)
 
 [node name="44" type="Line2D" parent="Aqr"]
 points = PackedVector2Array(2714.9, 2580.42, 2880.58, 2804.48)
@@ -307,56 +72,6 @@ width = 2.0
 
 [node name="Stars" type="Node2D" parent="Aql"]
 
-[node name="Star" parent="Aql/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2214.73, 2143.44)
-scale = Vector2(1.28172, 1.28172)
-
-[node name="Star58" parent="Aql/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2236.22, 2190.56)
-scale = Vector2(1.28647, 1.28647)
-
-[node name="Star59" parent="Aql/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2257.74, 2257.02)
-scale = Vector2(1.06372, 1.06372)
-
-[node name="Star60" parent="Aql/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2333.7, 2452.18)
-scale = Vector2(1.22255, 1.22255)
-
-[node name="Star61" parent="Aql/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2244.25, 2402.85)
-scale = Vector2(1.22926, 1.22926)
-
-[node name="Star62" parent="Aql/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2116.12, 2345.9)
-scale = Vector2(1.24316, 1.24316)
-
-[node name="Star63" parent="Aql/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2020.7, 2055.69)
-scale = Vector2(1.18518, 1.18518)
-
-[node name="Star64" parent="Aql/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2236.22, 2190.56)
-scale = Vector2(1.0047, 1.0047)
-
-[node name="Star65" parent="Aql/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2116.12, 2345.9)
-scale = Vector2(1.29335, 1.29335)
-
-[node name="Star66" parent="Aql/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2024.68, 2561.83)
-scale = Vector2(1.23853, 1.23853)
-
 [node name="Ara" parent="." instance=ExtResource("2_3mw2d")]
 visible = false
 metadata/_edit_lock_ = true
@@ -366,41 +81,6 @@ points = PackedVector2Array(1545.62, 3952.2, 1572.72, 4068.46, 1376.48, 4024.12,
 width = 2.0
 
 [node name="Stars" type="Node2D" parent="Ara"]
-
-[node name="Star" parent="Ara/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1545.62, 3952.2)
-scale = Vector2(0.991945, 0.991945)
-
-[node name="Star68" parent="Ara/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1572.72, 4068.46)
-scale = Vector2(1.19554, 1.19554)
-
-[node name="Star69" parent="Ara/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1376.48, 4024.12)
-scale = Vector2(1.29413, 1.29413)
-
-[node name="Star70" parent="Ara/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1418.44, 3941.73)
-scale = Vector2(1.15679, 1.15679)
-
-[node name="Star71" parent="Ara/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1423.02, 3865.33)
-scale = Vector2(1.01262, 1.01262)
-
-[node name="Star72" parent="Ara/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1576.25, 3776.65)
-scale = Vector2(1.14136, 1.14136)
-
-[node name="Star73" parent="Ara/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1545.18, 3929.31)
-scale = Vector2(1.2731, 1.2731)
 
 [node name="Ari" parent="." instance=ExtResource("2_3mw2d")]
 visible = false
@@ -412,26 +92,6 @@ width = 2.0
 
 [node name="Stars" type="Node2D" parent="Ari"]
 
-[node name="Star" parent="Ari/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4227.42, 1693.97)
-scale = Vector2(1.16909, 1.16909)
-
-[node name="Star75" parent="Ari/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4024.07, 1796.52)
-scale = Vector2(1.2098, 1.2098)
-
-[node name="Star76" parent="Ari/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3964.54, 1868.18)
-scale = Vector2(1.0065, 1.0065)
-
-[node name="Star77" parent="Ari/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3959.27, 1909.06)
-scale = Vector2(0.928256, 0.928256)
-
 [node name="Aur" parent="." instance=ExtResource("2_3mw2d")]
 visible = false
 metadata/_edit_lock_ = true
@@ -442,61 +102,6 @@ width = 2.0
 
 [node name="Stars" type="Node2D" parent="Aur"]
 
-[node name="Star" parent="Aur/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5127.76, 1216.42)
-scale = Vector2(1.01353, 1.01353)
-
-[node name="Star79" parent="Aur/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4924.27, 1188.05)
-scale = Vector2(0.948131, 0.948131)
-
-[node name="Star80" parent="Aur/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4875.95, 1316.67)
-scale = Vector2(0.994149, 0.994149)
-
-[node name="Star81" parent="Aur/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4830.72, 1534.52)
-scale = Vector2(1.24821, 1.24821)
-
-[node name="Star82" parent="Aur/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4969.89, 1657.6)
-scale = Vector2(1.2704, 1.2704)
-
-[node name="Star83" parent="Aur/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5128.68, 1425.26)
-scale = Vector2(1.24464, 1.24464)
-
-[node name="Star84" parent="Aur/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5127.76, 1216.42)
-scale = Vector2(0.994601, 0.994601)
-
-[node name="Star85" parent="Aur/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5127.75, 964.313)
-scale = Vector2(0.96014, 0.96014)
-
-[node name="Star86" parent="Aur/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4924.27, 1188.05)
-scale = Vector2(1.28092, 1.28092)
-
-[node name="Star87" parent="Aur/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4854.35, 1246.77)
-scale = Vector2(1.06284, 1.06284)
-
-[node name="Star88" parent="Aur/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4829, 1319)
-scale = Vector2(1.23401, 1.23401)
-
 [node name="Boo" parent="." instance=ExtResource("2_3mw2d")]
 visible = false
 metadata/_edit_lock_ = true
@@ -506,81 +111,6 @@ points = PackedVector2Array(509.496, 1958.66, 544.753, 1933.26, 644.391, 1912.08
 width = 2.0
 
 [node name="Stars" type="Node2D" parent="Boo"]
-
-[node name="Star" parent="Boo/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(509.496, 1958.66)
-scale = Vector2(1.21984, 1.21984)
-
-[node name="Star90" parent="Boo/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(544.753, 1933.26)
-scale = Vector2(1.15738, 1.15738)
-
-[node name="Star91" parent="Boo/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(644.391, 1912.08)
-scale = Vector2(0.944654, 0.944654)
-
-[node name="Star92" parent="Boo/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(721.193, 1609.97)
-scale = Vector2(1.02198, 1.02198)
-
-[node name="Star93" parent="Boo/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(722.37, 1395.68)
-scale = Vector2(1.20371, 1.20371)
-
-[node name="Star94" parent="Boo/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(864.244, 1339.45)
-scale = Vector2(1.21663, 1.21663)
-
-[node name="Star95" parent="Boo/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(928.638, 1530.5)
-scale = Vector2(1.26673, 1.26673)
-
-[node name="Star96" parent="Boo/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(783.687, 1699)
-scale = Vector2(0.992059, 0.992059)
-
-[node name="Star97" parent="Boo/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(644.391, 1912.08)
-scale = Vector2(1.11299, 1.11299)
-
-[node name="Star98" parent="Boo/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(765.459, 2059.34)
-scale = Vector2(0.925105, 0.925105)
-
-[node name="Star100" parent="Boo/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(722.37, 1395.68)
-scale = Vector2(1.26101, 1.26101)
-
-[node name="Star101" parent="Boo/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(647.822, 1185.62)
-scale = Vector2(1.27754, 1.27754)
-
-[node name="Star102" parent="Boo/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(633.952, 1031.73)
-scale = Vector2(1.28349, 1.28349)
-
-[node name="Star103" parent="Boo/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(689.685, 1030.03)
-scale = Vector2(1.12955, 1.12955)
-
-[node name="Star104" parent="Boo/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(647.822, 1185.62)
-scale = Vector2(1.20522, 1.20522)
 
 [node name="99" type="Line2D" parent="Boo"]
 points = PackedVector2Array(722.37, 1395.68, 647.822, 1185.62, 633.952, 1031.73, 689.685, 1030.03, 647.822, 1185.62)
@@ -596,26 +126,6 @@ width = 2.0
 
 [node name="Stars" type="Node2D" parent="Cae"]
 
-[node name="Star" parent="Cae/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4706.47, 3643.75)
-scale = Vector2(1.16777, 1.16777)
-
-[node name="Star106" parent="Cae/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4752.67, 3560.32)
-scale = Vector2(1.05109, 1.05109)
-
-[node name="Star107" parent="Cae/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4759.78, 3432.9)
-scale = Vector2(1.10031, 1.10031)
-
-[node name="Star108" parent="Cae/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4865.93, 3388.04)
-scale = Vector2(1.00037, 1.00037)
-
 [node name="Cam" parent="." instance=ExtResource("2_3mw2d")]
 visible = false
 metadata/_edit_lock_ = true
@@ -625,51 +135,6 @@ points = PackedVector2Array(4832.11, 978.693, 4861.24, 798.061, 4816.74, 638.747
 width = 2.0
 
 [node name="Stars" type="Node2D" parent="Cam"]
-
-[node name="Star" parent="Cam/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4832.11, 978.693)
-scale = Vector2(1.08649, 1.08649)
-
-[node name="Star110" parent="Cam/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4861.24, 798.061)
-scale = Vector2(1.25292, 1.25292)
-
-[node name="Star111" parent="Cam/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4816.74, 638.747)
-scale = Vector2(1.15701, 1.15701)
-
-[node name="Star112" parent="Cam/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4514.2, 504.028)
-scale = Vector2(1.01972, 1.01972)
-
-[node name="Star113" parent="Cam/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4510.23, 660.798)
-scale = Vector2(0.954621, 0.954621)
-
-[node name="Star114" parent="Cam/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4413.08, 811.612)
-scale = Vector2(1.21604, 1.21604)
-
-[node name="Star116" parent="Cam/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4816.74, 638.747)
-scale = Vector2(0.981802, 0.981802)
-
-[node name="Star117" parent="Cam/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5219.52, 558.365)
-scale = Vector2(1.18978, 1.18978)
-
-[node name="Star118" parent="Cam/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5415.32, 351.61)
-scale = Vector2(1.01967, 1.01967)
 
 [node name="115" type="Line2D" parent="Cam"]
 points = PackedVector2Array(4816.74, 638.747, 5219.52, 558.365, 5415.32, 351.61)
@@ -685,36 +150,6 @@ width = 2.0
 
 [node name="Stars" type="Node2D" parent="Cnc"]
 
-[node name="Star" parent="Cnc/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5977.81, 2109.84)
-scale = Vector2(1.29619, 1.29619)
-
-[node name="Star120" parent="Cnc/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5912.25, 1939.83)
-scale = Vector2(1.13192, 1.13192)
-
-[node name="Star121" parent="Cnc/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5905.61, 1850.35)
-scale = Vector2(1.16079, 1.16079)
-
-[node name="Star122" parent="Cnc/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5921.67, 1653.34)
-scale = Vector2(1.29387, 1.29387)
-
-[node name="Star124" parent="Cnc/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5912.25, 1939.83)
-scale = Vector2(1.24882, 1.24882)
-
-[node name="Star125" parent="Cnc/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5778.45, 2181.99)
-scale = Vector2(1.10037, 1.10037)
-
 [node name="123" type="Line2D" parent="Cnc"]
 points = PackedVector2Array(5912.25, 1939.83, 5778.45, 2181.99)
 width = 2.0
@@ -729,16 +164,6 @@ width = 2.0
 
 [node name="Stars" type="Node2D" parent="CVn"]
 
-[node name="Star" parent="CVn/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(266.036, 1395.5)
-scale = Vector2(1.16485, 1.16485)
-
-[node name="Star127" parent="CVn/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(160.276, 1313.35)
-scale = Vector2(0.956606, 0.956606)
-
 [node name="CMa" parent="." instance=ExtResource("2_3mw2d")]
 visible = false
 metadata/_edit_lock_ = true
@@ -748,76 +173,6 @@ points = PackedVector2Array(5237.82, 2914.81, 5344.46, 2881.33, 5429.37, 3073.5,
 width = 2.0
 
 [node name="Stars" type="Node2D" parent="CMa"]
-
-[node name="Star" parent="CMa/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5237.82, 2914.81)
-scale = Vector2(0.911973, 0.911973)
-
-[node name="Star129" parent="CMa/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5344.46, 2881.33)
-scale = Vector2(1.17834, 1.17834)
-
-[node name="Star130" parent="CMa/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5429.37, 3073.5)
-scale = Vector2(1.16363, 1.16363)
-
-[node name="Star131" parent="CMa/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5454.86, 3142.62)
-scale = Vector2(1.08642, 1.08642)
-
-[node name="Star132" parent="CMa/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5423.17, 3184.24)
-scale = Vector2(0.929545, 0.929545)
-
-[node name="Star133" parent="CMa/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5408.47, 3212.25)
-scale = Vector2(0.939494, 0.939494)
-
-[node name="Star134" parent="CMa/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5226.49, 3241.71)
-scale = Vector2(0.920737, 0.920737)
-
-[node name="Star136" parent="CMa/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5529.45, 3221.18)
-scale = Vector2(1.16189, 1.16189)
-
-[node name="Star137" parent="CMa/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5454.86, 3142.62)
-scale = Vector2(1.10439, 1.10439)
-
-[node name="Star139" parent="CMa/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5344.46, 2881.33)
-scale = Vector2(1.26827, 1.26827)
-
-[node name="Star140" parent="CMa/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5396.65, 2890.46)
-scale = Vector2(1.08158, 1.08158)
-
-[node name="Star141" parent="CMa/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5432.85, 2852.1)
-scale = Vector2(1.06594, 1.06594)
-
-[node name="Star142" parent="CMa/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5387.4, 2755.04)
-scale = Vector2(1.09471, 1.09471)
-
-[node name="Star143" parent="CMa/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5396.65, 2890.46)
-scale = Vector2(1.14489, 1.14489)
 
 [node name="135" type="Line2D" parent="CMa"]
 points = PackedVector2Array(5529.45, 3221.18, 5454.86, 3142.62)
@@ -837,16 +192,6 @@ width = 2.0
 
 [node name="Stars" type="Node2D" parent="CMi"]
 
-[node name="Star" parent="CMi/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5601.68, 2288.93)
-scale = Vector2(1.21627, 1.21627)
-
-[node name="Star145" parent="CMi/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5543.97, 2206.19)
-scale = Vector2(1.16135, 1.16135)
-
 [node name="Cap" parent="." instance=ExtResource("2_3mw2d")]
 visible = false
 metadata/_edit_lock_ = true
@@ -857,61 +202,6 @@ width = 2.0
 
 [node name="Stars" type="Node2D" parent="Cap"]
 
-[node name="Star" parent="Cap/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2363.83, 2767.72)
-scale = Vector2(1.11961, 1.11961)
-
-[node name="Star147" parent="Cap/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2379.8, 2829.1)
-scale = Vector2(0.986274, 0.986274)
-
-[node name="Star148" parent="Cap/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2417.09, 2910.97)
-scale = Vector2(0.945904, 0.945904)
-
-[node name="Star149" parent="Cap/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2498.95, 3112.31)
-scale = Vector2(1.23991, 1.23991)
-
-[node name="Star150" parent="Cap/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2526.15, 3156.82)
-scale = Vector2(0.985329, 0.985329)
-
-[node name="Star151" parent="Cap/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2691.67, 3035.1)
-scale = Vector2(1.15507, 1.15507)
-
-[node name="Star152" parent="Cap/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2788.44, 2865.44)
-scale = Vector2(1.10498, 1.10498)
-
-[node name="Star153" parent="Cap/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2755.43, 2879.88)
-scale = Vector2(1.10529, 1.10529)
-
-[node name="Star154" parent="Cap/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2670.67, 2884.53)
-scale = Vector2(1.03434, 1.03434)
-
-[node name="Star155" parent="Cap/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2593.25, 2895.29)
-scale = Vector2(0.989894, 0.989894)
-
-[node name="Star156" parent="Cap/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2363.83, 2767.72)
-scale = Vector2(1.16131, 1.16131)
-
 [node name="Car" parent="." instance=ExtResource("2_3mw2d")]
 
 [node name="157" type="Line2D" parent="Car"]
@@ -919,106 +209,6 @@ points = PackedVector2Array(5309.37, 3596.29, 5243.77, 3852.78, 6047.7, 4312.36,
 width = 2.0
 
 [node name="Stars" type="Node2D" parent="Car"]
-
-[node name="Star" parent="Car/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5309.37, 3596.29)
-scale = Vector2(1.22086, 1.22086)
-
-[node name="Star158" parent="Car/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5243.77, 3852.78)
-scale = Vector2(1.06158, 1.06158)
-
-[node name="Star159" parent="Car/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6047.7, 4312.36)
-scale = Vector2(1.29192, 1.29192)
-
-[node name="Star160" parent="Car/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6335.25, 4321.02)
-scale = Vector2(0.946504, 0.946504)
-
-[node name="Star161" parent="Car/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6474.04, 4168.65)
-scale = Vector2(1.18138, 1.18138)
-
-[node name="Star162" parent="Car/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6422.12, 4095.5)
-scale = Vector2(1.05691, 1.05691)
-
-[node name="Star163" parent="Car/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6351.14, 4085.97)
-scale = Vector2(1.02064, 1.02064)
-
-[node name="Star164" parent="Car/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6066.18, 4030.43)
-scale = Vector2(0.904314, 0.904314)
-
-[node name="Star165" parent="Car/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5806.94, 4036.76)
-scale = Vector2(0.94959, 0.94959)
-
-[node name="Star166" parent="Car/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5684.7, 3860.52)
-scale = Vector2(1.06584, 1.06584)
-
-[node name="Star167" parent="Car/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5745.28, 3708.09)
-scale = Vector2(0.93797, 0.93797)
-
-[node name="Star168" parent="Car/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5912.34, 3907.14)
-scale = Vector2(0.971157, 0.971157)
-
-[node name="Star169" parent="Car/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6066.18, 4030.43)
-scale = Vector2(1.0071, 1.0071)
-
-[node name="Star171" parent="Car/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6474.04, 4168.65)
-scale = Vector2(0.901043, 0.901043)
-
-[node name="Star172" parent="Car/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6586.07, 4115.45)
-scale = Vector2(1.13089, 1.13089)
-
-[node name="Star173" parent="Car/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6595.69, 4102.57)
-scale = Vector2(0.941656, 0.941656)
-
-[node name="Star174" parent="Car/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6614.85, 4058.58)
-scale = Vector2(1.15095, 1.15095)
-
-[node name="Star175" parent="Car/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6595.8, 4022.32)
-scale = Vector2(1.21823, 1.21823)
-
-[node name="Star176" parent="Car/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6524.1, 4019.04)
-scale = Vector2(1.26741, 1.26741)
-
-[node name="Star177" parent="Car/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6422.12, 4095.5)
-scale = Vector2(1.08992, 1.08992)
 
 [node name="170" type="Line2D" parent="Car"]
 points = PackedVector2Array(6474.04, 4168.65, 6586.07, 4115.45, 6595.69, 4102.57, 6614.85, 4058.58, 6595.8, 4022.32, 6524.1, 4019.04, 6422.12, 4095.5)
@@ -1032,31 +222,6 @@ width = 2.0
 
 [node name="Stars" type="Node2D" parent="Cas"]
 
-[node name="Star" parent="Cas/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3963.38, 710.907)
-scale = Vector2(1.18005, 1.18005)
-
-[node name="Star179" parent="Cas/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3827.63, 803.647)
-scale = Vector2(1.05775, 1.05775)
-
-[node name="Star180" parent="Cas/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3689.37, 790.649)
-scale = Vector2(1.24219, 1.24219)
-
-[node name="Star181" parent="Cas/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3612.41, 903.493)
-scale = Vector2(0.933528, 0.933528)
-
-[node name="Star182" parent="Cas/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3463.6, 832.955)
-scale = Vector2(1.1844, 1.1844)
-
 [node name="Cen" parent="." instance=ExtResource("2_3mw2d")]
 
 [node name="183" type="Line2D" parent="Cen"]
@@ -1064,101 +229,6 @@ points = PackedVector2Array(6654.78, 3901.26, 39.7024, 3799.5, 133.188, 3786.23,
 width = 2.0
 
 [node name="Stars" type="Node2D" parent="Cen"]
-
-[node name="Star" parent="Cen/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6654.78, 3901.26)
-scale = Vector2(1.07929, 1.07929)
-
-[node name="Star184" parent="Cen/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(39.7024, 3799.5)
-scale = Vector2(1.13515, 1.13515)
-
-[node name="Star185" parent="Cen/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(133.188, 3786.23)
-scale = Vector2(0.997502, 0.997502)
-
-[node name="Star186" parent="Cen/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(197.207, 3751.92)
-scale = Vector2(1.22259, 1.22259)
-
-[node name="Star187" parent="Cen/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(474.466, 3873.59)
-scale = Vector2(1.06553, 1.06553)
-
-[node name="Star188" parent="Cen/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(548.813, 3706.79)
-scale = Vector2(1.2216, 1.2216)
-
-[node name="Star189" parent="Cen/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(520.678, 3576.79)
-scale = Vector2(1.27394, 1.27394)
-
-[node name="Star190" parent="Cen/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(520.148, 3555.57)
-scale = Vector2(1.14113, 1.14113)
-
-[node name="Star191" parent="Cen/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(601.741, 3411.99)
-scale = Vector2(1.05239, 1.05239)
-
-[node name="Star192" parent="Cen/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(738.659, 3568.26)
-scale = Vector2(1.02809, 1.02809)
-
-[node name="Star193" parent="Cen/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(851.018, 3566.81)
-scale = Vector2(0.996665, 0.996665)
-
-[node name="Star195" parent="Cen/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(520.148, 3555.57)
-scale = Vector2(1.02896, 1.02896)
-
-[node name="Star196" parent="Cen/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(382.835, 3421.23)
-scale = Vector2(1.01919, 1.01919)
-
-[node name="Star198" parent="Cen/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(758.028, 4072.6)
-scale = Vector2(1.1412, 1.1412)
-
-[node name="Star199" parent="Cen/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(474.466, 3873.59)
-scale = Vector2(1.02911, 1.02911)
-
-[node name="Star200" parent="Cen/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(588.162, 4060.07)
-scale = Vector2(1.28426, 1.28426)
-
-[node name="Star202" parent="Cen/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(133.188, 3786.23)
-scale = Vector2(1.266, 1.266)
-
-[node name="Star203" parent="Cen/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(55.347, 3843.95)
-scale = Vector2(0.951661, 0.951661)
-
-[node name="Star204" parent="Cen/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6705.9, 4034.94)
-scale = Vector2(0.901878, 0.901878)
 
 [node name="194" type="Line2D" parent="Cen"]
 points = PackedVector2Array(520.148, 3555.57, 382.835, 3421.23)
@@ -1180,71 +250,6 @@ width = 2.0
 
 [node name="Stars" type="Node2D" parent="Cep"]
 
-[node name="Star" parent="Cep/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2420.51, 729.159)
-scale = Vector2(1.14698, 1.14698)
-
-[node name="Star206" parent="Cep/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2495.13, 760.352)
-scale = Vector2(1.0362, 1.0362)
-
-[node name="Star207" parent="Cep/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2653.25, 740.189)
-scale = Vector2(1.18591, 1.18591)
-
-[node name="Star208" parent="Cep/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2771.66, 842.94)
-scale = Vector2(1.12361, 1.12361)
-
-[node name="Star209" parent="Cep/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2921.42, 889.823)
-scale = Vector2(1.00391, 1.00391)
-
-[node name="Star210" parent="Cep/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2901.56, 858.565)
-scale = Vector2(1.16642, 1.16642)
-
-[node name="Star211" parent="Cep/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2988.56, 852.79)
-scale = Vector2(0.920143, 0.920143)
-
-[node name="Star212" parent="Cep/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3085.98, 642.589)
-scale = Vector2(1.19373, 1.19373)
-
-[node name="Star213" parent="Cep/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3321.9, 333.928)
-scale = Vector2(1.29237, 1.29237)
-
-[node name="Star214" parent="Cep/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2701.14, 524.861)
-scale = Vector2(1.02091, 1.02091)
-
-[node name="Star215" parent="Cep/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2653.25, 740.189)
-scale = Vector2(1.27766, 1.27766)
-
-[node name="Star217" parent="Cep/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2701.14, 524.861)
-scale = Vector2(1.12151, 1.12151)
-
-[node name="Star218" parent="Cep/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3085.98, 642.589)
-scale = Vector2(0.925692, 0.925692)
-
 [node name="216" type="Line2D" parent="Cep"]
 points = PackedVector2Array(2701.14, 524.861, 3085.98, 642.589)
 width = 2.0
@@ -1257,86 +262,6 @@ width = 2.0
 
 [node name="Stars" type="Node2D" parent="Cet"]
 
-[node name="Star" parent="Cet/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4195.68, 2342.63)
-scale = Vector2(1.02093, 1.02093)
-
-[node name="Star220" parent="Cet/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4160.4, 2278.98)
-scale = Vector2(1.01224, 1.01224)
-
-[node name="Star221" parent="Cet/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4123.76, 2201.58)
-scale = Vector2(1.29122, 1.29122)
-
-[node name="Star222" parent="Cet/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4203.48, 2156.92)
-scale = Vector2(1.0384, 1.0384)
-
-[node name="Star223" parent="Cet/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4273.65, 2189.5)
-scale = Vector2(1.26371, 1.26371)
-
-[node name="Star224" parent="Cet/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4285.83, 2319.58)
-scale = Vector2(1.12494, 1.12494)
-
-[node name="Star225" parent="Cet/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4195.68, 2342.63)
-scale = Vector2(1.09113, 1.09113)
-
-[node name="Star226" parent="Cet/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4177.54, 2421.13)
-scale = Vector2(1.05933, 1.05933)
-
-[node name="Star227" parent="Cet/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4081.9, 2510.4)
-scale = Vector2(1.16179, 1.16179)
-
-[node name="Star228" parent="Cet/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3949.44, 2709.04)
-scale = Vector2(1.04675, 1.04675)
-
-[node name="Star229" parent="Cet/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3914.32, 2860.31)
-scale = Vector2(1.18778, 1.18778)
-
-[node name="Star230" parent="Cet/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3627.05, 2915.64)
-scale = Vector2(1.28237, 1.28237)
-
-[node name="Star231" parent="Cet/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3512.28, 2668.25)
-scale = Vector2(0.944412, 0.944412)
-
-[node name="Star232" parent="Cet/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3745.8, 2704.92)
-scale = Vector2(0.940324, 0.940324)
-
-[node name="Star233" parent="Cet/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3819.11, 2650.95)
-scale = Vector2(0.960457, 0.960457)
-
-[node name="Star234" parent="Cet/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3949.44, 2709.04)
-scale = Vector2(0.919431, 0.919431)
-
 [node name="Cha" parent="." instance=ExtResource("2_3mw2d")]
 
 [node name="235" type="Line2D" parent="Cha"]
@@ -1344,36 +269,6 @@ points = PackedVector2Array(5788, 4506.83, 6438.48, 4552.41, 6485.04, 4602.68, 8
 width = 2.0
 
 [node name="Stars" type="Node2D" parent="Cha"]
-
-[node name="Star" parent="Cha/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5788, 4506.83)
-scale = Vector2(1.10172, 1.10172)
-
-[node name="Star236" parent="Cha/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6438.48, 4552.41)
-scale = Vector2(1.27306, 1.27306)
-
-[node name="Star237" parent="Cha/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6485.04, 4602.68)
-scale = Vector2(0.952365, 0.952365)
-
-[node name="Star238" parent="Cha/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(87.1492, 4571.43)
-scale = Vector2(1.05596, 1.05596)
-
-[node name="Star239" parent="Cha/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6838.23, 4541.99)
-scale = Vector2(1.18373, 1.18373)
-
-[node name="Star240" parent="Cha/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6438.48, 4552.41)
-scale = Vector2(1.22004, 1.22004)
 
 [node name="Cir" parent="." instance=ExtResource("2_3mw2d")]
 
@@ -1383,21 +278,6 @@ width = 2.0
 
 [node name="Stars" type="Node2D" parent="Cir"]
 
-[node name="Star" parent="Cir/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(938.192, 4017.63)
-scale = Vector2(1.23641, 1.23641)
-
-[node name="Star242" parent="Cir/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(771.907, 4184.33)
-scale = Vector2(0.959509, 0.959509)
-
-[node name="Star243" parent="Cir/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(966.044, 4031.66)
-scale = Vector2(1.1421, 1.1421)
-
 [node name="Col" parent="." instance=ExtResource("2_3mw2d")]
 
 [node name="244" type="Line2D" parent="Col"]
@@ -1405,36 +285,6 @@ points = PackedVector2Array(5235.04, 3332.78, 5087.06, 3395.74, 5033.33, 3350, 4
 width = 2.0
 
 [node name="Stars" type="Node2D" parent="Col"]
-
-[node name="Star" parent="Col/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5235.04, 3332.78)
-scale = Vector2(0.925164, 0.925164)
-
-[node name="Star245" parent="Col/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5087.06, 3395.74)
-scale = Vector2(1.20778, 1.20778)
-
-[node name="Star246" parent="Col/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5033.33, 3350)
-scale = Vector2(1.2971, 1.2971)
-
-[node name="Star247" parent="Col/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4993.26, 3387.7)
-scale = Vector2(0.965274, 0.965274)
-
-[node name="Star249" parent="Col/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5087.06, 3395.74)
-scale = Vector2(0.958117, 0.958117)
-
-[node name="Star250" parent="Col/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5125.95, 3586.01)
-scale = Vector2(1.15129, 1.15129)
 
 [node name="248" type="Line2D" parent="Col"]
 points = PackedVector2Array(5087.06, 3395.74, 5125.95, 3586.01)
@@ -1448,21 +298,6 @@ width = 2.0
 
 [node name="Stars" type="Node2D" parent="Com"]
 
-[node name="Star" parent="Com/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(332.443, 1956.71)
-scale = Vector2(1.24502, 1.24502)
-
-[node name="Star252" parent="Com/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(341.398, 1677.29)
-scale = Vector2(0.952281, 0.952281)
-
-[node name="Star253" parent="Com/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(127.955, 1666.75)
-scale = Vector2(1.27446, 1.27446)
-
 [node name="CrA" parent="." instance=ExtResource("2_3mw2d")]
 
 [node name="254" type="Line2D" parent="CrA"]
@@ -1470,46 +305,6 @@ points = PackedVector2Array(1988.93, 3431.9, 2025.49, 3430.71, 2039.99, 3453.42,
 width = 2.0
 
 [node name="Stars" type="Node2D" parent="CrA"]
-
-[node name="Star" parent="CrA/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1988.93, 3431.9)
-scale = Vector2(1.17096, 1.17096)
-
-[node name="Star255" parent="CrA/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2025.49, 3430.71)
-scale = Vector2(0.976277, 0.976277)
-
-[node name="Star256" parent="CrA/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2039.99, 3453.42)
-scale = Vector2(1.14885, 1.14885)
-
-[node name="Star257" parent="CrA/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2042.64, 3492.2)
-scale = Vector2(0.956323, 0.956323)
-
-[node name="Star258" parent="CrA/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2034.66, 3523.41)
-scale = Vector2(0.922748, 0.922748)
-
-[node name="Star259" parent="CrA/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2009.8, 3566.57)
-scale = Vector2(0.904989, 0.904989)
-
-[node name="Star260" parent="CrA/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1945.52, 3602.72)
-scale = Vector2(0.957602, 0.957602)
-
-[node name="Star261" parent="CrA/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1869.14, 3572.44)
-scale = Vector2(0.92915, 0.92915)
 
 [node name="CrB" parent="." instance=ExtResource("2_3mw2d")]
 
@@ -1519,41 +314,6 @@ width = 2.0
 
 [node name="Stars" type="Node2D" parent="CrB"]
 
-[node name="Star" parent="CrB/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1011.42, 1583.3)
-scale = Vector2(1.11227, 1.11227)
-
-[node name="Star263" parent="CrB/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(987.187, 1644.15)
-scale = Vector2(1.13372, 1.13372)
-
-[node name="Star264" parent="CrB/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1019.77, 1708.7)
-scale = Vector2(0.922839, 0.922839)
-
-[node name="Star265" parent="CrB/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1058.03, 1720.02)
-scale = Vector2(1.01954, 1.01954)
-
-[node name="Star266" parent="CrB/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1090.57, 1726.15)
-scale = Vector2(1.08564, 1.08564)
-
-[node name="Star267" parent="CrB/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1128.54, 1704.3)
-scale = Vector2(1.25805, 1.25805)
-
-[node name="Star268" parent="CrB/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1146.85, 1624.02)
-scale = Vector2(1.18203, 1.18203)
-
 [node name="Crv" parent="." instance=ExtResource("2_3mw2d")]
 
 [node name="269" type="Line2D" parent="Crv"]
@@ -1562,36 +322,6 @@ width = 2.0
 
 [node name="Stars" type="Node2D" parent="Crv"]
 
-[node name="Star" parent="Crv/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(39.9646, 3097.68)
-scale = Vector2(0.997512, 0.997512)
-
-[node name="Star270" parent="Crv/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(48.0928, 3040.73)
-scale = Vector2(1.24227, 1.24227)
-
-[node name="Star271" parent="Crv/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(75.0785, 2903.63)
-scale = Vector2(1.1011, 1.1011)
-
-[node name="Star272" parent="Crv/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(141.856, 2875.92)
-scale = Vector2(0.984811, 0.984811)
-
-[node name="Star273" parent="Crv/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(163.339, 3061.71)
-scale = Vector2(1.29365, 1.29365)
-
-[node name="Star274" parent="Crv/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(48.0928, 3040.73)
-scale = Vector2(1.12332, 1.12332)
-
 [node name="Crt" parent="." instance=ExtResource("2_3mw2d")]
 
 [node name="275" type="Line2D" parent="Crt"]
@@ -1599,61 +329,6 @@ points = PackedVector2Array(6729.24, 2694.66, 6671.9, 2723.2, 6646.87, 2829.02, 
 width = 2.0
 
 [node name="Stars" type="Node2D" parent="Crt"]
-
-[node name="Star" parent="Crt/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6729.24, 2694.66)
-scale = Vector2(0.916416, 0.916416)
-
-[node name="Star276" parent="Crt/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6671.9, 2723.2)
-scale = Vector2(1.12913, 1.12913)
-
-[node name="Star277" parent="Crt/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6646.87, 2829.02)
-scale = Vector2(1.11806, 1.11806)
-
-[node name="Star278" parent="Crt/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6553.93, 2924.07)
-scale = Vector2(1.0933, 1.0933)
-
-[node name="Star279" parent="Crt/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6610.38, 3046.3)
-scale = Vector2(0.915508, 0.915508)
-
-[node name="Star280" parent="Crt/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6665.98, 2937.06)
-scale = Vector2(0.931067, 0.931067)
-
-[node name="Star281" parent="Crt/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6673.19, 2907.47)
-scale = Vector2(1.26121, 1.26121)
-
-[node name="Star282" parent="Crt/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6767.62, 2925.47)
-scale = Vector2(1.07889, 1.07889)
-
-[node name="Star283" parent="Crt/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6821.08, 2893.07)
-scale = Vector2(1.05278, 1.05278)
-
-[node name="Star285" parent="Crt/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6646.87, 2829.02)
-scale = Vector2(1.22574, 1.22574)
-
-[node name="Star286" parent="Crt/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6673.19, 2907.47)
-scale = Vector2(1.22234, 1.22234)
 
 [node name="284" type="Line2D" parent="Crt"]
 points = PackedVector2Array(6646.87, 2829.02, 6673.19, 2907.47)
@@ -1667,26 +342,6 @@ width = 2.0
 
 [node name="Stars" type="Node2D" parent="Cru"]
 
-[node name="Star" parent="Cru/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(226.676, 4041.6)
-scale = Vector2(1.1155, 1.1155)
-
-[node name="Star288" parent="Cru/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(71.9397, 4016.22)
-scale = Vector2(1.21798, 1.21798)
-
-[node name="Star290" parent="Cru/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(126.342, 4133.68)
-scale = Vector2(1.03196, 1.03196)
-
-[node name="Star291" parent="Cru/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(148.038, 3972.06)
-scale = Vector2(0.980192, 0.980192)
-
 [node name="289" type="Line2D" parent="Cru"]
 points = PackedVector2Array(126.342, 4133.68, 148.038, 3972.06)
 width = 2.0
@@ -1698,56 +353,6 @@ points = PackedVector2Array(2626.45, 1613.87, 2499.5, 1512.8, 2385.58, 1343.07, 
 width = 2.0
 
 [node name="Stars" type="Node2D" parent="Cyg"]
-
-[node name="Star" parent="Cyg/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2626.45, 1613.87)
-scale = Vector2(1.12266, 1.12266)
-
-[node name="Star293" parent="Cyg/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2499.5, 1512.8)
-scale = Vector2(1.17093, 1.17093)
-
-[node name="Star294" parent="Cyg/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2385.58, 1343.07)
-scale = Vector2(1.06261, 1.06261)
-
-[node name="Star295" parent="Cyg/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2208.63, 1211.47)
-scale = Vector2(1.22512, 1.22512)
-
-[node name="Star296" parent="Cyg/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2136.1, 1033.3)
-scale = Vector2(0.910825, 0.910825)
-
-[node name="Star297" parent="Cyg/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2076.24, 989.05)
-scale = Vector2(1.14418, 1.14418)
-
-[node name="Star299" parent="Cyg/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2476.8, 1207.43)
-scale = Vector2(0.91133, 0.91133)
-
-[node name="Star300" parent="Cyg/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2385.58, 1343.07)
-scale = Vector2(1.16567, 1.16567)
-
-[node name="Star301" parent="Cyg/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2262.45, 1482.75)
-scale = Vector2(1.24589, 1.24589)
-
-[node name="Star302" parent="Cyg/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2140.93, 1675.09)
-scale = Vector2(1.10615, 1.10615)
 
 [node name="298" type="Line2D" parent="Cyg"]
 points = PackedVector2Array(2476.8, 1207.43, 2385.58, 1343.07, 2262.45, 1482.75, 2140.93, 1675.09)
@@ -1761,36 +366,6 @@ width = 2.0
 
 [node name="Stars" type="Node2D" parent="Del"]
 
-[node name="Star" parent="Del/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2437.76, 2124.81)
-scale = Vector2(1.02384, 1.02384)
-
-[node name="Star304" parent="Del/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2458.36, 2035.93)
-scale = Vector2(0.979935, 0.979935)
-
-[node name="Star305" parent="Del/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2468.28, 2000.37)
-scale = Vector2(1.21221, 1.21221)
-
-[node name="Star306" parent="Del/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2501.58, 1994.65)
-scale = Vector2(1.18381, 1.18381)
-
-[node name="Star307" parent="Del/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2486.43, 2022.99)
-scale = Vector2(1.12408, 1.12408)
-
-[node name="Star308" parent="Del/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2458.36, 2035.93)
-scale = Vector2(1.08277, 1.08277)
-
 [node name="Dor" parent="." instance=ExtResource("2_3mw2d")]
 
 [node name="309" type="Line2D" parent="Dor"]
@@ -1798,46 +373,6 @@ points = PackedVector2Array(4636.13, 3820.14, 4721.48, 3916.22, 5004.72, 4117.22
 width = 2.0
 
 [node name="Stars" type="Node2D" parent="Dor"]
-
-[node name="Star" parent="Dor/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4636.13, 3820.14)
-scale = Vector2(0.976004, 0.976004)
-
-[node name="Star310" parent="Dor/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4721.48, 3916.22)
-scale = Vector2(1.07163, 1.07163)
-
-[node name="Star311" parent="Dor/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5004.72, 4117.22)
-scale = Vector2(0.988365, 0.988365)
-
-[node name="Star312" parent="Dor/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5057.67, 4204.86)
-scale = Vector2(1.0394, 1.0394)
-
-[node name="Star313" parent="Dor/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5101.98, 4133.42)
-scale = Vector2(1.00762, 1.00762)
-
-[node name="Star314" parent="Dor/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5004.72, 4117.22)
-scale = Vector2(1.03975, 1.03975)
-
-[node name="Star315" parent="Dor/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4871.18, 3981.76)
-scale = Vector2(0.983629, 0.983629)
-
-[node name="Star316" parent="Dor/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4721.48, 3916.22)
-scale = Vector2(1.25642, 1.25642)
 
 [node name="Dra" parent="." instance=ExtResource("2_3mw2d")]
 
@@ -1847,94 +382,6 @@ width = 2.0
 
 [node name="Stars" type="Node2D" parent="Dra"]
 
-[node name="Star" parent="Dra/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1679.26, 894.44)
-scale = Vector2(1.02792, 1.02792)
-
-[node name="Star318" parent="Dra/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1693.88, 1039.8)
-scale = Vector2(1.07875, 1.07875)
-
-[node name="Star319" parent="Dra/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1569.56, 1017.86)
-scale = Vector2(1.05063, 1.05063)
-
-[node name="Star320" parent="Dra/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1578.27, 940.329)
-scale = Vector2(1.17187, 1.17187)
-
-[node name="Star321" parent="Dra/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1679.26, 894.44)
-scale = Vector2(1.18034, 1.18034)
-
-[node name="Star322" parent="Dra/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2054.64, 603.14)
-scale = Vector2(1.28026, 1.28026)
-
-[node name="Star323" parent="Dra/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1808.6, 503.879)
-scale = Vector2(1.04968, 1.04968)
-
-[node name="Star324" parent="Dra/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1466.74, 655.703)
-scale = Vector2(1.17712, 1.17712)
-
-[node name="Star325" parent="Dra/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1253.96, 769.117)
-scale = Vector2(1.03111, 1.03111)
-
-[node name="Star326" parent="Dra/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1148.97, 848.737)
-scale = Vector2(1.13361, 1.13361)
-
-[node name="Star327" parent="Dra/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(973.416, 837.915)
-scale = Vector2(0.929861, 0.929861)
-
-[node name="Star328" parent="Dra/Stars" instance=ExtResource("3_07t30")]
-position = Vector2(590.849, 691.851)
-scale = Vector2(0.90002, 0.90002)
-
-[node name="Star329" parent="Dra/Stars" instance=ExtResource("3_07t30")]
-position = Vector2(159.041, 545.719)
-scale = Vector2(1.07383, 1.07383)
-
-[node name="Star330" parent="Dra/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6704.17, 558.06)
-scale = Vector2(1.19612, 1.19612)
-
-[node name="Star332" parent="Dra/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1808.6, 503.879)
-scale = Vector2(1.29044, 1.29044)
-
-[node name="Star333" parent="Dra/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1810.02, 466.214)
-scale = Vector2(1.25484, 1.25484)
-
-[node name="Star335" parent="Dra/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2054.64, 603.14)
-scale = Vector2(1.00884, 1.00884)
-
-[node name="Star336" parent="Dra/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2223.82, 532.767)
-scale = Vector2(0.964332, 0.964332)
-
 [node name="Equ" parent="." instance=ExtResource("2_3mw2d")]
 
 [node name="337" type="Line2D" parent="Equ"]
@@ -1942,21 +389,6 @@ points = PackedVector2Array(2640.16, 2288.31, 2633.78, 2159.81, 2614.12, 2156.45
 width = 2.0
 
 [node name="Stars" type="Node2D" parent="Equ"]
-
-[node name="Star" parent="Equ/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2640.16, 2288.31)
-scale = Vector2(0.98316, 0.98316)
-
-[node name="Star338" parent="Equ/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2633.78, 2159.81)
-scale = Vector2(1.13399, 1.13399)
-
-[node name="Star339" parent="Equ/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2614.12, 2156.45)
-scale = Vector2(1.08047, 1.08047)
 
 [node name="Eri" parent="." instance=ExtResource("2_3mw2d")]
 
@@ -1966,141 +398,6 @@ width = 2.0
 
 [node name="Stars" type="Node2D" parent="Eri"]
 
-[node name="Star" parent="Eri/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4882.29, 2567.33)
-scale = Vector2(1.24894, 1.24894)
-
-[node name="Star341" parent="Eri/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4776.14, 2517.88)
-scale = Vector2(0.955154, 0.955154)
-
-[node name="Star342" parent="Eri/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4732.52, 2520.52)
-scale = Vector2(1.26062, 1.26062)
-
-[node name="Star343" parent="Eri/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4616.36, 2614.62)
-scale = Vector2(1.2259, 1.2259)
-
-[node name="Star344" parent="Eri/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4550.64, 2794.73)
-scale = Vector2(0.972445, 0.972445)
-
-[node name="Star345" parent="Eri/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4494.18, 2756.74)
-scale = Vector2(1.19336, 1.19336)
-
-[node name="Star346" parent="Eri/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4480.43, 2693.61)
-scale = Vector2(1.17733, 1.17733)
-
-[node name="Star347" parent="Eri/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4431.42, 2685.37)
-scale = Vector2(1.28603, 1.28603)
-
-[node name="Star348" parent="Eri/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4258.03, 2670.25)
-scale = Vector2(1.17947, 1.17947)
-
-[node name="Star349" parent="Eri/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4199.58, 2804.18)
-scale = Vector2(0.917161, 0.917161)
-
-[node name="Star350" parent="Eri/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4204.24, 2931.46)
-scale = Vector2(1.01342, 1.01342)
-
-[node name="Star351" parent="Eri/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4286.36, 3067.86)
-scale = Vector2(1.23911, 1.23911)
-
-[node name="Star352" parent="Eri/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4367.7, 3017.46)
-scale = Vector2(0.991135, 0.991135)
-
-[node name="Star353" parent="Eri/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4435.49, 3014.09)
-scale = Vector2(1.27107, 1.27107)
-
-[node name="Star354" parent="Eri/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4497.53, 3057.74)
-scale = Vector2(0.913836, 0.913836)
-
-[node name="Star355" parent="Eri/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4728.87, 3255.18)
-scale = Vector2(1.09841, 1.09841)
-
-[node name="Star356" parent="Eri/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4674.17, 3348.45)
-scale = Vector2(0.942873, 0.942873)
-
-[node name="Star357" parent="Eri/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4645, 3342.55)
-scale = Vector2(0.971317, 0.971317)
-
-[node name="Star358" parent="Eri/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4509.91, 3407.41)
-scale = Vector2(1.10072, 1.10072)
-
-[node name="Star359" parent="Eri/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4451.2, 3517.41)
-scale = Vector2(1.28796, 1.28796)
-
-[node name="Star360" parent="Eri/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4369.66, 3592.88)
-scale = Vector2(0.91716, 0.91716)
-
-[node name="Star361" parent="Eri/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4266.74, 3518.23)
-scale = Vector2(1.06893, 1.06893)
-
-[node name="Star362" parent="Eri/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4183.17, 3506.1)
-scale = Vector2(1.1392, 1.1392)
-
-[node name="Star363" parent="Eri/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4118.18, 3718)
-scale = Vector2(1.12741, 1.12741)
-
-[node name="Star364" parent="Eri/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4068.42, 3820.83)
-scale = Vector2(1.08086, 1.08086)
-
-[node name="Star365" parent="Eri/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3970.8, 3823.44)
-scale = Vector2(1.08739, 1.08739)
-
-[node name="Star366" parent="Eri/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3884.14, 3975.39)
-scale = Vector2(1.12046, 1.12046)
-
 [node name="For" parent="." instance=ExtResource("2_3mw2d")]
 
 [node name="367" type="Line2D" parent="For"]
@@ -2109,21 +406,6 @@ width = 2.0
 
 [node name="Stars" type="Node2D" parent="For"]
 
-[node name="Star" parent="For/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4332.36, 3212.67)
-scale = Vector2(0.902826, 0.902826)
-
-[node name="Star368" parent="For/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4223.18, 3304.96)
-scale = Vector2(1.03537, 1.03537)
-
-[node name="Star369" parent="For/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4011.33, 3221.01)
-scale = Vector2(1.0577, 1.0577)
-
 [node name="Gem" parent="." instance=ExtResource("2_3mw2d")]
 
 [node name="370" type="Line2D" parent="Gem"]
@@ -2131,71 +413,6 @@ points = PackedVector2Array(5200.67, 1822.32, 5239.06, 1822.13, 5338.68, 1751.46
 width = 2.0
 
 [node name="Stars" type="Node2D" parent="Gem"]
-
-[node name="Star" parent="Gem/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5200.67, 1822.32)
-scale = Vector2(0.91337, 0.91337)
-
-[node name="Star371" parent="Gem/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5239.06, 1822.13)
-scale = Vector2(1.10672, 1.10672)
-
-[node name="Star372" parent="Gem/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5338.68, 1751.46)
-scale = Vector2(1.29047, 1.29047)
-
-[node name="Star373" parent="Gem/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5467.91, 1613.38)
-scale = Vector2(0.966443, 0.966443)
-
-[node name="Star374" parent="Gem/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5579.34, 1569.02)
-scale = Vector2(0.950444, 0.950444)
-
-[node name="Star375" parent="Gem/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5630.25, 1673.29)
-scale = Vector2(1.12629, 1.12629)
-
-[node name="Star376" parent="Gem/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5585.63, 1703.82)
-scale = Vector2(0.996761, 0.996761)
-
-[node name="Star377" parent="Gem/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5510.58, 1836.48)
-scale = Vector2(1.07105, 1.07105)
-
-[node name="Star378" parent="Gem/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5434.52, 1874.6)
-scale = Vector2(0.91699, 0.91699)
-
-[node name="Star379" parent="Gem/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5309.13, 1987.22)
-scale = Vector2(1.01331, 1.01331)
-
-[node name="Star380" parent="Gem/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5345.13, 2081.82)
-scale = Vector2(1.26642, 1.26642)
-
-[node name="Star382" parent="Gem/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5510.58, 1836.48)
-scale = Vector2(1.08157, 1.08157)
-
-[node name="Star383" parent="Gem/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5500.94, 1983.41)
-scale = Vector2(1.15662, 1.15662)
 
 [node name="381" type="Line2D" parent="Gem"]
 points = PackedVector2Array(5510.58, 1836.48, 5500.94, 1983.41)
@@ -2209,56 +426,6 @@ width = 2.0
 
 [node name="Stars" type="Node2D" parent="Gru"]
 
-[node name="Star" parent="Gru/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3139.18, 3854.36)
-scale = Vector2(1.04056, 1.04056)
-
-[node name="Star385" parent="Gru/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3080.64, 3815.56)
-scale = Vector2(0.962114, 0.962114)
-
-[node name="Star386" parent="Gru/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3052.67, 3695.88)
-scale = Vector2(1.2941, 1.2941)
-
-[node name="Star387" parent="Gru/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2991.35, 3611.23)
-scale = Vector2(0.938934, 0.938934)
-
-[node name="Star388" parent="Gru/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2889.11, 3697.95)
-scale = Vector2(0.943299, 0.943299)
-
-[node name="Star389" parent="Gru/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3052.67, 3695.88)
-scale = Vector2(1.01911, 1.01911)
-
-[node name="Star391" parent="Gru/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2989.03, 3604.38)
-scale = Vector2(1.14677, 1.14677)
-
-[node name="Star392" parent="Gru/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2924.17, 3546.36)
-scale = Vector2(1.21914, 1.21914)
-
-[node name="Star393" parent="Gru/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2879.05, 3497.67)
-scale = Vector2(1.21022, 1.21022)
-
-[node name="Star394" parent="Gru/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2821.16, 3438.85)
-scale = Vector2(1.19123, 1.19123)
-
 [node name="390" type="Line2D" parent="Gru"]
 points = PackedVector2Array(2989.03, 3604.38, 2924.17, 3546.36, 2879.05, 3497.67, 2821.16, 3438.85)
 width = 2.0
@@ -2270,116 +437,6 @@ points = PackedVector2Array(1244.12, 1912.87, 1283.55, 1849.78, 1336.11, 1576.73
 width = 2.0
 
 [node name="Stars" type="Node2D" parent="Her"]
-
-[node name="Star" parent="Her/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1244.12, 1912.87)
-scale = Vector2(1.0577, 1.0577)
-
-[node name="Star396" parent="Her/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1283.55, 1849.78)
-scale = Vector2(1.10473, 1.10473)
-
-[node name="Star397" parent="Her/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1336.11, 1576.73)
-scale = Vector2(1.07345, 1.07345)
-
-[node name="Star398" parent="Her/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1343.76, 1379.1)
-scale = Vector2(1.29594, 1.29594)
-
-[node name="Star399" parent="Her/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1301.99, 1284.2)
-scale = Vector2(0.998162, 0.998162)
-
-[node name="Star400" parent="Her/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1233.77, 1179.54)
-scale = Vector2(1.16955, 1.16955)
-
-[node name="Star401" parent="Her/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1181.66, 1216.76)
-scale = Vector2(1.04842, 1.04842)
-
-[node name="Star402" parent="Her/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1105.21, 1283.81)
-scale = Vector2(1.2718, 1.2718)
-
-[node name="Star404" parent="Her/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1336.11, 1576.73)
-scale = Vector2(0.951139, 0.951139)
-
-[node name="Star405" parent="Her/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1426.38, 1594.99)
-scale = Vector2(0.903679, 0.903679)
-
-[node name="Star407" parent="Her/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1343.76, 1379.1)
-scale = Vector2(0.9993, 0.9993)
-
-[node name="Star408" parent="Her/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1496.47, 1436.15)
-scale = Vector2(0.901336, 0.901336)
-
-[node name="Star410" parent="Her/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1692.2, 1424.24)
-scale = Vector2(1.0301, 1.0301)
-
-[node name="Star411" parent="Her/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1537.49, 1427.06)
-scale = Vector2(1.26878, 1.26878)
-
-[node name="Star412" parent="Her/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1496.47, 1436.15)
-scale = Vector2(1.16044, 1.16044)
-
-[node name="Star413" parent="Her/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1426.38, 1594.99)
-scale = Vector2(1.00823, 1.00823)
-
-[node name="Star414" parent="Her/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1496.4, 1759.34)
-scale = Vector2(0.936875, 0.936875)
-
-[node name="Star415" parent="Her/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1645.68, 1681.54)
-scale = Vector2(1.29284, 1.29284)
-
-[node name="Star416" parent="Her/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1699.38, 1640.31)
-scale = Vector2(1.28449, 1.28449)
-
-[node name="Star417" parent="Her/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1745.83, 1653.41)
-scale = Vector2(1.24778, 1.24778)
-
-[node name="Star419" parent="Her/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1494.58, 2041.46)
-scale = Vector2(1.2599, 1.2599)
-
-[node name="Star420" parent="Her/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1283.55, 1849.78)
-scale = Vector2(0.912728, 0.912728)
 
 [node name="403" type="Line2D" parent="Her"]
 points = PackedVector2Array(1336.11, 1576.73, 1426.38, 1594.99)
@@ -2405,36 +462,6 @@ width = 2.0
 
 [node name="Stars" type="Node2D" parent="Hor"]
 
-[node name="Star" parent="Hor/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4626.51, 3571.95)
-scale = Vector2(1.29954, 1.29954)
-
-[node name="Star422" parent="Hor/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4192.15, 3801.61)
-scale = Vector2(1.06559, 1.06559)
-
-[node name="Star423" parent="Hor/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4167.68, 3848.66)
-scale = Vector2(1.26061, 1.26061)
-
-[node name="Star424" parent="Hor/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4183.14, 3902.85)
-scale = Vector2(1.20448, 1.20448)
-
-[node name="Star425" parent="Hor/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4292.16, 4042.92)
-scale = Vector2(1.08783, 1.08783)
-
-[node name="Star426" parent="Hor/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4269.28, 4159.93)
-scale = Vector2(1.05054, 1.05054)
-
 [node name="Hya" parent="." instance=ExtResource("2_3mw2d")]
 
 [node name="427" type="Line2D" parent="Hya"]
@@ -2442,101 +469,6 @@ points = PackedVector2Array(5922.18, 2256.69, 5930.06, 2272.38, 5905.32, 2338.24
 width = 2.0
 
 [node name="Stars" type="Node2D" parent="Hya"]
-
-[node name="Star" parent="Hya/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5922.18, 2256.69)
-scale = Vector2(1.1941, 1.1941)
-
-[node name="Star428" parent="Hya/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5930.06, 2272.38)
-scale = Vector2(1.17371, 1.17371)
-
-[node name="Star429" parent="Hya/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5905.32, 2338.24)
-scale = Vector2(1.20819, 1.20819)
-
-[node name="Star430" parent="Hya/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5884.1, 2339.78)
-scale = Vector2(1.1918, 1.1918)
-
-[node name="Star431" parent="Hya/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5878.87, 2276)
-scale = Vector2(1.0823, 1.0823)
-
-[node name="Star432" parent="Hya/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5922.18, 2256.69)
-scale = Vector2(1.29596, 1.29596)
-
-[node name="Star433" parent="Hya/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5963.12, 2269.47)
-scale = Vector2(1.01557, 1.01557)
-
-[node name="Star434" parent="Hya/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6053.23, 2367.51)
-scale = Vector2(1.01816, 1.01816)
-
-[node name="Star435" parent="Hya/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6174.32, 2460.86)
-scale = Vector2(0.992657, 0.992657)
-
-[node name="Star436" parent="Hya/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6116.04, 2663.78)
-scale = Vector2(0.908097, 0.908097)
-
-[node name="Star437" parent="Hya/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6229.52, 2830.86)
-scale = Vector2(1.27837, 1.27837)
-
-[node name="Star438" parent="Hya/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6320.29, 2763.56)
-scale = Vector2(1.01554, 1.01554)
-
-[node name="Star439" parent="Hya/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6393.93, 2884.58)
-scale = Vector2(1.11332, 1.11332)
-
-[node name="Star440" parent="Hya/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6505.72, 2867.23)
-scale = Vector2(1.15678, 1.15678)
-
-[node name="Star441" parent="Hya/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6711.76, 3290.16)
-scale = Vector2(1.1913, 1.1913)
-
-[node name="Star442" parent="Hya/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6806.32, 3345.52)
-scale = Vector2(1.28047, 1.28047)
-
-[node name="Star443" parent="Hya/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(374.878, 3055.63)
-scale = Vector2(1.25034, 1.25034)
-
-[node name="Star444" parent="Hya/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(600.265, 3150.42)
-scale = Vector2(1.24721, 1.24721)
-
-[node name="Star445" parent="Hya/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(808.87, 3184.93)
-scale = Vector2(1.26606, 1.26606)
 
 [node name="Hyi" parent="." instance=ExtResource("2_3mw2d")]
 
@@ -2546,36 +478,6 @@ width = 2.0
 
 [node name="Stars" type="Node2D" parent="Hyi"]
 
-[node name="Star" parent="Hyi/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3542.32, 4515.86)
-scale = Vector2(1.01017, 1.01017)
-
-[node name="Star447" parent="Hyi/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4499.39, 4434.45)
-scale = Vector2(1.00126, 1.00126)
-
-[node name="Star448" parent="Hyi/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4178.05, 4273.21)
-scale = Vector2(1.08804, 1.08804)
-
-[node name="Star449" parent="Hyi/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4093.31, 4283.8)
-scale = Vector2(1.00721, 1.00721)
-
-[node name="Star450" parent="Hyi/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3965.94, 4256.48)
-scale = Vector2(1.00788, 1.00788)
-
-[node name="Star451" parent="Hyi/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3984.16, 4092.39)
-scale = Vector2(1.10056, 1.10056)
-
 [node name="Ind" parent="." instance=ExtResource("2_3mw2d")]
 
 [node name="452" type="Line2D" parent="Ind"]
@@ -2584,36 +486,6 @@ width = 2.0
 
 [node name="Stars" type="Node2D" parent="Ind"]
 
-[node name="Star" parent="Ind/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2458.44, 3706.87)
-scale = Vector2(1.27845, 1.27845)
-
-[node name="Star453" parent="Ind/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2489.18, 3831.87)
-scale = Vector2(0.914728, 0.914728)
-
-[node name="Star454" parent="Ind/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2540.35, 4008.26)
-scale = Vector2(1.0497, 1.0497)
-
-[node name="Star455" parent="Ind/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2840.11, 3914.8)
-scale = Vector2(0.933114, 0.933114)
-
-[node name="Star456" parent="Ind/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2659.37, 3873.13)
-scale = Vector2(1.28824, 1.28824)
-
-[node name="Star457" parent="Ind/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2458.44, 3706.87)
-scale = Vector2(1.00243, 1.00243)
-
 [node name="Lac" parent="." instance=ExtResource("2_3mw2d")]
 
 [node name="458" type="Line2D" parent="Lac"]
@@ -2621,66 +493,6 @@ points = PackedVector2Array(2961.91, 1019.82, 2998.64, 1072.37, 2990.27, 1141.91
 width = 2.0
 
 [node name="Stars" type="Node2D" parent="Lac"]
-
-[node name="Star" parent="Lac/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2961.91, 1019.82)
-scale = Vector2(1.12491, 1.12491)
-
-[node name="Star459" parent="Lac/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2998.64, 1072.37)
-scale = Vector2(0.972585, 0.972585)
-
-[node name="Star460" parent="Lac/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2990.27, 1141.91)
-scale = Vector2(0.97291, 0.97291)
-
-[node name="Star461" parent="Lac/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2949.87, 1173.51)
-scale = Vector2(1.26471, 1.26471)
-
-[node name="Star462" parent="Lac/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2994.82, 1265.67)
-scale = Vector2(0.953411, 0.953411)
-
-[node name="Star463" parent="Lac/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3042.44, 1234.54)
-scale = Vector2(1.11855, 1.11855)
-
-[node name="Star464" parent="Lac/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2990.27, 1141.91)
-scale = Vector2(0.900877, 0.900877)
-
-[node name="Star465" parent="Lac/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2966.45, 1094.14)
-scale = Vector2(1.21399, 1.21399)
-
-[node name="Star466" parent="Lac/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2961.91, 1019.82)
-scale = Vector2(1.14522, 1.14522)
-
-[node name="Star468" parent="Lac/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2994.82, 1265.67)
-scale = Vector2(0.994837, 0.994837)
-
-[node name="Star469" parent="Lac/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2915.92, 1357.7)
-scale = Vector2(1.28122, 1.28122)
-
-[node name="Star470" parent="Lac/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2925.86, 1410.79)
-scale = Vector2(0.973412, 0.973412)
 
 [node name="467" type="Line2D" parent="Lac"]
 points = PackedVector2Array(2994.82, 1265.67, 2915.92, 1357.7, 2925.86, 1410.79)
@@ -2694,61 +506,6 @@ width = 2.0
 
 [node name="Stars" type="Node2D" parent="Leo"]
 
-[node name="Star" parent="Leo/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6309.77, 2106.89)
-scale = Vector2(1.07028, 1.07028)
-
-[node name="Star472" parent="Leo/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6304.83, 1977.41)
-scale = Vector2(0.971784, 0.971784)
-
-[node name="Star473" parent="Leo/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6364.87, 1894.28)
-scale = Vector2(1.27065, 1.27065)
-
-[node name="Star474" parent="Leo/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6622.02, 1875.86)
-scale = Vector2(1.24212, 1.24212)
-
-[node name="Star475" parent="Leo/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6788.03, 2036.55)
-scale = Vector2(1.2809, 1.2809)
-
-[node name="Star476" parent="Leo/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6622.64, 2013.4)
-scale = Vector2(1.16158, 1.16158)
-
-[node name="Star477" parent="Leo/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6309.77, 2106.89)
-scale = Vector2(1.22491, 1.22491)
-
-[node name="Star479" parent="Leo/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6364.87, 1894.28)
-scale = Vector2(1.19151, 1.19151)
-
-[node name="Star480" parent="Leo/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6349.28, 1797.73)
-scale = Vector2(1.13664, 1.13664)
-
-[node name="Star481" parent="Leo/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6235.63, 1727.81)
-scale = Vector2(1.25258, 1.25258)
-
-[node name="Star482" parent="Leo/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6202.79, 1788.09)
-scale = Vector2(1.21439, 1.21439)
-
 [node name="478" type="Line2D" parent="Leo"]
 points = PackedVector2Array(6364.87, 1894.28, 6349.28, 1797.73, 6235.63, 1727.81, 6202.79, 1788.09)
 width = 2.0
@@ -2761,36 +518,6 @@ width = 2.0
 
 [node name="Stars" type="Node2D" parent="LMi"]
 
-[node name="Star" parent="LMi/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6305.29, 1478.39)
-scale = Vector2(0.946913, 0.946913)
-
-[node name="Star484" parent="LMi/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6393.09, 1517.51)
-scale = Vector2(1.12218, 1.12218)
-
-[node name="Star485" parent="LMi/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6523.23, 1506.2)
-scale = Vector2(1.02279, 1.02279)
-
-[node name="Star486" parent="LMi/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6402.45, 1438.91)
-scale = Vector2(1.23454, 1.23454)
-
-[node name="Star487" parent="LMi/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6305.29, 1478.39)
-scale = Vector2(0.9708, 0.9708)
-
-[node name="Star488" parent="LMi/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6147.56, 1447.26)
-scale = Vector2(0.970747, 0.970747)
-
 [node name="Lep" parent="." instance=ExtResource("2_3mw2d")]
 
 [node name="489" type="Line2D" parent="Lep"]
@@ -2798,66 +525,6 @@ points = PackedVector2Array(5159.24, 2833.25, 5112.92, 2812.53, 5068.04, 2830.19
 width = 2.0
 
 [node name="Stars" type="Node2D" parent="Lep"]
-
-[node name="Star" parent="Lep/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5159.24, 2833.25)
-scale = Vector2(1.20953, 1.20953)
-
-[node name="Star490" parent="Lep/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5112.92, 2812.53)
-scale = Vector2(1.20094, 1.20094)
-
-[node name="Star491" parent="Lep/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5068.04, 2830.19)
-scale = Vector2(0.978259, 0.978259)
-
-[node name="Star492" parent="Lep/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5000.47, 2911.2)
-scale = Vector2(1.09764, 1.09764)
-
-[node name="Star493" parent="Lep/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4906.43, 2867.55)
-scale = Vector2(1.14848, 1.14848)
-
-[node name="Star494" parent="Lep/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4870.94, 3034.02)
-scale = Vector2(0.9704, 0.9704)
-
-[node name="Star495" parent="Lep/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4979.16, 2990.5)
-scale = Vector2(1.01561, 1.01561)
-
-[node name="Star496" parent="Lep/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5056.2, 3036.11)
-scale = Vector2(1.02547, 1.02547)
-
-[node name="Star497" parent="Lep/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5088.78, 2993.74)
-scale = Vector2(1.0453, 1.0453)
-
-[node name="Star499" parent="Lep/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4907.85, 2779.42)
-scale = Vector2(1.23916, 1.23916)
-
-[node name="Star500" parent="Lep/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4906.43, 2867.55)
-scale = Vector2(0.999475, 0.999475)
-
-[node name="Star501" parent="Lep/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4937.98, 2785.77)
-scale = Vector2(1.22523, 1.22523)
 
 [node name="498" type="Line2D" parent="Lep"]
 points = PackedVector2Array(4907.85, 2779.42, 4906.43, 2867.55, 4937.98, 2785.77)
@@ -2871,46 +538,6 @@ width = 2.0
 
 [node name="Stars" type="Node2D" parent="Lib"]
 
-[node name="Star" parent="Lib/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(874.334, 3112.61)
-scale = Vector2(1.10492, 1.10492)
-
-[node name="Star503" parent="Lib/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(811.672, 2863.13)
-scale = Vector2(1.16581, 1.16581)
-
-[node name="Star504" parent="Lib/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(935.782, 2683.34)
-scale = Vector2(1.26705, 1.26705)
-
-[node name="Star505" parent="Lib/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1023.75, 2829.32)
-scale = Vector2(1.28583, 1.28583)
-
-[node name="Star506" parent="Lib/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1030.86, 3189.65)
-scale = Vector2(1.09734, 1.09734)
-
-[node name="Star507" parent="Lib/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1038.62, 3234)
-scale = Vector2(1.26911, 1.26911)
-
-[node name="Star509" parent="Lib/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(811.672, 2863.13)
-scale = Vector2(1.1537, 1.1537)
-
-[node name="Star510" parent="Lib/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1023.75, 2829.32)
-scale = Vector2(1.13367, 1.13367)
-
 [node name="508" type="Line2D" parent="Lib"]
 points = PackedVector2Array(811.672, 2863.13, 1023.75, 2829.32)
 width = 2.0
@@ -2922,76 +549,6 @@ points = PackedVector2Array(1097.05, 3337.93, 1043.89, 3359.12, 958.578, 3409.06
 width = 2.0
 
 [node name="Stars" type="Node2D" parent="Lup"]
-
-[node name="Star" parent="Lup/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1097.05, 3337.93)
-scale = Vector2(1.17827, 1.17827)
-
-[node name="Star512" parent="Lup/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1043.89, 3359.12)
-scale = Vector2(0.913719, 0.913719)
-
-[node name="Star513" parent="Lup/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(958.578, 3409.06)
-scale = Vector2(1.28875, 1.28875)
-
-[node name="Star514" parent="Lup/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(956.517, 3527.48)
-scale = Vector2(0.985966, 0.985966)
-
-[node name="Star515" parent="Lup/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(848.027, 3594.62)
-scale = Vector2(1.10103, 1.10103)
-
-[node name="Star516" parent="Lup/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(769.164, 3709.48)
-scale = Vector2(1.04064, 1.04064)
-
-[node name="Star517" parent="Lup/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(913.353, 3836.68)
-scale = Vector2(1.13936, 1.13936)
-
-[node name="Star518" parent="Lup/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(943.035, 3722.63)
-scale = Vector2(1.10668, 1.10668)
-
-[node name="Star519" parent="Lup/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(962.736, 3636.62)
-scale = Vector2(1.01356, 1.01356)
-
-[node name="Star520" parent="Lup/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1021.92, 3541.5)
-scale = Vector2(0.95363, 0.95363)
-
-[node name="Star521" parent="Lup/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1140.58, 3466.71)
-scale = Vector2(1.26675, 1.26675)
-
-[node name="Star522" parent="Lup/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1171.31, 3423.66)
-scale = Vector2(1.09754, 1.09754)
-
-[node name="Star524" parent="Lup/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(956.517, 3527.48)
-scale = Vector2(0.964748, 0.964748)
-
-[node name="Star525" parent="Lup/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1021.92, 3541.5)
-scale = Vector2(1.09565, 1.09565)
 
 [node name="523" type="Line2D" parent="Lup"]
 points = PackedVector2Array(956.517, 3527.48, 1021.92, 3541.5)
@@ -3005,41 +562,6 @@ width = 2.0
 
 [node name="Stars" type="Node2D" parent="Lyn"]
 
-[node name="Star" parent="Lyn/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5223.21, 836.703)
-scale = Vector2(0.97475, 0.97475)
-
-[node name="Star527" parent="Lyn/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5402.06, 852.584)
-scale = Vector2(0.962681, 0.962681)
-
-[node name="Star528" parent="Lyn/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5541.89, 1101.29)
-scale = Vector2(1.01359, 1.01359)
-
-[node name="Star529" parent="Lyn/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5808.47, 1263.92)
-scale = Vector2(1.06564, 1.06564)
-
-[node name="Star530" parent="Lyn/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5988.04, 1301.86)
-scale = Vector2(0.984971, 0.984971)
-
-[node name="Star531" parent="Lyn/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6074.51, 1436.33)
-scale = Vector2(1.22952, 1.22952)
-
-[node name="Star532" parent="Lyn/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6085.01, 1501.4)
-scale = Vector2(1.12006, 1.12006)
-
 [node name="Lyr" parent="." instance=ExtResource("2_3mw2d")]
 
 [node name="533" type="Line2D" parent="Lyr"]
@@ -3047,46 +569,6 @@ points = PackedVector2Array(1922.67, 1414.66, 1920.8, 1360.46, 1885.46, 1382.84,
 width = 2.0
 
 [node name="Stars" type="Node2D" parent="Lyr"]
-
-[node name="Star" parent="Lyr/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1922.67, 1414.66)
-scale = Vector2(1.17405, 1.17405)
-
-[node name="Star534" parent="Lyr/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1920.8, 1360.46)
-scale = Vector2(1.1361, 1.1361)
-
-[node name="Star535" parent="Lyr/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1885.46, 1382.84)
-scale = Vector2(1.18978, 1.18978)
-
-[node name="Star536" parent="Lyr/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1922.67, 1414.66)
-scale = Vector2(1.20567, 1.20567)
-
-[node name="Star537" parent="Lyr/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1968.9, 1433.74)
-scale = Vector2(1.2546, 1.2546)
-
-[node name="Star538" parent="Lyr/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1989.98, 1547.38)
-scale = Vector2(1.01724, 1.01724)
-
-[node name="Star539" parent="Lyr/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1947.88, 1529.21)
-scale = Vector2(0.925409, 0.925409)
-
-[node name="Star540" parent="Lyr/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1922.67, 1414.66)
-scale = Vector2(0.975781, 0.975781)
 
 [node name="Men" parent="." instance=ExtResource("2_3mw2d")]
 
@@ -3096,26 +578,6 @@ width = 2.0
 
 [node name="Stars" type="Node2D" parent="Men"]
 
-[node name="Star" parent="Men/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5178.65, 4448.33)
-scale = Vector2(1.23158, 1.23158)
-
-[node name="Star542" parent="Men/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4996.45, 4491.21)
-scale = Vector2(1.1578, 1.1578)
-
-[node name="Star543" parent="Men/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4822.14, 4453.3)
-scale = Vector2(1.28327, 1.28327)
-
-[node name="Star544" parent="Men/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4857.9, 4355.49)
-scale = Vector2(1.0753, 1.0753)
-
 [node name="Mic" parent="." instance=ExtResource("2_3mw2d")]
 
 [node name="545" type="Line2D" parent="Mic"]
@@ -3124,36 +586,6 @@ width = 2.0
 
 [node name="Stars" type="Node2D" parent="Mic"]
 
-[node name="Star" parent="Mic/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2517.35, 3342.05)
-scale = Vector2(0.988081, 0.988081)
-
-[node name="Star546" parent="Mic/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2510.31, 3617.69)
-scale = Vector2(1.14713, 1.14713)
-
-[node name="Star547" parent="Mic/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2663.61, 3531.86)
-scale = Vector2(0.956342, 0.956342)
-
-[node name="Star548" parent="Mic/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2650.21, 3298.66)
-scale = Vector2(1.06375, 1.06375)
-
-[node name="Star549" parent="Mic/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2571.13, 3300.96)
-scale = Vector2(1.09732, 1.09732)
-
-[node name="Star550" parent="Mic/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2517.35, 3342.05)
-scale = Vector2(0.934161, 0.934161)
-
 [node name="Mon" parent="." instance=ExtResource("2_3mw2d")]
 
 [node name="551" type="Line2D" parent="Mon"]
@@ -3161,56 +593,6 @@ points = PackedVector2Array(5610.92, 2687.88, 5740.82, 2510.56, 5471.36, 2443.31
 width = 2.0
 
 [node name="Stars" type="Node2D" parent="Mon"]
-
-[node name="Star" parent="Mon/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5610.92, 2687.88)
-scale = Vector2(1.14492, 1.14492)
-
-[node name="Star552" parent="Mon/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5740.82, 2510.56)
-scale = Vector2(1.13056, 1.13056)
-
-[node name="Star553" parent="Mon/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5471.36, 2443.31)
-scale = Vector2(1.09162, 1.09162)
-
-[node name="Star554" parent="Mon/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5266.89, 2619.89)
-scale = Vector2(1.00257, 1.00257)
-
-[node name="Star555" parent="Mon/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5200.56, 2599.42)
-scale = Vector2(1.12423, 1.12423)
-
-[node name="Star557" parent="Mon/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5471.36, 2443.31)
-scale = Vector2(1.12321, 1.12321)
-
-[node name="Star558" parent="Mon/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5357.34, 2364.87)
-scale = Vector2(1.04067, 1.04067)
-
-[node name="Star559" parent="Mon/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5242.9, 2305.99)
-scale = Vector2(0.903591, 0.903591)
-
-[node name="Star560" parent="Mon/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5286.29, 2232.01)
-scale = Vector2(1.03217, 1.03217)
-
-[node name="Star561" parent="Mon/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5324.64, 2162.81)
-scale = Vector2(0.919032, 0.919032)
 
 [node name="556" type="Line2D" parent="Mon"]
 points = PackedVector2Array(5471.36, 2443.31, 5357.34, 2364.87, 5242.9, 2305.99, 5286.29, 2232.01, 5324.64, 2162.81)
@@ -3224,41 +606,6 @@ width = 2.0
 
 [node name="Stars" type="Node2D" parent="Mus"]
 
-[node name="Star" parent="Mus/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6771.63, 4231.68)
-scale = Vector2(1.12381, 1.12381)
-
-[node name="Star563" parent="Mus/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(83.4632, 4264.94)
-scale = Vector2(1.07821, 1.07821)
-
-[node name="Star564" parent="Mus/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(176.622, 4296.66)
-scale = Vector2(1.07135, 1.07135)
-
-[node name="Star565" parent="Mus/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(219.83, 4268.92)
-scale = Vector2(0.920964, 0.920964)
-
-[node name="Star566" parent="Mus/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(295.788, 4361.82)
-scale = Vector2(1.26222, 1.26222)
-
-[node name="Star567" parent="Mus/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(154.217, 4377.59)
-scale = Vector2(0.992493, 0.992493)
-
-[node name="Star568" parent="Mus/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(176.622, 4296.66)
-scale = Vector2(1.17284, 1.17284)
-
 [node name="Nor" parent="." instance=ExtResource("2_3mw2d")]
 
 [node name="569" type="Line2D" parent="Nor"]
@@ -3266,31 +613,6 @@ points = PackedVector2Array(1170.83, 3649.68, 1269.12, 3713.98, 1234.24, 3784.2,
 width = 2.0
 
 [node name="Stars" type="Node2D" parent="Nor"]
-
-[node name="Star" parent="Nor/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1170.83, 3649.68)
-scale = Vector2(1.23048, 1.23048)
-
-[node name="Star570" parent="Nor/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1269.12, 3713.98)
-scale = Vector2(1.1259, 1.1259)
-
-[node name="Star571" parent="Nor/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1234.24, 3784.2)
-scale = Vector2(0.913295, 0.913295)
-
-[node name="Star572" parent="Nor/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1155.27, 3759.2)
-scale = Vector2(0.990609, 0.990609)
-
-[node name="Star573" parent="Nor/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1170.83, 3649.68)
-scale = Vector2(0.922711, 0.922711)
 
 [node name="Oct" parent="." instance=ExtResource("2_3mw2d")]
 
@@ -3300,26 +622,6 @@ width = 2.0
 
 [node name="Stars" type="Node2D" parent="Oct"]
 
-[node name="Star" parent="Oct/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(697.872, 4689.03)
-scale = Vector2(0.920466, 0.920466)
-
-[node name="Star575" parent="Oct/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3068.78, 4627.3)
-scale = Vector2(1.10577, 1.10577)
-
-[node name="Star576" parent="Oct/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2762.02, 4519.53)
-scale = Vector2(1.07447, 1.07447)
-
-[node name="Star577" parent="Oct/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(697.872, 4689.03)
-scale = Vector2(1.18798, 1.18798)
-
 [node name="Oph" parent="." instance=ExtResource("2_3mw2d")]
 
 [node name="578" type="Line2D" parent="Oph"]
@@ -3327,106 +629,6 @@ points = PackedVector2Array(1705.38, 2693.89, 1652.49, 2356.9, 1631.49, 2306.68,
 width = 2.0
 
 [node name="Stars" type="Node2D" parent="Oph"]
-
-[node name="Star" parent="Oph/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1705.38, 2693.89)
-scale = Vector2(0.93693, 0.93693)
-
-[node name="Star579" parent="Oph/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1652.49, 2356.9)
-scale = Vector2(1.24286, 1.24286)
-
-[node name="Star580" parent="Oph/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1631.49, 2306.68)
-scale = Vector2(1.17463, 1.17463)
-
-[node name="Star581" parent="Oph/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1590.94, 2090.88)
-scale = Vector2(1.28206, 1.28206)
-
-[node name="Star582" parent="Oph/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1413.92, 2176.88)
-scale = Vector2(1.23545, 1.23545)
-
-[node name="Star583" parent="Oph/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1286.84, 2376.43)
-scale = Vector2(1.04059, 1.04059)
-
-[node name="Star584" parent="Oph/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1208.14, 2529.75)
-scale = Vector2(1.10172, 1.10172)
-
-[node name="Star585" parent="Oph/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1227.03, 2556.7)
-scale = Vector2(1.11749, 1.11749)
-
-[node name="Star586" parent="Oph/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1316.5, 2715.31)
-scale = Vector2(1.23708, 1.23708)
-
-[node name="Star587" parent="Oph/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1474.3, 2854.57)
-scale = Vector2(1.29495, 1.29495)
-
-[node name="Star589" parent="Oph/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1413.92, 2176.88)
-scale = Vector2(1.07607, 1.07607)
-
-[node name="Star590" parent="Oph/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1316.5, 2715.31)
-scale = Vector2(1.02971, 1.02971)
-
-[node name="Star591" parent="Oph/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1287.91, 2878.54)
-scale = Vector2(1.02092, 1.02092)
-
-[node name="Star592" parent="Oph/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1268.36, 2928.32)
-scale = Vector2(0.919427, 0.919427)
-
-[node name="Star593" parent="Oph/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1254.49, 2971.01)
-scale = Vector2(1.22486, 1.22486)
-
-[node name="Star594" parent="Oph/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1261.53, 3063.07)
-scale = Vector2(0.922289, 0.922289)
-
-[node name="Star596" parent="Oph/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1631.49, 2306.68)
-scale = Vector2(1.0865, 1.0865)
-
-[node name="Star597" parent="Oph/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1474.3, 2854.57)
-scale = Vector2(0.947703, 0.947703)
-
-[node name="Star598" parent="Oph/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1529.55, 3104.99)
-scale = Vector2(0.963998, 0.963998)
-
-[node name="Star599" parent="Oph/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1554.93, 3236.41)
-scale = Vector2(1.25038, 1.25038)
 
 [node name="588" type="Line2D" parent="Oph"]
 points = PackedVector2Array(1413.92, 2176.88, 1316.5, 2715.31, 1287.91, 2878.54, 1268.36, 2928.32, 1254.49, 2971.01, 1261.53, 3063.07)
@@ -3443,146 +645,6 @@ points = PackedVector2Array(5165.97, 2031.25, 5103.32, 1882.54, 5148.62, 1886.26
 width = 2.0
 
 [node name="Stars" type="Node2D" parent="Ori"]
-
-[node name="Star" parent="Ori/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5165.97, 2031.25)
-scale = Vector2(0.957317, 0.957317)
-
-[node name="Star601" parent="Ori/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5103.32, 1882.54)
-scale = Vector2(1.02897, 1.02897)
-
-[node name="Star602" parent="Ori/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5148.62, 1886.26)
-scale = Vector2(1.21152, 1.21152)
-
-[node name="Star603" parent="Ori/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5186.71, 2046.36)
-scale = Vector2(1.03873, 1.03873)
-
-[node name="Star604" parent="Ori/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5141.32, 2169.52)
-scale = Vector2(1.22387, 1.22387)
-
-[node name="Star605" parent="Ori/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5107.06, 2230.01)
-scale = Vector2(1.12231, 1.12231)
-
-[node name="Star606" parent="Ori/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4964.37, 2258.56)
-scale = Vector2(0.969894, 0.969894)
-
-[node name="Star607" parent="Ori/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4820.75, 2155.93)
-scale = Vector2(0.969994, 0.969994)
-
-[node name="Star609" parent="Ori/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4838.1, 2383.72)
-scale = Vector2(0.932728, 0.932728)
-
-[node name="Star610" parent="Ori/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4817.7, 2364.1)
-scale = Vector2(1.07661, 1.07661)
-
-[node name="Star611" parent="Ori/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4803.23, 2278.66)
-scale = Vector2(1.04722, 1.04722)
-
-[node name="Star612" parent="Ori/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4796.74, 2242.04)
-scale = Vector2(1.02064, 1.02064)
-
-[node name="Star613" parent="Ori/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4800.41, 2189.69)
-scale = Vector2(1.17895, 1.17895)
-
-[node name="Star614" parent="Ori/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4820.75, 2155.93)
-scale = Vector2(0.917767, 0.917767)
-
-[node name="Star615" parent="Ori/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4827.76, 2065.11)
-scale = Vector2(1.21322, 1.21322)
-
-[node name="Star616" parent="Ori/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4866.7, 2014.09)
-scale = Vector2(0.983547, 0.983547)
-
-[node name="Star617" parent="Ori/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4891.07, 2008.88)
-scale = Vector2(0.905562, 0.905562)
-
-[node name="Star619" parent="Ori/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4914.06, 2651.44)
-scale = Vector2(0.994252, 0.994252)
-
-[node name="Star620" parent="Ori/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4961.26, 2494.72)
-scale = Vector2(0.939816, 0.939816)
-
-[node name="Star621" parent="Ori/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4997.03, 2438.08)
-scale = Vector2(1.06973, 1.06973)
-
-[node name="Star622" parent="Ori/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4964.37, 2258.56)
-scale = Vector2(1.25378, 1.25378)
-
-[node name="Star623" parent="Ori/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5011.91, 2161.78)
-scale = Vector2(1.26553, 1.26553)
-
-[node name="Star624" parent="Ori/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5107.06, 2230.01)
-scale = Vector2(1.1929, 1.1929)
-
-[node name="Star625" parent="Ori/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5038.6, 2482.45)
-scale = Vector2(1.01821, 1.01821)
-
-[node name="Star626" parent="Ori/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5071.84, 2691.08)
-scale = Vector2(0.959297, 0.959297)
-
-[node name="Star628" parent="Ori/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5038.6, 2482.45)
-scale = Vector2(1.04819, 1.04819)
-
-[node name="Star629" parent="Ori/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5017.01, 2462.45)
-scale = Vector2(0.953339, 0.953339)
-
-[node name="Star630" parent="Ori/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4997.03, 2438.08)
-scale = Vector2(0.99929, 0.99929)
 
 [node name="608" type="Line2D" parent="Ori"]
 points = PackedVector2Array(4838.1, 2383.72, 4817.7, 2364.1, 4803.23, 2278.66, 4796.74, 2242.04, 4800.41, 2189.69, 4820.75, 2155.93, 4827.76, 2065.11, 4866.7, 2014.09, 4891.07, 2008.88)
@@ -3604,61 +666,6 @@ width = 2.0
 
 [node name="Stars" type="Node2D" parent="Pav"]
 
-[node name="Star" parent="Pav/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2401.83, 3961.85)
-scale = Vector2(0.903898, 0.903898)
-
-[node name="Star632" parent="Pav/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2493.55, 4217.49)
-scale = Vector2(1.25118, 1.25118)
-
-[node name="Star633" parent="Pav/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2321.45, 4216.92)
-scale = Vector2(1.05402, 1.05402)
-
-[node name="Star634" parent="Pav/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1958.03, 4109.07)
-scale = Vector2(0.917867, 0.917867)
-
-[node name="Star635" parent="Pav/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1820.33, 4090.34)
-scale = Vector2(0.973304, 0.973304)
-
-[node name="Star636" parent="Pav/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1750.76, 4149.05)
-scale = Vector2(0.921328, 0.921328)
-
-[node name="Star637" parent="Pav/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1642.23, 4177.55)
-scale = Vector2(0.92696, 0.92696)
-
-[node name="Star638" parent="Pav/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1914.42, 4358.56)
-scale = Vector2(1.15974, 1.15974)
-
-[node name="Star639" parent="Pav/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2282.81, 4398.58)
-scale = Vector2(1.09809, 1.09809)
-
-[node name="Star640" parent="Pav/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2493.55, 4217.49)
-scale = Vector2(1.17851, 1.17851)
-
-[node name="Star641" parent="Pav/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2690.61, 4194.89)
-scale = Vector2(1.23539, 1.23539)
-
 [node name="Peg" parent="." instance=ExtResource("2_3mw2d")]
 
 [node name="642" type="Line2D" parent="Peg"]
@@ -3666,86 +673,6 @@ points = PackedVector2Array(2897.44, 1534.19, 3054.26, 1614.03, 3152.93, 1671.76
 width = 2.0
 
 [node name="Stars" type="Node2D" parent="Peg"]
-
-[node name="Star" parent="Peg/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2897.44, 1534.19)
-scale = Vector2(1.05872, 1.05872)
-
-[node name="Star643" parent="Peg/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3054.26, 1614.03)
-scale = Vector2(1.22435, 1.22435)
-
-[node name="Star644" parent="Peg/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3152.93, 1671.76)
-scale = Vector2(1.03865, 1.03865)
-
-[node name="Star645" parent="Peg/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3459.84, 1644.56)
-scale = Vector2(1.26082, 1.26082)
-
-[node name="Star646" parent="Peg/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3482.87, 2020.04)
-scale = Vector2(1.19422, 1.19422)
-
-[node name="Star647" parent="Peg/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3157.61, 2019.46)
-scale = Vector2(1.26184, 1.26184)
-
-[node name="Star648" parent="Peg/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3071.79, 2101.33)
-scale = Vector2(1.2664, 1.2664)
-
-[node name="Star649" parent="Peg/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3046.94, 2137.55)
-scale = Vector2(1.27487, 1.27487)
-
-[node name="Star650" parent="Peg/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2898.45, 2262.66)
-scale = Vector2(0.968378, 0.968378)
-
-[node name="Star651" parent="Peg/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2774.88, 2163.38)
-scale = Vector2(1.12806, 1.12806)
-
-[node name="Star653" parent="Peg/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3157.61, 2019.46)
-scale = Vector2(1.13016, 1.13016)
-
-[node name="Star654" parent="Peg/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3152.93, 1671.76)
-scale = Vector2(1.14338, 1.14338)
-
-[node name="Star655" parent="Peg/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3087.52, 1765.76)
-scale = Vector2(1.0179, 1.0179)
-
-[node name="Star656" parent="Peg/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3071.02, 1793.73)
-scale = Vector2(1.23521, 1.23521)
-
-[node name="Star657" parent="Peg/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2883.3, 1745.68)
-scale = Vector2(1.1865, 1.1865)
-
-[node name="Star658" parent="Peg/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2777.07, 1737.58)
-scale = Vector2(1.11795, 1.11795)
 
 [node name="652" type="Line2D" parent="Peg"]
 points = PackedVector2Array(3157.61, 2019.46, 3152.93, 1671.76, 3087.52, 1765.76, 3071.02, 1793.73, 2883.3, 1745.68, 2777.07, 1737.58)
@@ -3758,136 +685,6 @@ points = PackedVector2Array(4485.51, 1558.22, 4532.13, 1569.14, 4555.08, 1463.64
 width = 2.0
 
 [node name="Stars" type="Node2D" parent="Per"]
-
-[node name="Star" parent="Per/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4485.51, 1558.22)
-scale = Vector2(0.971697, 0.971697)
-
-[node name="Star660" parent="Per/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4532.13, 1569.14)
-scale = Vector2(1.06549, 1.06549)
-
-[node name="Star661" parent="Per/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4555.08, 1463.64)
-scale = Vector2(1.24704, 1.24704)
-
-[node name="Star662" parent="Per/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4549.81, 1349.72)
-scale = Vector2(1.2343, 1.2343)
-
-[node name="Star663" parent="Per/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4489.67, 1280.38)
-scale = Vector2(0.986757, 0.986757)
-
-[node name="Star664" parent="Per/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4478.89, 1139.73)
-scale = Vector2(1.05906, 1.05906)
-
-[node name="Star665" parent="Per/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4448.33, 1128.8)
-scale = Vector2(0.928891, 0.928891)
-
-[node name="Star666" parent="Per/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4390.53, 1083.75)
-scale = Vector2(1.1699, 1.1699)
-
-[node name="Star667" parent="Per/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4297.78, 985.327)
-scale = Vector2(1.24781, 1.24781)
-
-[node name="Star668" parent="Per/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4230.81, 920.821)
-scale = Vector2(1.14918, 1.14918)
-
-[node name="Star669" parent="Per/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4247.72, 1005.41)
-scale = Vector2(1.28376, 1.28376)
-
-[node name="Star670" parent="Per/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4318.07, 1090.44)
-scale = Vector2(0.981904, 0.981904)
-
-[node name="Star671" parent="Per/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4320.11, 1218.85)
-scale = Vector2(1.08093, 1.08093)
-
-[node name="Star672" parent="Per/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4313.8, 1324.2)
-scale = Vector2(0.915294, 0.915294)
-
-[node name="Star673" parent="Per/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4328.63, 1360.49)
-scale = Vector2(1.23289, 1.23289)
-
-[node name="Star674" parent="Per/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4299.59, 1381.31)
-scale = Vector2(0.903305, 0.903305)
-
-[node name="Star675" parent="Per/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4269.12, 1359.11)
-scale = Vector2(1.07515, 1.07515)
-
-[node name="Star676" parent="Per/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4273.41, 1322.11)
-scale = Vector2(1.25051, 1.25051)
-
-[node name="Star677" parent="Per/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4313.8, 1324.2)
-scale = Vector2(1.24944, 1.24944)
-
-[node name="Star679" parent="Per/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4591.27, 1070.51)
-scale = Vector2(1.07681, 1.07681)
-
-[node name="Star680" parent="Per/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4630.76, 1122.95)
-scale = Vector2(1.17399, 1.17399)
-
-[node name="Star681" parent="Per/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4601.14, 1141.76)
-scale = Vector2(0.942317, 0.942317)
-
-[node name="Star682" parent="Per/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4478.89, 1139.73)
-scale = Vector2(1.02615, 1.02615)
-
-[node name="Star684" parent="Per/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4318.07, 1090.44)
-scale = Vector2(1.24379, 1.24379)
-
-[node name="Star685" parent="Per/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4199.95, 1100.83)
-scale = Vector2(1.07502, 1.07502)
-
-[node name="Star686" parent="Per/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3912.39, 1061.41)
-scale = Vector2(1.20744, 1.20744)
 
 [node name="678" type="Line2D" parent="Per"]
 points = PackedVector2Array(4591.27, 1070.51, 4630.76, 1122.95, 4601.14, 1141.76, 4478.89, 1139.73)
@@ -3905,46 +702,6 @@ width = 2.0
 
 [node name="Stars" type="Node2D" parent="Phe"]
 
-[node name="Star" parent="Phe/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3544.85, 3572.26)
-scale = Vector2(1.18776, 1.18776)
-
-[node name="Star688" parent="Phe/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3733.9, 3691.4)
-scale = Vector2(0.933253, 0.933253)
-
-[node name="Star689" parent="Phe/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3839.74, 3599.59)
-scale = Vector2(1.24831, 1.24831)
-
-[node name="Star690" parent="Phe/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3853.45, 3754.96)
-scale = Vector2(0.919054, 0.919054)
-
-[node name="Star691" parent="Phe/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3744.83, 3921.64)
-scale = Vector2(1.10569, 1.10569)
-
-[node name="Star692" parent="Phe/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3733.9, 3691.4)
-scale = Vector2(1.17759, 1.17759)
-
-[node name="Star693" parent="Phe/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3464.7, 3665.18)
-scale = Vector2(1.20468, 1.20468)
-
-[node name="Star694" parent="Phe/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3544.85, 3572.26)
-scale = Vector2(1.23403, 1.23403)
-
 [node name="Pic" parent="." instance=ExtResource("2_3mw2d")]
 
 [node name="695" type="Line2D" parent="Pic"]
@@ -3953,21 +710,6 @@ width = 2.0
 
 [node name="Stars" type="Node2D" parent="Pic"]
 
-[node name="Star" parent="Pic/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5358.91, 4102.42)
-scale = Vector2(1.07969, 1.07969)
-
-[node name="Star696" parent="Pic/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5081.68, 3946.5)
-scale = Vector2(1.05312, 1.05312)
-
-[node name="Star697" parent="Pic/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5069.6, 3808.8)
-scale = Vector2(1.06673, 1.06673)
-
 [node name="Psc" parent="." instance=ExtResource("2_3mw2d")]
 
 [node name="698" type="Line2D" parent="Psc"]
@@ -3975,131 +717,6 @@ points = PackedVector2Array(3770.31, 1766.24, 3760.39, 1617.58, 3797.47, 1693.87
 width = 2.0
 
 [node name="Stars" type="Node2D" parent="Psc"]
-
-[node name="Star" parent="Psc/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3770.31, 1766.24)
-scale = Vector2(1.22248, 1.22248)
-
-[node name="Star699" parent="Psc/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3760.39, 1617.58)
-scale = Vector2(0.907314, 0.907314)
-
-[node name="Star700" parent="Psc/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3797.47, 1693.87)
-scale = Vector2(1.05324, 1.05324)
-
-[node name="Star701" parent="Psc/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3770.31, 1766.24)
-scale = Vector2(0.920573, 0.920573)
-
-[node name="Star702" parent="Psc/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3759.4, 1862.06)
-scale = Vector2(0.970061, 0.970061)
-
-[node name="Star703" parent="Psc/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3854.55, 2015.66)
-scale = Vector2(1.26494, 1.26494)
-
-[node name="Star704" parent="Psc/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3920.62, 2182.74)
-scale = Vector2(0.945483, 0.945483)
-
-[node name="Star705" parent="Psc/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3999.72, 2355.38)
-scale = Vector2(0.972674, 0.972674)
-
-[node name="Star706" parent="Psc/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3959.39, 2343.94)
-scale = Vector2(1.20805, 1.20805)
-
-[node name="Star707" parent="Psc/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3901.8, 2281.83)
-scale = Vector2(1.06788, 1.06788)
-
-[node name="Star708" parent="Psc/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3848.38, 2264.12)
-scale = Vector2(1.02583, 1.02583)
-
-[node name="Star709" parent="Psc/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3770.23, 2225.46)
-scale = Vector2(1.21899, 1.21899)
-
-[node name="Star710" parent="Psc/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3718.98, 2216.97)
-scale = Vector2(1.2743, 1.2743)
-
-[node name="Star711" parent="Psc/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3651.24, 2225.2)
-scale = Vector2(1.13116, 1.13116)
-
-[node name="Star712" parent="Psc/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3416.73, 2244.69)
-scale = Vector2(1.12917, 1.12917)
-
-[node name="Star713" parent="Psc/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3324.77, 2278.09)
-scale = Vector2(0.974442, 0.974442)
-
-[node name="Star714" parent="Psc/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3267.85, 2257.77)
-scale = Vector2(1.19639, 1.19639)
-
-[node name="Star715" parent="Psc/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3231.63, 2284.7)
-scale = Vector2(1.21912, 1.21912)
-
-[node name="Star716" parent="Psc/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3216.54, 2341.38)
-scale = Vector2(1.23074, 1.23074)
-
-[node name="Star717" parent="Psc/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3262.93, 2396.1)
-scale = Vector2(0.977133, 0.977133)
-
-[node name="Star718" parent="Psc/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3334.72, 2381.94)
-scale = Vector2(1.04543, 1.04543)
-
-[node name="Star719" parent="Psc/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3355.36, 2335.86)
-scale = Vector2(0.924476, 0.924476)
-
-[node name="Star720" parent="Psc/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3324.77, 2278.09)
-scale = Vector2(1.16129, 1.16129)
-
-[node name="Star722" parent="Psc/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3216.54, 2341.38)
-scale = Vector2(1.14682, 1.14682)
-
-[node name="Star723" parent="Psc/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3153.41, 2326.86)
-scale = Vector2(1.09325, 1.09325)
 
 [node name="721" type="Line2D" parent="Psc"]
 points = PackedVector2Array(3216.54, 2341.38, 3153.41, 2326.86)
@@ -4113,56 +730,6 @@ width = 2.0
 
 [node name="Stars" type="Node2D" parent="PsA"]
 
-[node name="Star" parent="PsA/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3043.11, 3160.18)
-scale = Vector2(1.11467, 1.11467)
-
-[node name="Star725" parent="PsA/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3123.84, 3229.8)
-scale = Vector2(0.987658, 0.987658)
-
-[node name="Star726" parent="PsA/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3115.75, 3308.57)
-scale = Vector2(1.12786, 1.12786)
-
-[node name="Star727" parent="PsA/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3099.5, 3317.64)
-scale = Vector2(1.29971, 1.29971)
-
-[node name="Star728" parent="PsA/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2999.65, 3303.34)
-scale = Vector2(1.04713, 1.04713)
-
-[node name="Star729" parent="PsA/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2889.82, 3320.69)
-scale = Vector2(1.29631, 1.29631)
-
-[node name="Star730" parent="PsA/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2778.5, 3321.7)
-scale = Vector2(1.04066, 1.04066)
-
-[node name="Star731" parent="PsA/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2791.75, 3264.25)
-scale = Vector2(1.11855, 1.11855)
-
-[node name="Star732" parent="PsA/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2889.82, 3320.69)
-scale = Vector2(0.930188, 0.930188)
-
-[node name="Star733" parent="PsA/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3043.11, 3160.18)
-scale = Vector2(1.22478, 1.22478)
-
 [node name="Pup" parent="." instance=ExtResource("2_3mw2d")]
 
 [node name="734" type="Line2D" parent="Pup"]
@@ -4170,71 +737,6 @@ points = PackedVector2Array(5309.37, 3596.29, 5496.43, 3431.63, 5583.06, 3195.97
 width = 2.0
 
 [node name="Stars" type="Node2D" parent="Pup"]
-
-[node name="Star" parent="Pup/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5309.37, 3596.29)
-scale = Vector2(1.2402, 1.2402)
-
-[node name="Star735" parent="Pup/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5496.43, 3431.63)
-scale = Vector2(1.09535, 1.09535)
-
-[node name="Star736" parent="Pup/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5583.06, 3195.97)
-scale = Vector2(1.25257, 1.25257)
-
-[node name="Star737" parent="Pup/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5599.45, 3153.7)
-scale = Vector2(1.14635, 1.14635)
-
-[node name="Star738" parent="Pup/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5649.15, 3101.21)
-scale = Vector2(1.1899, 1.1899)
-
-[node name="Star739" parent="Pup/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5685.08, 3047.76)
-scale = Vector2(1.22696, 1.22696)
-
-[node name="Star740" parent="Pup/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5735.83, 3086.22)
-scale = Vector2(0.92934, 0.92934)
-
-[node name="Star741" parent="Pup/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5717.02, 3510.08)
-scale = Vector2(1.1146, 1.1146)
-
-[node name="Star742" parent="Pup/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5745.28, 3708.09)
-scale = Vector2(1.17329, 1.17329)
-
-[node name="Star744" parent="Pup/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5649.15, 3101.21)
-scale = Vector2(1.23973, 1.23973)
-
-[node name="Star745" parent="Pup/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5643.41, 3130.3)
-scale = Vector2(1.1534, 1.1534)
-
-[node name="Star746" parent="Pup/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5623.09, 3211.78)
-scale = Vector2(1.22855, 1.22855)
-
-[node name="Star747" parent="Pup/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5583.06, 3195.97)
-scale = Vector2(1.25374, 1.25374)
 
 [node name="743" type="Line2D" parent="Pup"]
 points = PackedVector2Array(5649.15, 3101.21, 5643.41, 3130.3, 5623.09, 3211.78, 5583.06, 3195.97)
@@ -4248,26 +750,6 @@ width = 2.0
 
 [node name="Stars" type="Node2D" parent="Pyx"]
 
-[node name="Star" parent="Pyx/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5717.02, 3510.08)
-scale = Vector2(1.22907, 1.22907)
-
-[node name="Star749" parent="Pyx/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5890.49, 3383.33)
-scale = Vector2(0.940622, 0.940622)
-
-[node name="Star750" parent="Pyx/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5907.06, 3326.03)
-scale = Vector2(0.999543, 0.999543)
-
-[node name="Star751" parent="Pyx/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5940.03, 3178.16)
-scale = Vector2(1.03471, 1.03471)
-
 [node name="Ret" parent="." instance=ExtResource("2_3mw2d")]
 
 [node name="752" type="Line2D" parent="Ret"]
@@ -4276,31 +758,6 @@ width = 2.0
 
 [node name="Stars" type="Node2D" parent="Ret"]
 
-[node name="Star" parent="Ret/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4628.52, 4116.8)
-scale = Vector2(1.03551, 1.03551)
-
-[node name="Star753" parent="Ret/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4638.3, 4031.16)
-scale = Vector2(0.900968, 0.900968)
-
-[node name="Star754" parent="Ret/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4554.04, 4087.81)
-scale = Vector2(1.18289, 1.18289)
-
-[node name="Star755" parent="Ret/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4484.95, 4179.79)
-scale = Vector2(1.11167, 1.11167)
-
-[node name="Star756" parent="Ret/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4628.52, 4116.8)
-scale = Vector2(1.09828, 1.09828)
-
 [node name="Sge" parent="." instance=ExtResource("2_3mw2d")]
 
 [node name="757" type="Line2D" parent="Sge"]
@@ -4308,31 +765,6 @@ points = PackedVector2Array(2185.46, 1943.62, 2220.09, 1929.57, 2274.1, 1903.71)
 width = 2.0
 
 [node name="Stars" type="Node2D" parent="Sge"]
-
-[node name="Star" parent="Sge/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2185.46, 1943.62)
-scale = Vector2(1.28584, 1.28584)
-
-[node name="Star758" parent="Sge/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2220.09, 1929.57)
-scale = Vector2(1.00348, 1.00348)
-
-[node name="Star759" parent="Sge/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2274.1, 1903.71)
-scale = Vector2(0.901659, 0.901659)
-
-[node name="Star761" parent="Sge/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2189.98, 1958.15)
-scale = Vector2(1.15039, 1.15039)
-
-[node name="Star762" parent="Sge/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2220.09, 1929.57)
-scale = Vector2(1.24461, 1.24461)
 
 [node name="760" type="Line2D" parent="Sge"]
 points = PackedVector2Array(2189.98, 1958.15, 2220.09, 1929.57)
@@ -4345,171 +777,6 @@ points = PackedVector2Array(1793.73, 3422.57, 1824.82, 3358.38, 1809.72, 3235.36
 width = 2.0
 
 [node name="Stars" type="Node2D" parent="Sgr"]
-
-[node name="Star" parent="Sgr/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1793.73, 3422.57)
-scale = Vector2(1.18666, 1.18666)
-
-[node name="Star764" parent="Sgr/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1824.82, 3358.38)
-scale = Vector2(1.24849, 1.24849)
-
-[node name="Star765" parent="Sgr/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1809.72, 3235.36)
-scale = Vector2(0.953015, 0.953015)
-
-[node name="Star766" parent="Sgr/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1842.86, 3116.39)
-scale = Vector2(1.16029, 1.16029)
-
-[node name="Star767" parent="Sgr/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1775.38, 2998.59)
-scale = Vector2(0.931778, 0.931778)
-
-[node name="Star769" parent="Sgr/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2102.53, 3630.39)
-scale = Vector2(1.25438, 1.25438)
-
-[node name="Star770" parent="Sgr/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2108.46, 3526.63)
-scale = Vector2(1.27764, 1.27764)
-
-[node name="Star771" parent="Sgr/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2007.41, 3236.76)
-scale = Vector2(1.14756, 1.14756)
-
-[node name="Star772" parent="Sgr/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1926.87, 3158.75)
-scale = Vector2(0.972987, 0.972987)
-
-[node name="Star773" parent="Sgr/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1842.86, 3116.39)
-scale = Vector2(1.1087, 1.1087)
-
-[node name="Star775" parent="Sgr/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2257.49, 3560.44)
-scale = Vector2(1.1926, 1.1926)
-
-[node name="Star776" parent="Sgr/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2278.75, 3382.46)
-scale = Vector2(1.18289, 1.18289)
-
-[node name="Star777" parent="Sgr/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2260.24, 3140.09)
-scale = Vector2(1.1937, 1.1937)
-
-[node name="Star778" parent="Sgr/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2169.36, 3101.86)
-scale = Vector2(1.19918, 1.19918)
-
-[node name="Star779" parent="Sgr/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2115.06, 3091.73)
-scale = Vector2(0.937495, 0.937495)
-
-[node name="Star780" parent="Sgr/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2068.82, 3111.93)
-scale = Vector2(1.19648, 1.19648)
-
-[node name="Star781" parent="Sgr/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1972.51, 3140.01)
-scale = Vector2(1.19056, 1.19056)
-
-[node name="Star782" parent="Sgr/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1926.87, 3158.75)
-scale = Vector2(1.28817, 1.28817)
-
-[node name="Star783" parent="Sgr/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1809.72, 3235.36)
-scale = Vector2(0.977142, 0.977142)
-
-[node name="Star784" parent="Sgr/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1737.59, 3251.45)
-scale = Vector2(1.16064, 1.16064)
-
-[node name="Star785" parent="Sgr/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1824.82, 3358.38)
-scale = Vector2(1.24134, 1.24134)
-
-[node name="Star786" parent="Sgr/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2007.41, 3236.76)
-scale = Vector2(1.25644, 1.25644)
-
-[node name="Star787" parent="Sgr/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2027.96, 3177.1)
-scale = Vector2(1.15243, 1.15243)
-
-[node name="Star788" parent="Sgr/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1972.51, 3140.01)
-scale = Vector2(1.04517, 1.04517)
-
-[node name="Star789" parent="Sgr/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2017.25, 3017.02)
-scale = Vector2(1.2251, 1.2251)
-
-[node name="Star790" parent="Sgr/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2041.38, 2997.64)
-scale = Vector2(1.17795, 1.17795)
-
-[node name="Star791" parent="Sgr/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2078.77, 2941.73)
-scale = Vector2(0.944587, 0.944587)
-
-[node name="Star792" parent="Sgr/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2097.95, 2911.87)
-scale = Vector2(0.93482, 0.93482)
-
-[node name="Star793" parent="Sgr/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2098.2, 2860.78)
-scale = Vector2(0.926471, 0.926471)
-
-[node name="Star795" parent="Sgr/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2017.25, 3017.02)
-scale = Vector2(1.03242, 1.03242)
-
-[node name="Star796" parent="Sgr/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1984.22, 2999.88)
-scale = Vector2(1.07318, 1.07318)
-
-[node name="Star797" parent="Sgr/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1967.31, 3044.11)
-scale = Vector2(1.24148, 1.24148)
-
-[node name="Star798" parent="Sgr/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1972.51, 3140.01)
-scale = Vector2(1.13055, 1.13055)
 
 [node name="768" type="Line2D" parent="Sgr"]
 points = PackedVector2Array(2102.53, 3630.39, 2108.46, 3526.63, 2007.41, 3236.76, 1926.87, 3158.75, 1842.86, 3116.39)
@@ -4531,81 +798,6 @@ width = 2.0
 
 [node name="Stars" type="Node2D" parent="Sco"]
 
-[node name="Star" parent="Sco/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1134.55, 3135.08)
-scale = Vector2(1.00682, 1.00682)
-
-[node name="Star800" parent="Sco/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1141.58, 3040.79)
-scale = Vector2(1.04399, 1.04399)
-
-[node name="Star801" parent="Sco/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1165.83, 2964.75)
-scale = Vector2(1.0949, 1.0949)
-
-[node name="Star803" parent="Sco/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1141.58, 3040.79)
-scale = Vector2(0.928565, 0.928565)
-
-[node name="Star804" parent="Sco/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1240.65, 3121.01)
-scale = Vector2(1.06063, 1.06063)
-
-[node name="Star805" parent="Sco/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1279.69, 3143.66)
-scale = Vector2(0.947333, 0.947333)
-
-[node name="Star806" parent="Sco/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1310.44, 3191.83)
-scale = Vector2(1.21628, 1.21628)
-
-[node name="Star807" parent="Sco/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1378.28, 3355.92)
-scale = Vector2(1.1071, 1.1071)
-
-[node name="Star808" parent="Sco/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1386.38, 3457.28)
-scale = Vector2(1.09384, 1.09384)
-
-[node name="Star809" parent="Sco/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1399.27, 3573.76)
-scale = Vector2(1.21522, 1.21522)
-
-[node name="Star810" parent="Sco/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1482.73, 3597.46)
-scale = Vector2(1.12759, 1.12759)
-
-[node name="Star811" parent="Sco/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1602.26, 3590.94)
-scale = Vector2(0.900688, 0.900688)
-
-[node name="Star812" parent="Sco/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1651.03, 3513.43)
-scale = Vector2(1.11758, 1.11758)
-
-[node name="Star813" parent="Sco/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1626.82, 3483.81)
-scale = Vector2(0.917031, 0.917031)
-
-[node name="Star814" parent="Sco/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1584.64, 3431.8)
-scale = Vector2(1.01293, 1.01293)
-
 [node name="802" type="Line2D" parent="Sco"]
 points = PackedVector2Array(1141.58, 3040.79, 1240.65, 3121.01, 1279.69, 3143.66, 1310.44, 3191.83, 1378.28, 3355.92, 1386.38, 3457.28, 1399.27, 3573.76, 1482.73, 3597.46, 1602.26, 3590.94, 1651.03, 3513.43, 1626.82, 3483.81, 1584.64, 3431.8)
 width = 2.0
@@ -4618,26 +810,6 @@ width = 2.0
 
 [node name="Stars" type="Node2D" parent="Scl"]
 
-[node name="Star" parent="Scl/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3698.38, 3222.65)
-scale = Vector2(0.938397, 0.938397)
-
-[node name="Star816" parent="Scl/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3367.4, 3189.52)
-scale = Vector2(1.2044, 1.2044)
-
-[node name="Star817" parent="Scl/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3224.41, 3308.36)
-scale = Vector2(1.28991, 1.28991)
-
-[node name="Star818" parent="Scl/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3291.61, 3451.09)
-scale = Vector2(1.22436, 1.22436)
-
 [node name="Sct" parent="." instance=ExtResource("2_3mw2d")]
 
 [node name="819" type="Line2D" parent="Sct"]
@@ -4645,31 +817,6 @@ points = PackedVector2Array(1877.23, 2652.59, 1934.08, 2558.19, 1910.8, 2674.42,
 width = 2.0
 
 [node name="Stars" type="Node2D" parent="Sct"]
-
-[node name="Star" parent="Sct/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1877.23, 2652.59)
-scale = Vector2(1.23329, 1.23329)
-
-[node name="Star820" parent="Sct/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1934.08, 2558.19)
-scale = Vector2(0.973519, 0.973519)
-
-[node name="Star821" parent="Sct/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1910.8, 2674.42)
-scale = Vector2(1.22858, 1.22858)
-
-[node name="Star822" parent="Sct/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1848.69, 2823.28)
-scale = Vector2(1.2325, 1.2325)
-
-[node name="Star823" parent="Sct/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1877.23, 2652.59)
-scale = Vector2(0.925441, 0.925441)
 
 [node name="Ser" parent="." instance=ExtResource("2_3mw2d")]
 
@@ -4679,51 +826,6 @@ width = 2.0
 
 [node name="Stars" type="Node2D" parent="Ser"]
 
-[node name="Star" parent="Ser/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1074.39, 2013.61)
-scale = Vector2(1.01557, 1.01557)
-
-[node name="Star825" parent="Ser/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1052.37, 1898.9)
-scale = Vector2(1.0687, 1.0687)
-
-[node name="Star826" parent="Ser/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1086.51, 1940.18)
-scale = Vector2(0.977232, 0.977232)
-
-[node name="Star827" parent="Ser/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1123.15, 2007.14)
-scale = Vector2(1.2587, 1.2587)
-
-[node name="Star828" parent="Ser/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1074.39, 2013.61)
-scale = Vector2(1.10223, 1.10223)
-
-[node name="Star829" parent="Ser/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1020.31, 2145.45)
-scale = Vector2(0.905106, 0.905106)
-
-[node name="Star830" parent="Ser/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1065.27, 2256.51)
-scale = Vector2(0.964642, 0.964642)
-
-[node name="Star831" parent="Ser/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1096.38, 2309.1)
-scale = Vector2(1.2152, 1.2152)
-
-[node name="Star832" parent="Ser/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1208.14, 2529.75)
-scale = Vector2(1.18085, 1.18085)
-
 [node name="Ser833" parent="." instance=ExtResource("2_3mw2d")]
 
 [node name="834" type="Line2D" parent="Ser833"]
@@ -4731,36 +833,6 @@ points = PackedVector2Array(1474.3, 2854.57, 1603.54, 2845.76, 1705.38, 2693.89,
 width = 2.0
 
 [node name="Stars" type="Node2D" parent="Ser833"]
-
-[node name="Star" parent="Ser833/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1474.3, 2854.57)
-scale = Vector2(1.19265, 1.19265)
-
-[node name="Star835" parent="Ser833/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1603.54, 2845.76)
-scale = Vector2(1.18129, 1.18129)
-
-[node name="Star836" parent="Ser833/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1705.38, 2693.89)
-scale = Vector2(1.21696, 1.21696)
-
-[node name="Star837" parent="Ser833/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1724.64, 2650.87)
-scale = Vector2(1.29665, 1.29665)
-
-[node name="Star838" parent="Ser833/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1811.22, 2508.27)
-scale = Vector2(1.01939, 1.01939)
-
-[node name="Star839" parent="Ser833/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1977.04, 2316.5)
-scale = Vector2(1.21826, 1.21826)
 
 [node name="Sex" parent="." instance=ExtResource("2_3mw2d")]
 
@@ -4770,26 +842,6 @@ width = 2.0
 
 [node name="Stars" type="Node2D" parent="Sex"]
 
-[node name="Star" parent="Sex/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6307.71, 2440.03)
-scale = Vector2(1.19799, 1.19799)
-
-[node name="Star841" parent="Sex/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6234.41, 2648.83)
-scale = Vector2(1.01041, 1.01041)
-
-[node name="Star842" parent="Sex/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6410.02, 2503.96)
-scale = Vector2(1.14785, 1.14785)
-
-[node name="Star843" parent="Sex/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6413.88, 2447.2)
-scale = Vector2(1.17009, 1.17009)
-
 [node name="Tau" parent="." instance=ExtResource("2_3mw2d")]
 
 [node name="844" type="Line2D" parent="Tau"]
@@ -4797,76 +849,6 @@ points = PackedVector2Array(5023.81, 1859.15, 4730.62, 1984.25, 4696.15, 2001.49
 width = 2.0
 
 [node name="Stars" type="Node2D" parent="Tau"]
-
-[node name="Star" parent="Tau/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5023.81, 1859.15)
-scale = Vector2(1.14011, 1.14011)
-
-[node name="Star845" parent="Tau/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4730.62, 1984.25)
-scale = Vector2(1.03583, 1.03583)
-
-[node name="Star846" parent="Tau/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4696.15, 2001.49)
-scale = Vector2(0.98933, 0.98933)
-
-[node name="Star847" parent="Tau/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4654.02, 2008.05)
-scale = Vector2(1.03556, 1.03556)
-
-[node name="Star848" parent="Tau/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4668.94, 1956.35)
-scale = Vector2(0.930094, 0.930094)
-
-[node name="Star849" parent="Tau/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4695.93, 1912.13)
-scale = Vector2(1.12724, 1.12724)
-
-[node name="Star850" parent="Tau/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4969.89, 1657.6)
-scale = Vector2(1.12686, 1.12686)
-
-[node name="Star852" parent="Tau/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4654.02, 2008.05)
-scale = Vector2(1.09252, 1.09252)
-
-[node name="Star853" parent="Tau/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4563.23, 2092.76)
-scale = Vector2(0.900012, 0.900012)
-
-[node name="Star854" parent="Tau/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4404.05, 2167.22)
-scale = Vector2(0.971701, 0.971701)
-
-[node name="Star855" parent="Tau/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4574.99, 2268.29)
-scale = Vector2(1.25687, 1.25687)
-
-[node name="Star857" parent="Tau/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4404.05, 2167.22)
-scale = Vector2(0.992273, 0.992273)
-
-[node name="Star858" parent="Tau/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4392.86, 2186.22)
-scale = Vector2(0.978173, 0.978173)
-
-[node name="Star859" parent="Tau/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4450.15, 2419.15)
-scale = Vector2(1.01473, 1.01473)
 
 [node name="851" type="Line2D" parent="Tau"]
 points = PackedVector2Array(4654.02, 2008.05, 4563.23, 2092.76, 4404.05, 2167.22, 4574.99, 2268.29)
@@ -4884,21 +866,6 @@ width = 2.0
 
 [node name="Stars" type="Node2D" parent="Tel"]
 
-[node name="Star" parent="Tel/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1763.34, 3670.77)
-scale = Vector2(1.2399, 1.2399)
-
-[node name="Star861" parent="Tel/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1838.12, 3671.15)
-scale = Vector2(0.945926, 0.945926)
-
-[node name="Star862" parent="Tel/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1846.95, 3754.91)
-scale = Vector2(0.957493, 0.957493)
-
 [node name="Tri" parent="." instance=ExtResource("2_3mw2d")]
 
 [node name="863" type="Line2D" parent="Tri"]
@@ -4906,26 +873,6 @@ points = PackedVector2Array(3957.14, 1631.37, 4035.33, 1485.34, 4072.24, 1516.13
 width = 2.0
 
 [node name="Stars" type="Node2D" parent="Tri"]
-
-[node name="Star" parent="Tri/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3957.14, 1631.37)
-scale = Vector2(0.900851, 0.900851)
-
-[node name="Star864" parent="Tri/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4035.33, 1485.34)
-scale = Vector2(1.19643, 1.19643)
-
-[node name="Star865" parent="Tri/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(4072.24, 1516.13)
-scale = Vector2(0.978513, 0.978513)
-
-[node name="Star866" parent="Tri/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3957.14, 1631.37)
-scale = Vector2(1.15552, 1.15552)
 
 [node name="TrA" parent="." instance=ExtResource("2_3mw2d")]
 
@@ -4935,26 +882,6 @@ width = 2.0
 
 [node name="Stars" type="Node2D" parent="TrA"]
 
-[node name="Star" parent="TrA/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1371.16, 4293.75)
-scale = Vector2(1.23623, 1.23623)
-
-[node name="Star868" parent="TrA/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1116.93, 4142.63)
-scale = Vector2(1.0191, 1.0191)
-
-[node name="Star869" parent="TrA/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(944.821, 4284.35)
-scale = Vector2(1.15711, 1.15711)
-
-[node name="Star870" parent="TrA/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1371.16, 4293.75)
-scale = Vector2(1.11263, 1.11263)
-
 [node name="Tuc" parent="." instance=ExtResource("2_3mw2d")]
 
 [node name="871" type="Line2D" parent="Tuc"]
@@ -4963,41 +890,6 @@ width = 2.0
 
 [node name="Stars" type="Node2D" parent="Tuc"]
 
-[node name="Star" parent="Tuc/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2937.88, 4057.01)
-scale = Vector2(1.24131, 1.24131)
-
-[node name="Star872" parent="Tuc/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3217.79, 4002.36)
-scale = Vector2(1.04054, 1.04054)
-
-[node name="Star873" parent="Tuc/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3569.84, 4129.87)
-scale = Vector2(1.25585, 1.25585)
-
-[node name="Star874" parent="Tuc/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3515.34, 4181.62)
-scale = Vector2(0.955167, 0.955167)
-
-[node name="Star875" parent="Tuc/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(3419.6, 4200.58)
-scale = Vector2(1.10303, 1.10303)
-
-[node name="Star876" parent="Tuc/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2979.83, 4184.09)
-scale = Vector2(1.28403, 1.28403)
-
-[node name="Star877" parent="Tuc/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2937.88, 4057.01)
-scale = Vector2(1.12498, 1.12498)
-
 [node name="UMa" parent="." instance=ExtResource("2_3mw2d")]
 
 [node name="878" type="Line2D" parent="UMa"]
@@ -5005,146 +897,6 @@ points = PackedVector2Array(73.2735, 890.12, 6572.71, 762.723, 6563.75, 907.675,
 width = 2.0
 
 [node name="Stars" type="Node2D" parent="UMa"]
-
-[node name="Star" parent="UMa/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(73.2735, 890.12)
-scale = Vector2(1.00061, 1.00061)
-
-[node name="Star879" parent="UMa/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6572.71, 762.723)
-scale = Vector2(1.17944, 1.17944)
-
-[node name="Star880" parent="UMa/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6563.75, 907.675)
-scale = Vector2(1.2231, 1.2231)
-
-[node name="Star881" parent="UMa/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6810.7, 980.24)
-scale = Vector2(1.15585, 1.15585)
-
-[node name="Star882" parent="UMa/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(73.2735, 890.12)
-scale = Vector2(1.23993, 1.23993)
-
-[node name="Star883" parent="UMa/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(256.639, 919.085)
-scale = Vector2(1.04419, 1.04419)
-
-[node name="Star884" parent="UMa/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(398.647, 947.014)
-scale = Vector2(1.0204, 1.0204)
-
-[node name="Star885" parent="UMa/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(510.819, 1098.54)
-scale = Vector2(1.15199, 1.15199)
-
-[node name="Star887" parent="UMa/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6810.7, 980.24)
-scale = Vector2(1.13707, 1.13707)
-
-[node name="Star888" parent="UMa/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6773.74, 1139.96)
-scale = Vector2(1.11825, 1.11825)
-
-[node name="Star889" parent="UMa/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6642.77, 1536.45)
-scale = Vector2(1.22098, 1.22098)
-
-[node name="Star890" parent="UMa/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6641.39, 1578.67)
-scale = Vector2(1.28705, 1.28705)
-
-[node name="Star892" parent="UMa/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6773.74, 1139.96)
-scale = Vector2(1.19902, 1.19902)
-
-[node name="Star893" parent="UMa/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6600.9, 1228.54)
-scale = Vector2(1.08621, 1.08621)
-
-[node name="Star894" parent="UMa/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6376.06, 1309.51)
-scale = Vector2(1.07106, 1.07106)
-
-[node name="Star896" parent="UMa/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6600.9, 1228.54)
-scale = Vector2(1.08554, 1.08554)
-
-[node name="Star897" parent="UMa/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6351.21, 1271.31)
-scale = Vector2(0.978535, 0.978535)
-
-[node name="Star899" parent="UMa/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6572.71, 762.723)
-scale = Vector2(1.14928, 1.14928)
-
-[node name="Star900" parent="UMa/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6134.76, 727.329)
-scale = Vector2(1.07711, 1.07711)
-
-[node name="Star901" parent="UMa/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5843.76, 790.609)
-scale = Vector2(1.27145, 1.27145)
-
-[node name="Star902" parent="UMa/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6227.2, 835.955)
-scale = Vector2(1.19681, 1.19681)
-
-[node name="Star903" parent="UMa/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6563.75, 907.675)
-scale = Vector2(0.904958, 0.904958)
-
-[node name="Star905" parent="UMa/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6563.75, 907.675)
-scale = Vector2(1.13905, 1.13905)
-
-[node name="Star906" parent="UMa/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6232.5, 970.264)
-scale = Vector2(1.25595, 1.25595)
-
-[node name="Star907" parent="UMa/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6141.07, 1034.71)
-scale = Vector2(1.00938, 1.00938)
-
-[node name="Star908" parent="UMa/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5981.24, 1132.87)
-scale = Vector2(1.19554, 1.19554)
-
-[node name="Star910" parent="UMa/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6002.22, 1156.77)
-scale = Vector2(1.0288, 1.0288)
-
-[node name="Star911" parent="UMa/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6141.07, 1034.71)
-scale = Vector2(1.03682, 1.03682)
 
 [node name="886" type="Line2D" parent="UMa"]
 points = PackedVector2Array(6810.7, 980.24, 6773.74, 1139.96, 6642.77, 1536.45, 6641.39, 1578.67)
@@ -5178,41 +930,6 @@ width = 2.0
 
 [node name="Stars" type="Node2D" parent="UMi"]
 
-[node name="Star" parent="UMi/Stars" instance=ExtResource("3_07t30")]
-position = Vector2(1064.28, 329.548)
-scale = Vector2(1.22229, 1.22229)
-
-[node name="Star913" parent="UMi/Stars" instance=ExtResource("3_07t30")]
-position = Vector2(1223.15, 384.607)
-scale = Vector2(1.12762, 1.12762)
-
-[node name="Star914" parent="UMi/Stars" instance=ExtResource("3_07t30")]
-position = Vector2(953.46, 490.482)
-scale = Vector2(1.2552, 1.2552)
-
-[node name="Star915" parent="UMi/Stars" instance=ExtResource("3_07t30")]
-position = Vector2(810.852, 427.802)
-scale = Vector2(1.23633, 1.23633)
-
-[node name="Star916" parent="UMi/Stars" instance=ExtResource("3_07t30")]
-position = Vector2(1064.28, 329.548)
-scale = Vector2(0.928277, 0.928277)
-
-[node name="Star917" parent="UMi/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1358.36, 214.993)
-scale = Vector2(0.948581, 0.948581)
-
-[node name="Star918" parent="UMi/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1578.03, 92.1645)
-scale = Vector2(1.06465, 1.06465)
-
-[node name="Polaris" parent="UMi/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(1861, 84)
-scale = Vector2(0.933248, 0.933248)
-
 [node name="Vel" parent="." instance=ExtResource("2_3mw2d")]
 
 [node name="920" type="Line2D" parent="Vel"]
@@ -5221,46 +938,6 @@ width = 2.0
 
 [node name="Stars" type="Node2D" parent="Vel"]
 
-[node name="Star" parent="Vel/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5912.34, 3907.14)
-scale = Vector2(1.08171, 1.08171)
-
-[node name="Star921" parent="Vel/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6090.04, 3915.29)
-scale = Vector2(1.25035, 1.25035)
-
-[node name="Star922" parent="Vel/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6255.1, 3903.33)
-scale = Vector2(0.940901, 0.940901)
-
-[node name="Star923" parent="Vel/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6492.16, 3764.35)
-scale = Vector2(1.24535, 1.24535)
-
-[node name="Star924" parent="Vel/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6340, 3567.29)
-scale = Vector2(1.03825, 1.03825)
-
-[node name="Star925" parent="Vel/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6130.83, 3522.6)
-scale = Vector2(1.11582, 1.11582)
-
-[node name="Star926" parent="Vel/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6022.98, 3602.68)
-scale = Vector2(1.1139, 1.1139)
-
-[node name="Star927" parent="Vel/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5745.28, 3708.09)
-scale = Vector2(1.25662, 1.25662)
-
 [node name="Vir" parent="." instance=ExtResource("2_3mw2d")]
 
 [node name="928" type="Line2D" parent="Vir"]
@@ -5268,81 +945,6 @@ points = PackedVector2Array(6772.83, 2253.71, 6795.8, 2382.35, 94.5535, 2448, 19
 width = 2.0
 
 [node name="Stars" type="Node2D" parent="Vir"]
-
-[node name="Star" parent="Vir/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6772.83, 2253.71)
-scale = Vector2(1.1618, 1.1618)
-
-[node name="Star929" parent="Vir/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(6795.8, 2382.35)
-scale = Vector2(0.901575, 0.901575)
-
-[node name="Star930" parent="Vir/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(94.5535, 2448)
-scale = Vector2(1.19948, 1.19948)
-
-[node name="Star931" parent="Vir/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(197.889, 2469.13)
-scale = Vector2(0.955932, 0.955932)
-
-[node name="Star932" parent="Vir/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(332.263, 2579.55)
-scale = Vector2(1.16202, 1.16202)
-
-[node name="Star933" parent="Vir/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(404.666, 2731.35)
-scale = Vector2(1.17829, 1.17829)
-
-[node name="Star934" parent="Vir/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(646.068, 2592.01)
-scale = Vector2(0.973768, 0.973768)
-
-[node name="Star935" parent="Vir/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(774.537, 2582.77)
-scale = Vector2(0.973024, 0.973024)
-
-[node name="Star937" parent="Vir/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(295.34, 2134.1)
-scale = Vector2(0.992932, 0.992932)
-
-[node name="Star938" parent="Vir/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(264.117, 2338.27)
-scale = Vector2(1.22547, 1.22547)
-
-[node name="Star939" parent="Vir/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(197.889, 2469.13)
-scale = Vector2(0.904616, 0.904616)
-
-[node name="Star941" parent="Vir/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(332.263, 2579.55)
-scale = Vector2(1.13562, 1.13562)
-
-[node name="Star942" parent="Vir/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(449.793, 2446.09)
-scale = Vector2(1.05172, 1.05172)
-
-[node name="Star943" parent="Vir/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(577.82, 2388.3)
-scale = Vector2(1.05566, 1.05566)
-
-[node name="Star944" parent="Vir/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(789.682, 2378.89)
-scale = Vector2(1.10982, 1.10982)
 
 [node name="936" type="Line2D" parent="Vir"]
 points = PackedVector2Array(295.34, 2134.1, 264.117, 2338.27, 197.889, 2469.13)
@@ -5360,41 +962,6 @@ width = 2.0
 
 [node name="Stars" type="Node2D" parent="Vol"]
 
-[node name="Star" parent="Vol/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5996.62, 4222.69)
-scale = Vector2(0.921774, 0.921774)
-
-[node name="Star946" parent="Vol/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5822.25, 4215.7)
-scale = Vector2(1.29061, 1.29061)
-
-[node name="Star947" parent="Vol/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5737.67, 4282.66)
-scale = Vector2(1.14605, 1.14605)
-
-[node name="Star948" parent="Vol/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5494.94, 4264.84)
-scale = Vector2(1.21916, 1.21916)
-
-[node name="Star949" parent="Vol/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5456.55, 4333.47)
-scale = Vector2(0.937296, 0.937296)
-
-[node name="Star950" parent="Vol/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5737.67, 4282.66)
-scale = Vector2(1.05444, 1.05444)
-
-[node name="Star951" parent="Vol/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(5996.62, 4222.69)
-scale = Vector2(1.18907, 1.18907)
-
 [node name="Vul" parent="." instance=ExtResource("2_3mw2d")]
 
 [node name="952" type="Line2D" parent="Vul"]
@@ -5402,28 +969,3 @@ points = PackedVector2Array(2072.03, 1852.46, 2131.35, 1764.05, 2248.94, 1779.85
 width = 2.0
 
 [node name="Stars" type="Node2D" parent="Vul"]
-
-[node name="Star" parent="Vul/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2072.03, 1852.46)
-scale = Vector2(1.11671, 1.11671)
-
-[node name="Star953" parent="Vul/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2131.35, 1764.05)
-scale = Vector2(0.987688, 0.987688)
-
-[node name="Star954" parent="Vul/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2248.94, 1779.85)
-scale = Vector2(1.20968, 1.20968)
-
-[node name="Star955" parent="Vul/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2285.23, 1680.65)
-scale = Vector2(1.19276, 1.19276)
-
-[node name="Star956" parent="Vul/Stars" instance=ExtResource("3_07t30")]
-process_mode = 4
-position = Vector2(2354.9, 1679.02)
-scale = Vector2(0.900319, 0.900319)
