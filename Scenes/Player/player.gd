@@ -1,8 +1,7 @@
 extends CharacterBody2D
 
 # Constants for movement and grappling mechanics
-const SWING_SPEED = 700           # Speed of the character while swinging on the rope
-const SPEED = 50
+@export var SWING_SPEED = 700           # Speed of the character while swinging on the rope
 @export var ROPE_LENGTH = 300 # (circle radius)
 const MAX_VERTICAL_VELOCITY = 500
 const GRAVITY = 880
@@ -50,7 +49,7 @@ func _process(delta):
 	# Flip Character
 	var direction = Input.get_vector("left","right","up","down")
 	if direction.x != 0:
-		$Player_Img.flip_h = !direction.x < 0 
+		$Player_Img.flip_h = direction.x < 0 
 
 func _physics_process(delta: float):
 	# Get the input direction from the player
@@ -72,7 +71,6 @@ func _physics_process(delta: float):
 		new_pos = constrain_rope(new_pos, rope_length)  # Constrain the position within the rope length
 	else:
 		total_forces = Vector2(0, GRAVITY)
-		#nongrapple_physics(direction, delta)
 		new_pos = verlet_integration(prev_pos, total_forces, delta)  # Calculate the new position
 	
 	var velocity_value = (new_pos - position) / delta  # Update velocity based on the new position
@@ -87,8 +85,6 @@ func _physics_process(delta: float):
 	velocity.y = clamp(velocity.y, -MAX_VERTICAL_VELOCITY, MAX_VERTICAL_VELOCITY)
 	prev_pos = position  # Update the previous position
 	move_and_slide()  
-	
-	#print(velocity)
 
 func find_closest_object(direction):
 	# Check the closest object within the area

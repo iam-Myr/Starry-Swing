@@ -63,11 +63,11 @@ position = Vector2(1371, -186)
 
 [node name="UMi" parent="." instance=ExtResource("2_wibjh")]
 position = Vector2(411, 349)
+constellation_name = "Ursa Minor"
 metadata/_edit_lock_ = true
 
 [node name="Line" parent="UMi" index="1"]
 points = PackedVector2Array(651, 427, 627, 332, 563, 224, 458, 156, 475, 92, 334, 57, 336, 144, 458, 156)
-width = 2.0
 
 [node name="Stars" parent="UMi" index="2"]
 metadata/_edit_lock_ = true
@@ -96,11 +96,11 @@ position = Vector2(336, 142)
 
 [node name="Cepheus" parent="." instance=ExtResource("2_wibjh")]
 position = Vector2(389, 325)
+constellation_name = "Cepheus"
 metadata/_edit_lock_ = true
 
 [node name="Line" parent="Cepheus" index="1"]
 points = PackedVector2Array(1118, -97, 1172, -12, 1038, 122, 960, 411, 1230, 254, 1383, 123, 1358, 66, 1171, -12)
-width = 2.0
 
 [node name="Cepheus@Stars2@Star" parent="Cepheus/Stars" index="0" instance=ExtResource("3_7cpuq")]
 position = Vector2(1120, -94)
@@ -125,11 +125,11 @@ position = Vector2(957, 414)
 
 [node name="Draco" parent="." instance=ExtResource("2_wibjh")]
 position = Vector2(411, 363)
+constellation_name = "Draco"
 metadata/_edit_lock_ = true
 
 [node name="Line" parent="Draco" index="1"]
 points = PackedVector2Array(108, 511, 125, 335, 81, 71, 136, -205, 244, -285, 500, -190, 678, -35, 854, -48, 803, -129, 704, -285)
-width = 2.0
 
 [node name="Draco@Stars2@Star" parent="Draco/Stars" index="0" instance=ExtResource("3_7cpuq")]
 position = Vector2(137, -205)
@@ -165,11 +165,11 @@ position = Vector2(673, -34)
 position = Vector2(107, 511)
 
 [node name="UrsaMajor" parent="." instance=ExtResource("2_wibjh")]
+constellation_name = "Ursa Major"
 metadata/_edit_lock_ = true
 
 [node name="Line" parent="UrsaMajor" index="1"]
 points = PackedVector2Array(136, 296, 216, 439, 211, 551, 213, 704, 123, 782, 219, 967, 350, 928, 214, 704)
-width = 2.0
 
 [node name="UrsaMajor@Stars2@Star" parent="UrsaMajor/Stars" index="0" instance=ExtResource("3_7cpuq")]
 position = Vector2(132, 298)
@@ -193,11 +193,11 @@ position = Vector2(126, 782)
 position = Vector2(221, 966)
 
 [node name="Cassiopeia" parent="." instance=ExtResource("2_wibjh")]
+constellation_name = "Cassiopeia"
 metadata/_edit_lock_ = true
 
 [node name="Line" parent="Cassiopeia" index="1"]
 points = PackedVector2Array(1623, 1077, 1741, 1031, 1758, 940, 1873, 903, 1817, 790)
-width = 2.0
 
 [node name="Cassiopeia@Stars2@Star" parent="Cassiopeia/Stars" index="0" instance=ExtResource("3_7cpuq")]
 position = Vector2(1626, 1076)

@@ -10,6 +10,9 @@ func _ready():
 	var rand_scale = randf_range(0.9,1.3)
 	self.scale = Vector2(rand_scale,rand_scale)
 
+#func _process(_delta):
+	#$StarImg.global_rotation = deg_to_rad(0)
+
 func get_chosen():
 	is_chosen = true
 	the_chosen_one(is_chosen)

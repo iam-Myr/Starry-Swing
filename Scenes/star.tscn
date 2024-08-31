@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://bho1ihsa2y4vl"]
 
 [ext_resource type="Script" path="res://Scenes/star.gd" id="1_rsrx2"]
-[ext_resource type="Texture2D" uid="uid://blhw5j2rd6jjq" path="res://Assets/Stars/item-feedback-4.png" id="2_1swxm"]
+[ext_resource type="Texture2D" uid="uid://do0ss5ao26yer" path="res://Assets/Stars/cool_star2.png" id="2_v3thv"]
 [ext_resource type="Texture2D" uid="uid://cmqat35qq3u5g" path="res://Assets/light.png" id="3_g75ee"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_5qc33"]
@@ -19,13 +19,14 @@ script = ExtResource("1_rsrx2")
 shape = SubResource("CircleShape2D_5qc33")
 
 [node name="StarImg" type="Sprite2D" parent="."]
-position = Vector2(-9.53674e-07, -1)
-scale = Vector2(0.957031, 0.770038)
-texture = ExtResource("2_1swxm")
+position = Vector2(1.19209e-07, 0)
+scale = Vector2(0.943655, 0.886123)
+texture = ExtResource("2_v3thv")
 
 [node name="Light" type="PointLight2D" parent="."]
 enabled = false
 color = Color(0.596078, 1, 1, 0.67451)
+energy = 0.5
 texture = ExtResource("3_g75ee")
 texture_scale = 0.07
 
@@ -43,10 +44,10 @@ one_shot = true
 
 [node name="ConstLight" type="PointLight2D" parent="."]
 enabled = false
-color = Color(0.678431, 0.00392157, 0.968627, 1)
-energy = 3.0
+color = Color(0.545098, 0, 0.615686, 1)
+energy = 3.5
 texture = ExtResource("3_g75ee")
-texture_scale = 0.1
+texture_scale = 0.07
 
 [node name="VisibleOnScreenEnabler2D" type="VisibleOnScreenEnabler2D" parent="."]
 position = Vector2(1.54972e-06, -8.9407e-08)

@@ -7,7 +7,7 @@ var unlocking_mode: bool = false
 var stars_unlocked = []
 var total_stars = 0
 var stars
-@export var constellation_name: String
+@export var constellation_name: String = "Constellation"
 
 func _ready():
 	stars = $Stars.get_children()

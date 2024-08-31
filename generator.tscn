@@ -3,4 +3,5 @@
 [ext_resource type="Script" path="res://Generator.gd" id="1_gxupn"]
 
 [node name="Generator" type="Node2D"]
+position = Vector2(0, 1)
 script = ExtResource("1_gxupn")

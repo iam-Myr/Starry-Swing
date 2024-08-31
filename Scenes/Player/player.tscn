@@ -20,7 +20,7 @@ texture = ExtResource("2_2405y")
 shape = SubResource("CapsuleShape2D_lw0y6")
 
 [node name="GrappleMarker" type="Marker2D" parent="."]
-position = Vector2(-2, -19)
+position = Vector2(13, 4)
 
 [node name="StarDetector" type="Area2D" parent="."]
 collision_mask = 2

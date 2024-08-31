@@ -1,14 +1,14 @@
 extends Node2D
 
 
-@onready var starmap = $StarMap2
-@onready var WORLD_DIMENSIONS = starmap.size
+@onready var starmap = $Planisphere
+@onready var WORLD_DIMENSIONS = Vector2(7500,7500)
 
 @onready var player: CharacterBody2D = $Player
 @onready var rope: Line2D = $Rope
 @onready var camera: Camera2D = $Player/Camera2D
-@onready var chosen_star: StaticBody2D = starmap.get_node("UMi/Stars/Polaris") # Start with spawnpoint
-@onready var prev_chosen_star: StaticBody2D = starmap.get_node("UMi/Stars/Polaris")
+@onready var chosen_star: CelestialBody = starmap.get_node("UMi/Stars/Polaris") # Start with spawnpoint
+@onready var prev_chosen_star: CelestialBody = starmap.get_node("UMi/Stars/Polaris")
 
 var random_spawn: bool = false
 var player_grappling: bool = true
@@ -40,14 +40,22 @@ func _on_player_player_grappling(star):
 	if prev_chosen_star.constellation and chosen_star.constellation != prev_chosen_star.constellation:
 		prev_chosen_star.constellation.fail()
 
-	if chosen_star.constellation and not chosen_star.constellation.is_unlocked:
-		chosen_star.constellation.const_star_activated(chosen_star)
-		print(chosen_star.constellation.constellation_name)
+	if chosen_star.constellation: 
+		if not chosen_star.constellation.is_unlocked:
+			chosen_star.constellation.const_star_activated(chosen_star)
+		else:
+			$UI.show_label(chosen_star.constellation.constellation_name)
 
 func _on_player_player_released():
 	player_grappling = false
 	chosen_star.remove_chosen()
 	prev_chosen_star = chosen_star
+	
+	# Hide Label
+	$UI.hide_label()
+	
+
+	
 
 # Function to create 8 background sprites around the given node
 func create_background_grid(bg: Node2D):

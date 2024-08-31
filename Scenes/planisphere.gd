@@ -10,7 +10,9 @@ func _process(delta):
 func _ready():
 	# Initialize the chart with the current date and time
 	set_initial_rotation()
-	#set_initial_rotation1()
+	
+	# Set Polaris Scale
+	$UMi/Stars/Polaris.scale = Vector2(2,2)
 
 func set_initial_rotation():
 	chart.rotation_degrees = 0
@@ -39,35 +41,3 @@ func set_initial_rotation():
 	chart.rotation_degrees = -degrees
 
 
-func set_initial_rotation1():
-	# Reset the chart's rotation to 0
-	#chart.rotation = 0
-	
-	var current_date = Time.get_datetime_dict_from_system()
-	var month = current_date["month"]
-	var day = current_date["day"]
-	var hour = current_date["hour"]
-	var minute = current_date["minute"]
-	var second = current_date["second"]
-	
-	# Precomputed cumulative days at the start of each month for non-leap years
-	var cumulative_days = [0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334]
-	
-	# Total days passed in the year up to the start of the current month + current day
-	var total_days = cumulative_days[month - 1] + day
-	
-	# Calculate total seconds passed in the current day
-	var total_seconds = hour * 3600 + minute * 60 + second
-	print(total_seconds)
-	
-	# Calculate degrees based on total days and time
-	var degrees = total_days + (rotation_speed_per_second * total_seconds)
-	
-	# Apply modulo 360 to ensure the degrees wrap correctly
-	#degrees = fmod(degrees, 360.0)
-	
-	# Print the calculated degrees for debugging
-	print("Calculated degrees: ", -degrees)
-	
-	# Convert degrees to radians and set the chart's initial rotation
-	#chart.rotation = -deg_to_rad(degrees)
