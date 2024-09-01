@@ -1,4 +1,4 @@
-extends Node2D  # Or Area2D, depending on your needs
+extends StaticBody2D # Or Area2D, depending on your needs
 
 class_name CelestialBody  # Register the class so it's easy to reference
 

@@ -5,13 +5,15 @@ class_name Star
 @onready var light = $Light
 var is_chosen = false
 
+
 func _ready():
 	#Random Scale
 	var rand_scale = randf_range(0.9,1.3)
 	self.scale = Vector2(rand_scale,rand_scale)
-
-#func _process(_delta):
-	#$StarImg.global_rotation = deg_to_rad(0)
+	
+	# I have to do this ugliness to fix a bug where the star nodes are greyed out
+	process_mode = Node.PROCESS_MODE_ALWAYS
+	process_mode = Node.PROCESS_MODE_INHERIT
 
 func get_chosen():
 	is_chosen = true

@@ -8,7 +8,7 @@ const GRAVITY = 880
 
 # Nodes and variables
 var grappling: bool = false       # Boolean to check if the character is currently grappling
-var grappled_body: CelestialBody    # Position of the point where the grapple hooks
+var grappled_body    # Position of the point where the grapple hooks
 var prev_pos: Vector2 = position  # Previous position of the character (used in Verlet integration)
 var closest_object 
 var closest_distance 
@@ -77,8 +77,8 @@ func _physics_process(delta: float):
 	
 	# Protection against teleport (BAD)
 	if new_pos.distance_to(position) > 50:
-		#player_released.emit()
-		#grappling = false
+		player_released.emit()
+		grappling = false
 		velocity_value = velocity
 	
 	velocity = velocity_value  # Update velocity based on the new position

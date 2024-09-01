@@ -10,19 +10,22 @@ height = 36.0
 radius = 102.961
 
 [node name="Player" type="CharacterBody2D"]
+collision_mask = 0
 script = ExtResource("1_sivrr")
 ROPE_LENGTH = 250
 
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+shape = SubResource("CapsuleShape2D_lw0y6")
+
 [node name="Player_Img" type="Sprite2D" parent="."]
 texture = ExtResource("2_2405y")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CapsuleShape2D_lw0y6")
 
 [node name="GrappleMarker" type="Marker2D" parent="."]
 position = Vector2(13, 4)
 
 [node name="StarDetector" type="Area2D" parent="."]
+visible = false
 collision_mask = 2
 
 [node name="StarDetectorCircle" type="CollisionShape2D" parent="StarDetector"]

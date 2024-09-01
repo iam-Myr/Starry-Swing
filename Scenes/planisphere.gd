@@ -12,7 +12,10 @@ func _ready():
 	set_initial_rotation()
 	
 	# Set Polaris Scale
-	$UMi/Stars/Polaris.scale = Vector2(2,2)
+	%Polaris.scale = Vector2(2,2)
+	
+	# Has to run even when the game is paused
+	process_mode = Node.PROCESS_MODE_ALWAYS
 
 func set_initial_rotation():
 	chart.rotation_degrees = 0

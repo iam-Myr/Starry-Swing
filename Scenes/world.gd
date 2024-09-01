@@ -7,8 +7,8 @@ extends Node2D
 @onready var player: CharacterBody2D = $Player
 @onready var rope: Line2D = $Rope
 @onready var camera: Camera2D = $Player/Camera2D
-@onready var chosen_star: CelestialBody = starmap.get_node("UMi/Stars/Polaris") # Start with spawnpoint
-@onready var prev_chosen_star: CelestialBody = starmap.get_node("UMi/Stars/Polaris")
+@onready var chosen_star = starmap.get_node("%Polaris") # Start with spawnpoint
+@onready var prev_chosen_star = starmap.get_node("%Polaris")
 
 var random_spawn: bool = false
 var player_grappling: bool = true

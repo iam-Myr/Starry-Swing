@@ -1,7 +1,7 @@
 extends Camera2D
 
 var zoom_speed = Vector2(0.1,0.1)
-var min_zoom = Vector2(0.1,0.1)
+var min_zoom = Vector2(0.2,0.2)
 var max_zoom = Vector2(2,2)
 
 func _ready():

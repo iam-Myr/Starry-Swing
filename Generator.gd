@@ -1,4 +1,4 @@
-@tool
+#@tool
 extends Node2D
 
 # Constants for the world size

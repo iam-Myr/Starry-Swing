@@ -53,6 +53,8 @@ region_rect = Rect2(0, 0, 7500, 7500)
 width = 3.0
 default_color = Color(0.596078, 0.815686, 1, 1)
 
+[node name="Planisphere" parent="." instance=ExtResource("6_4fkhw")]
+
 [node name="Player" parent="." instance=ExtResource("1_kxtem")]
 position = Vector2(1435, 1094)
 SWING_SPEED = 800
@@ -62,8 +64,6 @@ limit_smoothed = true
 script = ExtResource("6_7t2bm")
 
 [node name="UI" parent="." instance=ExtResource("7_nuh6t")]
-
-[node name="Planisphere" parent="." instance=ExtResource("6_4fkhw")]
 
 [node name="PlanBg-ai-brush-removebg-ksy130s5" type="Sprite2D" parent="."]
 position = Vector2(1431, 4371)

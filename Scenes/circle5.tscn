@@ -1,0 +1,275 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://Generator.gd" id="1_oycc1"]
+[ext_resource type="PackedScene" path="res://Scenes/consellation.tscn" id="2_utjt7"]
+
+[node name="Generator" type="Node2D"]
+position = Vector2(0, 1)
+script = ExtResource("1_oycc1")
+
+[node name="And" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Andromeda"
+
+[node name="Ant" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Antlia"
+
+[node name="Aps" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Apus"
+
+[node name="Aqr" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Aquarius"
+
+[node name="Aql" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Aquila"
+
+[node name="Ara" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Ara"
+
+[node name="Ari" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Aries"
+
+[node name="Aur" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Auriga"
+
+[node name="Boo" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Boötes"
+
+[node name="Cae" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Caelum"
+
+[node name="Cam" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Camelopardalis"
+
+[node name="Cnc" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Cancer"
+
+[node name="CVn" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Canes Venatici"
+
+[node name="CMa" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Canis Major"
+
+[node name="CMi" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Canis Minor"
+
+[node name="Cap" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Capricornus"
+
+[node name="Car" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Carina"
+
+[node name="Cas" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Cassiopeia"
+
+[node name="Cen" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Centaurus"
+
+[node name="Cep" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Cepheus"
+
+[node name="Cet" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Cetus"
+
+[node name="Cha" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Chamaeleon"
+
+[node name="Cir" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Circinus"
+
+[node name="Col" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Columba"
+
+[node name="Com" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Coma Berenices"
+
+[node name="CrA" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Corona Austrina"
+
+[node name="CrB" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Corona Borealis"
+
+[node name="Crv" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Corvus"
+
+[node name="Crt" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Crater"
+
+[node name="Cru" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Crux"
+
+[node name="Cyg" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Cygnus"
+
+[node name="Del" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Delphinus"
+
+[node name="Dor" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Dorado"
+
+[node name="Dra" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Draco"
+
+[node name="Equ" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Equuleus"
+
+[node name="Eri" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Eridanus"
+
+[node name="For" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Fornax"
+
+[node name="Gem" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Gemini"
+
+[node name="Gru" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Grus"
+
+[node name="Her" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Hercules"
+
+[node name="Hor" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Horologium"
+
+[node name="Hya" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Hydra"
+
+[node name="Hyi" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Hydrus"
+
+[node name="Ind" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Indus"
+
+[node name="Lac" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Lacerta"
+
+[node name="Leo" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Leo"
+
+[node name="LMi" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Leo Minor"
+
+[node name="Lep" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Lepus"
+
+[node name="Lib" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Libra"
+
+[node name="Lup" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Lupus"
+
+[node name="Lyn" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Lynx"
+
+[node name="Lyr" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Lyra"
+
+[node name="Men" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Mensa"
+
+[node name="Mic" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Microscopium"
+
+[node name="Mon" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Monoceros"
+
+[node name="Mus" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Musca"
+
+[node name="Nor" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Norma"
+
+[node name="Oct" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Octans"
+
+[node name="Oph" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Ophiuchus"
+
+[node name="Ori" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Orion"
+
+[node name="Pav" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Pavo"
+
+[node name="Peg" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Pegasus"
+
+[node name="Per" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Perseus"
+
+[node name="Phe" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Phoenix"
+
+[node name="Pic" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Pictor"
+
+[node name="Psc" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Pisces"
+
+[node name="PsA" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Piscis Austrinus"
+
+[node name="Pup" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Puppis"
+
+[node name="Pyx" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Pyxis"
+
+[node name="Ret" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Reticulum"
+
+[node name="Sge" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Sagitta"
+
+[node name="Sgr" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Sagittarius"
+
+[node name="Sco" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Scorpius"
+
+[node name="Scl" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Sculptor"
+
+[node name="Sct" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Scutum"
+
+[node name="Ser" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Serpens Cauda"
+
+[node name="Ser593" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Serpens Cauda"
+
+[node name="Sex" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Sextans"
+
+[node name="Tau" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Taurus"
+
+[node name="Tel" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Telescopium"
+
+[node name="Tri" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Triangulum"
+
+[node name="TrA" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Triangulum Australe"
+
+[node name="Tuc" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Tucana"
+
+[node name="UMa" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Ursa Major"
+
+[node name="UMi" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Ursa Minor"
+
+[node name="Vel" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Vela"
+
+[node name="Vir" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Virgo"
+
+[node name="Vol" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Volans"
+
+[node name="Vul" parent="." instance=ExtResource("2_utjt7")]
+constellation_name = "Vulpecula"
