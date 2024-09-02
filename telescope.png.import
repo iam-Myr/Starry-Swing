@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dje8dktxrqoo8"
-path="res://.godot/imported/plan_bg-ai-brush-removebg-ksy130s5.png-e2976c73d4784255e2d2e97c5b65a080.ctex"
+uid="uid://b1i3slga4q5rd"
+path="res://.godot/imported/telescope.png-08ff9d85f6283fc2e3e1e93f9e5710e5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://plan_bg-ai-brush-removebg-ksy130s5.png"
-dest_files=["res://.godot/imported/plan_bg-ai-brush-removebg-ksy130s5.png-e2976c73d4784255e2d2e97c5b65a080.ctex"]
+source_file="res://telescope.png"
+dest_files=["res://.godot/imported/telescope.png-08ff9d85f6283fc2e3e1e93f9e5710e5.ctex"]
 
 [params]
 

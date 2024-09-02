@@ -5,14 +5,12 @@ class_name Star
 @onready var light = $Light
 var is_chosen = false
 
-
 func _ready():
 	#Random Scale
-	var rand_scale = randf_range(0.9,1.3)
+	var rand_scale = randf_range(0.5,0.7)
 	self.scale = Vector2(rand_scale,rand_scale)
 	
 	# I have to do this ugliness to fix a bug where the star nodes are greyed out
-	process_mode = Node.PROCESS_MODE_ALWAYS
 	process_mode = Node.PROCESS_MODE_INHERIT
 
 func get_chosen():

@@ -4,7 +4,7 @@ extends CharacterBody2D
 @export var SWING_SPEED = 700           # Speed of the character while swinging on the rope
 @export var ROPE_LENGTH = 300 # (circle radius)
 const MAX_VERTICAL_VELOCITY = 500
-const GRAVITY = 880
+const GRAVITY = 900 # Normal is 980
 
 # Nodes and variables
 var grappling: bool = false       # Boolean to check if the character is currently grappling

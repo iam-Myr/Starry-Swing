@@ -1,59 +1,64 @@
-[gd_scene load_steps=4 format=3 uid="uid://b2f2ejek7xfb0"]
+[gd_scene load_steps=5 format=3 uid="uid://b7rsivlera8cb"]
 
 [ext_resource type="Script" path="res://Scenes/ui.gd" id="1_j8rk8"]
-[ext_resource type="FontFile" uid="uid://lfphfrvneu2t" path="res://Assets/quaver.ttf" id="1_o8ymy"]
 [ext_resource type="Texture2D" uid="uid://b8ssrsfdhmfd5" path="res://Assets/Stars/star.png" id="2_kejmx"]
+[ext_resource type="FontFile" uid="uid://lfphfrvneu2t" path="res://Assets/pixel_font.ttf" id="3_a0kln"]
+[ext_resource type="FontFile" uid="uid://8invnfa51ydh" path="res://Scenes/pixel_font.tres" id="4_cjbw3"]
 
 [node name="UI" type="CanvasLayer"]
 script = ExtResource("1_j8rk8")
 
-[node name="Control" type="Control" parent="."]
-layout_mode = 3
-anchor_left = 0.4
-anchor_top = 0.819
-anchor_right = 0.6
-anchor_bottom = 0.91
-grow_horizontal = 2
-grow_vertical = 0
-
-[node name="MarginContainer" type="MarginContainer" parent="."]
+[node name="ConstellationNameContainer" type="MarginContainer" parent="."]
 visible = false
-anchors_preset = 7
+anchors_preset = 5
 anchor_left = 0.5
-anchor_top = 1.0
 anchor_right = 0.5
-anchor_bottom = 1.0
 offset_left = -122.0
-offset_top = -53.0
 offset_right = 122.0
+offset_bottom = 53.0
 grow_horizontal = 2
-grow_vertical = 0
 size_flags_horizontal = 4
-theme_override_constants/margin_bottom = 15
+theme_override_constants/margin_top = 15
 
-[node name="ColorRect" type="ColorRect" parent="MarginContainer"]
+[node name="ColorRect" type="ColorRect" parent="ConstellationNameContainer"]
 layout_mode = 2
-color = Color(0.890196, 0.905882, 0.698039, 1)
+color = Color(0.690196, 0.709804, 0.866667, 1)
 
-[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="ConstellationNameContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_constants/separation = 14
 
-[node name="TextureRect" type="TextureRect" parent="MarginContainer/HBoxContainer"]
+[node name="TextureRect" type="TextureRect" parent="ConstellationNameContainer/HBoxContainer"]
 layout_mode = 2
 texture = ExtResource("2_kejmx")
 expand_mode = 2
 
-[node name="Label" type="Label" parent="MarginContainer/HBoxContainer"]
+[node name="ConstellationName" type="Label" parent="ConstellationNameContainer/HBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("1_o8ymy")
+theme_override_fonts/font = ExtResource("3_a0kln")
 text = "Constellation"
 horizontal_alignment = 1
 vertical_alignment = 2
 
-[node name="TextureRect2" type="TextureRect" parent="MarginContainer/HBoxContainer"]
+[node name="TextureRect2" type="TextureRect" parent="ConstellationNameContainer/HBoxContainer"]
 layout_mode = 2
 texture = ExtResource("2_kejmx")
 expand_mode = 2
+
+[node name="DateContainer" type="MarginContainer" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -92.0
+offset_bottom = 40.0
+grow_horizontal = 0
+theme_override_constants/margin_top = 30
+theme_override_constants/margin_right = 100
+
+[node name="Date" type="Label" parent="DateContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_cjbw3")
+theme_override_font_sizes/font_size = 21
+text = "2024-09-01"

@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://bho1ihsa2y4vl"]
 
 [ext_resource type="Script" path="res://Scenes/star.gd" id="1_rsrx2"]
-[ext_resource type="Texture2D" uid="uid://do0ss5ao26yer" path="res://Assets/Stars/cool_star2.png" id="2_v3thv"]
+[ext_resource type="Texture2D" uid="uid://cuoum7rrc61rc" path="res://Assets/Stars/star1.png" id="2_wr1fa"]
 [ext_resource type="Texture2D" uid="uid://cmqat35qq3u5g" path="res://Assets/light.png" id="3_g75ee"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_5qc33"]
@@ -20,14 +20,22 @@ shape = SubResource("CircleShape2D_5qc33")
 [node name="StarImg" type="Sprite2D" parent="."]
 position = Vector2(1.19209e-07, 0)
 scale = Vector2(0.943655, 0.886123)
-texture = ExtResource("2_v3thv")
+texture = ExtResource("2_wr1fa")
 
 [node name="Light" type="PointLight2D" parent="."]
 enabled = false
-color = Color(0.596078, 1, 1, 0.67451)
-energy = 0.5
+color = Color(0.596078, 1, 1, 1)
+energy = 2.0
 texture = ExtResource("3_g75ee")
 texture_scale = 0.07
+
+[node name="ConstLight" type="PointLight2D" parent="."]
+enabled = false
+color = Color(0.615686, 0.00392157, 0.843137, 1)
+energy = 2.0
+blend_mode = 2
+texture = ExtResource("2_wr1fa")
+texture_scale = 1.2
 
 [node name="Particles" type="CPUParticles2D" parent="."]
 emitting = false
@@ -40,12 +48,5 @@ color_ramp = SubResource("Gradient_lfb07")
 
 [node name="ChosenTimer" type="Timer" parent="."]
 one_shot = true
-
-[node name="ConstLight" type="PointLight2D" parent="."]
-enabled = false
-color = Color(0.545098, 0, 0.615686, 1)
-energy = 3.5
-texture = ExtResource("3_g75ee")
-texture_scale = 0.07
 
 [connection signal="timeout" from="ChosenTimer" to="." method="_on_chosen_timer_timeout"]

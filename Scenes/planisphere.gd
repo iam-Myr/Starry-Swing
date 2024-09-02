@@ -1,24 +1,23 @@
 extends Node2D
 
-@onready var chart = $Chart
-const OFFSET = 3
-var rotation_speed_per_second: float = 360.0 / (24 * 60 * 60) 
+const OFFSET: int = 3 # 3 hour ofsset for UTC +3
+const rotation_speed_per_second: float = 0.0041666666666667 # 360.0 / (24 * 60 * 60) 
 
 func _process(delta):
-	chart.rotation_degrees -= rotation_speed_per_second * delta
+	self.rotation_degrees -= rotation_speed_per_second * delta
 
 func _ready():
 	# Initialize the chart with the current date and time
 	set_initial_rotation()
 	
 	# Set Polaris Scale
-	%Polaris.scale = Vector2(2,2)
+	%Polaris.scale = Vector2(1,1)
 	
 	# Has to run even when the game is paused
 	process_mode = Node.PROCESS_MODE_ALWAYS
 
 func set_initial_rotation():
-	chart.rotation_degrees = 0
+	self.rotation_degrees = 0
 	
 	# Find elapsed seconds
 	var current_date = Time.get_datetime_dict_from_system()
@@ -41,6 +40,6 @@ func set_initial_rotation():
 
 	var total_days2 = (current_date["month"]-1) * 30 + current_date["day"] -1
 	var degrees = fmod(total_days2 + day_seconds * rotation_speed_per_second, 360.0)
-	chart.rotation_degrees = -degrees
+	self.rotation_degrees = -degrees
 
 

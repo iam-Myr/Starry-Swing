@@ -7,54 +7,51 @@ extends Node2D
 @onready var player: CharacterBody2D = $Player
 @onready var rope: Line2D = $Rope
 @onready var camera: Camera2D = $Player/Camera2D
-@onready var chosen_star = starmap.get_node("%Polaris") # Start with spawnpoint
-@onready var prev_chosen_star = starmap.get_node("%Polaris")
+@onready var chosen_celestial: CelestialBody = starmap.get_node("%Polaris") # Start with spawnpoint
+@onready var prev_chosen_celestial: CelestialBody = starmap.get_node("%Polaris")
 
-var random_spawn: bool = false
 var player_grappling: bool = true
 
 func _ready():
-	if random_spawn: 
-		chosen_star = starmap.get_node("Rogues").get_children().pick_random()
-	player.spawn_at(chosen_star)
-	chosen_star.get_chosen()
+	player.spawn_at(chosen_celestial)
+	chosen_celestial.get_chosen()
 	
 	#create_background_grid($BG)
 
 func _process(delta):
-	player.position = player.position.posmodv(WORLD_DIMENSIONS)
+	#player.position = player.position.posmodv(WORLD_DIMENSIONS)
 	#$Comet.position = $Comet.position.posmodv(WORLD_DIMENSIONS)
-	#chosen_star.position = player.position.posmodv(WORLD_DIMENSIONS)
+	#player.position = wrap_position(player.position, WORLD_DIMENSIONS)
 	
 	if player_grappling:
-		rope.points = [player.get_node("GrappleMarker").global_position, chosen_star.global_position]
+		rope.points = [player.get_node("GrappleMarker").global_position, chosen_celestial.global_position]
 	else:
 		rope.points = []
-	
+
+
+
 func _on_player_player_grappling(star):
 	player_grappling = true
-	chosen_star = star
-	chosen_star.get_chosen()
+	chosen_celestial = star
+	chosen_celestial.get_chosen()
 	
 	# Fail constellation: If player grapples another constellation's star
-	if prev_chosen_star.constellation and chosen_star.constellation != prev_chosen_star.constellation:
-		prev_chosen_star.constellation.fail()
+	if prev_chosen_celestial.constellation and chosen_celestial.constellation != prev_chosen_celestial.constellation:
+		prev_chosen_celestial.constellation.fail()
 
-	if chosen_star.constellation: 
-		if not chosen_star.constellation.is_unlocked:
-			chosen_star.constellation.const_star_activated(chosen_star)
+	if chosen_celestial.constellation: 
+		if not chosen_celestial.constellation.is_unlocked:
+			chosen_celestial.constellation.const_star_activated(chosen_celestial)
 		else:
-			$UI.show_label(chosen_star.constellation.constellation_name)
+			$UI.show_label(chosen_celestial.constellation.constellation_name)
 
 func _on_player_player_released():
 	player_grappling = false
-	chosen_star.remove_chosen()
-	prev_chosen_star = chosen_star
+	chosen_celestial.remove_chosen()
+	prev_chosen_celestial = chosen_celestial
 	
 	# Hide Label
 	$UI.hide_label()
-	
-
 	
 
 # Function to create 8 background sprites around the given node

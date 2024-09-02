@@ -1,12 +1,19 @@
 extends CanvasLayer
 
-@onready var label = $MarginContainer/HBoxContainer/Label
+@onready var constellation_name_label = $ConstellationNameContainer/HBoxContainer/ConstellationName
+@onready var date_label = $DateContainer/Date
+
+func _process(delta):
+	var date = Time.get_datetime_string_from_system()
+	date = date.replace("T", "   ")
+	date_label.text = date
+	
 
 func show_label(constellation_name):
-	label.text = constellation_name
-	$MarginContainer.visible = true
+	constellation_name_label.text = constellation_name
+	$ConstellationNameContainer.visible = true
 
 func hide_label():
-	$MarginContainer.visible = false
+	$ConstellationNameContainer.visible = false
 
 

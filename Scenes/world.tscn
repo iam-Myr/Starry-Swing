@@ -1,53 +1,42 @@
-[gd_scene load_steps=11 format=3 uid="uid://lirewln1yeo4"]
+[gd_scene load_steps=9 format=3 uid="uid://cd4ess54x0cof"]
 
 [ext_resource type="PackedScene" uid="uid://ck5qu4mm8eomm" path="res://Scenes/Player/player.tscn" id="1_kxtem"]
 [ext_resource type="Script" path="res://Scenes/world.gd" id="1_ofgo2"]
-[ext_resource type="Texture2D" uid="uid://b8ons6nu62avd" path="res://Assets/Stars/BG.jpg" id="3_xbmfc"]
+[ext_resource type="Texture2D" uid="uid://bghdv4tqrqy40" path="res://Assets/Stars/back.png" id="2_d1678"]
 [ext_resource type="PackedScene" uid="uid://bbs3yq637yyad" path="res://Scenes/planisphere.tscn" id="6_4fkhw"]
 [ext_resource type="Script" path="res://Scenes/Cammera.gd" id="6_7t2bm"]
-[ext_resource type="Texture2D" uid="uid://baee7466yypq8" path="res://plan_bg-ai-brush-removebg-ksy130s5.png" id="7_784m5"]
-[ext_resource type="PackedScene" uid="uid://b2f2ejek7xfb0" path="res://Scenes/ui.tscn" id="7_nuh6t"]
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_dqxx5"]
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8eau3"]
-texture = SubResource("CompressedTexture2D_dqxx5")
-separation = Vector2i(5, 0)
-texture_region_size = Vector2i(90, 90)
-use_texture_padding = false
-2:1/0 = 0
-3:1/0 = 0
-4:1/0 = 0
-1:1/0 = 0
-
-[sub_resource type="TileSet" id="TileSet_df1fy"]
-tile_size = Vector2i(20, 20)
-sources/0 = SubResource("TileSetAtlasSource_8eau3")
+[ext_resource type="PackedScene" uid="uid://b7rsivlera8cb" path="res://Scenes/ui.tscn" id="7_nuh6t"]
+[ext_resource type="Texture2D" uid="uid://c0ud8rn137wdl" path="res://eclipse_white.png" id="7_yh2cp"]
+[ext_resource type="Texture2D" uid="uid://deobxppsh3s63" path="res://telescope2.png" id="9_0pggo"]
 
 [node name="World" type="Node2D"]
 script = ExtResource("1_ofgo2")
 
-[node name="TileMap" type="TileMap" parent="."]
-visible = false
-tile_set = SubResource("TileSet_df1fy")
-format = 2
-layer_0/tile_data = PackedInt32Array(262201, 131072, 1)
-
 [node name="BG" type="Node2D" parent="."]
 
 [node name="ColorRect" type="ColorRect" parent="BG"]
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = -22875.0
+offset_top = -13250.0
+offset_right = -21976.0
+offset_bottom = -12408.0
 scale = Vector2(51.7203, 39.5004)
-color = Color(0.223529, 1, 1, 1)
+color = Color(0, 0, 0.0941176, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="BG"]
+offset_left = -5965.0
+offset_top = -2522.0
+offset_right = 6002.0
+offset_bottom = 7417.0
+color = Color(0.4, 1, 1, 1)
 
 [node name="BGSprite" type="Sprite2D" parent="BG"]
+modulate = Color(0.380392, 1, 1, 0.870588)
 texture_repeat = 3
-position = Vector2(-2074, -2811)
-texture = ExtResource("3_xbmfc")
+position = Vector2(-5965, -2525)
+texture = ExtResource("2_d1678")
 centered = false
 region_enabled = true
-region_rect = Rect2(0, 0, 7500, 7500)
+region_rect = Rect2(0, 0, 12000, 10000)
 
 [node name="Rope" type="Line2D" parent="."]
 width = 3.0
@@ -56,8 +45,8 @@ default_color = Color(0.596078, 0.815686, 1, 1)
 [node name="Planisphere" parent="." instance=ExtResource("6_4fkhw")]
 
 [node name="Player" parent="." instance=ExtResource("1_kxtem")]
-position = Vector2(1435, 1094)
-SWING_SPEED = 800
+position = Vector2(2, 43)
+SWING_SPEED = 1000
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 limit_smoothed = true
@@ -65,10 +54,26 @@ script = ExtResource("6_7t2bm")
 
 [node name="UI" parent="." instance=ExtResource("7_nuh6t")]
 
-[node name="PlanBg-ai-brush-removebg-ksy130s5" type="Sprite2D" parent="."]
-position = Vector2(1431, 4371)
-scale = Vector2(14.7, 14.7)
-texture = ExtResource("7_784m5")
+[node name="Eclipse" type="Sprite2D" parent="."]
+self_modulate = Color(0, 0, 0.0941176, 1)
+position = Vector2(-75, 2300)
+scale = Vector2(29.4, 29.4)
+texture = ExtResource("7_yh2cp")
+
+[node name="Telescope2" type="Sprite2D" parent="."]
+visible = false
+modulate = Color(0.564706, 0.564706, 0.564706, 1)
+position = Vector2(-15.0001, 1152)
+scale = Vector2(14, 14)
+texture = ExtResource("9_0pggo")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+visible = false
+offset_left = -5512.0
+offset_top = -1972.0
+offset_right = 5410.0
+offset_bottom = 7378.0
+color = Color(1, 1, 1, 0.498039)
 
 [connection signal="player_grappling" from="Player" to="." method="_on_player_player_grappling"]
 [connection signal="player_released" from="Player" to="." method="_on_player_player_released"]
