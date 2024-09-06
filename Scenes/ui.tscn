@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://b7rsivlera8cb"]
 
 [ext_resource type="Script" path="res://Scenes/ui.gd" id="1_j8rk8"]
-[ext_resource type="Texture2D" uid="uid://b8ssrsfdhmfd5" path="res://Assets/Stars/star.png" id="2_kejmx"]
-[ext_resource type="FontFile" uid="uid://lfphfrvneu2t" path="res://Assets/pixel_font.ttf" id="3_a0kln"]
+[ext_resource type="Texture2D" uid="uid://6nk8ckwnoysn" path="res://Assets/Stars/starar.png" id="2_k48xt"]
+[ext_resource type="FontFile" uid="uid://lfphfrvneu2t" path="res://Assets/quaver.ttf" id="3_a0kln"]
 [ext_resource type="FontFile" uid="uid://8invnfa51ydh" path="res://Scenes/pixel_font.tres" id="4_cjbw3"]
 
 [node name="UI" type="CanvasLayer"]
@@ -22,7 +22,7 @@ theme_override_constants/margin_top = 15
 
 [node name="ColorRect" type="ColorRect" parent="ConstellationNameContainer"]
 layout_mode = 2
-color = Color(0.690196, 0.709804, 0.866667, 1)
+color = Color(0.486275, 0.764706, 0.898039, 1)
 
 [node name="HBoxContainer" type="HBoxContainer" parent="ConstellationNameContainer"]
 layout_mode = 2
@@ -31,11 +31,13 @@ theme_override_constants/separation = 14
 
 [node name="TextureRect" type="TextureRect" parent="ConstellationNameContainer/HBoxContainer"]
 layout_mode = 2
-texture = ExtResource("2_kejmx")
+texture = ExtResource("2_k48xt")
 expand_mode = 2
+flip_v = true
 
 [node name="ConstellationName" type="Label" parent="ConstellationNameContainer/HBoxContainer"]
 layout_mode = 2
+size_flags_horizontal = 4
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_a0kln")
 text = "Constellation"
@@ -44,7 +46,7 @@ vertical_alignment = 2
 
 [node name="TextureRect2" type="TextureRect" parent="ConstellationNameContainer/HBoxContainer"]
 layout_mode = 2
-texture = ExtResource("2_kejmx")
+texture = ExtResource("2_k48xt")
 expand_mode = 2
 
 [node name="DateContainer" type="MarginContainer" parent="."]

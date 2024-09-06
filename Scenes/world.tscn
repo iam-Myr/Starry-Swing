@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://cd4ess54x0cof"]
+[gd_scene load_steps=8 format=3 uid="uid://cd4ess54x0cof"]
 
 [ext_resource type="PackedScene" uid="uid://ck5qu4mm8eomm" path="res://Scenes/Player/player.tscn" id="1_kxtem"]
 [ext_resource type="Script" path="res://Scenes/world.gd" id="1_ofgo2"]
@@ -6,46 +6,53 @@
 [ext_resource type="PackedScene" uid="uid://bbs3yq637yyad" path="res://Scenes/planisphere.tscn" id="6_4fkhw"]
 [ext_resource type="Script" path="res://Scenes/Cammera.gd" id="6_7t2bm"]
 [ext_resource type="PackedScene" uid="uid://b7rsivlera8cb" path="res://Scenes/ui.tscn" id="7_nuh6t"]
-[ext_resource type="Texture2D" uid="uid://c0ud8rn137wdl" path="res://eclipse_white.png" id="7_yh2cp"]
-[ext_resource type="Texture2D" uid="uid://deobxppsh3s63" path="res://telescope2.png" id="9_0pggo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4r0l1"]
+size = Vector2(11240, 9592)
 
 [node name="World" type="Node2D"]
 script = ExtResource("1_ofgo2")
 
-[node name="BG" type="Node2D" parent="."]
-
-[node name="ColorRect" type="ColorRect" parent="BG"]
-offset_left = -22875.0
-offset_top = -13250.0
-offset_right = -21976.0
-offset_bottom = -12408.0
-scale = Vector2(51.7203, 39.5004)
+[node name="BGColor" type="ColorRect" parent="."]
+offset_left = -19950.0
+offset_top = -11256.0
+offset_right = 30316.0
+offset_bottom = 23389.0
 color = Color(0, 0, 0.0941176, 1)
 
-[node name="ColorRect2" type="ColorRect" parent="BG"]
-offset_left = -5965.0
-offset_top = -2522.0
-offset_right = 6002.0
-offset_bottom = 7417.0
-color = Color(0.4, 1, 1, 1)
+[node name="RectMask" type="ColorRect" parent="."]
+clip_children = 2
+offset_right = 11240.0
+offset_bottom = 9600.0
+color = Color(0.443137, 1, 1, 1)
 
-[node name="BGSprite" type="Sprite2D" parent="BG"]
-modulate = Color(0.380392, 1, 1, 0.870588)
+[node name="BGSprite" type="Sprite2D" parent="RectMask"]
+modulate = Color(0.380392, 1, 1, 0.823529)
 texture_repeat = 3
-position = Vector2(-5965, -2525)
+position = Vector2(-390.998, -766.997)
 texture = ExtResource("2_d1678")
 centered = false
 region_enabled = true
-region_rect = Rect2(0, 0, 12000, 10000)
+region_rect = Rect2(0, 0, 12000, 11000)
 
-[node name="Rope" type="Line2D" parent="."]
+[node name="Rope" type="Line2D" parent="RectMask"]
+unique_name_in_owner = true
 width = 3.0
 default_color = Color(0.596078, 0.815686, 1, 1)
 
-[node name="Planisphere" parent="." instance=ExtResource("6_4fkhw")]
+[node name="Planisphere" parent="RectMask" instance=ExtResource("6_4fkhw")]
+unique_name_in_owner = true
+position = Vector2(5620, 2259)
+
+[node name="PlayableArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayableArea"]
+visible = false
+position = Vector2(5620, 4797)
+shape = SubResource("RectangleShape2D_4r0l1")
 
 [node name="Player" parent="." instance=ExtResource("1_kxtem")]
-position = Vector2(2, 43)
+position = Vector2(5626, 2343)
 SWING_SPEED = 1000
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
@@ -54,26 +61,7 @@ script = ExtResource("6_7t2bm")
 
 [node name="UI" parent="." instance=ExtResource("7_nuh6t")]
 
-[node name="Eclipse" type="Sprite2D" parent="."]
-self_modulate = Color(0, 0, 0.0941176, 1)
-position = Vector2(-75, 2300)
-scale = Vector2(29.4, 29.4)
-texture = ExtResource("7_yh2cp")
-
-[node name="Telescope2" type="Sprite2D" parent="."]
-visible = false
-modulate = Color(0.564706, 0.564706, 0.564706, 1)
-position = Vector2(-15.0001, 1152)
-scale = Vector2(14, 14)
-texture = ExtResource("9_0pggo")
-
-[node name="ColorRect" type="ColorRect" parent="."]
-visible = false
-offset_left = -5512.0
-offset_top = -1972.0
-offset_right = 5410.0
-offset_bottom = 7378.0
-color = Color(1, 1, 1, 0.498039)
-
+[connection signal="player_teleported" from="." to="Player" method="_on_world_player_teleported"]
+[connection signal="body_exited" from="PlayableArea" to="." method="_on_area_2d_body_exited"]
 [connection signal="player_grappling" from="Player" to="." method="_on_player_player_grappling"]
 [connection signal="player_released" from="Player" to="." method="_on_player_player_released"]

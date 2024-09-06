@@ -23,6 +23,13 @@ func _ready():
 	line.default_color = "e1e1e10c"
 	line.default_color.a = 0.05
 	
+	# Add line points to path
+	var curve = Curve2D.new()
+	for point in line.points:
+		curve.add_point(point)
+	$Path2D.curve = curve
+	
+	
 func const_star_activated(star):
 	if not is_unlocked and star not in stars_unlocked:
 		unlocking_mode = true
@@ -53,6 +60,8 @@ func unlock_constellation():
 	for star in stars_unlocked:
 		star.get_node("ConstLight").enabled = false
 	
+	$AnimationPlayer.play("Unlock_Animation")
+	await $AnimationPlayer.animation_finished
 	$Line.default_color.a = 0.4
 
 

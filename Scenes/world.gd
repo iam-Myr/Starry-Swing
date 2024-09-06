@@ -1,25 +1,25 @@
 extends Node2D
 
 
-@onready var starmap = $Planisphere
-@onready var WORLD_DIMENSIONS = Vector2(7500,7500)
-
+@onready var starmap = %Planisphere
 @onready var player: CharacterBody2D = $Player
-@onready var rope: Line2D = $Rope
+@onready var rope: Line2D = %Rope
 @onready var camera: Camera2D = $Player/Camera2D
 @onready var chosen_celestial: CelestialBody = starmap.get_node("%Polaris") # Start with spawnpoint
 @onready var prev_chosen_celestial: CelestialBody = starmap.get_node("%Polaris")
 
 var player_grappling: bool = true
+signal player_teleported
 
 func _ready():
 	player.spawn_at(chosen_celestial)
 	chosen_celestial.get_chosen()
 	
+	Globals.WORLD_SIZE = $RectMask.size
+	camera.update_center()
 	#create_background_grid($BG)
 
 func _process(delta):
-	#player.position = player.position.posmodv(WORLD_DIMENSIONS)
 	#$Comet.position = $Comet.position.posmodv(WORLD_DIMENSIONS)
 	#player.position = wrap_position(player.position, WORLD_DIMENSIONS)
 	
@@ -28,15 +28,13 @@ func _process(delta):
 	else:
 		rope.points = []
 
-
-
 func _on_player_player_grappling(star):
 	player_grappling = true
 	chosen_celestial = star
 	chosen_celestial.get_chosen()
 	
 	# Fail constellation: If player grapples another constellation's star
-	if prev_chosen_celestial.constellation and chosen_celestial.constellation != prev_chosen_celestial.constellation:
+	if prev_chosen_celestial.constellation and chosen_celestial.constellation and chosen_celestial.constellation != prev_chosen_celestial.constellation:
 		prev_chosen_celestial.constellation.fail()
 
 	if chosen_celestial.constellation: 
@@ -52,12 +50,11 @@ func _on_player_player_released():
 	
 	# Hide Label
 	$UI.hide_label()
-	
 
 # Function to create 8 background sprites around the given node
 func create_background_grid(bg: Node2D):
 	# Get the size of the background sprite
-	var sprite_size = WORLD_DIMENSIONS
+	var sprite_size = Globals.WORLD_SIZE
 	
 	# Loop through the grid positions (-1, 0, 1) for both x and y directions
 	for x_offset in [-1, 0, 1]:
@@ -76,4 +73,7 @@ func create_background_grid(bg: Node2D):
 			add_child(new_bg)
 
 		
-
+func _on_area_2d_body_exited(body):
+	if body == player:
+		player.position = player.position.posmodv(Globals.WORLD_SIZE)
+		player_teleported.emit()

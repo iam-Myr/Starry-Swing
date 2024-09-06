@@ -19,7 +19,7 @@ texture = ExtResource("2_01jbt")
 
 [node name="PlanBg-ai-brush-removebg-ksy130s5" type="Sprite2D" parent="."]
 visible = false
-position = Vector2(-36, 3337.5)
+position = Vector2(0, 3337.5)
 scale = Vector2(14.7, 14.7)
 texture = ExtResource("3_f5kba")
 
@@ -4183,13 +4183,8 @@ position = Vector2(-2931, 1508.5)
 [node name="Star11" parent="Rogues" instance=ExtResource("5_5k8bs")]
 position = Vector2(2554.5, 1217)
 
-[node name="ColorRect" type="ColorRect" parent="."]
-visible = false
-offset_left = -2841.0
-offset_top = -1112.0
-offset_right = 2790.0
-offset_bottom = 3669.0
-color = Color(1, 1, 1, 0.498039)
+[node name="Star12" parent="Rogues" instance=ExtResource("5_5k8bs")]
+position = Vector2(163, 142.5)
 
 [editable path="Aqr"]
 [editable path="Aql"]

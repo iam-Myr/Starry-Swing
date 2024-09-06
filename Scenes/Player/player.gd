@@ -9,7 +9,7 @@ const GRAVITY = 900 # Normal is 980
 # Nodes and variables
 var grappling: bool = false       # Boolean to check if the character is currently grappling
 var grappled_body    # Position of the point where the grapple hooks
-var prev_pos: Vector2 = position  # Previous position of the character (used in Verlet integration)
+var prev_pos: Vector2 = global_position  # Previous position of the character (used in Verlet integration)
 var closest_object 
 var closest_distance 
 var input_dir = Vector2.ZERO
@@ -27,7 +27,7 @@ func _ready():
 func spawn_at(star):
 	grappling = true
 	grappled_body = star
-	position = Vector2(star.global_position.x, star.global_position.y + 50)
+	global_position = Vector2(star.global_position.x, star.global_position.y + 50)
 
 func _input(event):
 	if event.is_action_released("grapple"):
@@ -76,9 +76,7 @@ func _physics_process(delta: float):
 	var velocity_value = (new_pos - position) / delta  # Update velocity based on the new position
 	
 	# Protection against teleport (BAD)
-	if new_pos.distance_to(position) > 50:
-		player_released.emit()
-		grappling = false
+	if new_pos.distance_to(prev_pos) > 50:
 		velocity_value = velocity
 	
 	velocity = velocity_value  # Update velocity based on the new position
@@ -105,4 +103,7 @@ func find_closest_object(direction):
 				closest_object = body
 	return closest_object
 
+func _on_world_player_teleported():
+		player_released.emit()
+		grappling = false
 
