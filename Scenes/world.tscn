@@ -24,6 +24,7 @@ shape = SubResource("RectangleShape2D_4r0l1")
 [node name="UI" parent="." instance=ExtResource("7_nuh6t")]
 
 [node name="Control" type="Control" parent="."]
+unique_name_in_owner = true
 clip_contents = true
 layout_direction = 1
 layout_mode = 3
@@ -39,6 +40,7 @@ position = Vector2(5620, 2259)
 scroll_base_offset = Vector2(320, 180)
 
 [node name="ColorRect" type="ColorRect" parent="ParallaxBackground"]
+visible = false
 custom_minimum_size = Vector2(12000, 10000)
 offset_left = -2662.0
 offset_top = -2180.0
@@ -50,9 +52,10 @@ color = Color(0, 0, 0.0941176, 1)
 texture_filter = 1
 texture_repeat = 1
 motion_scale = Vector2(0.5, 0.5)
+motion_mirroring = Vector2(11240, 9600)
 
 [node name="BGSprite" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
-modulate = Color(0.380392, 1, 1, 0.823529)
+modulate = Color(0.380392, 1, 1, 1)
 texture_repeat = 3
 texture = ExtResource("2_d1678")
 centered = false
@@ -69,6 +72,10 @@ position = Vector2(5626, 2343)
 SWING_SPEED = 1000
 
 [node name="PlayerCamera" type="Camera2D" parent="Player"]
+limit_left = 0
+limit_top = 0
+limit_right = 11240
+limit_bottom = 9600
 limit_smoothed = true
 script = ExtResource("6_7t2bm")
 

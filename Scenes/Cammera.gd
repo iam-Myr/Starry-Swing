@@ -1,7 +1,7 @@
 extends Camera2D
 
 const zoom_speed = Vector2(0.05,0.05)
-const min_zoom = Vector2(0.1,0.1)
+const min_zoom = Vector2(0.15,0.15)
 const max_zoom = Vector2(2,2)
 
 const CENTER_THRESHOLD = Vector2(0.15,0.15)
@@ -21,12 +21,10 @@ func _input(event):
 	if event.is_action_pressed("zoom in"):
 		zoom = clamp(zoom + zoom_speed, min_zoom, max_zoom)
 		if zoom > CENTER_THRESHOLD:
-			pass
 			global_position =  get_parent().global_position
 	if event.is_action_pressed("zoom out"):
 		zoom = clamp(zoom - zoom_speed, min_zoom, max_zoom)
 		if zoom <= CENTER_THRESHOLD:
-			pass
-			#var tween = create_tween()
-			#tween.tween_property(self, "global_position", CENTER_COORDS, 0.2)
-			global_position =  CENTER_COORDS 
+			var tween = create_tween()
+			tween.tween_property(self, "global_position", CENTER_COORDS, 0.2)
+			#global_position =  CENTER_COORDS 

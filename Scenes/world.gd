@@ -15,7 +15,7 @@ func _ready():
 	player.spawn_at(chosen_celestial)
 	chosen_celestial.get_chosen()
 	
-	Globals.WORLD_SIZE = $Control.size
+	Globals.WORLD_SIZE = %Control.size
 	camera.update_center()
 	#create_background_grid($BG)
 
