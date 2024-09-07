@@ -13,53 +13,64 @@ size = Vector2(11240, 9592)
 [node name="World" type="Node2D"]
 script = ExtResource("1_ofgo2")
 
-[node name="BGColor" type="ColorRect" parent="."]
-offset_left = -19950.0
-offset_top = -11256.0
-offset_right = 30316.0
-offset_bottom = 23389.0
-color = Color(0, 0, 0.0941176, 1)
-
-[node name="RectMask" type="ColorRect" parent="."]
-clip_children = 2
-offset_right = 11240.0
-offset_bottom = 9600.0
-color = Color(0.443137, 1, 1, 1)
-
-[node name="BGSprite" type="Sprite2D" parent="RectMask"]
-modulate = Color(0.380392, 1, 1, 0.823529)
-texture_repeat = 3
-position = Vector2(-390.998, -766.997)
-texture = ExtResource("2_d1678")
-centered = false
-region_enabled = true
-region_rect = Rect2(0, 0, 12000, 11000)
-
-[node name="Rope" type="Line2D" parent="RectMask"]
-unique_name_in_owner = true
-width = 3.0
-default_color = Color(0.596078, 0.815686, 1, 1)
-
-[node name="Planisphere" parent="RectMask" instance=ExtResource("6_4fkhw")]
-unique_name_in_owner = true
-position = Vector2(5620, 2259)
-
 [node name="PlayableArea" type="Area2D" parent="."]
+visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayableArea"]
 visible = false
 position = Vector2(5620, 4797)
 shape = SubResource("RectangleShape2D_4r0l1")
 
+[node name="UI" parent="." instance=ExtResource("7_nuh6t")]
+
+[node name="Control" type="Control" parent="."]
+clip_contents = true
+layout_direction = 1
+layout_mode = 3
+anchors_preset = 0
+offset_right = 11240.0
+offset_bottom = 9600.0
+
+[node name="Planisphere" parent="Control" instance=ExtResource("6_4fkhw")]
+unique_name_in_owner = true
+position = Vector2(5620, 2259)
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+scroll_base_offset = Vector2(320, 180)
+
+[node name="ColorRect" type="ColorRect" parent="ParallaxBackground"]
+custom_minimum_size = Vector2(12000, 10000)
+offset_left = -2662.0
+offset_top = -2180.0
+offset_right = 14701.0
+offset_bottom = 11771.0
+color = Color(0, 0, 0.0941176, 1)
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+texture_filter = 1
+texture_repeat = 1
+motion_scale = Vector2(0.5, 0.5)
+
+[node name="BGSprite" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+modulate = Color(0.380392, 1, 1, 0.823529)
+texture_repeat = 3
+texture = ExtResource("2_d1678")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 11240, 9600)
+
+[node name="Rope" type="Line2D" parent="."]
+unique_name_in_owner = true
+width = 3.0
+default_color = Color(0.596078, 0.815686, 1, 1)
+
 [node name="Player" parent="." instance=ExtResource("1_kxtem")]
 position = Vector2(5626, 2343)
 SWING_SPEED = 1000
 
-[node name="Camera2D" type="Camera2D" parent="Player"]
+[node name="PlayerCamera" type="Camera2D" parent="Player"]
 limit_smoothed = true
 script = ExtResource("6_7t2bm")
-
-[node name="UI" parent="." instance=ExtResource("7_nuh6t")]
 
 [connection signal="player_teleported" from="." to="Player" method="_on_world_player_teleported"]
 [connection signal="body_exited" from="PlayableArea" to="." method="_on_area_2d_body_exited"]

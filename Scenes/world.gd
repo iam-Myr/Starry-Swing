@@ -4,7 +4,7 @@ extends Node2D
 @onready var starmap = %Planisphere
 @onready var player: CharacterBody2D = $Player
 @onready var rope: Line2D = %Rope
-@onready var camera: Camera2D = $Player/Camera2D
+@onready var camera: Camera2D = $Player/PlayerCamera
 @onready var chosen_celestial: CelestialBody = starmap.get_node("%Polaris") # Start with spawnpoint
 @onready var prev_chosen_celestial: CelestialBody = starmap.get_node("%Polaris")
 
@@ -15,7 +15,7 @@ func _ready():
 	player.spawn_at(chosen_celestial)
 	chosen_celestial.get_chosen()
 	
-	Globals.WORLD_SIZE = $RectMask.size
+	Globals.WORLD_SIZE = $Control.size
 	camera.update_center()
 	#create_background_grid($BG)
 
@@ -34,7 +34,7 @@ func _on_player_player_grappling(star):
 	chosen_celestial.get_chosen()
 	
 	# Fail constellation: If player grapples another constellation's star
-	if prev_chosen_celestial.constellation and chosen_celestial.constellation and chosen_celestial.constellation != prev_chosen_celestial.constellation:
+	if prev_chosen_celestial.constellation and chosen_celestial.constellation != prev_chosen_celestial.constellation:
 		prev_chosen_celestial.constellation.fail()
 
 	if chosen_celestial.constellation: 
@@ -50,28 +50,6 @@ func _on_player_player_released():
 	
 	# Hide Label
 	$UI.hide_label()
-
-# Function to create 8 background sprites around the given node
-func create_background_grid(bg: Node2D):
-	# Get the size of the background sprite
-	var sprite_size = Globals.WORLD_SIZE
-	
-	# Loop through the grid positions (-1, 0, 1) for both x and y directions
-	for x_offset in [-1, 0, 1]:
-		for y_offset in [-1, 0, 1]:
-			# Skip the center position (0, 0) to avoid duplicating the original sprite
-			if x_offset == 0 and y_offset == 0:
-				continue
-
-			# Create a new instance of the sprite
-			var new_bg = bg.duplicate()
-
-			# Set the position of the new sprite based on the offset
-			new_bg.position = bg.position + Vector2(x_offset, y_offset) * sprite_size
-			new_bg.name = "BG_" + str(x_offset) + str(y_offset)
-			# Add the new sprite as a child of the background sprite's parent
-			add_child(new_bg)
-
 		
 func _on_area_2d_body_exited(body):
 	if body == player:
