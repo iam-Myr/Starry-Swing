@@ -4,7 +4,7 @@ class_name CelestialBody  # Register the class so it's easy to reference
 
 var constellation = null
 
-func get_chosen():
+func get_chosen(index):
 	pass
 
 func remove_chosen():

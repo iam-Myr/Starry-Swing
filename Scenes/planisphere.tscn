@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bxh1b2tknamr3" path="res://chart.png" id="2_01jbt"]
 [ext_resource type="Texture2D" uid="uid://dje8dktxrqoo8" path="res://plan_bg-ai-brush-removebg-ksy130s5.png" id="3_f5kba"]
 [ext_resource type="PackedScene" uid="uid://dyp0cloypkf7l" path="res://Scenes/consellation.tscn" id="4_lbhxa"]
-[ext_resource type="PackedScene" uid="uid://bho1ihsa2y4vl" path="res://Scenes/star.tscn" id="5_5k8bs"]
+[ext_resource type="PackedScene" uid="uid://cnapkdk28jjen" path="res://Scenes/star.tscn" id="5_5k8bs"]
 
 [node name="Planisphere" type="Node2D"]
 scale = Vector2(2, 2)
@@ -776,7 +776,7 @@ scale = Vector2(1.18528, 1.18528)
 
 [node name="Star244" parent="Cet/Stars" index="3" instance=ExtResource("5_5k8bs")]
 process_mode = 4
-position = Vector2(2551.9, 3322.97)
+position = Vector2(2544.98, 3314.58)
 rotation = 1.39626
 scale = Vector2(1.25886, 1.25886)
 

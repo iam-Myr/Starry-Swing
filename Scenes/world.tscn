@@ -69,7 +69,7 @@ default_color = Color(0.596078, 0.815686, 1, 1)
 
 [node name="Player" parent="." instance=ExtResource("1_kxtem")]
 position = Vector2(5626, 2343)
-SWING_SPEED = 1000
+SWING_SPEED = 1200
 
 [node name="PlayerCamera" type="Camera2D" parent="Player"]
 limit_left = 0

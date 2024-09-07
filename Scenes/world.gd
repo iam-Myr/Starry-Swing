@@ -9,11 +9,12 @@ extends Node2D
 @onready var prev_chosen_celestial: CelestialBody = starmap.get_node("%Polaris")
 
 var player_grappling: bool = true
+var star_counter = 0
 signal player_teleported
 
 func _ready():
 	player.spawn_at(chosen_celestial)
-	chosen_celestial.get_chosen()
+	chosen_celestial.get_chosen(star_counter)
 	
 	Globals.WORLD_SIZE = %Control.size
 	camera.update_center()
@@ -31,7 +32,8 @@ func _process(delta):
 func _on_player_player_grappling(star):
 	player_grappling = true
 	chosen_celestial = star
-	chosen_celestial.get_chosen()
+	chosen_celestial.get_chosen(star_counter)
+	star_counter += 1
 	
 	# Fail constellation: If player grapples another constellation's star
 	if prev_chosen_celestial.constellation and chosen_celestial.constellation != prev_chosen_celestial.constellation:
