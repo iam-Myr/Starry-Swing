@@ -45,7 +45,7 @@ func constrain_rope(pos: Vector2, max_rope_length: float) -> Vector2:
 		return grappled_body.global_position + rope_vector  # Return the constrained position
 	return pos  # Return the original position if within the rope length limit
 
-func _process(delta):
+func _process(_delta):
 	# Flip Character
 	var direction = Input.get_vector("left","right","up","down")
 	if direction.x != 0:

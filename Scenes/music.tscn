@@ -2,6 +2,6 @@
 
 [ext_resource type="AudioStream" uid="uid://c1c05g4x3wu4h" path="res://music.mp3" id="1_6ocff"]
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D"]
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer"]
 stream = ExtResource("1_6ocff")
-autoplay = true
+volume_db = -10.0

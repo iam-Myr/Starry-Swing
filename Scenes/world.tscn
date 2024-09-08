@@ -1,10 +1,12 @@
-[gd_scene load_steps=8 format=3 uid="uid://cd4ess54x0cof"]
+[gd_scene load_steps=10 format=3 uid="uid://cd4ess54x0cof"]
 
 [ext_resource type="PackedScene" uid="uid://ck5qu4mm8eomm" path="res://Scenes/Player/player.tscn" id="1_kxtem"]
 [ext_resource type="Script" path="res://Scenes/world.gd" id="1_ofgo2"]
 [ext_resource type="Texture2D" uid="uid://bghdv4tqrqy40" path="res://Assets/Stars/back.png" id="2_d1678"]
+[ext_resource type="Texture2D" uid="uid://p87m0rchy4xq" path="res://Assets/Stars/Blue2.png" id="5_2c3pa"]
 [ext_resource type="PackedScene" uid="uid://bbs3yq637yyad" path="res://Scenes/planisphere.tscn" id="6_4fkhw"]
 [ext_resource type="Script" path="res://Scenes/Cammera.gd" id="6_7t2bm"]
+[ext_resource type="Texture2D" uid="uid://caibocg05vx1o" path="res://Assets/Stars/BlueStars.png" id="6_oxi12"]
 [ext_resource type="PackedScene" uid="uid://b7rsivlera8cb" path="res://Scenes/ui.tscn" id="7_nuh6t"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4r0l1"]
@@ -23,6 +25,11 @@ shape = SubResource("RectangleShape2D_4r0l1")
 
 [node name="UI" parent="." instance=ExtResource("7_nuh6t")]
 
+[node name="Rope" type="Line2D" parent="."]
+unique_name_in_owner = true
+width = 3.0
+default_color = Color(0.596078, 0.815686, 1, 1)
+
 [node name="Control" type="Control" parent="."]
 unique_name_in_owner = true
 clip_contents = true
@@ -39,15 +46,6 @@ position = Vector2(5620, 2259)
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 scroll_base_offset = Vector2(320, 180)
 
-[node name="ColorRect" type="ColorRect" parent="ParallaxBackground"]
-visible = false
-custom_minimum_size = Vector2(12000, 10000)
-offset_left = -2662.0
-offset_top = -2180.0
-offset_right = 14701.0
-offset_bottom = 11771.0
-color = Color(0, 0, 0.0941176, 1)
-
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
 texture_filter = 1
 texture_repeat = 1
@@ -62,14 +60,30 @@ centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 11240, 9600)
 
-[node name="Rope" type="Line2D" parent="."]
-unique_name_in_owner = true
-width = 3.0
-default_color = Color(0.596078, 0.815686, 1, 1)
+[node name="Blue3" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+visible = false
+texture_repeat = 2
+scale = Vector2(1.67604, 2.23148)
+texture = ExtResource("5_2c3pa")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 11240, 9600)
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.8, 0.8)
+
+[node name="BGSprite2" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+modulate = Color(0.380392, 1, 1, 0.160784)
+texture_repeat = 3
+texture = ExtResource("6_oxi12")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 11240, 9600)
 
 [node name="Player" parent="." instance=ExtResource("1_kxtem")]
 position = Vector2(5626, 2343)
-SWING_SPEED = 1200
+SWING_SPEED = 1500
+ROPE_LENGTH = 300
 
 [node name="PlayerCamera" type="Camera2D" parent="Player"]
 limit_left = 0
@@ -78,6 +92,8 @@ limit_right = 11240
 limit_bottom = 9600
 limit_smoothed = true
 script = ExtResource("6_7t2bm")
+
+[node name="ParallaxBackground2" type="ParallaxBackground" parent="."]
 
 [connection signal="player_teleported" from="." to="Player" method="_on_world_player_teleported"]
 [connection signal="body_exited" from="PlayableArea" to="." method="_on_area_2d_body_exited"]

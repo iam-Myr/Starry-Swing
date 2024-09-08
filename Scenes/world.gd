@@ -20,7 +20,7 @@ func _ready():
 	camera.update_center()
 	#create_background_grid($BG)
 
-func _process(delta):
+func _process(_delta):
 	#$Comet.position = $Comet.position.posmodv(WORLD_DIMENSIONS)
 	#player.position = wrap_position(player.position, WORLD_DIMENSIONS)
 	

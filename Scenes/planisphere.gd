@@ -1,6 +1,5 @@
 extends Node2D
 
-const OFFSET: int = 3 # 3 hour ofsset for UTC +3
 const rotation_speed_per_second: float = 0.0041666666666667 # 360.0 / (24 * 60 * 60) 
 
 func _process(delta):
@@ -31,15 +30,11 @@ func set_initial_rotation():
 		"second": 0
 	}
 
-	# Get the Unix timestamp of the start of the year
-	var offset_seconds = OFFSET * 3600
-	var total_seconds = Time.get_unix_time_from_system() - Time.get_unix_time_from_datetime_dict(start_of_year) + offset_seconds
-	var total_days = floor(total_seconds / (60*60*24)) 
+	#var total_seconds = Time.get_unix_time_from_system() - Time.get_unix_time_from_datetime_dict(start_of_year) 
 	var day_seconds = current_date["hour"] * 3600 + current_date["minute"] * 60 + current_date["second"]
-
-
-	var total_days2 = (current_date["month"]-1) * 30 + current_date["day"] -1
-	var degrees = fmod(total_days2 + day_seconds * rotation_speed_per_second, 360.0)
+	var total_days = (current_date["month"]-1) * 30 + current_date["day"] -1
+	
+	var degrees = fmod(total_days + day_seconds * rotation_speed_per_second, 360.0)
 	self.rotation_degrees = -degrees
 
 

@@ -1,6 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://dyp0cloypkf7l"]
+[gd_scene load_steps=8 format=3 uid="uid://dyp0cloypkf7l"]
 
 [ext_resource type="Script" path="res://Scenes/consellation.gd" id="1_cn0t5"]
+[ext_resource type="Script" path="res://Scenes/Sound.gd" id="2_c6840"]
 
 [sub_resource type="Curve2D" id="Curve2D_5kchr"]
 
@@ -103,5 +104,8 @@ color_ramp = SubResource("Gradient_qt2sk")
 libraries = {
 "": SubResource("AnimationLibrary_fkmbs")
 }
+
+[node name="Sound" type="AudioStreamPlayer" parent="."]
+script = ExtResource("2_c6840")
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

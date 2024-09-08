@@ -3,7 +3,7 @@ extends CanvasLayer
 @onready var constellation_name_label = $ConstellationNameContainer/HBoxContainer/ConstellationName
 @onready var date_label = $DateContainer/Date
 
-func _process(delta):
+func _process(_delta):
 	var date = Time.get_datetime_string_from_system()
 	date = date.replace("T", "   ")
 	date_label.text = date

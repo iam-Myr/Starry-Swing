@@ -60,11 +60,14 @@ func unlock_constellation():
 	for star in stars_unlocked:
 		star.get_node("ConstLight").enabled = false
 	
+	# Play cute little sound
+	var rand_sound = randi_range(0,2)
+	$Sound.play_sound("ConstSounds",rand_sound, false)
+	
+	# Do cute little animation
 	$AnimationPlayer.play("Unlock_Animation")
 	await $AnimationPlayer.animation_finished
 	$Line.default_color.a = 0.4
-
-
 
 
 
